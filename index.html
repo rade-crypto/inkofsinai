@@ -135,10 +135,9 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; 
       <form class="signup" id="signup" method="post" novalidate>
         <h2 id="signup-h">One Torah discovery a week, by email</h2>
         <div class="row">
-          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Your email" aria-labelledby="signup-h" required>
+          <input id="email" name="email_address" type="email" inputmode="email" autocomplete="email" placeholder="Your email" aria-labelledby="signup-h" required>
           <button type="submit">Subscribe</button>
         </div>
-        <input type="hidden" name="embed" value="1">
         <p class="fine">Free, every Sunday. Unsubscribe anytime.</p>
         <p class="status" id="signup-status" role="status" aria-live="polite"></p>
       </form>
@@ -164,12 +163,12 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; text-wrap: balance; 
 </footer>
 
 <script>
-// Sign-up posts to Buttondown (username below), but only on the live domain; anywhere else it shows a note instead.
-const SIGNUP = { user: 'inkofsinai', liveHost: 'inkofsinai.com' };
+// Sign-up posts to the Kit form below, but only on the live domain; anywhere else it shows a note instead.
+const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com' };
 (function () {
   const form = document.getElementById('signup'), email = document.getElementById('email'), status = document.getElementById('signup-status');
   const host = location.hostname, live = host === SIGNUP.liveHost || host.endsWith('.' + SIGNUP.liveHost);
-  if (live) form.action = 'https://buttondown.com/api/emails/embed-subscribe/' + SIGNUP.user;
+  if (live) form.action = 'https://app.kit.com/forms/' + SIGNUP.form + '/subscriptions';
   form.addEventListener('submit', e => {
     if (!email.value || !email.checkValidity()) { e.preventDefault(); status.textContent = 'Enter an email address like name@example.com.'; email.focus(); return; }
     if (!live) { e.preventDefault(); status.textContent = 'Sign-up starts working once the site is live at inkofsinai.com.'; }
