@@ -141,13 +141,18 @@ const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','
 async function load(name) { try { const r = await fetch('data/' + name + '.json', { cache: 'no-cache' }); return r.ok ? r.json() : []; } catch { return []; } }
 
 const card = (v, url, img) => `<a class="card" href="${url}"><span class="thumb"><img src="${img}" alt="" loading="lazy"><span class="play"></span></span><span class="t">${esc(v.title)}</span></a>`;
-load('longform').then(list => {
+const longLoaded = load('longform').then(list => {
   document.getElementById('longform').innerHTML = list.slice(0, 3).map(v =>
     card(v, `https://www.youtube.com/watch?v=${v.id}`, `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`)).join('');
 });
-load('shorts').then(list => {
+const shortsLoaded = load('shorts').then(list => {
   document.getElementById('shorts').innerHTML = list.slice(0, 4).map(v =>
     card(v, `https://www.youtube.com/shorts/${v.id}`, `https://i.ytimg.com/vi/${v.id}/oardefault.jpg`)).join('');
+});
+// The rows above grow after loading, so a link like /#newsletter has to scroll again once they're in.
+Promise.all([longLoaded, shortsLoaded]).then(() => {
+  const target = location.hash && document.getElementById(location.hash.slice(1));
+  if (target) target.scrollIntoView();
 });
 
 // Sign-up goes to the Kit form in the background, so readers stay on the page.
