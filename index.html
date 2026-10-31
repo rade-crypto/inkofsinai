@@ -51,17 +51,15 @@ nav a { font-size: 15px; font-weight: 500; color: #e9dcc3; }
 .head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-bottom: 26px; }
 h2 { margin: 0; font: 600 38px/1.1 'Source Serif 4', serif; }
 .all { color: var(--gold); font-weight: 600; white-space: nowrap; }
-.featured { display: grid; grid-template-columns: 1.6fr 1fr; gap: 32px; align-items: center; }
+.row { display: grid; grid-auto-flow: column; gap: 24px; }
+.row.long { grid-auto-columns: calc((100% - 48px) / 3); }
+.row.short { grid-auto-columns: calc((100% - 72px) / 4); }
 .thumb { position: relative; display: block; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); background: var(--panel); }
 .thumb img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
-.play { position: absolute; left: 50%; top: 50%; width: 72px; height: 72px; margin: -36px; border-radius: 50%; background: rgba(179,38,30,.92); display: grid; place-items: center; }
-.play::after { content: ''; border-left: 22px solid #fff; border-top: 13px solid transparent; border-bottom: 13px solid transparent; margin-left: 6px; }
-.featured h3 { margin: 0 0 10px; font: 600 30px/1.2 'Source Serif 4', serif; }
-.featured .date { color: var(--dim); font-size: 15px; }
-.longrow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 32px; }
-.card span, .short span { display: block; margin-top: 12px; font-weight: 500; line-height: 1.35; }
-.shorts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.short img { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); }
+.row.short .thumb img { aspect-ratio: 9 / 16; }
+.play { position: absolute; left: 50%; top: 50%; width: 56px; height: 56px; margin: -28px; border-radius: 50%; background: rgba(179,38,30,.92); display: grid; place-items: center; }
+.play::after { content: ''; border-left: 18px solid #fff; border-top: 11px solid transparent; border-bottom: 11px solid transparent; margin-left: 5px; }
+.card span.t { display: block; margin-top: 12px; font-weight: 500; line-height: 1.35; }
 .about { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-top: 28px; }
 .about h3 { margin: 0 0 8px; font: 600 22px 'Source Serif 4', serif; }
 .about p { margin: 0; color: var(--muted); }
@@ -81,8 +79,9 @@ footer a:hover, .all:hover { text-decoration: underline; }
 @media (max-width: 760px) {
   nav { padding: 16px 20px; gap: 14px; } nav a:not(.cta):not(.logo) { display: none; }
   .sec, .news { padding-left: 20px; padding-right: 20px; } .sec { padding-top: 64px; }
-  .featured { grid-template-columns: 1fr; gap: 18px; } .longrow { grid-template-columns: 1fr; }
-  .shorts { grid-template-columns: 1fr 1fr; gap: 16px; } .short:nth-child(n+7) { display: none; } .about { grid-template-columns: 1fr; }
+  .row { overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; gap: 14px; } .card { scroll-snap-align: start; }
+  .row.long { grid-auto-columns: 82%; } .row.short { grid-auto-columns: 44%; }
+  .about { grid-template-columns: 1fr; }
   h2 { font-size: 30px; } .box { grid-template-columns: 1fr; padding: 28px; } .form { flex-direction: column; }
   footer { padding: 24px 20px 40px; flex-direction: column; }
 }
@@ -106,12 +105,12 @@ footer a:hover, .all:hover { text-decoration: underline; }
 
 <section class="sec" id="videos">
   <div class="head"><h2>Long videos</h2><a class="all" href="https://www.youtube.com/@InkofSinai/videos">All on YouTube →</a></div>
-  <div id="longform"><p><a class="all" href="https://www.youtube.com/@InkofSinai/videos">Watch on YouTube →</a></p></div>
+  <div class="row long" id="longform"></div>
 </section>
 
 <section class="sec">
   <div class="head"><h2>Shorts</h2><a class="all" href="https://www.youtube.com/@InkofSinai/shorts">All Shorts →</a></div>
-  <div class="shorts" id="shorts"></div>
+  <div class="row short" id="shorts"></div>
 </section>
 
 <section class="sec" id="about">
@@ -139,21 +138,16 @@ footer a:hover, .all:hover { text-decoration: underline; }
 <script>
 // Video lists come from data/*.json, refreshed by the scheduled GitHub workflows.
 const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
-const date = iso => new Date(iso).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
 async function load(name) { try { const r = await fetch('data/' + name + '.json', { cache: 'no-cache' }); return r.ok ? r.json() : []; } catch { return []; } }
 
+const card = (v, url, img) => `<a class="card" href="${url}"><span class="thumb"><img src="${img}" alt="" loading="lazy"><span class="play"></span></span><span class="t">${esc(v.title)}</span></a>`;
 load('longform').then(list => {
-  if (!list.length) return;
-  const [first, ...rest] = list;
-  const card = v => `<a class="card" href="https://www.youtube.com/watch?v=${v.id}"><span class="thumb"><img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy"></span><span>${esc(v.title)}</span></a>`;
-  document.getElementById('longform').innerHTML =
-    `<div class="featured"><a class="thumb" href="https://www.youtube.com/watch?v=${first.id}"><img src="https://i.ytimg.com/vi/${first.id}/maxresdefault.jpg" alt=""><span class="play"></span></a>
-     <div><h3>${esc(first.title)}</h3><div class="date">${date(first.published)}</div></div></div>` +
-    (rest.length ? `<div class="longrow">${rest.slice(0, 3).map(card).join('')}</div>` : '');
+  document.getElementById('longform').innerHTML = list.slice(0, 3).map(v =>
+    card(v, `https://www.youtube.com/watch?v=${v.id}`, `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`)).join('');
 });
 load('shorts').then(list => {
-  document.getElementById('shorts').innerHTML = list.slice(0, 8).map(v =>
-    `<a class="short" href="https://www.youtube.com/shorts/${v.id}"><img src="https://i.ytimg.com/vi/${v.id}/oardefault.jpg" alt="" loading="lazy"><span>${esc(v.title)}</span></a>`).join('');
+  document.getElementById('shorts').innerHTML = list.slice(0, 4).map(v =>
+    card(v, `https://www.youtube.com/shorts/${v.id}`, `https://i.ytimg.com/vi/${v.id}/oardefault.jpg`)).join('');
 });
 
 // Sign-up posts to the Kit form, but only on the live domain.
