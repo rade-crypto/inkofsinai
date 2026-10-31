@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>The Thursday email · Ink of Sinai</title>
-<meta name="description" content="This week's Torah portion, plus a summary of the week's insights. Free every Thursday, before Shabbat.">
+<meta name="description" content="This week's Torah portion, plus a summary of the week's insights. Free every Thursday, in time for Shabbat.">
 <link rel="canonical" href="https://inkofsinai.com/newsletter/">
 <meta name="theme-color" content="#120e0a">
 <link rel="icon" type="image/png" href="/favicon.png">
 <meta property="og:title" content="The Thursday email · Ink of Sinai">
-<meta property="og:description" content="This week's Torah portion, plus a summary of the week's insights. Free every Thursday, before Shabbat.">
+<meta property="og:description" content="This week's Torah portion, plus a summary of the week's insights. Free every Thursday, in time for Shabbat.">
 <meta property="og:image" content="https://inkofsinai.com/media/og.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,7 +37,7 @@ button { padding: 15px 24px; border: 0; border-radius: 8px; background: var(--re
 <main>
   <div class="mark" lang="he" aria-hidden="true">א</div>
   <div class="brand">Ink of Sinai</div>
-  <h1>Every Thursday, before Shabbat</h1>
+  <h1>Every Thursday, in time for Shabbat</h1>
   <p>This week's Torah portion, plus a summary of the week's insights. Free, no ads.</p>
   <form id="signup" method="post" novalidate>
     <div class="form" style="display:grid;gap:10px"><input id="email" name="email_address" type="email" autocomplete="email" placeholder="Your email" aria-label="Email address" required><button type="submit">Subscribe</button></div>
@@ -64,7 +64,7 @@ const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com' };
         method: 'POST', mode: 'no-cors', body: new URLSearchParams({ email_address: email.value.trim() })
       });
       form.querySelector('.form').style.display = 'none';
-      status.textContent = "You're in. The next email arrives Thursday, before Shabbat.";
+      status.textContent = "You're in. The next email arrives Thursday, in time for Shabbat.";
     } catch {
       button.disabled = false;
       status.textContent = 'Something went wrong. Please try again in a moment.';
