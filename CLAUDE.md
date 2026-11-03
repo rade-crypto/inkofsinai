@@ -92,6 +92,7 @@ These are the user's standing notes from earlier videos. Apply all of them witho
 - Motion:
   - Motion graphics are what holds attention, so every scene moves from its first second. Never let stills sit with slow zooms, and leave no empty space in the hook.
   - Animate visuals (characters, objects, maps, fire, water), not only the text. Keep it cinematic and elegant.
+  - Layout for photoreal videos: the picture sits on one side and fades into black. On the black side, verses, Hebrew words, labels and diagrams explain the pattern. Never let the picture fill the frame with text laid over it.
   - Nothing that looks cheap or AI-made: no splashing letters, no trembling, no random zooms on props.
   - Pace, neither slow nor rushed:
     - Shots hold about 3–5 s, and reveals hold longer.
