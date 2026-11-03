@@ -209,3 +209,10 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Numbers 7:** 89 verses, the longest chapter in the Torah (next: Deut 28, 69). Twelve gift sections (7:12–83) are the same text apart from the day, the name and one opening word, so say "nearly word for word". חֲנֻכַּת הַמִּזְבֵּחַ at 7:10, 11, 84, 88. מִבֵּין שְׁנֵי הַכְּרֻבִים appears only at Exod 25:22 (the promise) and Num 7:89 (Moses hears the voice). 7:89 has no Divine Name.
 - **Two Lamechs:** Cain's line puts Lamech 7th from Adam (4:17–18); he boasts of killing and says שִׁבְעִים וְשִׁבְעָה (4:23–24; the phrase also occurs at Judg 8:14 and Ezra 8:35). Seth's line puts Enoch 7th; וַיִּתְהַלֵּךְ חֲנוֹךְ אֶת הָאֱלֹהִים (5:22, 24; show Hebrew only up to חֲנוֹךְ). Seth's Lamech lives שֶׁבַע וְשִׁבְעִים שָׁנָה וּשְׁבַע מֵאוֹת שָׁנָה, 777 years (5:31, the only place this number appears).
 - **וַיִּזְכֹּר אֱלֹהִים:** exactly 4 times in the Tanakh: Gen 8:1 (Noah), 19:29 (Abraham, so Lot is saved), 30:22 (Rachel), Exod 2:24 (the covenant, slaves in Egypt). The long-form "5 patterns" and the barren-mothers draft already use part of this.
+
+## Friday parasha reel, Chayei Sarah (Nov 7, 2026): "full price". The owner's pick
+- בְּכֶסֶף מָלֵא appears only in Gen 23:9 (Abraham) and 1 Chr 21:22, 24 (David). Both owners say נָתַתִּי (Gen 23:11 נָתַתִּי לָךְ; 1 Chr 21:23 הַכֹּל נָתָתִּי).
+- Abraham sets the terms before Ephron speaks (23:9; Ephron first speaks in 23:10), and Ephron names the 400 (23:15). So don't say "Abraham named the price".
+- In 1 Chr 21:24, show only לֹא כִּי קָנֹה אֶקְנֶה בְּכֶסֶף מָלֵא on screen. The negation of חִנָּם sits in the cut part, and לַיהוָה follows.
+- Keep it off politics: no "bought/ours/deed", no modern photos of the Machpelah building or the Temple Mount.
+- 127 (Sarah and Esther) is held for a later Chayei Sarah or Purim.
