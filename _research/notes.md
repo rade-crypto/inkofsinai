@@ -216,3 +216,10 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - In 1 Chr 21:24, show only לֹא כִּי קָנֹה אֶקְנֶה בְּכֶסֶף מָלֵא on screen. The negation of חִנָּם sits in the cut part, and לַיהוָה follows.
 - Keep it off politics: no "bought/ours/deed", no modern photos of the Machpelah building or the Temple Mount.
 - 127 (Sarah and Esther) is held for a later Chayei Sarah or Purim.
+
+## 122 "The last word": the deeper layer (verified in the WLC, Nov 3)
+- The hitpael of הלך first appears in Gen 3:8: קוֹל … מִתְהַלֵּךְ בַּגָּן (the Divine Name sits in the verse, so show it in English only). The man and his wife hide (וַיִּתְחַבֵּא). Before that, only the qal (2:14, a river). Note: מִתְהַלֵּךְ can grammatically go with קוֹל, so say "hear God walking", not "God is the one walking".
+- Gen 3:19: עַד שׁוּבְךָ אֶל־הָאֲדָמָה כִּי מִמֶּנָּה לֻקָּחְתָּ, with לקח in the pual. Gen 5:24 has both וַיִּתְהַלֵּךְ and לָקַח (qal). The two share a root but not a stem. לקח appears earlier too (2:15, 2:21–23, 3:6), so say "go back to Eden", not "first".
+- Elijah: 2 Kgs 2:9 בְּטֶרֶם אֶלָּקַח מֵעִמָּךְ. In 2:11 הֹלְכִים הָלוֹךְ וְדַבֵּר is a qal, and he walks with Elisha, not "with God".
+- Micah 6:8 uses the qal לֶכֶת עִם, where Enoch has the hitpael אֶת. Let the viewer make the link; don't say "the same walk".
+- All four reviewers wanted Elijah cut (a new name, no shared verb in the VO). He stays, because the owner asked for the two men who didn't die, now tied in with his own word אֶלָּקַח.
