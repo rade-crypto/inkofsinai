@@ -175,3 +175,10 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - The pinned comment notes the Masoretic Text.
 - **3 of 4, so left out:** Nahash (the editor said no), 17:57 head in hand (the editor), cutting the line 44 dust/face-down (the core fan), cutting "bronze down to the shins" (the editor).
 - **YouTube strategist:** 8:00 adds no average view duration (6:30 at 50% ≈ 8:00 at 40%). Save 8+ minutes for the Nephilim video. Open on the thumbnail's composition.
+
+## Reel topic scout (Nov 3, 2026): verified in WLC
+- **Babel (Gen 11:1–9):** הָבָה three times: 11:3 נִלְבְּנָה לְבֵנִים, 11:4 נִבְנֶה, 11:7 נֵרְדָה וְנָבְלָה. Center 11:5 וַיֵּרֶד (Divine Name in the verse, so show it in English). 11:4 פֶּן נָפוּץ עַל פְּנֵי כָל הָאָרֶץ comes back in 11:8 וַיָּפֶץ…עַל פְּנֵי כָל הָאָרֶץ. 11:3 אִישׁ אֶל רֵעֵהוּ / 11:7 אִישׁ שְׂפַת רֵעֵהוּ. The tower (מִגְדָּל) is named only in 11:4–5 and is never destroyed: 11:8 "they stopped building the city". לבן/בלל are different roots, so call it a sound reversal.
+- **Plagues:** morning warnings at 1, 4, 7 (7:15 לֵךְ…בַּבֹּקֶר; 8:16 and 9:13 הַשְׁכֵּם בַּבֹּקֶר); בֹּא אֶל פַּרְעֹה at 2, 5, 8 (7:26; 9:1; 10:1); no warning at 3, 6, 9 (8:12; 9:8; 10:21). The tenth strikes בַּחֲצִי הַלַּיְלָה (12:29; announced 11:4). Known from the Haggadah grouping, so expect "old news" comments.
+- **Tabernacle as creation:** seven speeches in Exod 25–31 (25:1; 30:11, 17, 22, 34; 31:1, 12), and the seventh is the Sabbath. Exod 39:43 וַיַּרְא…אֶת כָּל…וְהִנֵּה…וַיְבָרֶךְ ~ Gen 1:31 and 2:3; Exod 40:33 וַיְכַל מֹשֶׁה אֶת הַמְּלָאכָה ~ Gen 2:2. The order differs, so don't claim the same order.
+- **Eden:** 2:25 עֲרוּמִּים / 3:1 עָרוּם; 3:7, 10, 11 use עֵירֹם. This is heavily covered online, so it's low on differentiation.
+- **Already made:** Babel = short 21, Tabernacle as creation = short 17, plagues in threes = short 18. Check the full episode list (shorts 1–119) before pitching.
