@@ -67,6 +67,36 @@
   - No fade-outs: scenes hold, then cut.
   - Text and graphics are centered together, inside the 9:16 safe zone, with no floating icons.
 
+# On screen (every video, long-form and Shorts)
+
+These are the user's standing notes from earlier videos. Apply all of them without being reminded.
+
+- Verses:
+  - Every Hebrew verse or phrase on screen comes with its English translation and its reference.
+  - When the VO quotes a verse, put the verse on screen, the way 04 kept a verse banner up (reference, Hebrew with the key word in gold, English below with the same word in gold).
+  - A verse stays up long enough to read without pausing. Scenes with more text run slower.
+  - Translate or explain every Hebrew word shown.
+- Timing:
+  - Text follows the VO exactly and appears on the word, never late.
+  - No fade-outs on scenes or key text; scenes hold, then cut. Nothing leaves the screen too quickly.
+  - No rough cuts. Finish one idea's graphic before starting the next, and earlier panels stay while the new ones build.
+- Size and layout:
+  - No small text anywhere, the italic English especially.
+  - Keep everything inside the safe zones, with nothing touching the edges or overflowing a panel.
+  - Text and graphics are centered together, with no title at the top and text in the middle, and no clashing text blocks.
+  - Don't crowd the screen: three lines, a verse and a table together is too much. No small bottom captions, except the English under a quoted Hebrew verse.
+- Look:
+  - Use elegant fonts, never the default "AI" fonts, and no text stroke or bullet dots.
+  - Key words are highlighted in gold or yellow, the same color all video long.
+  - The viewer must always understand what's on screen and why. Numbers, icons or words without context aren't enough. Say when a graphic is a verse.
+- Motion:
+  - Motion graphics are what holds attention, so every scene moves from its first second. Never let stills sit with slow zooms, and leave no empty space in the hook.
+  - Animate visuals (characters, objects, maps, fire, water), not only the text. Keep it cinematic and elegant.
+  - Nothing that looks cheap or AI-made: no splashing letters, no trembling, no random zooms on props.
+  - Music should be engaging, not meditative or sad, with sound effects.
+  - End on a verse, shown dramatically, with nothing else on screen.
+- Before sending, watch the whole video as a viewer, line by line. Check the timing, size, centering, crowding, and whether each line pulls into the next.
+
 # Research notes
 
 `_research/notes.md` holds everything researched so far: demand data, channel hits, writing principles, topic verdicts and verified Hebrew. Read it before picking a topic or writing, and add new findings to it.
