@@ -76,8 +76,6 @@ When the Philistines see their champion dead, they run. For forty days Goliath s
 
 David had said this would happen. Before the fight, he told the giant, "Today I will give the bodies of the Philistine army to the birds of the sky and the wild animals of the earth." It was the giant's own threat, turned around on his whole army. And he said why: וְיֵדְעוּ כָּל־הָאָרֶץ, "so the whole earth will know that there is a God in Israel."
 
-So look at what the earth got to see. A giant dressed as the serpent, in five thousand shekels of bronze. And against him, a shepherd boy with a stone from a stream.
-
 And before that stone ever left his sling, the boy told everyone whose win it would be:
 
 "God does not save with sword and spear, for the battle belongs to God."
