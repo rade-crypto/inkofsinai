@@ -17,7 +17,7 @@ Clue one: count the bronze. A bronze helmet. A coat of five thousand shekels of 
 
 Bronze is an ordinary Hebrew word. But four times in two verses, on one man, is a pattern.
 
-And the Bible puts serpent and bronze together itself. In the desert, when serpents bite the people, Moses makes נְחַשׁ נְחֹשֶׁת, a serpent of bronze. Anyone who was bitten could look at it and live.
+And the Bible puts serpent and bronze together itself. In the desert, when serpents bite the people, Moses makes נְחַשׁ נְחֹשֶׁת, a serpent of bronze.
 
 The next piece of Goliath's armor points to something bigger than a snake.
 
@@ -33,7 +33,7 @@ The head, and the ground. Both are about to show up in the valley.
 
 But the giant can't get a fight. For אַרְבָּעִים יוֹם, forty days, he walks out morning and evening and takes his stand. His dare is simple: "Choose a man to come down to me. If he kills me, we'll be your slaves. If I kill him, you'll be ours."
 
-And for forty days, nobody goes. In the desert, Israel looked at a serpent of bronze and lived. In this valley, they look at a man of bronze and run.
+And for forty days, nobody goes. When Israel's soldiers see him, they run.
 
 Then a shepherd boy arrives in the camp with bread and grain for his older brothers. He hears the challenge, and he isn't afraid. He says, "I'll go and fight him."
 
@@ -134,7 +134,6 @@ And before that stone ever left his sling, the boy told everyone whose win it wo
   - "I'll go and fight him" (17:32). "You're a boy… a warrior since his youth" (17:33).
   - The lion and the bear, "by its beard," "like one of them" (17:34–36). 17:37 has the Divine Name, so it isn't quoted.
   - Goliath's contempt and "Am I a dog… with sticks?" (17:42–43). "Your flesh to the birds of the sky and the beasts of the field" (17:44), turned around in 17:46.
-  - Bronze serpent: "everyone bitten who sees it shall live" (Numbers 21:8–9). Israel "saw the man… and fled" (17:24).
   - Dagon: brought into Dagon's temple (5:2). נֹפֵל לְפָנָיו אַרְצָה (5:3, 5:4). Head and hands כְּרֻתוֹת, "cut off" (5:4). Compare וַיִּפֹּל עַל פָּנָיו אָרְצָה (17:49) and וַיִּכְרָת… אֶת רֹאשׁוֹ (17:51). On screen, show only נֹפֵל לְפָנָיו אַרְצָה, because the rest of the verse has the Divine Name.
   - Nob: no weapon (21:9). "The sword of Goliath the Philistine whom you struck in the Valley of Elah… wrapped in a cloth behind the ephod" and אֵין כָּמוֹהָ תְּנֶנָּה לִּי (21:10). The sword is given to him (22:10).
 - **On screen:** 17:45 and 17:47 in English only, because their Hebrew contains the Divine Name. For 17:46, show only וְיֵדְעוּ כָּל הָאָרֶץ.
