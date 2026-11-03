@@ -192,3 +192,8 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Post it** in Thanksgiving week (Nov 19–24).
 - **Runner-up (all accepted):** בֹּעֵר בָּאֵשׁ appears 4 times: the bush (Exod 3:2) and Sinai (Deut 4:11; 5:23; 9:15).
 - **Also accepted by some:** Samson's eyes (Judg 14:3, 16:21, 17:6, 21:25); Daniel's Aramaic mirror (2↔7, 3↔6, 4↔5, center 4:22 = Eng 4:25).
+
+## Reel scout v2 (Nov 3, 2026): verified in WLC
+- **127:** only Gen 23:1 (Sarah's life) and Esth 1:1, 8:9, 9:30 (Ahasuerus's 127 provinces). No other 127 in the Tanakh. Mirror: יְפַת מַרְאֶה (Gen 12:11) / יְפַת תֹּאַר וְטוֹבַת מַרְאֶה (Esth 2:7); וַתֻּקַּח הָאִשָּׁה בֵּית פַּרְעֹה (Gen 12:15) / וַתִּלָּקַח אֶסְתֵּר אֶל בֵּית הַמֶּלֶךְ (Esth 2:8); אֲחֹתִי אָתְּ (Gen 12:13) / לֹא הִגִּידָה אֶסְתֵּר אֶת עַמָּהּ (Esth 2:10, 20). The provinces are Ahasuerus's, not Esther's.
+- **בְּכֶסֶף מָלֵא:** exactly 3 verses: Gen 23:9 (Machpelah), 1 Chr 21:22, 24 (the Temple site). Both sellers offer it free: נָתַתִּי לָךְ (Gen 23:11), הַכֹּל נָתָתִּי (1 Chr 21:23). עוֹלָה/עֹלוֹת חִנָּם in 1 Chr 21:24 and 2 Sam 24:24 (Divine Name in both, so English). Samuel and Chronicles give different prices, so never state David's price.
+- **יֶשׁ לִי רָב / יֶשׁ לִי כֹל:** each only once (Gen 33:9 Esau, 33:11 Jacob; 33:11 has אֱלֹהִים). בַּכֹּל Gen 24:1 (Divine Name in verse), מִכֹּל Gen 27:33 (Isaac ate, then blessed). The בַּכֹּל מִכֹּל כֹּל line is from the Grace After Meals (liturgy, pinned comment only).
