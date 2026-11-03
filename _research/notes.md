@@ -182,3 +182,13 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Tabernacle as creation:** seven speeches in Exod 25–31 (25:1; 30:11, 17, 22, 34; 31:1, 12), and the seventh is the Sabbath. Exod 39:43 וַיַּרְא…אֶת כָּל…וְהִנֵּה…וַיְבָרֶךְ ~ Gen 1:31 and 2:3; Exod 40:33 וַיְכַל מֹשֶׁה אֶת הַמְּלָאכָה ~ Gen 2:2. The order differs, so don't claim the same order.
 - **Eden:** 2:25 עֲרוּמִּים / 3:1 עָרוּם; 3:7, 10, 11 use עֵירֹם. This is heavily covered online, so it's low on differentiation.
 - **Already made:** Babel = short 21, Tabernacle as creation = short 17, plagues in threes = short 18. Check the full episode list (shorts 1–119) before pitching.
+
+## Next reel (Nov 3, 2026): Psalm 100:3, one letter. Unanimous pick (strategist, scholar, hook writer)
+- **Verified (WLC):**
+  - The ketiv is ולא and the qere is וְלוֹ. KJV: "and not we ourselves". NIV: "and we are his".
+  - לְתוֹדָה appears only at Ps 100:1. This was cut from the script as a post-payoff tangent; the KJV title reads "A Psalm of praise".
+  - The ketiv לא / qere לו swap appears in 19 verses (incl. Job 13:15, Isa 63:9), so never say "only".
+  - On-screen Hebrew starts after יְהוָה and אֱלֹהִים: הוּא־עָשָׂנוּ ולא / וְלוֹ אֲנַחְנוּ.
+- **Post it** in Thanksgiving week (Nov 19–24).
+- **Runner-up (all accepted):** בֹּעֵר בָּאֵשׁ appears 4 times: the bush (Exod 3:2) and Sinai (Deut 4:11; 5:23; 9:15).
+- **Also accepted by some:** Samson's eyes (Judg 14:3, 16:21, 17:6, 21:25); Daniel's Aramaic mirror (2↔7, 3↔6, 4↔5, center 4:22 = Eng 4:25).
