@@ -44,6 +44,8 @@
   - empty rhythmic triplets
   - closing lines that restate the point
   - vague "the whole story/book"
+- Retention pass on every script: three quick reviewers read it line by line as three different viewers: a casual Bible fan who doesn't read Hebrew, a Hebrew-reading Jewish skeptic of typology, and a secular mystery fan who leaves within 10 seconds. Each marks where they'd leave and rewrites the line so it pulls into the next one. Merge the fixes, keeping Tanakh-only sources.
+- Open on the concrete detail the thumbnail promises, never on what viewers already know. No "keep that in mind" filler. Every line must make the next one necessary; any line that sounds like an ending before the end gets a pull into what's next.
 - No chapter titles or section cards in scripts. Write plain narration only.
 - Before sending: one quick, time-limited reviewer (facts + skeptical viewer), apply the fixes, then send only the script.
 
