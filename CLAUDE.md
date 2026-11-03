@@ -9,6 +9,7 @@
 - Send short texts (scripts, captions, lines) as plain chat text unless the user asks for a file.
 - When the user asks for one change, change nothing else.
 - After any fix to a script, send the whole updated file again, every time.
+- Don't send source links or source lists in replies.
 
 # Content rules (Ink of Sinai)
 
