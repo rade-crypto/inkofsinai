@@ -57,6 +57,8 @@
 
 # Titles, thumbnails, captions
 
+- Hooks: before writing any hook, title or first line, read `_research/hooks.md` and run its checklist.
+
 - Title: the searchable keyword plus the insight (e.g., "Goliath Was Dressed as the Serpent"). It must match the first minute and contain nothing a commenter can disprove.
 - Thumbnail text never repeats the title; it adds a second hook. Proven on this channel: "Why Everyone in the Bible Meets Their Wife at a Well" with "IT'S ON PURPOSE." (264k views in 4 days, the channel's best).
 - Thumbnail style that works here: gold ink on black, one figure or scene on the right, and a 2–3 word statement on the left ending with a period, with its key word in gold. Add a "look here" cue (a glowing circle) on the detail the video reveals. One subject, no clutter, no decorative extras, no Divine Name.
