@@ -17,7 +17,7 @@
 - Say "God", never "Hashem". No Divine Name in on-screen Hebrew (show those verses in English).
 - Verify every Hebrew claim in the Westminster Leningrad Codex before using it. Words like "only", "exactly", "every" and "first" must be checked, or dropped.
 - Don't spend ElevenLabs credits without being asked; the user records the voiceovers.
-- Make every visual for these videos with our own in-house engine. Never generate or source images with outside tools (Magnific, ElevenLabs, AI image models, stock or museum images).
+- Photoreal stills come only from fal (Nano Banana Pro), using our own prompts and character sheets. Everything else (grade, Hebrew text, circles, motion, edit) is done in our in-house engine. No other outside image tools, stock or museum images.
 
 # Writing scripts
 
