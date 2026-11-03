@@ -9,7 +9,7 @@ Before Goliath says a single word, the Bible spends three verses on what he's we
 
 Almost all of it is bronze. In Hebrew, bronze is נְחֹשֶׁת. The serpent in Eden is נָחָשׁ. Say them together, and you can hear the serpent inside the bronze.
 
-The guards on his legs are bronze too. In Hebrew they're called מִצְחַת, from מֵצַח, forehead. A "forehead" on his legs. You won't find that word anywhere else in the Bible.
+The guards on his legs are bronze too. Their Hebrew name comes from מֵצַח, the word for forehead. A "forehead" on his legs. You won't find that word anywhere else in the Bible.
 
 There are four clues like that in this chapter, and the third one points to the spot where the stone lands.
 
