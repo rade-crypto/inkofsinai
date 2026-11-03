@@ -1,0 +1,93 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="file:///tmp/claude-0/lf12/build/fonts/local.css">
+<style>
+html,body{margin:0;background:transparent}
+#st{position:relative;width:1920px;height:1080px;overflow:hidden}
+.blk{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;text-align:center}
+.scrim{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(5,3,1,.62),rgba(5,3,1,.38) 55%,rgba(5,3,1,0));z-index:-1}
+.heb{font-family:"Frank Ruhl Libre";font-weight:500;direction:rtl;line-height:1.25;white-space:nowrap;
+ background:linear-gradient(180deg,#fbe8b4 0%,#e2b260 48%,#a8722f 100%);-webkit-background-clip:text;background-clip:text;color:transparent;
+ filter:drop-shadow(0 0 18px rgba(240,170,70,.55)) drop-shadow(0 2px 2px rgba(0,0,0,.6))}
+.en{font-family:"Fraunces";font-style:italic;font-weight:400;color:#efe6d4;opacity:.93;margin-top:6px;text-shadow:0 2px 10px rgba(0,0,0,.85)}
+.ref{font-family:"Fraunces";font-weight:500;color:#d9b46a;letter-spacing:3px;opacity:.85;margin-top:14px;text-shadow:0 2px 8px rgba(0,0,0,.9);font-size:28px}
+.dim{background:none;color:rgba(217,180,106,.28);-webkit-background-clip:initial;filter:none}
+.verse{font-family:"Frank Ruhl Libre";font-weight:400;direction:rtl;color:rgba(239,230,212,.42);font-size:62px;line-height:1.75;width:1500px;text-align:center}
+.hl{font-weight:500;background:linear-gradient(180deg,#fff0c4 0%,#e9bb67 50%,#b07a33 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 16px rgba(250,180,70,.8))}
+</style></head><body><div id="st"></div>
+<script>
+const st=document.getElementById('st');
+window.R=(spec)=>{st.innerHTML='';
+ const mk=(h)=>{const d=document.createElement('div');d.innerHTML=h;return d.firstElementChild;};
+
+ const G='background:linear-gradient(180deg,#fff0c4 0%,#e9bb67 50%,#b07a33 100%);-webkit-background-clip:text;background-clip:text;color:transparent;';
+ if(spec.type==='quote'){const b=mk(`<div class="blk" style="left:${spec.x*1920}px;top:${spec.y*1080}px;width:${spec.w||1300}px">
+   <div class="scrim" style="width:${(spec.w||1300)+200}px;height:${spec.sh||420}px;background:radial-gradient(closest-side,rgba(5,3,1,.78),rgba(5,3,1,.5) 60%,rgba(5,3,1,0))"></div>
+   <div class="en" style="font-size:${spec.fs||56}px;font-style:italic;line-height:1.3">${spec.q}</div>
+   ${spec.ref?`<div class="ref" style="font-size:30px;margin-top:22px">${spec.ref}</div>`:''}</div>`);st.appendChild(b);}
+ if(spec.type==='label'){const b=mk(`<div class="blk" style="left:${spec.x*1920}px;top:${spec.y*1080}px">
+   ${spec.noscrim?'':`<div class="scrim" style="width:${spec.sw||520}px;height:${spec.sh||200}px"></div>`}
+   ${spec.heb?`<div class="heb" style="font-size:${spec.hs||64}px">${spec.heb}</div>`:''}
+   ${spec.en?`<div class="en" style="font-size:${spec.es||40}px;margin-top:${spec.heb?0:0}px">${spec.en}</div>`:''}
+   ${spec.ref?`<div class="ref" style="font-size:${spec.rs||24}px;margin-top:8px">${spec.ref}</div>`:''}</div>`);st.appendChild(b);}
+ if(spec.type==='digit'){const b=mk(`<div class="blk" style="left:960px;top:540px"><div class="heb" style="font-family:Newsreader;font-variant-numeric:lining-nums;direction:ltr;font-weight:500;font-size:${spec.fs||170}px;line-height:1">${spec.d}</div></div>`);st.appendChild(b);}
+ if(spec.type==='x4'){const b=mk(`<div class="blk" style="left:${spec.x*1920}px;top:${spec.y*1080}px">
+   <div style="font-family:Newsreader;font-variant-numeric:lining-nums;font-weight:500;font-size:150px;line-height:1;${G}filter:drop-shadow(0 0 24px rgba(250,180,70,.8))">×4</div></div>`);st.appendChild(b);}
+ if(spec.type==='trk'){ // big four-clue tracker
+   const slot=(n)=>{const on=spec.hl===n;return `<div style="display:flex;flex-direction:column;align-items:center;margin:0 38px">
+     <div style="width:150px;height:150px;border-radius:50%;border:5px solid ${on?'#f3cf86':'rgba(217,180,106,.55)'};display:flex;align-items:center;justify-content:center;
+       box-shadow:${on?'0 0 40px rgba(250,180,70,.85),inset 0 0 30px rgba(250,180,70,.35)':'0 0 10px rgba(0,0,0,.6)'};background:rgba(8,5,2,.55)">
+       <div style="font-family:Newsreader;font-variant-numeric:lining-nums;font-weight:500;font-size:84px;${on?G:'color:rgba(239,230,212,.75);'}">${n}</div></div>
+     <div class="ref" style="font-size:26px;margin-top:16px;opacity:${on?1:.0}">THE STONE</div></div>`;};
+   const b=mk(`<div class="blk" style="left:960px;top:${spec.y*1080}px"><div class="scrim" style="width:1400px;height:420px"></div>
+     <div class="ref" style="font-size:34px;letter-spacing:8px;margin:0 0 26px">FOUR CLUES</div>
+     <div style="display:flex">${[1,2,3,4].map(slot).join('')}</div></div>`);st.appendChild(b);}
+ if(spec.type==='hud'){ // small corner tracker
+   const lab=['נְחֹשֶׁת','קַשְׂקַשִּׂים','מִצְחַת','?'];
+   const slot=(n)=>{const act=spec.a===n,done=n<spec.a;return `<div style="display:flex;flex-direction:column;align-items:center;width:132px">
+     <div style="width:76px;height:76px;border-radius:50%;border:3px solid ${act?'#f3cf86':done?'rgba(217,180,106,.8)':'rgba(217,180,106,.35)'};display:flex;align-items:center;justify-content:center;
+     background:${done?'rgba(217,180,106,.22)':'rgba(8,5,2,.6)'};box-shadow:${act?'0 0 24px rgba(250,180,70,.9)':'none'}">
+     <div style="font-family:Newsreader;font-variant-numeric:lining-nums;font-size:40px;${act?G:done?'color:#e9cf96;':'color:rgba(239,230,212,.5);'}">${n}</div></div>
+     <div class="heb" style="font-size:30px;margin-top:6px;${(act||done)&&n<4?'':'opacity:0'}">${lab[n-1]}</div></div>`;};
+   const b=mk(`<div style="position:absolute;right:46px;top:40px;display:flex;padding:14px 10px;border-radius:18px;background:radial-gradient(closest-side,rgba(5,3,1,.6),rgba(5,3,1,0))">
+     ${[1,2,3,4].map(slot).join('')}</div>`);st.appendChild(b);}
+ if(spec.type==='v49'){const n=spec.n;const M='מִצְחוֹ';let k=0;const hl=()=>{k++;return k<=n?`<span class="hl">${M}</span>`:`<span>${M}</span>`;};
+   const v=`וַיִּשְׁלַח דָּוִד אֶת־יָדוֹ אֶל־הַכֶּלִי וַיִּקַּח מִשָּׁם אֶבֶן וַיְקַלַּע וַיַּךְ אֶת־הַפְּלִשְׁתִּי אֶל־${hl()} וַתִּטְבַּע הָאֶבֶן בְּ${hl()} וַיִּפֹּל עַל־פָּנָיו אָרְצָה`;
+   const b=mk(`<div class="blk" style="left:960px;top:520px"><div class="scrim" style="width:1900px;height:900px"></div>
+    <div class="verse" style="font-size:64px">${v}</div><div class="ref" style="font-size:32px;margin-top:34px">1 SAMUEL 17:49</div></div>`);st.appendChild(b);}
+ if(spec.type==='hu2'){const b=mk(`<div class="blk" style="left:${spec.x*1920}px;top:${spec.y*1080}px">
+   <div class="scrim" style="width:1250px;height:520px;background:radial-gradient(closest-side,rgba(5,3,1,.72),rgba(5,3,1,.45) 60%,rgba(5,3,1,0))"></div>
+   <div style="font-family:'Frank Ruhl Libre';font-weight:500;direction:rtl;font-size:120px;line-height:1.25;white-space:nowrap">
+     <span style="${G}filter:drop-shadow(0 0 14px rgba(240,170,70,.45));opacity:${spec.dim?.45:1}">הוּא יְשׁוּפְךָ </span><span style="${G}filter:drop-shadow(0 0 ${spec.dim?34:18}px rgba(255,190,80,${spec.dim?1:.6}))">רֹאשׁ</span></div>
+   <div class="en" style="font-size:48px">they will strike your <span style="color:#f3cf86;font-weight:500">head</span></div>
+   <div class="ref">GENESIS 3:15</div></div>`);st.appendChild(b);}
+ if(spec.type==='word'){const b=mk(`<div class="blk" style="left:${spec.x*1920}px;top:${spec.y*1080}px">
+   <div class="scrim" style="width:${spec.sw||980}px;height:${spec.sh||560}px;${spec.dark?'background:radial-gradient(closest-side,rgba(5,3,1,.80),rgba(5,3,1,.55) 55%,rgba(5,3,1,0))':''}"></div>
+   <div class="heb" style="font-size:${spec.hs||150}px">${spec.heb}</div>
+   ${spec.en?`<div class="en" style="font-size:${spec.es||48}px">${spec.en}</div>`:''}
+   ${spec.ref?`<div class="ref">${spec.ref}</div>`:''}</div>`);st.appendChild(b);}
+ if(spec.type==='ref'){const b=mk(`<div class="blk" style="left:${spec.x*1920}px;top:${spec.y*1080}px">
+   <div class="scrim" style="width:620px;height:160px"></div><div class="ref" style="font-size:30px;margin:0">${spec.ref}</div></div>`);st.appendChild(b);}
+ if(spec.type==='count'){const b=mk(`<div class="blk" style="left:${spec.x*1920}px;top:${spec.y*1080}px">
+   <div class="scrim" style="width:520px;height:420px"></div>
+   <div class="heb" style="font-size:150px;font-family:Newsreader;font-variant-numeric:lining-nums;direction:ltr">${spec.n}</div>
+   <div class="heb" style="font-size:60px;margin-top:-10px">נְחֹשֶׁת</div></div>`);st.appendChild(b);}
+ if(spec.type==='g1'){ const lit=spec.lit;
+   const g='background:linear-gradient(180deg,#fff0c4 0%,#e9bb67 50%,#b07a33 100%);-webkit-background-clip:text;background-clip:text;color:transparent;';
+   const d='color:rgba(217,180,106,.22);';
+   const b=mk(`<div class="blk" style="left:960px;top:520px">
+    <div class="scrim" style="width:1500px;height:900px"></div>
+    <div style="font-family:'Frank Ruhl Libre';font-weight:500;direction:rtl;font-size:230px;line-height:1.25;white-space:nowrap;filter:drop-shadow(0 0 ${lit?26:18}px rgba(240,170,70,${lit?.75:.5}))"><span style="${g}">נְחֹשֶׁ</span><span style="${lit?d:g}">ת</span></div>
+    <div class="en" style="font-size:50px;margin-top:-6px">bronze</div>
+    <div style="height:46px"></div>
+    <div class="heb" style="font-size:${lit?190:170}px;opacity:${lit?1:.5}">נָחָשׁ</div>
+    <div class="en" style="font-size:50px;margin-top:-6px;opacity:${lit?.93:.5}">serpent</div></div>`);st.appendChild(b);}
+ if(spec.type==='g2'){const n=spec.n;
+   const W='נְחֹשֶׁת';let k=0;const hl=()=>{k++;return k<=n?`<span class="hl">${W}</span>`:`<span>${W}</span>`;};
+   const v5=`וְכוֹבַע ${hl()} עַל־רֹאשׁוֹ וְשִׁרְיוֹן קַשְׂקַשִּׂים הוּא לָבוּשׁ וּמִשְׁקַל הַשִּׁרְיוֹן חֲמֵשֶׁת־אֲלָפִים שְׁקָלִים ${hl()}`;
+   const v6=`וּמִצְחַת ${hl()} עַל־רַגְלָיו וְכִידוֹן ${hl()} בֵּין כְּתֵפָיו`;
+   const b=mk(`<div class="blk" style="left:960px;top:520px">
+    <div class="scrim" style="width:1900px;height:1000px"></div>
+    <div class="verse">${v5}<br>${v6}</div>
+    <div class="ref" style="font-size:32px;margin-top:34px">1 SAMUEL 17:5–6</div></div>`);st.appendChild(b);}
+};
+window.READY=true;
+</script></body></html>
