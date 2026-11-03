@@ -156,7 +156,7 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Checked, but not agreed (save for other videos):**
   - **Saul's first war is against נָחָשׁ הָעַמּוֹנִי** (1 Sam 11:1–2), with חֶרְפָּה עַל כָּל יִשְׂרָאֵל. Don't say "only": Josh 5:9 has חֶרְפַּת מִצְרַיִם מֵעֲלֵיכֶם.
   - **Israel has no swords** (1 Sam 13:19, 22): only Saul and Jonathan have חֶרֶב וַחֲנִית.
-  - **רֹאשׁ appears 6 times in 1 Sam 17** (vv. 5, 38, 46, 51, 54, 57). The chapter ends with וְרֹאשׁ הַפְּלִשְׁתִּי בְּיָדוֹ.
+  - **רֹאשׁ appears 6 times in 1 Sam 17** (vv. 5, 38, 46, 51, 54, 57). 17:57 has וְרֹאשׁ הַפְּלִשְׁתִּי בְּיָדוֹ before Saul. It is not the chapter's last line; 17:58 follows.
   - **Ezek 29:5:** the dragon goes to the beasts and birds. This is a stock curse, and the order is reversed from 17:46.
   - **Josh 11:22:** the עֲנָקִים are left only in Gaza, Gath and Ashdod.
 - **Rejected:**
