@@ -1,0 +1,89 @@
+GOLIATH VIDEO: IMAGE PROMPTS (Ink of Sinai, video 05)
+
+INSTRUCTIONS FOR GEMINI
+Make the images in this file in order, one image per shot, each in 16:9.
+Make the 3 character sheets first. Then make every later shot to match them exactly: same faces, hair, armor and clothing.
+Apply the STYLE block to every image.
+Make 5 images at a time, then stop and wait for me to say "continue".
+In every image: no text, no letters, no captions, no logos, no watermarks. No blood or gore. Modest clothing.
+
+STYLE (apply to every image)
+Photoreal cinematic film still, Iron Age Levant, around 1000 BC.
+Caravaggio-style chiaroscuro: one hard, warm key light, with shadows falling to near-black.
+Palette: deep black, burnished bronze, gold highlights, dusty ochre. Bronze is the warmest thing in the frame.
+35mm film grain, anamorphic lens, shallow depth of field.
+Dust in the light. Epic scale, quiet and serious mood.
+
+CHARACTERS (keep identical in every shot)
+GOLIATH: a towering Philistine giant, about twice the height of a normal man.
+- Thick black beard, weathered olive skin, cold contemptuous eyes.
+- Open-faced bronze helmet. Its rim sits high, so his forehead stays bare.
+- A long coat of overlapping bronze scales, laced with leather cords, reaching mid-thigh. Green-black age in the seams.
+- Bronze greaves (shin guards) on both shins, their top edges curved like a brow.
+- A bronze javelin slung across his back between the shoulders.
+- A massive spear with a thick wooden shaft and a dark iron spearhead.
+- A huge sword in a sheath at his hip.
+
+DAVID: a slight teenage shepherd, about 16, with a ruddy complexion, auburn curly hair and bright, calm eyes.
+- An undyed wool tunic with a rope belt.
+- A leather shepherd's bag on a strap.
+- A wooden staff and a woven leather sling.
+- No armor.
+
+SAUL: the King of Israel. The tallest man in the Israelite camp, middle-aged, with a dark beard going grey.
+- A rich dark-red robe over bronze scale armor.
+- A worried, tired face.
+
+CHARACTER SHEETS
+C1. Character sheet of GOLIATH on a plain near-black background: front view, profile, three-quarter view, and full body. Same lighting in every view.
+C2. Character sheet of DAVID on a plain near-black background: front view, profile, three-quarter view, and full body.
+C3. Character sheet of SAUL on a plain near-black background: front view, profile, and full body.
+
+SHOTS (in script order)
+1. Low-angle full figure of GOLIATH standing alone in the Valley of Elah at dusk. The armies sit small on the hills behind him, and his bronze glows in the last light.
+2. Extreme macro of a hammered bronze surface in torchlight. Warm reflections ripple across it like the sheen on a snake's skin.
+3. A desert viper coiled on dark sand, its scales catching warm side light, black background.
+4. Low-angle close-up of GOLIATH's bronze greaves on his shins, dust swirling around his feet.
+5. Wide shot: GOLIATH striding out in front of the Philistine ranks, the Israelite army watching from the far hill.
+6. Profile close-up of GOLIATH's bronze helmet, a gold rim light along its edge, his bare forehead below the rim.
+7. Close-up of the heavy coat of bronze scales across GOLIATH's torso.
+8. Detail of the bronze javelin slung across GOLIATH's back, between his shoulders.
+9. Close-up of the massive spear's dark iron spearhead against the bronze armor behind it.
+10. GOLIATH standing still while a narrow beam of light slides across his bronze, leaving almost everything else black.
+11. Moses in the desert raising a bronze serpent on a tall wooden pole, the Israelites around him looking up in hope, dusk sky.
+12. Close-up of the bronze serpent coiled on top of the pole against a dark gold sky.
+13. Side view of GOLIATH's chest, the overlapping bronze scales reading like reptile skin.
+14. Extreme macro of the bronze scales: leather lacing, rivet holes, green-black age in the seams.
+15. Macro of fish scales under dark water, silver and gold.
+16. A colossal crocodile-like river monster lying in the reeds of the Nile at night, its huge scales gleaming bronze, Egyptian temple silhouettes far behind.
+17. GOLIATH in the valley, his long shadow on the rocks behind him curving like a coiled serpent.
+18. The Garden of Eden at dusk: a serpent coiled on a branch beside ripe fruit, and a woman's hand reaching in from the edge of the frame.
+19. Ground-level shot of a serpent crawling on its belly through the dust, dust rising.
+20. Ground-level shot of a bare human heel beside a serpent's raised head in the dust.
+21. Very wide shot across the Valley of Elah: huge GOLIATH on one side, tiny DAVID on the other, the brook between them.
+22. Close-up of GOLIATH's greave, its top edge curved like a brow, a "forehead" on his shin.
+23. Close-up of GOLIATH's face under the high helmet rim, forehead bare, eyes full of contempt.
+24. DAVID kneeling at the brook, choosing five smooth stones, the water sparkling gold.
+25. Close-up of DAVID's hand reaching into his leather bag and taking out one stone.
+26. DAVID whirling the sling overhead, motion blur on the sling, his face focused.
+27. Frozen moment: the stone in mid-air, inches from GOLIATH's bare forehead.
+28. GOLIATH's head snapping back at the impact, eyes wide. No blood.
+29. GOLIATH toppling forward toward the ground, dust exploding around him.
+30. Ground-level shot of GOLIATH lying face-down in the dust, his helmet rolled away, the dust settling.
+31. DAVID standing over the fallen giant, drawing GOLIATH's huge sword from its sheath, seen in silhouette against the sky.
+32. KING SAUL in his tent at night, tall and anxious, his bronze armor laid out on a table.
+33. Israelite soldiers crouching in fear on the hillside, staring at the distant giant.
+34. SAUL setting a bronze helmet on DAVID's head, the armor far too big for the boy.
+35. DAVID taking off the bronze helmet and armor and setting them down.
+36. SAUL's bronze helmet lying on the ground, left behind.
+37. DAVID facing the giant and speaking, wind in his hair, calm and certain.
+38. DAVID walking out toward GOLIATH with staff, sling and bag, seen from behind.
+39. Close-up of DAVID's empty hand, no sword, the sling cord wrapped around his fingers.
+40. GOLIATH's great sword lying in the dust, gleaming.
+41. The Philistine army fleeing in panic at dusk, dust and dropped shields.
+42. The Israelite army rising with a shout and charging down the hillside.
+43. The road to Gath at dusk, a walled city on the horizon, dropped shields along the road.
+44. Birds circling over the empty battlefield against a gold evening sky.
+45. Wide final shot of the valley at dusk: the shepherd boy small in the golden light, the fallen bronze giant in the distance.
+46. Close-up of the sling at rest in DAVID's hand, its stone pouch empty.
+47. Golden light breaking through the clouds over the Valley of Elah, rays falling across the valley.
