@@ -50,8 +50,9 @@
 # Titles, thumbnails, captions
 
 - Title: the searchable keyword plus the insight (e.g., "Goliath Was Dressed as the Serpent"). It must match the first minute and contain nothing a commenter can disprove.
-- Thumbnail text never repeats the title; it adds a second hook (title "Goliath Was Dressed as the Serpent", thumbnail "LOOK AT HIS ARMOR").
-- Thumbnail: at most 4 words of text, one clear image, gold ink on black for long-forms. No decorative extras (the user removed a swirl), and no Divine Name.
+- Thumbnail text never repeats the title; it adds a second hook. Proven on this channel: "Why Everyone in the Bible Meets Their Wife at a Well" with "IT'S ON PURPOSE." (264k views in 4 days, the channel's best).
+- Thumbnail style that works here: gold ink on black, one figure or scene on the right, and a 2–3 word statement on the left ending with a period, with its key word in gold. Add a "look here" cue (a glowing circle) on the detail the video reveals. One subject, no clutter, no decorative extras, no Divine Name.
+- Title patterns that perform in this niche: "Why Everyone in the Bible…", "The Hidden Reason…", "What Most People Miss About…", "N Patterns Hidden in…". Use the searchable keyword (the famous story), and nothing a commenter can disprove.
 - Tags come from YouTube autocomplete research. In IG captions, put a blank line between lines. Strip `?si=` from YouTube links.
 - Shorts:
   - Text follows the voiceover exactly, appearing as each line is spoken.

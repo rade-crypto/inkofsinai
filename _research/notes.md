@@ -31,6 +31,25 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Veritasium (Derek Muller):** start from what viewers already believe, including misconceptions, then answer it.
 - **Open loops:** 1–2 per video, and pay them off.
 
+## Our own videos (YouTube search, Nov 3, 2026)
+- "Why Everyone in the Bible Meets Their Wife at a Well" (03): 264k views in 4 days. Thumbnail: "IT'S ON PURPOSE."
+- "5 Patterns Hidden in the Hebrew Bible Most Readers Never Notice": 88k views in 7 days. Thumbnail: "EVERY 50TH LETTER".
+- "The Deception the Bible Keeps Repeating" (04): 24k views in 12 hours. Thumbnail: "HIS OWN SONS."
+
+## Thumbnail and title research (48 top Bible videos, ranked by views per month)
+- Thumbnails:
+  - Huge 2–4 word text, high contrast, often top-left; or no text at all over an epic cinematic scene.
+  - One dominant subject: an expressive face, or one dramatic scene.
+  - A "look here" cue (red circle or arrow) on the mystery detail.
+- Title patterns that perform:
+  - "The HIDDEN Reason David HAD to Cut Off Goliath's Head" (371k in 3 months; a direct competitor on Goliath)
+  - "What Most People Miss About Job"
+  - "The Jonah Paradox no one is talking about"
+  - "Eden Wasn't Just a Garden" (a pattern; not to be copied in scripts)
+  - "7 Messages Hidden in the Bible"
+  - "The Bible is WAY Weirder Than You Think"
+- Big formats: "the entire Bible explained" overviews, mysteries compilations, Nephilim and giants.
+
 ## YouTube demand (top videos found in search, views)
 - **Esther:**
   - Superbook "For Such a Time as This": 7.4M
