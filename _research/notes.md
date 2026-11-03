@@ -131,3 +131,19 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - Hanukkah: evening of Dec 4, 2026.
 - Purim: Mar 22–23, 2027.
 - Torah portions: Vayishlach Nov 28; Vayeshev Dec 5; Miketz Dec 12; Vayigash Dec 19.
+
+## Visual style research (Nov 3, 2026, for 05 Goliath)
+- **Code-drawn figures were rejected as bad.** A realistic look needs an AI image model. Magnific is connected but had only 10 credits.
+- **What's winning (YouTube):** photoreal cinematic AI "Bible movies".
+  - Unraveling the Scriptures: "Daniel – The Movie" 11.27M in 3 months.
+  - Bible Stories - Movies: "Chronicles of Enoch" 8.29M in 1 month.
+  - Beyond The Verses (giants): 786K.
+  - Pixar-style 3D (Bible In a Nutshell, 8.4M) reads as aimed at kids.
+  - Direct Goliath competitors use AI watercolor storybook art (Deep Scripture Simple, 371k).
+- **Recommended for 05:** photoreal Caravaggio-style stills.
+  - Look: one hard warm light, shadows falling to black, bronze as the only warm color, 35mm grain, anamorphic lens, slow push-ins. It fits black and gold.
+  - Model: Nano Banana Pro or 2.1, with Seedream 5 as the fallback.
+  - Make character sheets for Goliath and David first, and attach them to every still.
+- **Pacing:** a new visual every 4–7 seconds, about 35–40 stills for 6 minutes.
+  - Hebrew overlay in gold only while the word is spoken, for about 3 seconds.
+  - YouTube demonetizes generic AI slideshows, so keep one consistent look.
