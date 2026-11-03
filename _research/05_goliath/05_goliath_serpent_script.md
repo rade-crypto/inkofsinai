@@ -55,9 +55,9 @@ David runs, draws Goliath's own sword, and cuts off his head, the spot Genesis n
 
 And the Philistines have seen this before. Earlier in the same book, they capture Israel's ark and set it in the temple of their god, Dagon. The next morning, Dagon himself is lying נֹפֵל לְפָנָיו אַרְצָה, "fallen on his face to the ground," in front of the ark. The morning after, he's on his face again, and his head has been cut off.
 
-Now the same thing happens to their champion, in nearly the same words.
+Now the same thing happens to their champion, in nearly the same words. And clue four is on David.
 
-But before the fight, someone tried to put bronze on David too. That's clue four: King Saul.
+Before the fight, someone tried to put bronze on him: King Saul.
 
 He's the tallest man in Israel. But when Goliath shouts his challenge, the Bible says he and all Israel were "dismayed and terribly afraid."
 
