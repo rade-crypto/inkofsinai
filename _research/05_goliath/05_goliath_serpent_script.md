@@ -1,4 +1,4 @@
-# 05 · Why the Bible Dresses Goliath Like a Serpent. Voiceover, draft 6 (for review)
+# 05 · Why the Bible Dresses Goliath Like a Serpent. Voiceover, draft 7 (for review)
 
 **Title:** Why the Bible Dresses Goliath Like a Serpent
 **Thumbnail:** `_share/05_goliath_thumbnail.jpg`: Goliath in gold ink, a glowing circle on his coat of scales, with "LOOK AT / HIS ARMOR."
@@ -29,19 +29,11 @@ So the giant walks out dressed as a serpent and a dragon. And back in Genesis 3,
 
 After the serpent tricks Eve, God sentences it. It will crawl on its belly and eat dust. And the woman's children will fight it: הוּא יְשׁוּפְךָ רֹאשׁ, "they will strike your head."
 
-The head, and the ground. Both are about to show up in the valley.
+The head is about to show up in the valley.
 
-But the giant can't get a fight. For אַרְבָּעִים יוֹם, forty days, he walks out morning and evening and takes his stand. His dare is simple: "Choose a man to come down to me. If he kills me, we'll be your slaves. If I kill him, you'll be ours."
+But the giant can't get a fight. For אַרְבָּעִים יוֹם, forty days, he walks out morning and evening and dares Israel to send one man. And for forty days, nobody goes. When Israel's soldiers see him, they run.
 
-And for forty days, nobody goes. When Israel's soldiers see him, they run.
-
-Then a shepherd boy arrives in the camp with bread and grain for his older brothers. He hears the challenge, and he isn't afraid. He says, "I'll go and fight him."
-
-The king tells him, "You can't. You're only a boy, and he's been a warrior since his youth."
-
-So David tells him about his sheep. When a lion or a bear came and carried off a lamb, he went after it, struck it, and pulled the lamb out of its mouth. And when it turned on him, he grabbed it by its beard and killed it. "This Philistine," he says, "will be like one of them."
-
-He's killed monsters before. None of them wore bronze down to the shins.
+Then a shepherd boy shows up with bread for his brothers, and he says he'll fight. He's already killed a lion and a bear. He grabbed one by its beard. Neither of them wore bronze down to the shins.
 
 Clue three is that bronze "forehead" on his legs, מִצְחַת נְחֹשֶׁת. He has a bronze helmet on his head, and a bronze "forehead" down on his shins.
 
@@ -55,7 +47,7 @@ David runs, draws Goliath's own sword, and cuts off his head, the spot Genesis n
 
 And the Philistines have seen this before. Earlier in the same book, they capture Israel's ark and set it in the temple of their god, Dagon. The next morning, Dagon himself is lying נֹפֵל לְפָנָיו אַרְצָה, "fallen on his face to the ground," in front of the ark. The morning after, he's on his face again, and his head has been cut off.
 
-Now the same thing happens to their champion, in nearly the same words. And clue four is on David.
+And clue four is on David.
 
 Before the fight, someone tried to put bronze on him: King Saul.
 
@@ -68,9 +60,6 @@ Those are almost the same words the Bible used for Goliath's helmet.
 David takes a few steps and says, "I can't walk in these." Then, וַיְסִרֵם דָּוִד מֵעָלָיו, "David removed them from upon himself."
 
 Then that same phrase comes out of David's own mouth, when he faces the giant: וַהֲסִרֹתִי אֶת רֹאשְׁךָ מֵעָלֶיךָ, "I will remove your head from upon you."
-
-First he takes the bronze off himself. Then he promises to take the head off the giant.
-
 He walks out with a staff, five smooth stones and a sling. There's no bronze anywhere on him.
 
 The giant looks at the boy with contempt. "Am I a dog, that you come at me with sticks? Come here, and I'll give your flesh to the birds of the sky and the beasts of the field."
@@ -79,15 +68,9 @@ David answers, "You come to me with sword and spear and javelin, and I come to y
 
 And the narrator adds one line, וְחֶרֶב אֵין בְּיַד דָּוִד, "and there was no sword in David's hand."
 
-The only sword in the fight was Goliath's, and it took his head. And that sword isn't finished.
+The only sword in the fight was Goliath's, and it took his head.
 
-It shows up one more time. Later, David is running for his life from Saul, with no weapon at all. He stops at the priests' town of Nob and asks for one. The priest has only one. It's wrapped in a cloth: "the sword of Goliath the Philistine, whom you struck in the Valley of Elah."
-
-David says, אֵין כָּמוֹהָ, "There's none like it. Give it to me."
-
-The giant's sword comes back to the boy who beat him without one.
-
-Back in the valley, the giant isn't the only one who falls.
+And the giant isn't the only one who falls.
 
 When the Philistines see their champion dead, they run. For forty days Goliath stood in that valley, and Israel ran from him. Now Israel rises with a shout and chases them. Philistine dead fall along the road as far as Gath, Goliath's hometown.
 
@@ -135,6 +118,5 @@ And before that stone ever left his sling, the boy told everyone whose win it wo
   - The lion and the bear, "by its beard," "like one of them" (17:34–36). 17:37 has the Divine Name, so it isn't quoted.
   - Goliath's contempt and "Am I a dog… with sticks?" (17:42–43). "Your flesh to the birds of the sky and the beasts of the field" (17:44), turned around in 17:46.
   - Dagon: brought into Dagon's temple (5:2). נֹפֵל לְפָנָיו אַרְצָה (5:3, 5:4). Head and hands כְּרֻתוֹת, "cut off" (5:4). Compare וַיִּפֹּל עַל פָּנָיו אָרְצָה (17:49) and וַיִּכְרָת… אֶת רֹאשׁוֹ (17:51). On screen, show only נֹפֵל לְפָנָיו אַרְצָה, because the rest of the verse has the Divine Name.
-  - Nob: no weapon (21:9). "The sword of Goliath the Philistine whom you struck in the Valley of Elah… wrapped in a cloth behind the ephod" and אֵין כָּמוֹהָ תְּנֶנָּה לִּי (21:10). The sword is given to him (22:10).
 - **On screen:** 17:45 and 17:47 in English only, because their Hebrew contains the Divine Name. For 17:46, show only וְיֵדְעוּ כָּל הָאָרֶץ.
 - **The scales word:** the exact form קַשְׂקַשִּׂים appears only at 17:5. The same word, as קַשְׂקֶשֶׂת or קַשְׂקְשֹׂת, appears only in Leviticus 11, Deuteronomy 14 and Ezekiel 29:4.
