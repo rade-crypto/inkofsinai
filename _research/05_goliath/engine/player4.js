@@ -1,10 +1,10 @@
 (function(){
-const HALF=window.HALF||1;
+const HALF=window.HALF??0;
 const W=1920,H=1080,PRE=0.5;
 // VO insertions [vo time, seconds]: the spliced word מֵצַח at 22.50, the rest are silent pauses
 const INS=window.INS;
 const TG=t=>{let s=t;for(const [v,d] of INS)if(t>=v)s+=d;return s;};
-const VO0=HALF===1?0:180.55;
+const VO0=HALF===2?180.55:0;
 const T=t=>PRE+TG(t)-TG(VO0);
 const END_T=HALF===1?T(179.98)+2.4:T(328.74)+4.5; window.DUR=END_T+0.25;
 const IVORY='#efe6d4',GOLD='#d9b46a',GL='#f6dc98';
@@ -83,7 +83,7 @@ const BN2=[
  {a:301.38,b:308.36,ref:'1 SAMUEL 17:46',he:'וְנָתַתִּי פֶּגֶר מַחֲנֵה פְלִשְׁתִּים הַיּוֹם הַזֶּה לְעוֹף הַשָּׁמַיִם וּלְחַיַּת הָאָרֶץ',en:'…and I will give the bodies of the Philistine army this day to the birds of the sky and the wild animals of the earth',gold:{'פֶּגֶר':303.34,'לְעוֹף':305.20,'הַשָּׁמַיִם':305.76,'וּלְחַיַּת':306.54,'הָאָרֶץ':307.64},hot:{bodies:303.34,birds:305.20,sky:305.76,animals:306.86,earth:307.64},hs:58,es:42},
  {a:313.86,b:318.94,ref:'1 SAMUEL 17:46',he:'וְיֵדְעוּ כָּל־הָאָרֶץ …',en:'…so the whole earth will know that there is a God in Israel',gold:{'וְיֵדְעוּ':313.86,'כָּל־הָאָרֶץ':314.28},hot:{whole:315.96,earth:316.26,know:316.84},hs:84,es:52},
 ];
-const BN=HALF===1?BN1:BN2;
+const BN=HALF===1?BN1:HALF===2?BN2:BN1.concat(BN2);
 const conv=m=>{if(!m)return m;const o={};for(const k in m)o[k]=Array.isArray(m[k])?m[k].map(T):T(m[k]);return o;};
 BN.forEach(b=>{b.t0=T(b.a);b.t1=T(b.b);b.g=conv(b.gold);b.h=conv(b.hot);});
 const BC={};
@@ -149,13 +149,13 @@ const SH1=[
  G(178.42,183.0,'RC'),
 ];
 const SH2=[
- S(180.55,185.00,'n12',1.00,1.07,[.5,.5],[.5,.46],{fx:['haze','dust'],lab:[183.46,'1 SAMUEL 5',100]}),
- S(185.00,188.50,'n12',1.30,1.45,[.5,.42],[.5,.45],{fx:['dust']}),
- S(188.50,193.50,'n13',1.00,1.10,[.45,.55],[.42,.6],{fx:['dust','haze']}),
+ S(180.80,185.00,'n12',1.00,1.07,[.5,.5],[.5,.46],{fx:['haze','dust'],lab:[183.46,'1 SAMUEL 5',100]}),
+ S(185.00,188.50,'n12',1.45,1.70,[.54,.46],[.54,.43],{fx:['dust','haze']}),
+ S(188.50,193.50,'n13',1.00,1.14,[.5,.52],[.5,.6],{fx:['dust','haze']}),
  G(193.50,197.28,'CMP',{bg:'n13',rows:[
    {ref:'1 SAMUEL 17:49 · GOLIATH',he:'וַיִּפֹּל עַל־פָּנָיו אָרְצָה',en:'he fell on his face to the ground',on:193.50,gold:{'עַל־פָּנָיו':194.56,'אָרְצָה':195.20},hot:{face:194.56,ground:195.20}},
    {ref:'1 SAMUEL 5:3 · DAGON',he:'נֹפֵל לְפָנָיו אַרְצָה',en:'fallen on his face to the ground',on:194.00,gold:{'לְפָנָיו':194.56,'אַרְצָה':195.20},hot:{face:194.56,ground:195.20}}]}),
- S(197.28,201.50,'n14',1.00,1.14,[.5,.55],[.5,.65],{fx:['dust']}),
+ S(197.28,201.50,'n14',1.00,1.10,[.5,.5],[.48,.5],{fx:['dust']}),
  S(201.50,203.82,'d01',2.00,2.08,[.55,.25],[.56,.24],{fx:['dust'],tk:4,tks:201.50,tke:203.70}),
  S(203.82,209.88,'n15',1.00,1.16,[.45,.45],[.42,.32],{fx:['dust'],lab:[206.82,'KING SAUL',96]}),
  S(209.88,212.40,'n04',1.00,1.08,[.5,.36],[.46,.32],{fx:['dust'],kick:210.56}),
@@ -190,7 +190,7 @@ const SH2=[
  S(318.94,324.38,'n21',1.10,1.25,[.7,.5],[.72,.45],{fx:['dust']}),
  G(324.38,340,'END'),
 ];
-const SH=HALF===1?SH1:SH2;
+const SH=HALF===1?SH1:HALF===2?SH2:SH1.concat(SH2);
 window.SHOTS=SH;
 // ---------- engine ----------
 const st=i=>i>0?T(SH[i].a):0, en=i=>i<SH.length-1?T(SH[i].b):END_T;

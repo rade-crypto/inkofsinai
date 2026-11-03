@@ -101,6 +101,7 @@ These are the user's standing notes from earlier videos. Apply all of them witho
   - Draw objects and people the way the Tanakh describes them. The ark follows Exodus 25, and cherubim are not birds. Make a reference image first and use it for every shot of that object or person.
   - Music should be engaging, not meditative or sad, with sound effects.
   - End on a verse, shown dramatically, with nothing else on screen.
+- Send the whole video as one HTML file, never split into parts.
 - Before sending, watch the whole video as a viewer, line by line. Check the timing, size, centering, crowding, and whether each line pulls into the next.
 
 # Research notes

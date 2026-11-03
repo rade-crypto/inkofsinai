@@ -3,7 +3,7 @@ D='/tmp/claude-0/lf12/lf05v/'
 HALF=int(sys.argv[1]); sr=48000; PRE=0.5
 INS=json.load(open(D+'ins.json'))
 TG=lambda t: t+sum(d for v,d in INS if t>=v)
-VO0=0 if HALF==1 else 180.55
+VO0=180.55 if HALF==2 else 0
 T=lambda t: PRE+TG(t)-TG(VO0)
 END1=PRE+TG(179.98)+2.4; DUR1=END1+0.25
 END=END1 if HALF==1 else T(328.74)+4.5; DUR=END+0.25; N=int(DUR*sr)
@@ -23,14 +23,14 @@ if HALF==1:
     cut=int((T(179.98)+0.35)*sr); fz=int(.04*sr); v[cut:cut+fz]*=np.linspace(1,0,fz)[:,None]; v[cut+fz:]=0
 mus,msr=sf.read('/tmp/claude-0/lf12/out/music_v7.wav')
 if msr!=sr: mus=ss.resample_poly(mus,sr,msr,axis=0)
-mo=0 if HALF==1 else int(DUR1*sr)
+mo=int(DUR1*sr) if HALF==2 else 0
 m=np.zeros((N,2)); seg=mus[mo:mo+N]; m[:len(seg)]=seg
-fi=int((1.2 if HALF==1 else 0.3)*sr); m[:fi]*=np.linspace(0,1,fi)[:,None]; fo=int((1.0 if HALF==1 else 3.0)*sr); m[N-fo:]*=np.linspace(1,0,fo)[:,None]
+fi=int((0.3 if HALF==2 else 1.2)*sr); m[:fi]*=np.linspace(0,1,fi)[:,None]; fo=int((1.0 if HALF==1 else 3.0)*sr); m[N-fo:]*=np.linspace(1,0,fo)[:,None]
 mono=np.abs(v).mean(1); on=(mono>0.01).astype(float); K=int(.3*sr); c=np.concatenate([[0],np.cumsum(on)])
 lo=np.clip(np.arange(N)-K//2,0,N); hi=np.clip(np.arange(N)+K//2,0,N); env=(c[hi]-c[lo])/K
 duck=1-0.58*np.clip(env*3,0,1)
 tt=np.arange(N)/sr
-if HALF==1:  # music drops away from "Now watch where the stone goes" until the stone hits
+if HALF in (0,1):  # music drops away from "Now watch where the stone goes" until the stone hits
     a,b=T(143.70),T(150.54); g=np.ones(N); g-=0.8*np.clip((tt-a)/0.8,0,1)*(tt<b); g[tt>=b]=1-0.8*np.clip(1-(tt[tt>=b]-b)/0.6,0,1); duck*=g
 rng=np.random.default_rng(3)
 fx=np.zeros((N,2))
@@ -53,7 +53,7 @@ def ting(d=0.9,f=1900):
     t_=np.arange(int(d*sr))/sr; y=sum(np.sin(2*np.pi*f*r*t_+p)*a for r,a,p in [(1,.6,0),(2.76,.3,1),(5.4,.15,2),(1.5,.2,.4)])
     y*=np.exp(-t_*7)*(1-np.exp(-t_*400)); return np.stack([y,y],1)/np.abs(y).max()
 TI=lambda t,g=.05,f=1900: place(T(t),ting(0.9,f),g)
-if HALF==1:
+if HALF in (0,1):
     place(T(0)+0.05,thump(40,1.6),0.30)
     for t in [3.06,3.28,3.50]: TI(t,.03,2200)
     for t in [4.30,4.90,5.50,6.00]: TI(t,.035,2400)
@@ -78,7 +78,7 @@ if HALF==1:
     TI(152.16); TI(155.50); TI(157.52,.06,1800); place(T(158.32),thump(58,0.9),0.18)
     place(T(159.90),shimmer(1.0),0.07); TI(160.48,.04); TI(162.64,.05)
     place(T(167.00),thump(38,1.8),0.36); TI(176.80,.04); TI(178.60,.05,1500); place(T(179.62)+0.15,shimmer(1.6),0.09)
-else:
+if HALF in (0,2):
     place(T(183.46),shimmer(1.0),0.05)
     TI(191.90,.05); TI(192.84,.04); place(T(194.56),shimmer(1.2),0.07); TI(199.88,.05); TI(200.48,.05)
     place(T(201.50),shimmer(0.9),0.07); TI(206.82,.04,1500); TI(208.20,.04)
