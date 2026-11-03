@@ -42,6 +42,7 @@
   - empty rhythmic triplets
   - closing lines that restate the point
   - vague "the whole story/book"
+- No chapter titles or section cards in scripts. Write plain narration only.
 - Before sending: one quick, time-limited reviewer (facts + skeptical viewer), apply the fixes, then send only the script.
 
 # Titles, thumbnails, captions
