@@ -6,7 +6,7 @@ TG=lambda t: t+sum(d for v,d in INS if t>=v)
 VO0=180.55 if HALF==2 else 0
 T=lambda t: PRE+TG(t)-TG(VO0)
 END1=PRE+TG(179.98)+2.4; DUR1=END1+0.25
-END=END1 if HALF==1 else T(328.74)+4.5; DUR=END+0.25; N=int(DUR*sr)
+END=END1 if HALF==1 else T(328.74)+2.6; DUR=END+0.25; N=int(DUR*sr)
 vo,_=sf.read(D+'vo_spliced.wav')
 if vo.ndim==1: vo=np.stack([vo,vo],1)
 # insert silent pauses (the 22.50 entry is the spliced word, already in vo_spliced)
@@ -67,7 +67,7 @@ if HALF in (0,1):
     for t in [36.18,39.34,40.34,41.94]: TI(t,.06)
     TI(44.54,.06,900)
     for t in [48.18,48.36,48.54,48.72]: TI(t,.05,2100)
-    place(T(48.54),thump(60,0.9),0.18)
+    place(T(48.18)-0.15,thump(60,0.9),0.18)
     TI(59.06); TI(69.74,.04); TI(71.60); TI(73.96,.04); TI(77.52,.05); TI(80.80,.04); TI(84.46,.05)
     for t in [86.12,87.94,88.86]: place(T(t)-0.05,thump(64,0.5),0.06)
     TI(102.36); place(T(104.72),shimmer(1.0),0.06); place(T(105.70),shimmer(1.0),0.06)
