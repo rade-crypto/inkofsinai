@@ -35,7 +35,7 @@ But the giant can't get a fight. For אַרְבָּעִים יוֹם, forty days
 
 Then a shepherd boy shows up with bread for his brothers, and he says he'll fight. He's already killed a lion and a bear. He grabbed one by its beard. Neither of them wore bronze down to the shins.
 
-Clue three is that bronze "forehead" on his legs, מִצְחַת נְחֹשֶׁת. He has a bronze helmet on his head, and a bronze "forehead" down on his shins.
+Clue three is that bronze "forehead" on his legs, מִצְחַת נְחֹשֶׁת. It's built from מֵצַח, forehead. He has a bronze helmet on his head, and a bronze "forehead" down on his shins.
 
 Now watch where the stone goes.
 
