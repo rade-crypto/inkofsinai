@@ -9,7 +9,7 @@ Before Goliath says a single word, the Bible spends three verses on what he's we
 
 Almost all of it is bronze. In Hebrew, bronze is נְחֹשֶׁת. The serpent in Eden is נָחָשׁ. Say them together, and you can hear the serpent inside the bronze.
 
-The guards on his legs are bronze too. Their Hebrew name comes from the word for forehead. A "forehead" on his legs. You won't find that word anywhere else in the Bible.
+The guards on his legs are bronze too. In Hebrew they're called מִצְחַת, from מֵצַח, forehead. A "forehead" on his legs. You won't find that word anywhere else in the Bible.
 
 There are four clues like that in this chapter, and the third one points to the spot where the stone lands.
 
@@ -35,7 +35,7 @@ But the giant can't get a fight. For אַרְבָּעִים יוֹם, forty days
 
 Then a shepherd boy shows up with bread for his brothers, and he says he'll fight. He's already killed a lion and a bear. He grabbed one by its beard. Neither of them wore bronze down to the shins.
 
-Clue three is that bronze "forehead" on his legs, מִצְחַת נְחֹשֶׁת. It's built from מֵצַח, forehead. He has a bronze helmet on his head, and a bronze "forehead" down on his shins.
+Clue three is that bronze "forehead" on his legs, מִצְחַת נְחֹשֶׁת. He has a bronze helmet on his head, and a bronze "forehead" down on his shins.
 
 Now watch where the stone goes.
 
