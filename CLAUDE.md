@@ -17,7 +17,8 @@
 - Say "God", never "Hashem". No Divine Name in on-screen Hebrew (show those verses in English).
 - Verify every Hebrew claim in the Westminster Leningrad Codex before using it. Words like "only", "exactly", "every" and "first" must be checked, or dropped.
 - Don't spend ElevenLabs credits without being asked; the user records the voiceovers.
-- Photoreal stills come only from fal (Nano Banana Pro), using our own prompts and character sheets. Everything else (grade, Hebrew text, circles, motion, edit) is done in our in-house engine. No other outside image tools, stock or museum images.
+- Photoreal stills come from ElevenLabs (Seedream 5 Lite, about 212 credits each) or fal, using our own prompts and character sheets, and only when the user asks for them. Everything else (grade, Hebrew text, circles, motion, edit) is done in our in-house engine. No stock or museum images.
+- Never redo or regenerate an image without the user's permission. Point out the problem and ask first.
 
 # Writing scripts
 
