@@ -164,3 +164,14 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - **טבע "sank like a stone" (Exod 15):** the root appears in 10 verses, and the link mixes up two pharaohs.
   - **The spies' forty days:** אַרְבָּעִים יוֹם appears in 17 verses. The giants come from the report the Torah calls דִּבָּה. Better as the spine of a Nephilim video.
   - **Staff נָחָשׁ (Exod 4:3) / תַּנִּין (Exod 7:10):** Moses' staff vs Aaron's, so "the same staff" can be knocked down.
+- **Round 2 (Bible scholar, YouTube strategist, story editor, core fan), unanimous:**
+  - Plant 17:26 when David arrives.
+  - Sword set-up inside ch. 17 (17:39 → 17:50).
+  - A second loop in the cold open ("the fourth is in Israel's own camp").
+  - "This leg-armor word" (line 12).
+  - Gen 3:15 "the woman's offspring… 'it will strike your head'".
+  - The shorter flight.
+  - Cut "the giant's own threat, turned around".
+  - The pinned comment notes the Masoretic Text.
+- **3 of 4, so left out:** Nahash (the editor said no), 17:57 head in hand (the editor), cutting the line 44 dust/face-down (the core fan), cutting "bronze down to the shins" (the editor).
+- **YouTube strategist:** 8:00 adds no average view duration (6:30 at 50% ≈ 8:00 at 40%). Save 8+ minutes for the Nephilim video. Open on the thumbnail's composition.
