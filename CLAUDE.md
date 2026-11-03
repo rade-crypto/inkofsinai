@@ -1,5 +1,7 @@
 # Working with the user
 
+- Before sending anything, check it against every rule in this file and fix what breaks them. The user shouldn't have to repeat a rule.
+
 - Answer first. When the user asks a question, reply straight away in one short text message before running any tools. Only then do the work, if there is any.
 - Keep replies short: give the decision and the result, and skip process narration. Send only what was asked for.
 - No extra checks or steps the user didn't ask for. Only research when the question really needs it, and say so in one line first.
@@ -48,6 +50,7 @@
 # Titles, thumbnails, captions
 
 - Title: the searchable keyword plus the insight (e.g., "Goliath Was Dressed as the Serpent"). It must match the first minute and contain nothing a commenter can disprove.
+- Thumbnail text never repeats the title; it adds a second hook (title "Goliath Was Dressed as the Serpent", thumbnail "LOOK AT HIS ARMOR").
 - Thumbnail: at most 4 words of text, one clear image, gold ink on black for long-forms. No decorative extras (the user removed a swirl), and no Divine Name.
 - Tags come from YouTube autocomplete research. In IG captions, put a blank line between lines. Strip `?si=` from YouTube links.
 - Shorts:
