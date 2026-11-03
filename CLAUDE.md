@@ -49,7 +49,7 @@
 - Open on the concrete detail the thumbnail promises, never on what viewers already know. No "keep that in mind" filler. Every line must make the next one necessary; any line that sounds like an ending before the end gets a pull into what's next.
 - One idea per beat. Don't stack extra proofs that bring in new names or terms; if a beat needs two sources, it's too complicated. The chain from one beat to the next must stay simple enough to follow on first listen.
 - No chapter titles or section cards in scripts. Write plain narration only.
-- Every Hebrew word or phrase in a script gets its pronunciation right after it, in italics with the stressed syllable in caps (e.g. נְחֹשֶׁת, *ne-CHO-shet*). The voiceover says both the Hebrew and the English.
+- Always write Hebrew words in Hebrew letters, never spelled out the way they're pronounced (no transliteration).
 - Before sending: one quick, time-limited reviewer (facts + skeptical viewer), apply the fixes, then send only the script.
 
 # Titles, thumbnails, captions
