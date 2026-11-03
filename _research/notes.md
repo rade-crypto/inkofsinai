@@ -147,3 +147,20 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Pacing:** a new visual every 4–7 seconds, about 35–40 stills for 6 minutes.
   - Hebrew overlay in gold only while the word is spoken, for about 3 seconds.
   - YouTube demonetizes generic AI slideshows, so keep one consistent look.
+
+## 05 Goliath length review (Nov 3, 2026, three reviewers plus a unanimous vote)
+- **Verdict:** don't stretch to 8:00. All three said the climax lands about 3:00, and anything added after it pads the tail. Their targets were about 6:05–6:40.
+- **Agreed by all three:**
+  - Add 17:26 as the first of the three הֵסִיר…מֵעַל (17:26, 17:39, 17:46).
+  - Compress the Philistine flight to two sentences.
+- **Checked, but not agreed (save for other videos):**
+  - **Saul's first war is against נָחָשׁ הָעַמּוֹנִי** (1 Sam 11:1–2), with חֶרְפָּה עַל כָּל יִשְׂרָאֵל. Don't say "only": Josh 5:9 has חֶרְפַּת מִצְרַיִם מֵעֲלֵיכֶם.
+  - **Israel has no swords** (1 Sam 13:19, 22): only Saul and Jonathan have חֶרֶב וַחֲנִית.
+  - **רֹאשׁ appears 6 times in 1 Sam 17** (vv. 5, 38, 46, 51, 54, 57). The chapter ends with וְרֹאשׁ הַפְּלִשְׁתִּי בְּיָדוֹ.
+  - **Ezek 29:5:** the dragon goes to the beasts and birds. This is a stock curse, and the order is reversed from 17:46.
+  - **Josh 11:22:** the עֲנָקִים are left only in Gaza, Gath and Ashdod.
+- **Rejected:**
+  - **The four stones for Goliath's brothers:** the text never says it, and 2 Sam 21:19 (Elhanan) invites comments disproving it.
+  - **טבע "sank like a stone" (Exod 15):** the root appears in 10 verses, and the link mixes up two pharaohs.
+  - **The spies' forty days:** אַרְבָּעִים יוֹם appears in 17 verses. The giants come from the report the Torah calls דִּבָּה. Better as the spine of a Nephilim video.
+  - **Staff נָחָשׁ (Exod 4:3) / תַּנִּין (Exod 7:10):** Moses' staff vs Aaron's, so "the same staff" can be knocked down.
