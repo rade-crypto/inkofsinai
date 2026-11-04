@@ -211,4 +211,13 @@ Everything researched for topics and scripts. Read this before picking a topic, 
     - a companion to the show
     - a one-field gate
   - No faith comment-to-DM case gives a number.
-- **Revised recommendation:** "Read the Hebrew in 22 Days": one letter a day, each with a word from our published videos. The Pattern Key becomes the bookmark at the end. Waiting on the owner's go-ahead.
+- **Built (owner approved): "Read Biblical Hebrew in 22 Days"**, 27 phone-portrait pages (720×1280).
+  - One letter a day, each with a real word from Genesis or Exodus.
+  - Each word has a per-letter sound row (letter sounds follow modern Israeli pronunciation).
+  - A printable chart and tracker comes right after day 1.
+  - Day 22 is Tamar's sentence (Gen 38:25), with the payoff in 38:26.
+  - Links to the matching videos.
+  - Source: `.banner/hebrew22/`.
+  - Reviewer scores: accuracy 8.5 → 9; beginner 7; conversion 7. All their must-fixes were applied after that.
+  - Every practice word was checked in the WLC. Also verified: סֻלָּם appears only in Gen 28:12 (lemma 5551), and צָדְקָה מִמֶּנִּי is Gen 38:26.
+  - Reel CTA: "Comment HEBREW for the free 22-day guide." Also set ALEPH and ALEF as triggers.
