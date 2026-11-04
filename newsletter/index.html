@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>The Thursday email · Ink of Sinai</title>
-<meta name="description" content="This week's Torah portion, plus a summary of the week's insights, every Thursday.">
+<title>Free guide: Read Biblical Hebrew in 22 Days · Ink of Sinai</title>
+<meta name="description" content="A free 22-day guide: one letter a day, every word straight from the Torah. Plus the Thursday email.">
 <link rel="canonical" href="https://inkofsinai.com/newsletter/">
 <meta name="theme-color" content="#120e0a">
 <link rel="icon" type="image/png" href="/favicon.png">
-<meta property="og:title" content="The Thursday email · Ink of Sinai">
-<meta property="og:description" content="This week's Torah portion, plus a summary of the week's insights, every Thursday.">
-<meta property="og:image" content="https://inkofsinai.com/media/og.jpg">
+<meta property="og:title" content="Read Biblical Hebrew in 22 Days · Free guide">
+<meta property="og:description" content="One letter a day. Every word straight from the Torah. Your first word today.">
+<meta property="og:image" content="https://inkofsinai.com/media/og-hebrew.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap">
@@ -30,6 +31,8 @@ input { width: 100%; padding: 15px 16px; border-radius: 8px; border: 1px solid v
 input::placeholder { color: var(--dim); }
 button { padding: 15px 24px; border: 0; border-radius: 8px; background: var(--red); color: #fff; font: 600 16px Inter, sans-serif; cursor: pointer; }
 .status { margin: 6px 0 0; min-height: 1.4em; color: var(--muted); font-size: 15px; }
+.cover { width: 150px; border-radius: 6px; box-shadow: 0 12px 30px rgba(0,0,0,.5); margin: 4px auto 22px; display: block; }
+.dl { display: inline-block; margin: 2px 0 8px; padding: 14px 22px; border-radius: 8px; background: var(--red); color: #fff; font: 600 16px Inter, sans-serif; text-decoration: none; }
 .back { display: inline-block; margin-top: 22px; color: var(--gold); font-weight: 600; text-decoration: none; }
 </style>
 </head>
@@ -37,10 +40,11 @@ button { padding: 15px 24px; border: 0; border-radius: 8px; background: var(--re
 <main>
   <div class="mark" lang="he" aria-hidden="true">א</div>
   <div class="brand">Ink of Sinai</div>
-  <h1>Get the Thursday email</h1>
-  <p>This week's Torah portion, plus a summary of the week's insights.</p>
+  <img class="cover" src="/img/hebrew-guide-cover.jpg" alt="Cover of the free guide Read Biblical Hebrew in 22 Days" width="150" height="267">
+  <h1>Read Biblical Hebrew in 22 Days</h1>
+  <p>Get the free guide, plus the Thursday email: this week's Torah portion and a summary of the week's insights.</p>
   <form id="signup" method="post" novalidate>
-    <div class="form" style="display:grid;gap:10px"><input id="email" name="email_address" type="email" autocomplete="email" placeholder="Your email" aria-label="Email address" required><button type="submit">Sign me up</button></div>
+    <div class="form" style="display:grid;gap:10px"><input id="email" name="email_address" type="email" autocomplete="email" placeholder="Your email" aria-label="Email address" required><button type="submit">Get the free guide</button></div>
     <p class="status" id="signup-status" role="status" aria-live="polite"></p>
   </form>
   <a class="back" href="/">Watch the videos →</a>
@@ -49,7 +53,7 @@ button { padding: 15px 24px; border: 0; border-radius: 8px; background: var(--re
 <script>
 // Sign-up goes to the Kit form in the background, so readers stay on the page.
 // Kit doesn't let the page read its reply, so the email is checked here first.
-const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com' };
+const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com', guide: '/guide/Read-Biblical-Hebrew-in-22-Days.pdf' };
 (function () {
   const form = document.getElementById('signup'), email = document.getElementById('email'), status = document.getElementById('signup-status');
   const host = location.hostname, live = host === SIGNUP.liveHost || host.endsWith('.' + SIGNUP.liveHost);
@@ -64,7 +68,7 @@ const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com' };
         method: 'POST', mode: 'no-cors', body: new URLSearchParams({ email_address: email.value.trim() })
       });
       form.querySelector('.form').style.display = 'none';
-      status.textContent = "You're in. The next email arrives Thursday.";
+      status.innerHTML = '<a class="dl" href="' + SIGNUP.guide + '" download>Download your guide (PDF)</a><br>You\'re in. The next email arrives Thursday.';
     } catch {
       button.disabled = false;
       status.textContent = 'Something went wrong. Please try again in a moment.';

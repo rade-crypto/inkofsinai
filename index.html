@@ -73,6 +73,9 @@ h2 { margin: 0; font: 600 38px/1.1 'Source Serif 4', serif; }
 .form input::placeholder { color: var(--dim); }
 .form button { padding: 15px 24px; border: 0; border-radius: 8px; background: var(--red); color: #fff; font: 600 16px Inter, sans-serif; cursor: pointer; }
 .status { grid-column: 1 / -1; margin: 0; min-height: 1.4em; color: var(--muted); font-size: 15px; }
+.nl { display: flex; gap: 26px; align-items: center; }
+.nl img { width: 118px; flex: none; border-radius: 5px; box-shadow: 0 10px 26px rgba(0,0,0,.45); }
+.dl { display: inline-block; margin: 2px 0 8px; padding: 14px 22px; border-radius: 8px; background: var(--red); color: #fff; font: 600 16px Inter, sans-serif; }
 footer { max-width: 1180px; margin: 90px auto 0; padding: 28px 48px 52px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid #2e251c; color: var(--dim); font-size: 15px; }
 footer a:hover, .all:hover { text-decoration: underline; }
 
@@ -82,7 +85,7 @@ footer a:hover, .all:hover { text-decoration: underline; }
   .row { overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 8px; gap: 14px; } .card { scroll-snap-align: start; }
   .row.long { grid-auto-columns: 82%; } .row.short { grid-auto-columns: 44%; }
   .about { grid-template-columns: 1fr; }
-  h2 { font-size: 30px; } .box { grid-template-columns: 1fr; padding: 28px; } .form { flex-direction: column; }
+  h2 { font-size: 30px; } .box { grid-template-columns: 1fr; padding: 28px; } .form { flex-direction: column; } .nl { gap: 18px; } .nl img { width: 86px; }
   footer { padding: 24px 20px 40px; flex-direction: column; }
 }
 </style>
@@ -99,7 +102,7 @@ footer a:hover, .all:hover { text-decoration: underline; }
     <div class="mark" lang="he" aria-hidden="true">א</div>
     <h1>Ink of Sinai</h1>
     <p>The Torah, up close</p>
-    <div class="btns"><a class="btn primary" href="#videos">▶ Watch the videos</a><a class="btn ghost" href="#newsletter">Get the Thursday email</a></div>
+    <div class="btns"><a class="btn primary" href="#videos">▶ Watch the videos</a><a class="btn ghost" href="#newsletter">Free Hebrew guide</a></div>
   </div>
 </header>
 
@@ -124,8 +127,8 @@ footer a:hover, .all:hover { text-decoration: underline; }
 
 <div class="news" id="newsletter">
   <form class="box" id="signup" method="post" novalidate>
-    <div><h2>Get the Thursday email</h2><p>This week's Torah portion, plus a summary of the week's insights.</p></div>
-    <div class="form"><input id="email" name="email_address" type="email" autocomplete="email" placeholder="Your email" aria-label="Email address" required><button type="submit">Sign me up</button></div>
+    <div class="nl"><img src="/img/hebrew-guide-cover.jpg" alt="Cover of the free guide Read Biblical Hebrew in 22 Days" width="118" height="210" loading="lazy"><div><h2>Read Biblical Hebrew in 22 Days</h2><p>Get the free guide, plus the Thursday email: this week's Torah portion and a summary of the week's insights.</p></div></div>
+    <div class="form"><input id="email" name="email_address" type="email" autocomplete="email" placeholder="Your email" aria-label="Email address" required><button type="submit">Get the free guide</button></div>
     <p class="status" id="signup-status" role="status" aria-live="polite"></p>
   </form>
 </div>
@@ -157,7 +160,7 @@ Promise.all([longLoaded, shortsLoaded]).then(() => {
 
 // Sign-up goes to the Kit form in the background, so readers stay on the page.
 // Kit doesn't let the page read its reply, so the email is checked here first.
-const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com' };
+const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com', guide: '/guide/Read-Biblical-Hebrew-in-22-Days.pdf' };
 (function () {
   const form = document.getElementById('signup'), email = document.getElementById('email'), status = document.getElementById('signup-status');
   const host = location.hostname, live = host === SIGNUP.liveHost || host.endsWith('.' + SIGNUP.liveHost);
@@ -172,7 +175,7 @@ const SIGNUP = { form: '10075748', liveHost: 'inkofsinai.com' };
         method: 'POST', mode: 'no-cors', body: new URLSearchParams({ email_address: email.value.trim() })
       });
       form.querySelector('.form').style.display = 'none';
-      status.textContent = "You're in. The next email arrives Thursday.";
+      status.innerHTML = '<a class="dl" href="' + SIGNUP.guide + '" download>Download your guide (PDF)</a><br>You\'re in. The next email arrives Thursday.';
     } catch {
       button.disabled = false;
       status.textContent = 'Something went wrong. Please try again in a moment.';
