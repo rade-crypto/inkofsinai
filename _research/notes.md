@@ -215,7 +215,7 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - One letter a day, each with a real word from Genesis or Exodus.
   - Each word has a per-letter sound row (letter sounds follow modern Israeli pronunciation).
   - A printable chart and tracker comes right after day 1.
-  - Day 22 is Tamar's sentence (Gen 38:25), with the payoff in 38:26.
+  - Day 22 is Gen 29:20, Jacob's seven years for Rachel, read word by word. It replaced Tamar's 38:25 so the guide ends on a beautiful verse. The verse is verified in the WLC and has no divine name. הַכֶּר־נָא stays on days 4–5.
   - Links to the matching videos.
   - Source: `.banner/hebrew22/`.
   - Reviewer scores: accuracy 8.5 → 9; beginner 7; conversion 7. All their must-fixes were applied after that.
