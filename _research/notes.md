@@ -211,14 +211,34 @@ Everything researched for topics and scripts. Read this before picking a topic, 
     - a companion to the show
     - a one-field gate
   - No faith comment-to-DM case gives a number.
-- **Built (owner approved): "Read Biblical Hebrew in 22 Days"**, 27 phone-portrait pages (720×1280).
-  - One letter a day, each with a real word from Genesis or Exodus.
-  - Each word has a per-letter sound row (letter sounds follow modern Israeli pronunciation).
-  - A printable chart and tracker comes right after day 1.
-  - Day 22 is Gen 29:20, Jacob's seven years for Rachel, read word by word. It replaced Tamar's 38:25 so the guide ends on a beautiful verse. The verse is verified in the WLC and has no divine name. הַכֶּר־נָא stays on days 4–5.
-  - Links to the matching videos.
-  - Source: `.banner/hebrew22/`.
-  - Reviewer scores: accuracy 8.5 → 9; beginner 7; conversion 7. All their must-fixes were applied after that.
-  - Every practice word was checked in the WLC. Also verified: סֻלָּם appears only in Gen 28:12 (lemma 5551), and צָדְקָה מִמֶּנִּי is Gen 38:26.
-  - Reel CTA: "Comment HEBREW for the free 22-day guide." Also set ALEPH and ALEF as triggers.
+- **Built (owner approved): "Read Biblical Hebrew in 22 Days"**, 27 phone pages (720×1280), Shorts style. Source: `.banner/hebrew22/`.
+  - Words were chosen for beauty, all from the Torah, and all verified in the WLC. No divine name appears in Hebrew.
+  - Days 1–20 teach the letters:
+    - אוֹר (1:3)
+    - בָּרָא (1:1)
+    - הָאוֹר (1:4)
+    - יְהִי אוֹר (1:3)
+    - תּוֹרָה (Deut 33:4)
+    - בְּרֵאשִׁית (1:1)
+    - טוֹב (1:4)
+    - הַשָּׁמַיִם (1:1)
+    - טוֹב מְאֹד (1:31)
+    - שָׁלוֹם (Num 6:26)
+    - בְּרִית עוֹלָם (9:16)
+    - הִנֵּנִי (22:1)
+    - חֵן (6:8)
+    - עֵץ הַחַיִּים (3:24)
+    - בְגַן־עֵדֶן (2:15)
+    - בְּרָכָה (12:2)
+    - הַקֶּשֶׁת (9:14)
+    - לְנֶפֶשׁ חַיָּה (2:7)
+    - זָכוֹר (Exod 20:8)
+    - חֶסֶד (Exod 20:6)
+  - Day 21: וְאָהַבְתָּ לְרֵעֲךָ כָּמוֹךָ (Lev 19:18).
+  - Day 22: Gen 29:20, read word by word.
+  - Day 1 teaches א, וֹ and ר. Vav as a consonant waits until day 21. A printable chart and tracker comes after day 1. The finish page links the well video.
+  - Four reviewer rounds (Hebrew accuracy, beginner reader, design/conversion):
+    - Round 1: 8/8/8.
+    - Round 4: all three PERFECT, at 9.5, 9 and 9.
+  - Verified facts: Gen 1:3 is God's first speech. Num 6:26 ends with שָׁלוֹם. טוֹב appears 7× in Gen 1 (each after "God saw"). Gen 2:7 reads לְנֶפֶשׁ חַיָּה. In Gen 29:20, the בְּ of בְּרָחֵל means "for" (price).
   - Style: matches the Shorts. Parchment (#e8dbc1), dark ink (#2a1e12), and red (#a63a22) only for the Hebrew being learned. Readers arrive from reels, the vowel dots read better, and every page prints. PDF is ~1.3 MB.
