@@ -147,3 +147,32 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Pacing:** a new visual every 4–7 seconds, about 35–40 stills for 6 minutes.
   - Hebrew overlay in gold only while the word is spoken, for about 3 seconds.
   - YouTube demonetizes generic AI slideshows, so keep one consistent look.
+
+## Newsletter lead magnet research (Nov 4, 2026)
+- **Peers:**
+  - Aleph Beta: a free 8-part video course.
+  - BibleProject: a reading plan.
+  - Jeff Benner: a free ebook.
+  - First Fruits of Zion: a free Torah-portions card.
+  - Chaim Bentorah: a daily word email.
+  - The common promise: "see what English hides", or a habit that comes to you.
+- **Search demand (Google Trends US, 12 months, relative):**
+  - "hebrew alphabet" is about 9x "patterns in the bible" and 1.8x "torah portion".
+  - Autocomplete asks for "hebrew alphabet chart with meanings pdf" and "with numerical value".
+  - "hebrew words every christian should know" (5/7/10/52/365, pdf) is strong too.
+  - "patterns in the bible" is weak on Google but strong on YouTube (BibleProject 1.08M; our "5 Patterns" 88k).
+  - "bible reading plan" spikes 7x in the New Year week.
+- **Conversion (vendor data only, no independent studies):**
+  - Comment-to-DM: put the link in the 2nd message (42% vs 29%), keep the first message under 120 characters, and use one button.
+  - Roughly 10–25% of people who comment the keyword subscribe. A bio link gets about 2–5% click-through.
+  - Ask for email only; each extra field roughly halves signups.
+  - Religion has the top open rate (MailerLite: 55.7% vs 43.5% median).
+- **Avoid:**
+  - Pictograph letter-meaning charts (not from the Tanakh, and disputable).
+  - "Names of God" and the Aaronic Blessing (Divine Name).
+  - Wallpapers (low demand, Divine Name).
+  - Angel-number "biblical numbers".
+  - A Torah calendar as the magnet (Hebcal and Chabad give it away free, and it skews Jewish).
+- **Decision:** "7 Patterns Hidden in Genesis", a short gold-on-black PDF cut from the Genesis ebook. It feeds the Nov 27 ebook launch, and it matches the Genesis portions the newsletter covers until January.
+  - Deliver it by IG comment keyword to DM, and by YouTube call to action.
+  - The Hebrew alphabet chart is a possible second magnet if we ever chase search traffic.
