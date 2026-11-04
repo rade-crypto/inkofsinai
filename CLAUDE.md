@@ -37,7 +37,8 @@
 - Style:
   - Short spoken sentences, said once, concrete.
   - Anchor each Hebrew word in its sound or an image.
-  - Start from what viewers already believe, and answer the skeptic.
+  - Start from what viewers already believe, and answer the skeptic, but never say it out loud as a line about the audience.
+  - Never talk to or about the audience in a script: no "most people", "most of us", "we were taught", "you", "us", and no orders like "look at", "watch", "notice", "remember" or "read the Bible in order". State the thing itself. This doesn't apply to quoted verses.
 - Banned AI phrasing:
   - "It's not X, it's Y"
   - "X isn't about A, it's about B"
