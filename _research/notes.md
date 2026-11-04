@@ -241,3 +241,11 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - **Samson's mother:** she repeats the angel's words to Manoah but changes the end. The angel's "he will begin to rescue Israel from the Philistines" (13:5) becomes "a Nazirite to God from the womb to the day of his death" (13:7, עַד־יוֹם מוֹתוֹ). The rescue is dropped and death is added, foreshadowing "a powerful but spiritually dubious savior" who sows as much destruction as salvation. Nobody tells Manoah about the hair.
   - **Rachel:** a "pointed reversal" of the type-scene. She is set up to receive an annunciation (favored, barren, with a rival), but she demands sons from her husband instead of praying (Hannah) or being visited (Sarah, Manoah's wife). Jacob's "Am I instead of God?" is "virtually an explicit reference… to the traditional requirements of the type-scene." Ominously, she dies at the second son, and the kings come from Leah's Judah, not from Joseph. הָבָה is used for crude demands (Judah to Tamar), and her "I'm dead" echoes Esau's "I'm about to die."
   - **Rebekah:** he only poses the question of how her scene differs from the others.
+
+## 06 barren mothers: Hebrew checked for the edit (WLC)
+- Eccl 3:2 has the form לַעֲקוֹר ("to uproot"), not עָקַר; show the root as ע־ק־ר.
+- Gen 11:29: שֵׁם אֵשֶׁת־אַבְרָם שָׂרָי (no leading vav in this clause).
+- Lev 4:3, 4:5, 4:16, 6:15 (Eng 6:22): הַכֹּהֵן הַמָּשִׁיחַ, "the anointed priest".
+- Gen 25:23 ends וְרַב יַעֲבֹד צָעִיר (that clause has no Divine Name; the verse opens with it).
+- 1 Sam 10:1 פַּךְ הַשֶּׁמֶן (flask, Saul); 1 Sam 16:13 קֶרֶן הַשֶּׁמֶן (horn, David).
+- Visual lesson: a lens-shaped oil lamp reads as the Christian fish symbol; use the menorah (Exod 25:31–37) for the sanctuary lamp.
