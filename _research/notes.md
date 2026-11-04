@@ -223,3 +223,12 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - Elijah: 2 Kgs 2:9 בְּטֶרֶם אֶלָּקַח מֵעִמָּךְ. In 2:11 הֹלְכִים הָלוֹךְ וְדַבֵּר is a qal, and he walks with Elisha, not "with God".
 - Micah 6:8 uses the qal לֶכֶת עִם, where Enoch has the hitpael אֶת. Let the viewer make the link; don't say "the same walk".
 - All four reviewers wanted Elijah cut (a new name, no shared verb in the VO). He stays, because the owner asked for the two men who didn't die, now tied in with his own word אֶלָּקַח.
+
+## 06 Alter pattern 2, the barren mothers (Nov 4, 2026): verified in WLC
+- **כָּעֵת חַיָּה:** exactly 4 verses: Gen 18:10, 14 (Sarah) and 2 Kgs 4:16, 17 (the Shunammite). KJV renders it "according to the time of life". It's an idiom for "this time next year"; חַיָּה is an adjective, so don't render it as a verb ("comes alive"). Both promises also have לַמּוֹעֵד.
+- **עֲקָרָה / עֲקֶרֶת:** Gen 11:30; 25:21; 29:31; Exod 23:26; Deut 7:14; Judg 13:2, 3; 1 Sam 2:5; Isa 54:1; Ps 113:9; Job 24:21. The Shunammite and Hannah (in the narrative) are never called עֲקָרָה. The same letters as "uproot" (Eccl 3:2; Zeph 2:4): say "same letters", not etymology.
+- **Sarah outside Genesis:** only Isa 51:2 in the Hebrew Bible (the NT names her too, so always say "Hebrew Bible"). 51:1–2 is God speaking.
+- **Hannah:** 1 Sam 2:6 מֵמִית וּמְחַיֶּה shares the root חיה with כָּעֵת חַיָּה. 1:20 says "in time" (לִתְקֻפוֹת הַיָּמִים), not "a year".
+- **Shunammite:** שָׁלוֹם 4:23 (KJV "It shall be well", to her husband) and 4:26 (KJV "It is well", to Gehazi). The Abraham parallel can't rest on saddling (a stock formula; Balaam matches Gen 22:3 better), only on the mountain and the son at stake. Gen 22 never says Abraham rode.
+- **Don't say "six women"** (commenters add Ruth and Elizabeth). Use "again and again".
+- **Pinned comment:** seven barren women with Zion in Pesikta de-Rav Kahana 20; Alter's annunciation type-scene; Isa 54:1 in Gal 4:27.
