@@ -173,6 +173,6 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - Wallpapers (low demand, Divine Name).
   - Angel-number "biblical numbers".
   - A Torah calendar as the magnet (Hebcal and Chabad give it away free, and it skews Jewish).
-- **Decision:** "7 Patterns Hidden in Genesis", a short gold-on-black PDF cut from the Genesis ebook. It feeds the Nov 27 ebook launch, and it matches the Genesis portions the newsletter covers until January.
+- **Decision:** "7 Patterns Hidden in Genesis", a short standalone gold-on-black PDF. There will be no ebook (owner, Nov 4). It matches the Genesis portions the newsletter covers until January, and its last page points to the YouTube channel.
   - Deliver it by IG comment keyword to DM, and by YouTube call to action.
   - The Hebrew alphabet chart is a possible second magnet if we ever chase search traffic.
