@@ -75,3 +75,50 @@ This goes with `hooks.md`. Read both before writing any script, reel text or cap
 - **"And then" lists and stacked proofs:** use but/therefore, one proof per beat.
 - **Overclaiming and a moral at the end:** under-claim, check "only/every/first" in the WLC, and end on the verse.
 - **Pictograph claims:** never say Hebrew letters carry meaning from ancient picture shapes. That idea is debunked.
+
+## Storytelling and a human voice (researched Nov 4, 2026, after the owner's "you write like AI")
+The owner rejected the 06 script because every sentence was the same short length, stacked one per line like a list. These are the fixes.
+
+### What makes a script sound like AI
+- **The rhythm is uniform.** Newer models drift toward short sentences inside a strict 8–20 word band, with more periods and fewer dashes (Wikipedia, "Signs of AI writing", 2026 note). Three or more sentences under 6 words in a row is a "fragment chain": the thought is chopped up instead of developed.
+- **Other tells:** "clause trios" of three punchy phrases; negative parallels ("not X but Y", "Y rather than X"); "-ing" tails that claim significance; paragraphs that end by restating; cycling synonyms; dense nouns (Reinhart et al., PNAS 2025).
+- **Listeners hear low variation as machine-made,** even though detectors are unreliable (GPTZero's burstiness; Scribbr).
+
+### How human narration gets its rhythm
+- **Mix the lengths** (Provost; Roy Peter Clark's "Set the pace with sentence length"). Long sentences carry the listener, and a short one stops them. Spend the short sentence on the reveal, and put the strongest word last.
+- **Use cumulative sentences** (Christensen): a base clause, then details added the way a camera moves. They cure staccato prose. Fold stacked facts into one sentence.
+- **Write for one breath** (CBC and CDC radio guides; Peggy Noonan): about 25 words at most. Use contractions, talk to one person, and read it aloud. Very short sentences sound stilted.
+- **The narrator has a stance:** a reaction, a dry aside, an admission, a doubt (Sarah Koenig's momentum comes from visible doubt). Use spoken openers: "Now," "So," "Except."
+- **Draft in paragraphs, not one sentence per line.** A list layout breeds list rhythm.
+
+### Story craft
+- **Action, then reflection** (Ira Glass). A run of actions makes the listener ask "where is this going?" Then one line of meaning lands the Hebrew. Plant "bait" questions early and answer them late.
+- **Avoid "and, and, and"** (Randy Olson, ABT). First fill in his insight template: "Nothing in ___ makes sense except in the light of ___." Cut any beat that doesn't serve it.
+- **Every beat turns a value** (McKee). If the viewer believes the same thing at the end of a beat as at its start, cut the beat.
+- **Dicks's tools (Storyworthy):**
+  - The opening is the opposite of the ending, and the story builds to one five-second moment of change.
+  - The **hourglass**: slow down right before the reveal, with more detail and less time passing.
+  - **Breadcrumbs**: hints that don't give the reveal away.
+  - The **crystal ball**: a prediction that the reveal confirms or breaks.
+- **Use the present tense, with one place and one physical detail per scene.** Cut lines that describe what's already on screen (Geoffrey C. Ward, Attenborough).
+- **Curiosity peaks when the viewer knows part of a set** (Storr, citing Loewenstein). Show two matches, then hold back the third.
+
+### YouTube scripting
+- **Put the paradox itself in the title.** Hype words can't carry it alone (Veritasium, "Clickbait is Unreasonably Effective").
+- **Pay off the title by about 0:45, then widen it into a bigger question** that carries the video to its final payoff (Johnny Harris on How I Write).
+- **No TV intro.** Open on the discrepancy. Voice the misconception first, then break it; that teaches better than the clean answer (Muller's PhD).
+- **Wrap the pattern around a human payoff:** curious package, emotional core. End on one line that reframes, then stop (Ryan Trahan breakdown).
+- **Write the last line first, and build every beat to land on it** (Tom Scott). Use a "cold" questioner who asks "how did you get from there to that?" at every leap (BibleProject). Say "we don't know" where the evidence stops.
+- **Benchmarks:**
+  - At least 60–70% of viewers should still be watching at 0:30 (vidIQ).
+  - 5–10 minute videos lose about 17% of viewers in the first 2% of runtime (Wistia).
+  - Mid-video drops come when a question closes without a new one opening, or when a setup runs long.
+
+### Checklist for a 900–1,100 word voiceover
+1. Count the words in each sentence. If three in a row land within about 3 words of each other, rewrite. Aim for a spread from 2 to about 30 words.
+2. Allow at most two sentences under 6 words in a row, and save the short one for the reveal.
+3. Give every paragraph a "because", "so", "until" or "which means".
+4. Give each beat one concrete detail and one stance moment.
+5. Don't start more than two sentences in a row with the subject.
+6. Allow about one colon or dash per 150 words.
+7. Read it aloud at speaking pace. Split anything that needs two breaths, and join any run that sounds like a drumbeat.
