@@ -173,6 +173,28 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - Wallpapers (low demand, Divine Name).
   - Angel-number "biblical numbers".
   - A Torah calendar as the magnet (Hebcal and Chabad give it away free, and it skews Jewish).
-- **Decision:** "7 Patterns Hidden in Genesis", a short standalone gold-on-black PDF. There will be no ebook (owner, Nov 4). It matches the Genesis portions the newsletter covers until January, and its last page points to the YouTube channel.
-  - Deliver it by IG comment keyword to DM, and by YouTube call to action.
-  - The Hebrew alphabet chart is a possible second magnet if we ever chase search traffic.
+- **Audience asks (539 YouTube comments, Nov 4):**
+  - More patterns.
+  - "Teach me to see it myself."
+  - "Show me the verses so I can check."
+  - "Slow down, I can't read the Hebrew."
+  - Side signals: "Is this Christian / AI / who is behind this?"
+- **What signature freebies share:** you keep it rather than use it once; it's one visual page that can be screenshotted; it gives a whole field one name you can say; it carries the brand's look. Examples: Life in Weeks, the Cognitive Bias Codex, Laws of UX.
+- **Decision (owner: no ebook; every new pattern is saved for a video):** "The Pattern Key", a 10-page gold-on-black PDF.
+  - Six marks: REPEAT, RERUN, MIRROR, CENTER, NAME, SILENCE.
+  - Three checks.
+  - A "your turn" exercise and an answer key.
+  - A printable bookmark.
+  - Every example comes from an already-published video.
+  - Instagram keyword: PATTERN.
+  - Source: `.banner/pattern-key/`.
+- **Verified Hebrew for the Pattern Key (WLC):**
+  - הַכֶּר־נָא appears in only 2 verses in the whole Tanakh: Gen 37:32 and 38:25.
+  - וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר appears 3 times: Gen 19:27, 21:14 and 22:3. Don't call it unique to 21–22.
+  - Esther: 167 verses, with no lemma for a divine name.
+  - Flood numbers:
+    - 7 days: 7:4, 7:10 and 8:10, 8:12
+    - 40 days: 7:17 and 8:6
+    - 150 days: 7:24 and 8:3
+    - Center: וַיִּזְכֹּר at 8:1
+  - Well beats: Gen 24:10–67, 29:1–28 and Exod 2:15–21.
