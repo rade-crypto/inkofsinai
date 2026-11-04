@@ -221,3 +221,4 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - Reviewer scores: accuracy 8.5 → 9; beginner 7; conversion 7. All their must-fixes were applied after that.
   - Every practice word was checked in the WLC. Also verified: סֻלָּם appears only in Gen 28:12 (lemma 5551), and צָדְקָה מִמֶּנִּי is Gen 38:26.
   - Reel CTA: "Comment HEBREW for the free 22-day guide." Also set ALEPH and ALEF as triggers.
+  - Style: matches the Shorts. Parchment (#e8dbc1), dark ink (#2a1e12), and red (#a63a22) only for the Hebrew being learned. Readers arrive from reels, the vowel dots read better, and every page prints. PDF is ~1.3 MB.
