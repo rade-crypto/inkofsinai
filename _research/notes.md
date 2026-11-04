@@ -198,3 +198,17 @@ Everything researched for topics and scripts. Read this before picking a topic, 
     - 150 days: 7:24 and 8:3
     - Center: וַיִּזְכֹּר at 8:1
   - Well beats: Gen 24:10–67, 29:1–28 and Exod 2:15–21.
+- **Proven lead magnets (Nov 4; mostly self-reported):**
+  - eTeacher "Read Hebrew in 22 Days or Less" ebook: 10.4% of mobile impressions signed up (measured by Wisepops); 90K+ contacts. One letter a day, "reading Hebrew words on the first day."
+  - Ascension "Bible in a Year" plan: 250K signups in 14 days. A printable checklist that goes with the daily podcast.
+  - Nils Glenn's free YouTube-channel ebook: 8,793 Gumroad downloads, 97% five-star.
+  - Bible-app reading plans: the most finished ones are 7 days or shorter.
+  - Thomas Frank: a free template per video, ~35K list.
+  - What the winners share:
+    - a fixed number of days, with one small unit a day
+    - a quick first win
+    - a number in the title
+    - a companion to the show
+    - a one-field gate
+  - No faith comment-to-DM case gives a number.
+- **Revised recommendation:** "Read the Hebrew in 22 Days": one letter a day, each with a word from our published videos. The Pattern Key becomes the bookmark at the end. Waiting on the owner's go-ahead.
