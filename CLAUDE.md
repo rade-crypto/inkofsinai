@@ -24,6 +24,8 @@
 
 # Writing scripts
 
+- Before writing any script, Reel or Short text, hook, title or caption, read `_research/scripts_playbook.md` in full and run its checklist. It holds every rule from the owner's feedback, the formula of our finished scripts, and the copywriting research.
+
 - Research before writing: real demand (YouTube search titles and views, autocomplete), the channel's own hits, and the proven writing principles below. Never write from memory.
 - A long-form needs one differentiating insight from the Hebrew that viewers haven't heard. Never just retell the story; the story comes in only as evidence for the insight.
 - Picking a topic: run quick, time-limited reviewers that find topics on their own. Don't hand them candidates. Don't reuse stories from recent videos (04 covered Genesis 27–38).
