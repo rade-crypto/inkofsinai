@@ -242,3 +242,36 @@ Everything researched for topics and scripts. Read this before picking a topic, 
     - Round 4: all three PERFECT, at 9.5, 9 and 9.
   - Verified facts: Gen 1:3 is God's first speech. Num 6:26 ends with שָׁלוֹם. טוֹב appears 7× in Gen 1 (each after "God saw"). Gen 2:7 reads לְנֶפֶשׁ חַיָּה. In Gen 29:20, the בְּ of בְּרָחֵל means "for" (price).
   - Style: matches the Shorts. Parchment (#e8dbc1), dark ink (#2a1e12), and red (#a63a22) only for the Hebrew being learned. Readers arrive from reels, the vowel dots read better, and every page prints. PDF is ~1.3 MB.
+
+## Newsletter evidence (Nov 5, 2026)
+Full notes with sources are in the session scratchpad, `email_evidence.md`.
+- **Benchmarks:**
+  - MailerLite, religion (3.6M campaigns): 55.7% open, 2.95% click, 0.13% unsubscribe. MEASURED.
+  - Apple accounts for 76.6% of tracked opens (Litmus, Sept 2026), so judge the newsletter by clicks, not opens.
+- **Subject lines:**
+  - Adding the first name lifted opens about 20% and cut unsubscribes 17% (1.2M-subscriber field experiments). MEASURED.
+  - Keep the hook within about 40 characters (beehiiv).
+  - In the Upworthy tests, headlines that were already concrete lost about 10% when made more concrete. Be specific, and leave one thing open.
+- **Format:**
+  - Plain or letter-style email beats designed HTML.
+    - HubSpot: one image cost 21% of clicks.
+    - NextAfter at First Baptist Dallas: clicks went from 0.8% to 1.7%.
+  - One main link, placed first.
+- **Day:** Tuesday to Thursday are best, and Thursday is never contradicted. Keep the same day and hour every week.
+- **Opt-in:** Double opt-in subscribers start with about 2× the engagement (Mailchimp). Kit's free incentive email can do double opt-in, with the PDF behind the confirm button.
+- **Kit free plan:**
+  - Included:
+    - up to 10k subscribers
+    - broadcasts
+    - tags and segments
+    - forms and landing pages
+    - the incentive email
+    - A/B tests on 2 subject lines
+    - Recommendations
+  - Not included:
+    - sequences
+    - automations
+    - RSS
+    - polls
+    - referrals
+- **First 30 days:** Engagement peaks at the first email (Mailchimp). Make the incentive email the welcome email, and make every Thursday issue continue the "22 days" promise.
