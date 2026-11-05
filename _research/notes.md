@@ -275,3 +275,31 @@ Full notes with sources are in the session scratchpad, `email_evidence.md`.
     - polls
     - referrals
 - **First 30 days:** Engagement peaks at the first email (Mailchimp). Make the incentive email the welcome email, and make every Thursday issue continue the "22 days" promise.
+
+## Weekly email format research (Nov 5, 2026)
+- Full notes: scratchpad `email_creators.md` (case studies, sources, Kit plan facts).
+- **Proven pattern:** a fixed, numbered skeleton (3-2-1, 5 bullets, 10 things), a short core, one click target, commerce below the sign-off, one question to the reader, and a plain forward ask at the end.
+  - Clear: 3M+ subscribers, core content about 185 words.
+  - Daily Stoic: 320k subscribers, ~500 words, one CTA button, 40% open and 3% click.
+  - Ferriss: ~1.5M subscribers, >60% open (self-reported).
+  - Kleon: 300k+, every Friday since 2013.
+  - Dense Discovery: 36k subscribers, 63% open and 13% click; it is designed, and the exception.
+- **Hebrew peers:**
+  - Hebrew for Christians Substack: 16k+ subscribers on "one Hebrew word, twice a day", but only 4–16 likes a post.
+  - The Pour Over (Christian news): 930K (Dec 2024).
+- **Kit free plan:** no sequences or automations, but the incentive email sends automatically, so it doubles as the welcome. It also has 2-subject A/B tests and a one-click resend to non-openers. The referral system is Pro only.
+- **Decision proposed:** the "Thursday Portion" format.
+  1. Portion line.
+  2. "What the Hebrew shows" (150–200 words).
+  3. The one main link.
+  4. "One word you can now read" (in the guide's layout).
+  5. Three-line recap of the week.
+  6. "Your turn" (a verse-number question).
+  7. Standing "New here?" block.
+  8. Forward line.
+- **Subject:** "[Book chapters]: [concrete detail]", in English with no Hebrew letters, because a portion name in Latin letters would be transliteration.
+- **Verified (WLC):**
+  - Gen 23:1 has וַיִּהְיוּ חַיֵּי שָׂרָה.
+  - בְּאֵר is in Gen 24:11 (אֶל־בְּאֵר הַמָּיִם); וַתָּרָץ עוֹד אֶל־הַבְּאֵר is in Gen 24:20.
+  - בְּאֵר uses the same letters as the guide's Day 2 word בָּרָא.
+  - Chayei Sarah is read Nov 7, 2026.
