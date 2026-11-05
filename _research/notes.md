@@ -270,3 +270,9 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Backup Reels, verified:**
   - **The robe:** כְּנַף and מְעִיל together appear in only 3 verses (1 Sam 15:27; 24:5; 24:12). מְעִיל in 1 Samuel: 2:19 (Hannah's little robe), 15:27, 18:4, 24:5, 24:12, 28:14 ("an old man… wrapped in a robe"). 15:28 and 28:17 קרע the kingdom "to your neighbor" (Divine Name, so English only). 24:21 מָלֹךְ תִּמְלוֹךְ.
   - **Milk and honey:** זָבַת חָלָב וּדְבַשׁ is in 20 verses; only Num 16:13 (Dathan and Abiram) means Egypt.
+
+## Viral engagement for Reels and Shorts (researched Nov 5, 2026)
+- **Ranking signals:** Mosseri (Jan 2025) names watch time, likes per reach and sends per reach as Instagram's top three. Sends weigh most for reaching non-followers. The often-quoted "3–5x" weighting comes from creator blogs and isn't confirmed.
+- **Shorts:** viewed vs swiped is the first gate (aim for 70%+ viewed). Replays count as views since Mar 31, 2025, so a loop that flows back into frame 1 adds watch time.
+- **Why people engage:** comments come from reaction or debate; saves from future value (a grid or list to come back to); sends from social value. Berger & Milkman: high-arousal emotion (awe, hope) drives shares, and sadness lowers them.
+- **Applied to the 06 Reel:** a famous story in the hook (Jacob and Esau), the proof in the next line, stakes that climb (fate, laughter, death, life restored), and a hopeful close for anyone waiting for a child (the send trigger). Close on Psalm 113:9, shown without הַלְלוּ־יָהּ; the long-form ends on 1 Sam 2:6.
