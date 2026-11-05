@@ -249,3 +249,24 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - Gen 25:23 ends וְרַב יַעֲבֹד צָעִיר (that clause has no Divine Name; the verse opens with it).
 - 1 Sam 10:1 פַּךְ הַשֶּׁמֶן (flask, Saul); 1 Sam 16:13 קֶרֶן הַשֶּׁמֶן (horn, David).
 - Visual lesson: a lens-shaped oil lamp reads as the Christian fish symbol; use the menorah (Exod 25:31–37) for the sanctuary lamp.
+
+## Reel: Saul and the water (Nov 5, 2026), a sequel to the well hit. Verified in WLC.
+- **The phrase:** יֹצְאוֹת לִשְׁאֹב מָיִם (plural, with מָיִם) appears in exactly 2 verses:
+  - Gen 24:13 (spelled יֹצְאֹת, with בְנוֹת);
+  - 1 Sam 9:11 (נְעָרוֹת יֹצְאוֹת לִשְׁאֹב מָיִם).
+- **Other uses of the verb:** Gen 24:43 is the same scene, singular, with no מָיִם. The infinitive לִשְׁאֹב appears only in Gen 24:13, 20, 43 and 1 Sam 9:11.
+- **What not to claim:** never say "exact words" (the nouns differ), and never say Saul reaches a well. He meets the girls on the ascent (9:11) and goes up into the town (9:14).
+- **Hurry:** מַהֵר עַתָּה (9:12). Rebekah וַתְּמַהֵר (Gen 24:18, 20); Rebekah runs home (24:28); Rachel runs (29:12); מִהַרְתֶּן (Exod 2:18).
+- **The ending:**
+  - 10:1: oil on his head.
+  - 10:8: שִׁבְעַת יָמִים תּוֹחֵל, "wait seven days".
+  - 13:8: he waits seven days and Samuel doesn't come.
+  - 13:9: he offers the sacrifice himself.
+  - 13:10: Samuel arrives as he finishes.
+  - 13:14: וְעַתָּה מַמְלַכְתְּךָ לֹא־תָקוּם. That clause has no Divine Name; the verse goes on with it.
+  - The reason in 13:13 is "you did not keep the command", and the command was to wait. 13:1's numbers are unclear, so never say "years later".
+- **Seer = prophet:** 1 Sam 9:9.
+- **Alter:** ch. 3, "The type-scene has been aborted" (1 Sam 9:11–12).
+- **Backup Reels, verified:**
+  - **The robe:** כְּנַף and מְעִיל together appear in only 3 verses (1 Sam 15:27; 24:5; 24:12). מְעִיל in 1 Samuel: 2:19 (Hannah's little robe), 15:27, 18:4, 24:5, 24:12, 28:14 ("an old man… wrapped in a robe"). 15:28 and 28:17 קרע the kingdom "to your neighbor" (Divine Name, so English only). 24:21 מָלֹךְ תִּמְלוֹךְ.
+  - **Milk and honey:** זָבַת חָלָב וּדְבַשׁ is in 20 verses; only Num 16:13 (Dathan and Abiram) means Egypt.
