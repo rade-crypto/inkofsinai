@@ -276,3 +276,10 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Shorts:** viewed vs swiped is the first gate (aim for 70%+ viewed). Replays count as views since Mar 31, 2025, so a loop that flows back into frame 1 adds watch time.
 - **Why people engage:** comments come from reaction or debate; saves from future value (a grid or list to come back to); sends from social value. Berger & Milkman: high-arousal emotion (awe, hope) drives shares, and sadness lowers them.
 - **Applied to the 06 Reel:** a famous story in the hook (Jacob and Esau), the proof in the next line, stakes that climb (fate, laughter, death, life restored), and a hopeful close for anyone waiting for a child (the send trigger). Close on Psalm 113:9, shown without הַלְלוּ־יָהּ; the long-form ends on 1 Sam 2:6.
+
+## 06 Short v8 (Nov 5, 2026): extra pairs verified in WLC
+- **Rachel:** מֵתָה appears in Genesis only at 30:1 (וְאִם־אַיִן מֵתָה אָנֹכִי), 35:18 (בְּצֵאת נַפְשָׁהּ כִּי מֵתָה) and 48:7. 30:1 is a participle and 35:18 a perfect, so say "the same word", never "the same form". She never asked for death: write "Sons, or I die."
+- **Sarah:** God names יִצְחָק in 17:19 (said to Abraham; the verse has אֱלֹהִים). At the birth, 21:6 כָּל־הַשֹּׁמֵעַ יִצְחַק־לִי (the clause has no Divine Name).
+- **Shunammite:** 4:18 וַיִּגְדַּל הַיָּלֶד, so he grows up before he dies on her knees (4:20).
+- **Jerusalem:** 54:1 never names the city; the identification rests on 52:1–2, 9. Don't call her the "last" barren woman, because Ps 113:9 comes later in the canon. Optional: Isa 66:8 כִּי־חָלָה גַּם־יָלְדָה צִיּוֹן אֶת־בָּנֶיהָ answers 54:1 לֹא יָלָדָה … לֹא־חָלָה.
+- **Rebekah:** 25:23 וְרַב יַעֲבֹד צָעִיר comes true in 2 Sam 8:14 וַיְהִי כָל־אֱדוֹם עֲבָדִים לְדָוִד (the verse goes on with the Divine Name). Left out of the Short for length.
