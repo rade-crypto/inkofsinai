@@ -303,3 +303,32 @@ Full notes with sources are in the session scratchpad, `email_evidence.md`.
   - בְּאֵר is in Gen 24:11 (אֶל־בְּאֵר הַמָּיִם); וַתָּרָץ עוֹד אֶל־הַבְּאֵר is in Gen 24:20.
   - בְּאֵר uses the same letters as the guide's Day 2 word בָּרָא.
   - Chayei Sarah is read Nov 7, 2026.
+
+## Paid offer research (Nov 6, 2026; Hormozi frameworks + niche market + platforms)
+Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.md, offers_platforms.md.
+- **Hormozi rules** (from chapter summaries):
+  - value = dream outcome × likelihood ÷ time delay × effort
+  - never discount the core offer
+  - give away the secrets, sell the implementation
+  - order offers attraction → core → upsell/downsell → continuity
+  - sell continuity as a bonus first
+  - validate: first 5 free, then discounted batches, then full price, +20% per batch
+  - a close rate of 80% or more means underpriced
+- **Niche market:**
+  - Aleph Beta: $18/mo or $180/yr; $2.40M in fees in FY2025 (filing); 10–12k members (self-reported). It is the closest model.
+  - BibleProject: $30.0M in donations in FY2025.
+  - Israel Institute of Biblical Studies: ~$979 per Hebrew level.
+  - Ehrman courses: $60–395.
+  - Paid Skool groups at $45–50/mo in this niche have 1–13 members.
+  - Gaps: Tanakh-only pattern teaching for mixed audiences; verifiable word studies; a $49–99 single-pattern course; premium print.
+- **Platforms (Serbia):**
+  - Stripe is not supported.
+  - Gumroad (10% + $0.50; merchant of record; bank payout in RSD) for courses.
+  - Skool ($9/mo + 10%; merchant of record) for community and cohort.
+  - Payhip and Ko-fi work through PayPal.
+- **Tax (orientation):** education (8559) is not excluded from paušal under Article 40, so sell through the business. Watch the 6M RSD cap. Confirm with the accountant.
+- **Proposed offer:**
+  - Core: a 6-week "Hebrew Pattern Lab" founding cohort (~$297), with a weekly live lab and personal review of each student's pattern.
+  - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
+  - Attraction: a small pattern challenge or single-pattern course.
+  - Validate before building.
