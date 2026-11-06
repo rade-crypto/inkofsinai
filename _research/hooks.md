@@ -48,3 +48,25 @@ Read this before writing any hook, title or first line. The full notes with sour
 5. Is there awe of God or real stakes (death, love, Israel)?
 6. Is it under about 10 words per line, with no question mark and no "you"?
 7. Is every word true, with no "only", "never" or "first" a commenter can knock down?
+
+## Shorts research round 2 (Nov 6, 2026, after the owner rejected four brothers-reel hooks)
+- **What the owner rejected, and why:**
+  - A famous fact as the hook ("Esau planned to kill Jacob…" got "yeah we know").
+  - A dull summary ("…sibling rivalries end up in the same cave").
+  - Written-sounding wording, and the answer given on the very next screen ("the same moment puts them side by side again", then "Their father's funeral").
+  - Narrating the story with no twist.
+- **The owner's method:** take the email's main point and frame it as one big contrast with a number, with "one thing" left open. "Three generations of brothers… one same thing brings them back together." Same shape as "5 barren women… the last one is singing."
+- **Hold the answer back** (Hoyos, Storr, Kallaway):
+  - Set up all the instances first, and give the answer in stages after them.
+  - Show two matches and hold back the third.
+  - Re-hook at about 20–30 s with a contrast plus a new fact.
+  - Put the payoff at the very end, then cut.
+- **Tease, don't name** (Sugarman, Mel Martin):
+  - Tease the action with a verb and save the key noun ("buried") for the reveal.
+  - A fascination is a specific detail, with the answer held back and a pointer to where it is.
+- **Plain spoken words** (Kallaway, MrBeast memo): if a line can be read two ways, viewers swipe. Two lines of about 8 words.
+- **What wins in the Bible niche (YouTube data, Nov 6):**
+  - Plain retellings of this exact beat get about 600 views ("Isaac and Ishmael Buried Abraham Together": 663).
+  - Hits pair a famous story with a number, a reversal in two flat statements, or "hidden in plain sight". "72,000 Angels Stood Ready. Jesus Said No." got 5.8M; "The Three Immortal Men of the Bible" got 3.5M.
+  - A real place you can visit also works ("Visiting the tombs of Abraham, Isaac and Jacob": 2.9M).
+- **The break goes last, and points to God.** Example: the first two burials pass in silence, and after the third Joseph speaks (50:20).
