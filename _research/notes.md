@@ -289,3 +289,31 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **The ark's exodus (1 Sam 2–6, 2 Sam 6):** the Philistines say Egypt twice: 4:8 (the gods "who struck Egypt with every plague") and 6:6 (לָמָּה תְכַבְּדוּ אֶת לְבַבְכֶם כַּאֲשֶׁר כִּבְּדוּ מִצְרַיִם וּפַרְעֹה). הִתְעַלֵּל in 6:6 and Exod 10:2 (also Num 22:29 and other forms, so never "only"). אַל תְּשַׁלְּחוּ אֹתוֹ רֵיקָם (6:3) ~ לֹא תֵלְכוּ רֵיקָם (Exod 3:21); רֵיקָם is in 15 verses. כְּלֵי הַזָּהָב 6:8, 15 ~ Exod 3:22; 11:2; 12:35. Root כבד: 2:29 וַתְּכַבֵּד אֶת בָּנֶיךָ, 2:30, 4:18 (Eli זָקֵן…וְכָבֵד), 4:21–22 גָּלָה כָבוֹד מִיִּשְׂרָאֵל, 5:6, 5:11, 6:5, 6:6. כבד and קלל in one verse: 1 Sam 2:30, 6:5 (כָּבוֹד…יָקֵל אֶת יָדוֹ), 2 Sam 6:22 (וּנְקַלֹּתִי…אִכָּבֵדָה), plus Isa 8:23, 23:9, 1 Kgs 12:10, 2 Chr 10:10. עֲגָלָה חֲדָשָׁה only in 1 Sam 6:7, 2 Sam 6:3, 1 Chr 13:7. 2 Sam 6:20 מַה נִּכְבַּד הַיּוֹם. Ps 24:7 has no Divine Name; 1 Kgs 8:11, Exod 40:35, 5:3–4, 5:6, 6:1, 6:8, 6:19, 6:20 do. Avoid the 6:19 numbers.
 - **Death wish:** וַיִּשְׁאַל אֶת נַפְשׁוֹ לָמוּת only in 1 Kgs 19:4 and Jonah 4:8; קַח (נָא אֶת) נַפְשִׁי only in 1 Kgs 19:4 and Jonah 4:3; טוֹב מוֹתִי only Jonah 4:3, 8. תַּחַת אַחַד הַשִּׂיחִם (Gen 21:15) / תַּחַת רֹתֶם אחת (1 Kgs 19:4 ketiv, also 19:5), both near Beersheba (Gen 21:14; 1 Kgs 19:3). Jonah 4:2 quotes Exod 34:6 (Name in verse). Jonah 4:11 has no Name.
 - **Giants:** נְפִלִים as giants only Gen 6:4, Num 13:33; the same consonants mean "the fallen" elsewhere (Josh 8:25, Judg 7:12, Ezek 32:22–27). Sheshai, Ahiman, Talmai: Num 13:22, Josh 15:14, Judg 1:10. Caleb is 85, "45 years" (Josh 14:10). Last giants: וַיִּפְּלוּ בְיַד דָּוִד וּבְיַד עֲבָדָיו (2 Sam 21:22; 1 Chr 20:8).
+
+## 07 the ark's exodus (Nov 6, 2026): script draft 3, verified in WLC
+- **Pick:** the ark's capture and return (1 Sam 4–6, 2 Sam 6, 1 Kgs 8), told as the Exodus replayed, with the root כבד ("heavy" and "glory") as its spine.
+  - Demand: the "ark of the covenant" searches are huge, and the autocomplete includes "philistines captured the ark" and "why did god kill uzzah".
+  - Runners-up: Abraham's two sons (Gen 21–22), the Nephilim, and the death wishes of Elijah and Jonah.
+- **הִתְעַלֵּל (hitpael) with God as subject:** only Exod 10:2 and 1 Sam 6:6.
+  - The other hitpael uses have other subjects: Num 22:29, Judg 19:25, 1 Sam 31:4, Jer 38:19, 1 Chr 10:4.
+  - Other forms with God as subject do exist (Lam 1:12, 1:22, 2:20, עוֹלַל), so say "this form".
+  - Exod 10:2 is the "tell your son" verse, and it follows 10:1, הִכְבַּדְתִּי אֶת־לִבּוֹ.
+- **Pharaoh's heart and כבד:** six times (7:14, 8:11, 8:28, 9:7, 9:34, 10:1). The exact phrase כָּבֵד לֵב פַּרְעֹה appears only at 7:14. Re-hardening after relief comes at 8:11, 8:28 and 9:34. At the sea, the root turns to God: וְאִכָּבְדָה בְּפַרְעֹה (14:4, 14:17; 14:17 has no Name).
+- **The root כבד in 1 Sam 2:29–6:6:** 12 words, counting the name אִי־כָבוֹד and both end verses. It's a common root, so give the number no meaning (it was cut from the script).
+- **Honor, despise, light:** 1 Sam 2:30 (מְכַבְּדַי אֲכַבֵּד וּבֹזַי יֵקָלּוּ) is echoed in 2 Sam 6:16 (וַתִּבֶז, root בזה), 6:20 (נִּכְבַּד) and 6:22 (וּנְקַלֹּתִי, אִכָּבֵדָה), all on one day (הַיּוֹם twice in 6:20).
+- **Further echoes:**
+  - 2 Sam 6:20 also has גלה three times ("uncovered"), echoing גָּלָה כָבוֹד in 4:21. This is unused.
+  - כִּסֵּא כָבוֹד appears in Hannah's song (2:8), and Eli falls off the כִּסֵּא (4:18). This is unused.
+- **The new cart and the shoulder:**
+  - עֲגָלָה חֲדָשָׁה: 1 Sam 6:7 and 2 Sam 6:3, with 1 Chr 13:7 repeating 2 Sam 6:3, so two scenes.
+  - Num 7:6–9: wagons go to Gershon and Merari, and none to Kohath, בַּכָּתֵף יִשָּׂאוּ (no Name).
+  - 2 Sam 6:13 has נֹשְׂאֵי.
+- **Details checked:**
+  - The cows never wore a yoke, and their calves were shut at home (6:7, 10). They went הָלֹךְ וְגָעוֹ (6:12).
+  - Beth Shemesh: men struck for looking into the ark (6:19). Avoid the numbers. They sent messengers to Kiriath-jearim (6:21).
+  - Eli scolded his sons (2:23–25) but didn't restrain them (3:13). The warning goes on past 2:30 (to 2:36).
+  - The linen ephod is a priest's garment (1 Sam 22:18).
+  - David "feared God" (6:9). Uzzah and Ahio drove David's cart (נֹהֲגִים, 6:3).
+- **On-screen Hebrew without the Name:** 2:29; the 2:30 fragment; 4:8, 4:18, 4:21–22; 5:11; 6:3–6, 6:9, 6:12; Exod 3:21; 14:17; Num 7:9; 2 Sam 6:6, 6:20, 6:22; Ps 24:7.
+- **English only (Name in the verse):** 5:3–4, 5:6, 6:8 (show the fragment without the Name), 6:19–20, 1 Kgs 8:10–11 (fragment), Exod 40:35, 1 Chr 15:15.
+- **Don't** tie Ps 24 to the ark's entry. That link is rabbinic, and Christians use the verse too.
