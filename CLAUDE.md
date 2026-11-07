@@ -108,6 +108,7 @@ These are the user's standing notes from earlier videos. Apply all of them witho
     - No whip pans or white flashes.
     - Add short VO pauses after key reveals so the verse can be read.
   - Circles and highlights go only on the detail the VO is naming at that moment.
+  - Design each video's visuals fresh. Before building, run visual reviewers (a motion designer and a retention strategist) to pick graphics that show exactly what each line is saying and keep attention. Don't carry over props or motifs from earlier videos.
   - Draw objects and people the way the Tanakh describes them. The ark follows Exodus 25, and cherubim are not birds. Make a reference image first and use it for every shot of that object or person.
   - Music should be engaging, not meditative or sad, with sound effects.
   - End on a verse, shown dramatically, with nothing else on screen.
