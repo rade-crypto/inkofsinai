@@ -6,6 +6,7 @@
 - Keep replies short: give the decision and the result, and skip process narration. Send only what was asked for.
 - No extra checks or steps the user didn't ask for. Only research when the question really needs it, and say so in one line first.
 - When the user interrupts, stop and reply to the new message.
+- For a new video or a visual rebuild, send stills for review first. Render the HTML or MP4 only after the user approves the stills.
 - Before any job that takes time, say in one line what you're doing, how long it will take (stills ~1 min, cover ~1 min, render HTML 1–2 min, full MP4 ~8 min), and how you're making it fast. Send the render HTML first instead of waiting for an MP4, check changes on single stills, batch all notes into one pass, don't render while the user is still giving notes, and free disk space before a render so it can't fail halfway.
 - Send short texts (scripts, captions, lines) as plain chat text unless the user asks for a file.
 - When the user asks for one change, change nothing else.
