@@ -20,6 +20,6 @@ Next time: Magnific Nano Banana 2.1 (`imagen-nano-banana-2-1`) at 2K, 65 credits
 - Round 3: grabs_v3 (Joseph's gaze fixed but a stray third hand) and grip_hands (unused) 65 each; joseph_bow.png → j_bow (in use, 0:17–0:24). The 4-person grab shot was dropped: too complex for the generator.
 
 ## Dropped shots (never bring back)
-- 02_crossing (Jacob's arms crossed onto two heads, 3 people): replaced by the bedside still + two gold arcs drawn in the engine (0:12).
+- (02_crossing was dropped, then restored at the owner's request: it came out right and shows the actual crossing.)
 - 02b_grabs / grabs_v3 (4 people, Joseph grabbing Jacob's wrist): failed twice; replaced by Joseph alone (j_bow) at 0:17–0:24.
 - b_joseph (old Joseph reaching into empty space): gaze made no sense.
