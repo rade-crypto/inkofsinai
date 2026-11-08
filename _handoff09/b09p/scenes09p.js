@@ -217,7 +217,7 @@ S(11.95,17.15,(v)=>{const u=camE((v-12.05)/5.2);const z=lerp(.832,.875,u),cxI=le
   tagAt('FIRSTBORN',300,440,360,300,1,false);tagAt('YOUNGER',1620,440,1000,340,1+.2*sm(tYg,tYg+.4,v),true);
   const [hx,hy]=P(872,248);{const [sx,sy]=P(600,318);ink(bez([sx,sy],[(sx+hx)/2,sy-210],[hx-10,hy-58]),eio(sm(tRH,tRH+1.1,v)),1,{arrow:true,w:6,head:30});}});
 // ---------- 0:17 · the boys' father
-S(17.15,19.75,(v)=>{const u=camE((v-17.25)/2.65);{const s2=H/768*.5;draw('02_crossing',-70+10*u,1060-759*s2,s2,.9);}const sc=H/768*.7*(1+.05*u);const [ox,oy]=at(735,185,1430-40*u,500,sc);warm(1400,560,600,1);draw('b_joseph',ox,oy,sc);bokeh(v,1,7,6);
+S(17.15,19.75,(v)=>{const u=camE((v-17.25)/2.65);{const s2=H/768*.5;draw('02_crossing',-70+10*u,1060-759*s2,s2,.9);}const sc=H/768*.7*(1+.05*u);const [ox,oy]=at(930,150,1430-40*u,500,sc);warm(1400,560,600,1);draw('b_joseph',ox,oy,sc);bokeh(v,1,7,6);
   cap('JOSEPH, THE BOYS’ FATHER',1330,150,52,ap(v,17.3,.4),true);lx('Jacob’s own son,',1330,250,76,v,18.6);});
 // ---------- 0:20 · he grabs Jacob's hand
 S(19.75,21.55,(v)=>{const u=eio(clamp((v-19.55)/2.95));const z=lerp(.95,1.55,u);const sc=H/768*z;const [ox,oy]=at(790,262,960,lerp(600,540,u),sc);warm(960,560,700,.8);draw('02b_grabs',ox,oy,sc);bokeh(v,1,43,5);
@@ -226,7 +226,7 @@ S(19.75,21.55,(v)=>{const u=eio(clamp((v-19.55)/2.95));const z=lerp(.95,1.55,u);
   const g2=X.createLinearGradient(0,820,0,1080);g2.addColorStop(0,'rgba(5,4,3,0)');g2.addColorStop(1,'rgba(5,4,3,.9)');X.fillStyle=g2;X.fillRect(0,820,W,260);X.restore();
   lx('He grabs Jacob’s hand to move it.',960,950,70,v,19.9);});
 // ---------- 0:22 · "Not so, father, this one is the firstborn"
-S(21.55,24.75,(v)=>{const z=lerp(1.25,1.31,camE((v-22.3)/2.6));const sc=H/768*z;const [ox,oy]=at(735,185,1450,400,sc);warm(1450,420,700,1);draw('b_joseph',ox,oy,sc);blackL(860,1200);bokeh(v,1,47,6);
+S(21.55,24.75,(v)=>{const z=lerp(1.25,1.31,camE((v-22.3)/2.6));const sc=H/768*z;const [ox,oy]=at(930,150,1450,400,sc);warm(1450,420,700,1);draw('b_joseph',ox,oy,sc);blackL(860,1200);bokeh(v,1,47,6);
   vSide(ap(v,21.7,.35),600,'GENESIS 48:18','לֹא־כֵן אָבִי כִּי־זֶה הַבְּכֹר',['הַבְּכֹר'],[[['“Not so, father,',0]],[['this one is the ',0],['firstborn',1],['.”',0]]],{cy:540,hs:100,es:66});});
 // ---------- 0:25 · "and Jacob says, 'I know, my son, I know'" ----------
 S(24.75,28.65,(v)=>{const k2=C('i know',27);const z=1.04+.06*eio(sm(24.9,28.75,v))+.06*eio(sm(k2,k2+1,v));pic('03_jacob_closeup',v,24.9,28.8,{side:'L',tx:420,z,push:0});
@@ -397,7 +397,7 @@ S(207.15,213.15,(v)=>{BGd();const xs=[520,960,1400],tc=[207.3,208.7,211.4];
 S(213.15,216.95,(v)=>{pic('31_joseph_sold',v,213.15,217,{side:'R',tx:1300,drift:-50});const c=560;
   lx('They sell him',c,430,66,v,213.3);lx('as a slave instead,',c,515,66,v,213.8);lx('but *Joseph* survives.',c,625,66,v,215.5);});
 // 3:37 · years later: the boys' father
-S(216.95,223.15,(v)=>{const u=camE((v-217.1)/6);{const s2=H/768*.5;draw('02_crossing',-70+10*u,1060-759*s2,s2,.9);}const s=H/768*.7*(1+.06*u);const [ox,oy]=at(735,185,1430-40*u,500,s);warm(1400,560,600,1);draw('b_joseph',ox,oy,s);bokeh(v,1,61,6);
+S(216.95,223.15,(v)=>{const u=camE((v-217.1)/6);{const s2=H/768*.5;draw('02_crossing',-70+10*u,1060-759*s2,s2,.9);}const s=H/768*.7*(1+.06*u);const [ox,oy]=at(930,150,1430-40*u,500,s);warm(1400,560,600,1);draw('b_joseph',ox,oy,s);bokeh(v,1,61,6);
   nameH('יוֹסֵף','JOSEPH',400,190,ap(v,217.2,.35),86,44);lx('Years later,',540,335,60,v,217.1);ln('the boys’ father',400,300,60,v,218.2);lx('from the start of this story,',540,495,60,v,219.1);lx('the one who grabs Jacob’s hand.',540,575,60,v,221.0);});
 // 3:43 · Manasseh and Ephraim
 S(223.15,227.85,(v)=>{warm(960,560,820,.8);const z=lerp(.78,.81,camE((v-223.3)/5));bed('00_before',v,z);
