@@ -18,6 +18,10 @@ An image is good when a viewer with the sound off can tell what is happening in 
 7. **Continuity:** the same person has the same look across shots (hair, beard, age, clothing color); check against the reference image.
 8. **House rules:** plain undyed earth-tone clothing, closed necklines, natural bodies, men and women never touch, nothing modern, no Divine Name.
 
+## One use per image
+
+- List every image and the shots it appears in. Any image that comes back after a different shot is a repeat: replace it with an explainer graphic (comparison, tree, chain, timeline, diagram, dots) or an unused image. One continuous scene split into several shots counts as one use.
+
 ## What to do with a failure
 
 - **Free fixes first:** mirror (so the gaze faces the partner or the text side), crop, reposition, pair it with another image in the same frame, or use it only where a portrait reading is right.

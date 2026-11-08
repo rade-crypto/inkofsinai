@@ -90,6 +90,8 @@
 
 These are the user's standing notes from earlier videos. Apply all of them without being reminded.
 
+- Never use the same image twice in one video. An image may stay up across one continuous scene, but it never comes back later; a callback gets a new image or an explainer graphic.
+- Use explainer animations wherever an idea can be shown visually: comparisons (T-charts), family trees, chains, timelines, diagrams of an action (e.g. crossed hands as two arrows), counts as dots or tallies, word trees for Hebrew meanings. Prefer them over a second photo or a caption.
 - Don't caption the narration. The VO tells the story; the screen shows what the VO can't: verses, Hebrew words, names and labels, numbers, and explainer scenes (comparisons, charts, chains, timelines). Add a short line only for a key point.
 - Verses:
   - Every Hebrew verse or phrase on screen comes with its English translation and its reference.
