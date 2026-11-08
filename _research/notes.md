@@ -473,3 +473,7 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - A Hebrew key word with its gloss goes under the scene (וְלֹא הִכִּירוּ "he did not recognize him").
 - Explainers are labelled pattern diagrams: 03 drew the recurring scene as a path with stations (JOURNEY, A WELL, WATER, …).
 - The narration isn't captioned.
+
+## Image generation (Nov 8, 2026)
+- Use Magnific with Nano Banana 2 (mode `imagen-nano-banana-2-flash`, 1k, 16:9): 75 credits per image, with references at the same price. ElevenLabs' Nano Banana 2 costs 204 per image.
+- Always upload the existing shots of a recurring person as references (`creations_request_upload` → PUT → `creations_finalize_upload`).
