@@ -21,7 +21,8 @@
 - Verify every Hebrew claim in the Westminster Leningrad Codex before using it. Words like "only", "exactly", "every" and "first" must be checked, or dropped.
 - Don't spend ElevenLabs credits without being asked; the user records the voiceovers.
 - Ask first before using ElevenLabs or any paid image generator for images, and say how many credits it will cost. Make one image per prompt, never several versions of the same thing. Generated stills are graded to our gold-on-black look and animated in our in-house engine, at a professional standard, never like a child's drawing. Never draw people in code; people come only from approved generated images. Free graphics that are public domain or CC0 (silhouettes, SVG shapes, textures) can be used as building blocks, and examples online as style references. No stock photos or museum paintings.
-- Never redo or regenerate an image without the user's permission. Point out the problem and ask first.
+- Never redo or regenerate an image without the user's permission, not even once. Point out the problem and ask first.
+- Don't be nitpicky when checking an image. Flag only what a viewer would actually notice: the wrong number of people, the wrong action or hand, a broken face or hand, or something obviously modern. Fix small things yourself for free (crop, mirror, grade, fade into black) without making a point of them.
 
 # Writing scripts
 
