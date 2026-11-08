@@ -450,3 +450,11 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - What they get wrong most often: hand actions (crossing, grabbing, an object in a named hand), left versus right, exact counts, several figures interacting, costume described only in words, and lettering.
 - Workflow: lock one style frame; make one character sheet per person from the Tanakh text and reuse it with edit-with-reference; generate backgrounds and single figures on black separately, then composite and animate in our engine; stage hard actions in the composite (for example arms as separate layers); edit an image only when it's about 80% right; one variation per prompt.
 - Models and prices: Nano Banana Pro for figures (best consistency, up to 14 references); Nano Banana 2 for backgrounds, props and drafts. On ElevenLabs, Nano Banana 2 at 1K costs about 406 credits per image and about 609 with references.
+
+## Consistent characters with Nano Banana (Nov 2026 research: web and YouTube tutorials; X posts weren't searchable)
+- The standard workflow is: one approved style frame, then a master portrait per character, then a character sheet made from that portrait, then scenes made from the sheet.
+- Sheet: 16:9 on a plain neutral background, showing front, 3/4, profile and back plus a full-body view. Keep the clothes identical and the hands empty, because props in the hands make the views drift.
+- Nano Banana 2 takes up to 4 references for character consistency (Pro takes 5). For a scene, attach that character's sheet plus the style frame.
+- Prompt for a scene: name what must stay identical (face, beard, head cloth, robe), then change one thing (pose, angle or action). Fix with edits that change one thing at a time.
+- Drift grows with each extra character in a shot, so use as few people per image as possible.
+- Make sheets only for people who appear in more than one shot. A one-off figure needs only its fixed description.
