@@ -458,3 +458,9 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - Prompt for a scene: name what must stay identical (face, beard, head cloth, robe), then change one thing (pose, angle or action). Fix with edits that change one thing at a time.
 - Drift grows with each extra character in a shot, so use as few people per image as possible.
 - Make sheets only for people who appear in more than one shot. A one-off figure needs only its fixed description.
+
+## Clothing in the patriarchs' era (Nov 2026 research, for image prompts)
+- The best visual source is the Beni Hasan tomb painting (about 1890 BCE). The Semitic "Aamu" travelers wear brightly dyed wool with geometric patterns and stripes in red, white and blue, often with fringed hems, while the Egyptians beside them wear plain white linen. The men have full beards and bare heads with thick hair, and no head cloths. The women wear long patterned dresses, with long hair held by headbands.
+- Dyes found in the Levant: red from madder and from oak-scale insects (Middle Bronze Age wool from the Judean Desert), and blue from woad (Timna, 13th–10th c. BCE). Undyed wool and linen were the base, and coloured cloth showed wealth (Jacob and Isaac were rich: Gen 26:13, 30:43).
+- Women's head covering: in Genesis the veil is situational. Rebekah takes the צָּעִיף when she meets Isaac (Gen 24:65), and Tamar covers herself (Gen 38:14). The Lachish relief (701 BCE, much later) shows Judean women under long shawls from head to hem. Everyday veiling isn't attested for the patriarchs' era.
+- The keffiyeh-and-agal head cloth is a later Bedouin look and isn't attested for this period.
