@@ -4,7 +4,7 @@ const PRE=.4, VEND=423.7, DUR=PRE+VEND+3.2;
 const norm=s=>s.toLowerCase().replace(/[^a-z0-9 ]/g,'').split(/\s+/).filter(Boolean);const WW=WDS.map(w=>w[2].replace(/'/g,''));
 function C(ph,after=0,end=false){const q=norm(ph);for(let i=0;i<WDS.length;i++){if(WDS[i][0]<after-4)continue;let ok=true;for(let j=0;j<q.length;j++){if(!WW[i+j]||WW[i+j]!==q[j]){ok=false;break;}}if(ok)return end?WDS[i+q.length-1][1]:WDS[i][0];}console.warn('cue?',ph,after);window.MISS=(window.MISS||[]).concat([ph]);return after;}
 const CE=(ph,after=0)=>C(ph,after,true);
-const SH=[];const S=(a,b,f,keep)=>SH.push({a,b,f,keep});window.TXA=1;
+const SH=[];const S=(a,b,f,keep,cut)=>SH.push({a,b,f,keep,cut});window.TXA=1;
 {const _ft=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(...q){const k=window.TXA;if(k!==1){if(k<=.003)return;const g=this.globalAlpha;this.globalAlpha=Math.min(1,g*k);_ft.apply(this,q);this.globalAlpha=g;}else _ft.apply(this,q);};}
 const ap=(v,v0,d=.45)=>sm(v0-.2,v0-.2+Math.min(d,.35),v);
 const BGd=()=>{X.fillStyle='#050403';X.fillRect(0,0,W,H);};
@@ -233,15 +233,10 @@ S(11.95,17.15,(v)=>{const u=camE((v-12.05)/5.2);const z=lerp(.832,.875,u),cxI=le
   tagAt('FIRSTBORN',300,440,520,250,1,false);tagAt('YOUNGER',1620,440,930,260,1+.2*sm(tYg,tYg+.4,v),true);
   const [hx,hy]=P(860,190);{const [sx,sy]=P(600,330);ink(bez([sx,sy],[(sx+hx)/2,sy-210],[hx-10,hy-58]),eio(sm(tRH,tRH+1.1,v)),1,{arrow:true,w:6,head:30});}});
 // ---------- 0:17 · the boys' father
-S(17.15,24.75,(v)=>{const k1=eio(sm(19.5,20.9,v)),k2=eio(sm(21.45,22.7,v));
-  const A=[688,384,960,640,H/768*.85],B=[770,241,960,560,H/768*1.55],Cc=[936,110,1380,430,H/768*1.8];
-  const q=A.map((a,n)=>lerp(lerp(a,B[n],k1),Cc[n],k2));const s=q[4]*(1+.015*(v-17.15)/7.6);const [ox,oy]=at(q[0],q[1],q[2],q[3],s);
-  warm(960,560,760,.8);draw('02b_grabs',ox,oy,s);bokeh(v,1,43,5);
-  {const [gx,gy]=P(770,241);orb(gx,gy,180,.28*sm(20.3,21,v)*(1-k2));}
-  X.save();const g=X.createRadialGradient(960,540,480,960,540,1150);g.addColorStop(0,'rgba(5,4,3,0)');g.addColorStop(1,'rgba(5,4,3,.7)');X.fillStyle=g;X.fillRect(0,0,W,H);X.restore();
-  if(k2>0){X.save();X.globalAlpha=k2;blackL(860,1200);X.restore();}
-  if(v<19.45){cap('JOSEPH, THE BOYS’ FATHER',960,78,46,ap(v,17.3,.4),true);ln('Jacob’s own son,',960,148,62,v,18.6);}
-  vSide(ap(v,21.7,.35),600,'GENESIS 48:18','לֹא־כֵן אָבִי כִּי־זֶה הַבְּכֹר',['הַבְּכֹר'],[[['“Not so, father,',0]],[['this one is the ',0],['firstborn',1],['.”',0]]],{cy:540,hs:100,es:66});});
+S(17.15,24.75,(v)=>{const u=camE((v-17.15)/7.6);const s=H/768*(1.0+.12*u);const [ox,oy]=at(650,250,1260-20*u,400,s);warm(1200,420,700,.9);draw('j_bow',ox,oy,s);bokeh(v,1,7,6);
+  X.save();X.globalAlpha=.88;blackL(600,960);X.restore();
+  if(v<21.45){cap('JOSEPH, THE BOYS’ FATHER',480,430,44,ap(v,17.3,.4),true);}
+  else vSide(ap(v,21.7,.35),520,'GENESIS 48:18','לֹא־כֵן אָבִי כִּי־זֶה הַבְּכֹר',['הַבְּכֹר'],[[['“Not so, father,',0]],[['this one is the ',0],['firstborn',1],['.”',0]]],{cy:540,hs:96,es:64});},false,true);
 // ---------- 0:20 · he grabs Jacob's hand
 // ---------- 0:22 · "Not so, father, this one is the firstborn"
 // ---------- 0:25 · "and Jacob says, 'I know, my son, I know'" ----------
@@ -565,7 +560,9 @@ function runShot(s,v){X.save();try{s.f(Math.max(0,v));}catch(e){console.error('s
 function blendShot(s,v,a){if(a<=.002)return;if(!OC){const m=mk(W,H);OC=m[0];OX=m[1];}const MX=X;X=OX;resetCtx();X.clearRect(0,0,W,H);BGd();runShot(s,v);X=MX;resetCtx();X.globalAlpha=a;X.drawImage(OC,0,0);X.globalAlpha=1;}
 function drawAt(t){const v=t-PRE;resetCtx();BGd();
   let i=-1;for(let k=0;k<SH.length;k++){if(v>=SH[k].a&&v<SH[k].b){i=k;break;}}if(i<0)return;const s=SH[i],nx=SH[i+1],pv=SH[i-1];
-  if(nx&&v>s.b-XF/2){window.TXA=nx.keep?1:1-sm(s.b-.32,s.b-.1,v);runShot(s,v);window.TXA=nx.keep?0:sm(s.b-.1,s.b+.12,v)/Math.max(.05,eio(clamp((v-(s.b-XF/2))/XF)));blendShot(nx,v,eio(clamp((v-(s.b-XF/2))/XF)));window.TXA=1;}
+  if(nx&&nx.cut&&v>s.b-XF/2){window.TXA=1-sm(s.b-.32,s.b-.1,v);runShot(s,v);}
+  else if(s.cut&&v<s.a+XF/2){window.TXA=sm(s.a-.1,s.a+.12,v);runShot(s,v);}
+  else if(nx&&v>s.b-XF/2){window.TXA=nx.keep?1:1-sm(s.b-.32,s.b-.1,v);runShot(s,v);window.TXA=nx.keep?0:sm(s.b-.1,s.b+.12,v)/Math.max(.05,eio(clamp((v-(s.b-XF/2))/XF)));blendShot(nx,v,eio(clamp((v-(s.b-XF/2))/XF)));window.TXA=1;}
   else if(pv&&v<s.a+XF/2){window.TXA=s.keep?1:1-sm(s.a-.32,s.a-.1,v);runShot(pv,v);window.TXA=s.keep?0:sm(s.a-.1,s.a+.12,v)/Math.max(.05,eio(clamp((v-(s.a-XF/2))/XF)));blendShot(s,v,eio(clamp((v-(s.a-XF/2))/XF)));window.TXA=1;}
   else{window.TXA=1;runShot(s,v);}window.TXA=1;}
 window.renderFrame=t=>{drawAt(t);X.setTransform(1,0,0,1,0,0);X.globalAlpha=1;if(VIG)X.drawImage(VIG,0,0);if(GR.length)X.drawImage(GR[Math.floor(t*24)%3],0,0);};

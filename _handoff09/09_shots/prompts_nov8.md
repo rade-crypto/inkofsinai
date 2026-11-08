@@ -17,3 +17,4 @@ Next time: Magnific Nano Banana 2.1 (`imagen-nano-banana-2-1`) at 2K, 65 credits
 - v3_before_v2.png → 00_before; v3_crossing_v2.png → 02_crossing (edit of before_v2 + old crossing as pose ref, first try); v3_grabs_v2.png → 02b_grabs (crossing_v2 + Joseph ref).
 - v3_jacob_iknow.png → 01_jacob_boys slot (Jacob speaking, 0:25); v3_gideon.png → 35_gideon_me (ref: threshing Gideon); v3_offering(_nofire).png → e_offering (ref: Cain/Abel lineup; fire removed by retouch, 150 credits: price retouches with simulate_cost first, Auto picked an expensive model).
 - Round 2 total: 8 × 65 + 150 = 670 credits.
+- Round 3: grabs_v3 (Joseph's gaze fixed but a stray third hand) and grip_hands (unused) 65 each; joseph_bow.png → j_bow (in use, 0:17–0:24). The 4-person grab shot was dropped: too complex for the generator.
