@@ -28,9 +28,10 @@
   - Before generating, check the balance and the price (simulate the cost).
   - Use the cheapest model that does the job.
   - Reuse good images we already have instead of making new ones.
+  - When a person already appears in another shot, upload that image as a reference so the face and look match.
   - Fix small problems with a region edit instead of a new image.
   - After each batch, say how many credits it used.
-- Don't be nitpicky when checking an image. Flag only what a viewer would actually notice: the wrong number of people, the wrong action or hand, a broken face or hand, or something obviously modern. Fix small things yourself for free (crop, mirror, grade, fade into black) without making a point of them.
+- Don't be nitpicky when checking an image. Flag only what a viewer would actually notice: the wrong number of people, the wrong action or hand, a broken face or hand, or something obviously modern. Fix small things yourself for free (crop, mirror, grade, fade into black) without making a point of them. Never retouch image content yourself (no cloning, blurring or painting over details); anything beyond crop, mirror, grade and fade is a region edit in the generator.
 
 # Writing scripts
 
