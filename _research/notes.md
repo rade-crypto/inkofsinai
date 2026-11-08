@@ -344,3 +344,9 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Elijah at Horeb = Sinai replayed:** אַרְבָּעִים יוֹם וְאַרְבָּעִים לַיְלָה 10 verses (Flood, Moses, 1 Kgs 19:8); עֹבֵר 1 Kgs 19:11 ~ Exod 34:6; דְּמָמָה 1 Kgs 19:12, Job 4:16 (Ps 107:29 spelled לִדְמָמָה). Overlaps the Jonah/Elijah material.
 - **Burning bush = Sinai:** בֹּעֵר בָּאֵשׁ only Exod 3:2 (Name), Deut 4:11, 5:23, 9:15; שֹׁכְנִי סְנֶה Deut 33:16; Deut 4:33 (no Name). Was a runner-up Reel; check it wasn't posted.
 - **Babel and "name":** Gen 6:4 אַנְשֵׁי הַשֵּׁם, 11:4 וְנַעֲשֶׂה לָּנוּ שֵׁם, 11:10 Shem's line, 12:2 וַאֲגַדְּלָה שְׁמֶךָ (no Name). Babel was short 21.
+
+## Long-form pick (Nov 8, 2026): "Why God calls some names twice". Verified in WLC
+- A doubled name in direct address from God appears exactly 4 times: אַבְרָהָם אַבְרָהָם (Gen 22:11, Name), יַעֲקֹב יַעֲקֹב (Gen 46:2, no Name), מֹשֶׁה מֹשֶׁה (Exod 3:4, Name), שְׁמוּאֵל שְׁמוּאֵל (1 Sam 3:10, Name). The other doubled proper nouns are genealogy seams (Gen 6:9, 11:10 …) or not address, except David's אַבְשָׁלוֹם אַבְשָׁלוֹם (2 Sam 19:5), a father calling a dead son.
+- Abraham, Jacob and Moses answer הִנֵּנִי; Samuel said הִנֵּנִי at the earlier calls (3:4) and at the double call answers דַּבֵּר כִּי שֹׁמֵעַ עַבְדֶּךָ.
+- God says הִנֵּנִי: Isa 58:9 (Name), 52:6; doubled הִנֵּנִי הִנֵּנִי only Isa 65:1 (no Name), אֶל גּוֹי לֹא קֹרָא בִשְׁמִי. הִנֵּנִי appears in 177 verses, so the claim is the doubled form.
+- Demand rides on the famous scenes (binding, burning bush, boy Samuel); no big video on the pattern found in autocomplete. The double-name reading is in the Midrash: pinned comment only.
