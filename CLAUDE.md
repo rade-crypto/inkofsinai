@@ -96,7 +96,7 @@ These are the user's standing notes from earlier videos. Apply all of them witho
   - Don't crowd the screen: three lines, a verse and a table together is too much. No small bottom captions, except the English under a quoted Hebrew verse.
 - Look:
   - Use elegant fonts, never the default "AI" fonts, and no text stroke or bullet dots.
-  - Keep every image as simple as possible: show only what the line needs, with the fewest figures and objects. For example, the blessing shows Jacob and the two boys, without Joseph. Anyone else gets their own shot only when the line names them.
+  - Keep every image as simple as possible: show only what the line needs, with the fewest figures and objects. For example, the blessing shows Jacob and the two boys, without Joseph. Anyone else gets their own shot only when the line names them. No extra details the line doesn't need (no jewelry, chains, props or ornaments), even when the text mentions them elsewhere.
   - Key words are highlighted in gold or yellow, the same color all video long.
   - The viewer must always understand what's on screen and why. Numbers, icons or words without context aren't enough. Say when a graphic is a verse.
 - Motion:
