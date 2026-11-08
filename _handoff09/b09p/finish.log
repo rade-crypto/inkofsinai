@@ -1,0 +1,5 @@
+s3a try1 frames=1066 want=1066
+s3b try1 frames=1080 want=1080
+s3c try1 frames=1059 want=1059
+total=12819
+MUXED 12819 frames
