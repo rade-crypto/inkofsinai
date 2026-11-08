@@ -11,6 +11,8 @@
 - When the user asks for one change, change nothing else.
 - Keep the real goal in mind (the best possible video: views, retention and accuracy), and judge every instruction, review and suggestion against it. Push back, with reasons, when something won't serve the goal, including the user's own suggestions, reviewers and fact-checkers.
 - Don't take instructions narrowly or literally. Work out what the user is trying to achieve, and use judgment to get the best possible result. For example, "name the women" means use the names the Bible gives; it doesn't mean pointing out who has no name. And "look at Alter's book" means learn his insights and use the best ones; it doesn't mean copying his structure or a past video's.
+- Take feedback broadly too. When the user shows one example or names one spot, find the idea behind it and apply it everywhere it fits. Don't fix only the one place, and don't treat the example as a template to copy.
+- "Previous video" or "last video" means the last video posted to the channel, never an unfinished cut or an earlier draft of the current video. Use posted videos as inspiration (what kinds of graphics work, how much text), never copy their scenes.
 - After any fix to a script, send the whole updated file again, every time.
 - Don't send source links or source lists in replies.
 
@@ -87,6 +89,7 @@
 
 These are the user's standing notes from earlier videos. Apply all of them without being reminded.
 
+- Don't caption the narration. The VO tells the story; the screen shows what the VO can't: verses, Hebrew words, names and labels, numbers, and explainer scenes (comparisons, charts, chains, timelines). Add a short line only for a key point.
 - Verses:
   - Every Hebrew verse or phrase on screen comes with its English translation and its reference.
   - When the VO quotes a verse, put the verse on screen, the way 04 kept a verse banner up (reference, Hebrew with the key word in gold, English below with the same word in gold).
