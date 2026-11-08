@@ -212,7 +212,7 @@ function crossX(v,cx,y0,y1,pR,pL,a,o={}){if(a<=.003)return;const w=o.w||400;
 // ---------- 0:00 · "In his old age, Jacob can't see" ----------
 S(-1,2.65,(v)=>{const seeT=C('cant see',1);pic('03_jacob_closeup',v,-1.2,2.9,{side:'L',tx:420,z:1.02,push:.1,blur:6*sm(seeT,seeT+.6,v)});
   rays(120,-40,.95,1200,.5,1.1-.7*sm(seeT,seeT+.5,v),v);bokeh(v,1,5,7,-1);if(v>seeT)dimAt(960,300,1500,.25*sm(seeT,seeT+.6,v));
-  const c=TC();kx('In his old age,','in his old age',0,c,460,88,v);});
+  const c=TC();nameH('יַעֲקֹב','JACOB',c,500,ap(v,1.4,.35),130,58);});
 // ---------- 0:03 · two boys; the right hand is meant for the firstborn ----------
 function bedT(z,cxImg=688){const s=H/768*z;return {s,ox:960-cxImg*s,oy:1110-759*s};}
 function bed(k,v,z,cxImg){const T0=bedT(z,cxImg);draw(k,T0.ox,T0.oy,T0.s);motes(v,.8,200,200,1520,860);bokeh(v,1,11,7);return T0;}
@@ -222,23 +222,39 @@ S(2.65,11.95,(v)=>{warm(960,560,820,.8);const tR=C('right hand is meant',5)+.1,t
 
 
   const [rx,ry]=P(588,432);ringA(rx,ry,80,54,ap(v,tR,.5)*(1-sm(7.4,7.9,v)),sm(tR,tR+1,v));
-  tagAt('FIRSTBORN',300,440,520,250,ap(v,tF,.6),false);tagAt('YOUNGER',1620,440,910,240,ap(v,tY,.6),true);});
+  tagAt('FIRSTBORN',300,440,520,250,ap(v,tF,.6),false);tagAt('YOUNGER',1620,440,910,240,ap(v,tY,.6),true);
+  cap('HIS GRANDSONS',960,110,44,ap(v,3.2,.4)*(1-sm(7.5,7.9,v)),false,'9px');
+  {const [ax,ay]=P(520,250);warm(ax,ay,380,1.2*sm(8.1,8.6,v)*(1-sm(10.3,10.7,v)));const [bx,by]=P(910,240);warm(bx,by,380,1.2*sm(10.5,11,v));}
+  {const [hx,hy]=P(588,432),[mx,my]=P(520,250);X.save();X.setLineDash([12,12]);ink(bez([hx,hy],[hx-40,hy-260],[mx,my-70]),eio(sm(6.0,6.9,v)),.8*(1-sm(10.9,11.6,v)),{arrow:true,w:3,head:18,col:'rgba(240,228,205,.85)'});X.restore();}});
 const RH0=[588,432],LH0=[806,432],OB=[520,250],YB=[912,268];
 // ---------- 0:12 · "But Jacob crosses his arms, so his right hand comes down on the younger boy's head" ----------
-S(11.95,17.15,(v)=>{const u=camE((v-11.95)/5.2);const z=lerp(.8,.86,u);warm(960,560,820,.8);bed('00_before',v,z);
+S(11.95,17.15,(v)=>{const u=camE((v-11.95)/9.6);const z=lerp(.8,.86,u);warm(960,560,820,.8);bed('00_before',v,z);
   const tRH=C('so his right hand comes',13)+.25,tYg=C('younger boys head',15);
   if(v>tYg){const [yx,yy]=P(910,260);warm(yx,yy,420,1.3*sm(tYg,tYg+.6,v));}
   X.save();const g=X.createLinearGradient(0,0,0,330);g.addColorStop(0,'rgba(5,4,3,.9)');g.addColorStop(1,'rgba(5,4,3,0)');X.fillStyle=g;X.fillRect(0,0,W,330);X.restore();
   
   tagAt('FIRSTBORN',300,440,520,250,1,false);tagAt('YOUNGER',1620,440,910,240,1+.2*sm(tYg,tYg+.4,v),true);
   // the crossing drawn as two arcs from his hands to the opposite heads
-  {const [lx,ly]=P(806,432),[mx,my]=P(520,250);ink(bez([lx,ly],[(lx+mx)/2,ly-260],[mx+20,my+30]),eio(sm(12.6,13.4,v)),.85,{arrow:true,w:4,head:22,col:'rgba(240,228,205,.9)'});}
-  {const [rx,ry]=P(588,432),[ex,ey]=P(910,240);ink(bez([rx,ry],[(rx+ex)/2,ry-300],[ex-20,ey+30]),eio(sm(tRH,tRH+1.1,v)),1,{arrow:true,w:6,head:30});}});
+  {const [lx,ly]=P(806,432),[mx,my]=P(520,250);ink(bez([lx,ly],[(lx+mx)/2+60,ly-480],[mx+10,my-80]),eio(sm(12.6,13.4,v)),.85,{arrow:true,w:4,head:22,col:'rgba(240,228,205,.9)'});}
+  {const [rx,ry]=P(588,432),[ex,ey]=P(910,240);ink(bez([rx,ry],[(rx+ex)/2-60,ry-520],[ex-10,ey-80]),eio(sm(tRH,tRH+1.1,v)),1,{arrow:true,w:6,head:30});}
+  // Joseph: named, then his move drawn as arrows (no figure composited into the group)
+  
+  {const [ex,ey]=P(910,240),[mx,my]=P(520,250);
+   ink(bez([1640,420],[1400,250],[ex+60,ey-20]),eio(sm(19.9,20.6,v)),1,{arrow:true,w:5,head:26});
+   const p=eio(sm(20.6,21.4,v));if(p>0){X.save();X.setLineDash([16,12]);ink(bez([ex,ey-60],[(ex+mx)/2,ey-260],[mx,my-60]),p,.9,{arrow:true,w:4,head:22,col:'rgba(240,228,205,.9)'});X.restore();}}
+});
 // ---------- 0:17 · the boys' father
-S(17.15,24.75,(v)=>{const u=camE((v-17.15)/7.6);const s=H/768*(1.0+.12*u);const [ox,oy]=at(650,250,1260-20*u,400,s);warm(1200,420,700,.9);draw('j_bow',ox,oy,s);bokeh(v,1,7,6);
-  X.save();X.globalAlpha=.88;blackL(600,960);X.restore();
-  if(v<21.45){cap('JOSEPH, THE BOYS’ FATHER',480,430,44,ap(v,17.3,.4),true);}
-  else vSide(ap(v,21.7,.35),520,'GENESIS 48:18','לֹא־כֵן אָבִי כִּי־זֶה הַבְּכֹר',['הַבְּכֹר'],[[['“Not so, father,',0]],[['this one is the ',0],['firstborn',1],['.”',0]]],{cy:540,hs:96,es:64});},false,true);
+function josephClose(v,t0){const u=camE((v-t0)/3.2);const s=H/768*(1.75+.06*u);const [ox,oy]=at(650,250,1300,470,s);warm(1250,420,700,.9);draw('j_bow',ox,oy,s);bokeh(v,1,7,6);
+  X.save();const g=X.createLinearGradient(0,700,0,1080);g.addColorStop(0,'rgba(5,4,3,0)');g.addColorStop(1,'rgba(5,4,3,1)');X.fillStyle=g;X.fillRect(0,700,W,380);X.restore();
+  X.save();X.globalAlpha=.92;blackL(640,1000);X.restore();}
+S(17.15,19.75,(v)=>{josephClose(v,17.15);nameH('יוֹסֵף','JOSEPH',500,470,ap(v,17.3,.35),110,52);cap('THE BOYS’ FATHER',500,600,40,ap(v,17.7,.35),true,'8px');},false,true);
+S(19.75,21.55,(v)=>{const z=.86;warm(960,560,820,.8);bed('00_before',v,z);
+  {const [lx,ly]=P(806,432),[mx,my]=P(520,250);ink(bez([lx,ly],[(lx+mx)/2+60,ly-480],[mx+10,my-80]),1,.6,{arrow:true,w:4,head:22,col:'rgba(240,228,205,.9)'});}
+  {const [rx,ry]=P(588,432),[ex,ey]=P(910,240);ink(bez([rx,ry],[(rx+ex)/2-60,ry-520],[ex-10,ey-80]),1,.75,{arrow:true,w:6,head:30});
+   ink(bez([1820,520],[1500,300],[ex+70,ey-70]),eio(sm(19.9,20.5,v)),1,{arrow:true,w:6,head:28});cap('JOSEPH',1720,600,46,ap(v,19.9,.35),true,'9px');
+   const p=eio(sm(20.6,21.3,v));if(p>0){X.save();X.setLineDash([16,12]);const [mx,my]=P(520,250);ink(bez([ex,ey-90],[(ex+mx)/2,ey-330],[mx,my-90]),p,.95,{arrow:true,w:4,head:22,col:'rgba(240,228,205,.95)'});X.restore();}}},false,true);
+S(21.55,24.75,(v)=>{josephClose(v,19.95);
+  verse2(ap(v,21.7,.35),520,540,'GENESIS 48:18',['לֹא־כֵן אָבִי כִּי־זֶה הַבְּכֹר','שִׂים יְמִינְךָ עַל־רֹאשׁוֹ'],['הַבְּכֹר','יְמִינְךָ'],[[['“Not so, father,',0]],[['this one is the ',0],['firstborn',1],[';',0]],[['put your ',0],['right hand',1]],[['on his head.”',0]]],{hs:80,es:58});},false,true);
 // ---------- 0:20 · he grabs Jacob's hand
 // ---------- 0:22 · "Not so, father, this one is the firstborn"
 // ---------- 0:25 · "and Jacob says, 'I know, my son, I know'" ----------
