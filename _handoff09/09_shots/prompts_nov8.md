@@ -11,3 +11,9 @@ Superseded (not used): ElevenLabs text-only versions of 26, f_cain_rises, b_jose
 
 Prompts: subject → action → gaze target ("their eyes meet; neither looks at the viewer") → plain undyed clothing with closed round necklines → "Dark oil painting, Rembrandt chiaroscuro, warm golden light, near-black background". Full prompt text is in the ElevenLabs flow "ETAP99lc2gpUT76kA4Au" and in the Magnific Personal project.
 Next time: Magnific Nano Banana 2.1 (`imagen-nano-banana-2-1`) at 2K, 65 credits, with the playbook's STYLE block.
+
+## Round 2 (Magnific, Nano Banana 2.1 `imagen-nano-banana-2-1`, 2K, 65 credits each)
+- v3_man_sheet.png / v3_eph_sheet.png: character sheets, Manasseh (~22) and Ephraim (~20). Gen 41:50 + 45:6 + 47:28 put them at 20+ at the blessing.
+- v3_before_v2.png → 00_before; v3_crossing_v2.png → 02_crossing (edit of before_v2 + old crossing as pose ref, first try); v3_grabs_v2.png → 02b_grabs (crossing_v2 + Joseph ref).
+- v3_jacob_iknow.png → 01_jacob_boys slot (Jacob speaking, 0:25); v3_gideon.png → 35_gideon_me (ref: threshing Gideon); v3_offering(_nofire).png → e_offering (ref: Cain/Abel lineup; fire removed by retouch, 150 credits: price retouches with simulate_cost first, Auto picked an expensive model).
+- Round 2 total: 8 × 65 + 150 = 670 credits.
