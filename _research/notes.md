@@ -411,3 +411,11 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Verdict:** put the reversal in the title, in two flat true statements. Best: "David Sent for Bathsheba. Then God Sent Nathan." with the thumbnail "SAME WORD." (circle on the messenger's hand). Backups: "The Hidden Reason God Is Silent in David and Bathsheba" / "HE WAS WATCHING."; "What Most People Miss About David and Bathsheba" / "IT'S ON PURPOSE."
 - **Rejected:** "Why David Never Went to Bathsheba", disproved by 2 Sam 12:24 וַיָּבֹא אֵלֶיהָ. Also "God sent for David" (God sent Nathan to David, 12:1).
 - **On screen:** "שלח twelve times in one chapter; David sends eight of them." In 12:25 the sender of וַיִּשְׁלַח בְּיַד נָתָן is not named (God is the subject of 12:24's last clause); Joab sends again in 12:27, so don't say God has "the last send" in the chapter.
+
+## 12 tribes: Simeon and Levi, one curse, two endings (Nov 8, 2026): verified in WLC
+- Gen 34:25 שִׁמְעוֹן וְלֵוִי … אִישׁ חַרְבּוֹ (Shechem). Gen 49:5–7 Jacob: כְּלֵי חָמָס … אָרוּר אַפָּם … אֲחַלְּקֵם בְּיַעֲקֹב וַאֲפִיצֵם בְּיִשְׂרָאֵל (no Name). Both tribes are cursed with being scattered.
+- Levi at the golden calf: מִי לַיהוָה אֵלָי וַיֵּאָסְפוּ אֵלָיו כָּל בְּנֵי לֵוִי (Exod 32:26, Name); שִׂימוּ אִישׁ חַרְבּוֹ (32:27, Name), the same phrase as Gen 34:25 (אִישׁ חַרְבּוֹ in 4 verses: Gen 34:25, Exod 32:27, Song 3:8, Neh 4:12); וְלָתֵת עֲלֵיכֶם הַיּוֹם בְּרָכָה (32:29, Name).
+- Simeon at Peor: Zimri, נְשִׂיא בֵית אָב לַשִּׁמְעֹנִי (Num 25:14, no Name), stopped by Phinehas, a Levite (25:7). Simeon's census: 59,300 (Num 1:23) → 22,200 (Num 26:14), down almost two-thirds.
+- Moses' blessing (Deut 33) names every tribe except Simeon; Levi gets a long blessing, יוֹרוּ מִשְׁפָּטֶיךָ לְיַעֲקֹב וְתוֹרָתְךָ לְיִשְׂרָאֵל (33:10, no Name).
+- The scattering comes true for both: Simeon's land is inside Judah's (Josh 19:1, 9, no Name); Levi gets 48 cities spread through all the tribes (Num 35:7, no Name), as teachers. Simeon still appears later (1 Chr 4:24–43; Ezek 48:24), so never say "disappeared"; say "missing from Moses' blessing".
+- Gen 34 is inside 04's chapter range (04 didn't use Shechem).
