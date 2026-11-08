@@ -254,7 +254,7 @@ S(19.75,21.55,(v)=>{const z=.86;warm(960,560,820,.8);bed('00_before',v,z);
    ink(bez([1820,520],[1500,300],[ex+70,ey-70]),eio(sm(19.9,20.5,v)),1,{arrow:true,w:6,head:28});cap('JOSEPH',1720,600,46,ap(v,19.9,.35),true,'9px');
    const p=eio(sm(20.6,21.3,v));if(p>0){X.save();X.setLineDash([16,12]);const [mx,my]=P(520,250);ink(bez([ex,ey-90],[(ex+mx)/2,ey-330],[mx,my-90]),p,.95,{arrow:true,w:4,head:22,col:'rgba(240,228,205,.95)'});X.restore();}}},false,true);
 S(21.55,24.75,(v)=>{josephClose(v,19.95);
-  verse2(ap(v,21.7,.35),520,540,'GENESIS 48:18',['לֹא־כֵן אָבִי כִּי־זֶה הַבְּכֹר','שִׂים יְמִינְךָ עַל־רֹאשׁוֹ'],['הַבְּכֹר','יְמִינְךָ'],[[['“Not so, father,',0]],[['this one is the ',0],['firstborn',1],[';',0]],[['put your ',0],['right hand',1]],[['on his head.”',0]]],{hs:80,es:58});},false,true);
+  vSide(ap(v,21.7,.35),500,'GENESIS 48:18','לֹא־כֵן אָבִי כִּי־זֶה הַבְּכֹר',['הַבְּכֹר'],[[['“Not so, father,',0]],[['this one is the ',0],['firstborn',1],['.”',0]]],{cy:540,hs:92,es:64});},false,true);
 // ---------- 0:20 · he grabs Jacob's hand
 // ---------- 0:22 · "Not so, father, this one is the firstborn"
 // ---------- 0:25 · "and Jacob says, 'I know, my son, I know'" ----------
@@ -303,7 +303,7 @@ S(53.15,60.05,(v)=>{const u=camE((v-53.25)/6.9);const sc=1.22*(1+.05*u);const [o
 S(60.05,63.35,(v)=>{const tR=C('cain rises up',59),tK=C('and kills him',61);
   pic('f_cain_rises',v,60.15,63.6,{side:'L',tx:560,fx:.5,z:.75,push:.06,fade:760});bokeh(v,1,31,5);
   const [ax,ay]=P(1100,560);dimAt(ax,ay,330,.95*sm(tK,tK+.8,v));
-  verse2(ap(v,60.2,.3),1440,520,'GENESIS 4:8',['וַיָּקָם קַיִן אֶל־הֶבֶל','אָחִיו וַיַּהַרְגֵהוּ'],['וַיַּהַרְגֵהוּ'],[[['“Cain rose up against Abel',0]],[['his brother, and ',0],['killed him',1],['.”',0]]],{hs:92,es:62});});
+  verse2(ap(v,60.2,.3),1440,520,'GENESIS 4:8',['וַיָּקָם קַיִן … וַיַּהַרְגֵהוּ'],['וַיַּהַרְגֵהוּ'],[[['“Cain rose up against Abel',0]],[['his brother, and ',0],['killed him',1],['.”',0]]],{hs:84,es:62});});
 // ---------- 1:03 · "But God keeps choosing the younger anyway. Isaac is picked over his older brother Ishmael" ----------
 S(63.35,69.05,(v)=>{const tO=C('his older brother ishmael',66);const q=eio(sm(tO-.7,tO+1.5,v));
   const sA=H/768*1.3,sB=H/768*.82;const [aox,aoy]=at(957,480,640,600,sA);const bm=META['11_isaac_ishmael'];const box=440-bm.cx*1376*sB,boy=560-.5*768*sB;
@@ -317,13 +317,13 @@ S(69.05,81.55,(v)=>{pic('12_rebekah_pregnant',v,69.05,81.6,{side:'L',tx:560,push
   if(v<76.25){lx('When Isaac has *twins*,',c,320,64,v,69.2);lx('God chooses before',c,420,64,v,71.0);lx('they’re even born,',c,505,64,v,71.9);lx('telling their mother,',c,605,64,v,73.2);nameH('רִבְקָה','REBEKAH',c,540,ap(v,73.9,.35),88,46);}
   else if(v<80.65)vSide(ap(v,76.4,.3),c,'GENESIS 25:23','וְרַב יַעֲבֹד צָעִיר',['וְרַב','צָעִיר'],[[['“The ',0],['older',1],[' will serve',0]],[['the ',0],['younger',1],['.”',0]]],{cy:540,hs:108,es:68});
   else{keyW('רַב','“older”',c,440,ap(v,80.8,.5),{hs:210,gy:160,gs:62});cap('GENESIS 25:23',c,200,46,ap(v,80.8,.5),false,'8px');}});
-S(81.55,87.95,(v)=>{exBG(v);keyW('רַב','“older”',960,330,1,{hs:190,gy:150,gs:60});cap('AN ARMY',960,560,44,ap(v,84.4,.35),false,'9px');cap('SENT HOME',1520,560,40,ap(v,86.9,.35),true,'8px');
+S(81.55,87.95,(v)=>{exBG(v);keyW('רַב','“older”',960,330,1,{hs:190,gy:150,gs:60});cap('AN ARMY',960,560,50,ap(v,84.4,.35),false,'9px');cap('SENT HOME',960,990,50,ap(v,86.9,.35),true,'9px');
   {const r=rng(21),a=ap(v,84.1,.5),go=sm(85.9,87.2,v);X.save();for(let i=0;i<900;i++){const x=260+r()*1400,y=620+r()*330,keep=i%3===0;const al=a*(keep?1:1-go)*(.45+.35*r());if(al<=.01)continue;X.fillStyle=`rgba(225,190,125,${al})`;X.beginPath();X.arc(x+(keep?0:-go*60),y,2.4,0,7);X.fill();}X.restore();}});
 // 1:28 · Isaac loves Esau
 S(87.95,90.95,(v)=>{pic('13_isaac_esau',v,87.95,91,{side:'L',tx:560,z:.86});const c=TC();
   kx('Isaac loves *Esau*,','isaac loves esau',86,c,480,84,v);lx('the firstborn twin,',c,590,66,v,89.6);});
 // 1:31 · Rebekah loves Jacob
-S(90.95,92.85,(v)=>{pic('14_rebekah_jacob',v,90.95,93,{side:'L',tx:560,z:.92});const c=TC();
+S(90.95,92.85,(v)=>{pic('14_rebekah_jacob',v,90.95,93,{side:'L',tx:560,fx:.55,z:1.05});const c=TC();
   lx('while Rebekah loves *Jacob*.',c,500,72,v,91.1);});
 // 1:33 · the birthright for a bowl of stew
 S(92.85,96.35,(v)=>{pic('15_stew',v,92.85,96.4,{side:'L',tx:540,z:.72});const c=TC();
@@ -341,7 +341,7 @@ S(105.65,109.85,(v)=>{pic('17_isaac_feels',v,105.65,109.9,{side:'L',tx:520,z:.86
 // 1:50 · Esau cries out
 S(109.85,118.05,(v)=>{pic('20_esau_cries',v,109.85,118.1,{side:'L',tx:560});const c=TC();
   if(v<112.25){lx('When Esau finds out,',c,470,68,v,110.0);lx('he cries:',c,560,68,v,111.3);}
-  else verse2(ap(v,112.4,.35),c,540,'GENESIS 27:36',['אֶת־בְּכֹרָתִי לָקָח','וְהִנֵּה עַתָּה לָקַח בִּרְכָתִי'],['אֶת־בְּכֹרָתִי','בִּרְכָתִי'],[[['“He took my ',0],['birthright',1],[',',0]],[['and now he has taken',0]],[['my ',0],['blessing',1],['.”',0]]],{hs:92,es:62});});
+  else verse2(ap(v,112.4,.35),c,540,'GENESIS 27:36',['בְּכֹרָתִי לָקָח … לָקַח בִּרְכָתִי'],['בְּכֹרָתִי','בִּרְכָתִי'],[[['“He took my ',0],['birthright',1],[',',0]],[['now he has taken my ',0],['blessing',1],['.”',0]]],{hs:84,es:60});});
 // 1:58 · בְּכֹרָתִי / בִּרְכָתִי: swap two letters
 function letters2(v,cx,y,swapU,a){const L5=['ב','כ','ר','ת','י'],gap=170,x0=cx+2*gap;
   L5.forEach((ch,i)=>{let x=x0-i*gap,yy=y;const sw=(i===1||i===2);if(sw){const to=i===1?x0-2*gap:x0-gap;const u=eio(swapU);x=lerp(x,to,u);yy=y-(i===1?1:-1)*110*Math.sin(Math.PI*u);}
@@ -355,7 +355,7 @@ S(118.05,128.75,(v)=>{BGd();glow(960,520,760,.18);motes(v,.6,200,100,1520,880);
 // 2:08 · Esau's plan → Genesis 27:41 → a second older brother
 S(128.75,139.75,(v)=>{pic('21_esau_plan',v,128.75,139.8,{side:'L',tx:520,push:.14});const c=TC();
   if(v<131.25)lx('So Esau makes a *plan*.',c,520,72,v,128.9);
-  else if(v<136.55)verse2(ap(v,131.4,.35),c,540,'GENESIS 27:41',['יִקְרְבוּ יְמֵי אֵבֶל אָבִי','וְאַהַרְגָה אֶת־יַעֲקֹב אָחִי'],['וְאַהַרְגָה'],[[['“The days of mourning',0]],[['for my father are coming;',0]],[['then I will ',0],['kill',1]],[['my brother Jacob.”',0]]],{hs:84,es:60});
+  else if(v<136.55)verse2(ap(v,131.4,.35),c,540,'GENESIS 27:41',['וְאַהַרְגָה אֶת־יַעֲקֹב אָחִי'],['וְאַהַרְגָה'],[[['“…then I will ',0],['kill',1]],[['my brother Jacob.”',0]]],{hs:96,es:66});
   else{tally2(v,c,500,v>136.9?2:1,ap(v,136.6,.35),['CAIN','ESAU','JACOB’S SONS'],300,58);}});
 // 2:19 · Jacob runs to Laban
 S(139.75,142.25,(v)=>{pic('22_jacob_flees',v,139.75,144.7,{side:'L',tx:600,drift:60});const c=TC();
@@ -367,7 +367,7 @@ function flipCard(v,cx,cy,w,h,p,a,front,back){if(a<=.003)return;const ang=Math.P
   X.strokeStyle='rgba(217,180,106,.85)';X.lineWidth=2.5;X.shadowColor='rgba(255,190,90,.6)';X.shadowBlur=18;X.stroke();X.shadowBlur=0;X.strokeStyle='rgba(217,180,106,.35)';X.lineWidth=1.2;X.beginPath();X.roundRect(-w/2+16,-h/2+16,w-32,h-32,14);X.stroke();X.restore();
   if(k>.15){X.save();X.translate(cx,cy);X.scale(k,1);X.translate(-cx,-cy);
     nameH(face[0],face[1],cx,cy-120,a,96,46,true);cap('OVER',cx,cy+20,34,a*.8,false,'10px');nameH(face[2],face[3],cx,cy+170,a*.75,80,40,false);X.restore();}}
-S(142.25,146.45,(v)=>{exBG(v);flipCard(v,960,540,620,640,sm(143.4,144.1,v),ap(v,142.4,.4),['הַצָּעִיר','THE YOUNGER','הַבְּכֹר','THE OLDER'],['הַבְּכִירָה','THE OLDER','הַצְּעִירָה','THE YOUNGER']);});
+S(142.25,146.45,(v)=>{exBG(v);flipCard(v,960,540,620,640,sm(143.4,144.1,v),ap(v,142.4,.4),['הַצָּעִיר','THE YOUNGER','הַבְּכֹר','THE FIRSTBORN'],['הַבְּכִירָה','THE FIRSTBORN','הַצְּעִירָה','THE YOUNGER']);});
 // 2:24 · Laban's two daughters
 S(146.45,150.85,(v)=>{pic('23_leah_rachel',v,146.45,150.9,{side:'L',tx:560,z:.84,ty:620});const c=TC();
   tag('LEAH',620,40,ap(v,146.6,.35),false,{dx:0,y:110,tick:false});tag('RACHEL',860,40,ap(v,148.0,.35),true,{dx:60,y:110,tick:false});
@@ -375,7 +375,7 @@ S(146.45,150.85,(v)=>{pic('23_leah_rachel',v,146.45,150.9,{side:'L',tx:560,z:.84
 // 2:31 · Laban's trick and excuse
 S(150.85,160.45,(v)=>{pic('24_laban',v,150.85,160.5,{side:'L',tx:540,z:.95});const c=TC();
   if(v<155.05){lx('But Laban tricks him',c,430,64,v,151.0);lx('into marrying Leah first,',c,515,64,v,152.0);lx('and his excuse stings:',c,620,64,v,153.8);}
-  else verse2(ap(v,155.2,.35),c,540,'GENESIS 29:26',['לֹא־יֵעָשֶׂה כֵן בִּמְקוֹמֵנוּ','לָתֵת הַצְּעִירָה לִפְנֵי הַבְּכִירָה'],['הַצְּעִירָה'],[[['“Around here, we don’t give',0]],[['the ',0],['younger',1],[' before',0]],[['the firstborn.”',0]]],{hs:80,es:60});});
+  else verse2(ap(v,155.2,.35),c,540,'GENESIS 29:26',['לָתֵת הַצְּעִירָה לִפְנֵי הַבְּכִירָה'],['הַצְּעִירָה'],[[['“…give the ',0],['younger',1]],[['before the firstborn.”',0]]],{hs:84,es:64});});
 // 2:40 · Jacob, of all people
 S(160.45,164.75,(v)=>{exBG(v);nameH('יַעֲקֹב','JACOB',960,330,ap(v,160.6,.35),110,52);cap('THE YOUNGER BROTHER',960,450,38,ap(v,161.2,.35),false,'7px');
   ln('is told:',960,590,64,v,162.4);ln('“the *firstborn* comes first.”',960,690,76,v,162.9);});
@@ -388,7 +388,7 @@ S(168.75,172.25,(v)=>{exBG(v);const y=520,xs=[380,880,1460];
   nameH('לֵאָה','LEAH',xs[0],y,ap(v,169.1,.35),80,40,false);ln('the unloved one',xs[0],y+110,56,v,169.1);
   ink([[xs[0]+130,y],[xs[1]-170,y]],sm(169.4,169.9,v),1,{arrow:true,w:3,head:18});
   nameH('יְהוּדָה','JUDAH',xs[1],y,ap(v,169.9,.35),80,40);
-  ink([[xs[1]+170,y],[xs[2]-255,y]],sm(170.6,171.3,v),1,{arrow:true,w:3,head:18});ln('the tribe of',(xs[1]+xs[2])/2+20,y-130,52,v,170.6);
+  ink([[xs[1]+170,y],[xs[2]-255,y]],sm(170.6,171.3,v),1,{arrow:true,w:3,head:18});ln('the tribe of',(xs[1]+xs[2])/2+20,y-130,58,v,170.6);
   nameH('דָּוִד','KING DAVID',xs[2],y,ap(v,171.3,.35),80,40);});
 S(172.25,179.25,(v)=>{exBG(v);const g=v>176.1;
   nameH('לֵאָה','LEAH',640,560,ap(v,172.4,.35),110,50,g);ln('the older',640,690,58,v,172.4);
@@ -397,7 +397,7 @@ S(172.25,179.25,(v)=>{exBG(v);const g=v>176.1;
   cap('GOD SIDES WITH',640,250,40,ap(v,175.4,.35),true,'7px');ink([[640,290],[640,400]],sm(176.1,176.7,v),1,{arrow:true,w:5,head:20});});
 // 2:59 · the two fathers' favorites vs God's choice
 S(179.25,189.05,(v)=>{exBG(v);const L0=640,R0=1280;
-  if(v<185.85){cap('THE FATHER FAVORED',L0,250,40,ap(v,179.4,.35)*(v<183.5?1:.6),false,'7px');cap('GOD CHOSE',R0,250,40,ap(v,183.5,.35),true,'8px');hrule(380,1540,300,sm(179.3,180,v));vrule(960,280,860,sm(179.5,180.3,v));
+  if(v<185.85){cap('FAVORED',L0,250,44,ap(v,179.4,.35)*(v<183.5?1:.6),false,'7px');cap('GOD CHOSE',R0,250,40,ap(v,183.5,.35),true,'8px');hrule(380,1540,300,sm(179.3,180,v));vrule(960,280,860,sm(179.5,180.3,v));
     const dl=v<183.5?1:.55;
     nameH('עֵשָׂו','ESAU',L0,460,ap(v,180.0,.35)*dl,96,44,false);ln('by Isaac',L0,560,56,v,180.0,{a:dl});
     nameH('רָחֵל','RACHEL',L0,730,ap(v,181.8,.35)*dl,96,44,false);ln('by Jacob',L0,830,56,v,181.8,{a:dl});
@@ -408,7 +408,7 @@ S(189.05,195.35,(v)=>{pic('26_jacob_joseph',v,189.05,200.6,{side:'L',tx:560,fx:.
   nameH('יַעֲקֹב','JACOB',c,480,ap(v,189.2,.35),110,52);lx('now has a *favorite*',c,490,62,v,191.3);lx('of his own,',c,565,62,v,192.1);
   lx('a son who is about',c,680,62,v,193.0);lx('to pay for it.',c,755,62,v,194.1);});
 // 3:15 · Joseph
-S(195.35,200.55,(v)=>{pic('26_jacob_joseph',v,189.05,200.6,{side:'L',tx:560,fx:.25,z:.9,push:.08,fade:700});const c=1400;nameH('יוֹסֵף','JOSEPH',1480,260,ap(v,195.7,.4),90,44);verse2(ap(v,197.6,.35),1480,640,'GENESIS 37:3',['וְיִשְׂרָאֵל אָהַב אֶת־יוֹסֵף','מִכָּל־בָּנָיו'],['מִכָּל־בָּנָיו'],[[['“Israel loved Joseph',0]],[['more than all',1],[' his sons.”',0]]],{hs:66,es:56});
+S(195.35,200.55,(v)=>{pic('26_jacob_joseph',v,189.05,200.6,{side:'L',tx:560,fx:.25,z:.9,push:.08,fade:700});const c=1400;if(v<197.45)nameH('יוֹסֵף','JOSEPH',1480,500,ap(v,195.7,.4),110,52);else verse2(ap(v,197.6,.35),1480,540,'GENESIS 37:3',['אָהַב אֶת־יוֹסֵף מִכָּל־בָּנָיו'],['מִכָּל־בָּנָיו'],[[['“Israel loved Joseph',0]],[['more than all',1],[' his sons.”',0]]],{hs:66,es:56});
   lx('Rachel’s son,',c,490,62,v,196.6);lx('and Jacob loves him more',c,580,62,v,197.6);lx('than all his brothers.',c,660,62,v,199.2);});
 // 3:20 · the brothers hate him (text on the black sky, upper right)
 S(200.55,207.15,(v)=>{pic('30_brothers_see',v,200.55,207.2,{side:'C',z:1,push:.08});
@@ -440,17 +440,17 @@ S(227.85,234.85,(v)=>{exBG(v);
 // 3:55 · I know, my son → he too will be great
 S(234.85,242.15,(v)=>{exBG(v);const c=960;
   if(v<238.15)vSide(ap(v,235.9,.35),c,'GENESIS 48:19','יָדַעְתִּי בְנִי יָדַעְתִּי',['יָדַעְתִּי'],[[['“',0],['I know',1],[', my son,',0]],[['I know',1],['.”',0]]],{hs:120,es:72});
-  else verse2(ap(v,238.3,.35),c,540,'GENESIS 48:19',['וְאוּלָם אָחִיו הַקָּטֹן יִגְדַּל מִמֶּנּוּ'],['הַקָּטֹן'],[[['“He too will be great,',0]],[['but his ',0],['little brother',1]],[['will be greater than he.”',0]]],{hs:80,es:68});});
+  else verse2(ap(v,238.3,.35),c,540,'GENESIS 48:19',['וְאוּלָם אָחִיו הַקָּטֹן יִגְדַּל מִמֶּנּוּ'],['הַקָּטֹן'],[[['“But his ',0],['little brother',1]],[['will be greater than he.”',0]]],{hs:72,es:68});});
 // 4:02 · Isaac was fooled by a pair of hands
 S(242.15,249.95,(v)=>{exBG(v);const L0=640,R0=1280;const dl=v>246.2?.5:1;vrule(960,220,860,sm(242.3,243,v));
-  nameH('יִצְחָק','ISAAC',L0,300,ap(v,242.3,.35)*dl,96,46,false);ln('can’t see',L0,440,58,v,242.3,{a:dl});ln('fooled by',L0,570,64,v,242.7,{a:dl});ln('a pair of *hands*',L0,655,64,v,243.4,{a:dl});
-  nameH('יַעֲקֹב','JACOB',R0,300,ap(v,244.7,.35),96,46);ln('can’t see either',R0,440,58,v,245.0);ln('but *knows exactly*',R0,570,64,v,247.8);ln('what he’s doing',R0,655,64,v,248.7);});
+  nameH('יִצְחָק','ISAAC',L0,300,ap(v,242.3,.35)*dl,96,46,false);ln('can’t see',L0,440,58,v,242.3,{a:dl});ln('fooled by *hands*',L0,580,64,v,243.0,{a:dl});
+  nameH('יַעֲקֹב','JACOB',R0,300,ap(v,244.7,.35),96,46);ln('can’t see either',R0,440,58,v,245.0);ln('but *knows*',R0,580,64,v,248.1);});
 // 4:04 · Jacob can't see either, but he knows
 S(249.95,255.55,(v)=>{exBG(v);const rows=[['CAIN','ABEL'],['ESAU','JACOB'],['THE BROTHERS','JOSEPH']];
   rows.forEach(([l,r],i)=>{const y=230+i*105,a=.55*ap(v,250.1+i*.25,.35);cap(l,700,y,40,a,false,'7px');xmark(960,y,16,a);cap(r,1220,y,40,a,false,'7px');});
   hrule(560,1360,560,sm(250.9,251.6,v));
   {const a=ap(v,251.3,.35);nameH('מְנַשֶּׁה','MANASSEH',740,700,a,80,40,false);nameH('אֶפְרַיִם','EPHRAIM',1180,700,a,80,40);}
-  ln('*side by side*',960,840,66,v,252.0);ln('and nobody wants anybody dead.',960,940,62,v,253.3);});
+  ln('*side by side*',960,840,66,v,252.0);});
 // 4:15 · Jacob never says why; the answer goes to Manasseh's tribe
 S(255.55,257.95,(v)=>{exBG(v);crossX(v,960,420,800,1,1,.5);T('?',960,560,'400 160px Fraunces',GOLD,ap(v,256.8,.35),'center');
   kin('But Jacob never says *why*|he crossed his hands.','but jacob never says why',255,960,170,64,v);});
@@ -469,21 +469,21 @@ S(269.35,274.15,(v)=>{pic('33_gideon_threshing',v,268.9,274.2,{side:'R',tx:1320,
 // 4:34 · "I am the wrong man" (Judges 6:15)
 S(274.15,283.95,(v)=>{pic('35_gideon_me',v,274.15,284,{side:'L',tx:560,fx:.33});const c=TC();
   if(v<276.25){lx('Gideon says',c,450,68,v,274.3);lx('he’s the wrong man:',c,540,68,v,274.8);}
-  else verse2(ap(v,276.4,.35),c,560,'JUDGES 6:15',['הִנֵּה אַלְפִּי הַדַּל בִּמְנַשֶּׁה','וְאָנֹכִי הַצָּעִיר בְּבֵית אָבִי'],['אַלְפִּי','הַצָּעִיר'],[[['“My ',0],['clan',1],[' is the poorest',0]],[['in Manasseh,',0]],[['and I am the ',0],['youngest',1]],[['in my father’s house.”',0]]],{hs:76,es:56});});
+  else verse2(ap(v,276.4,.35),c,560,'JUDGES 6:15',['אַלְפִּי הַדַּל … וְאָנֹכִי הַצָּעִיר'],['אַלְפִּי','הַצָּעִיר'],[[['“My ',0],['clan',1],[' is the poorest…',0]],[['and I am the ',0],['youngest',1],['.”',0]]],{hs:80,es:60});});
 // 4:44 · אַלְפִּי my clan → my thousand · הַצָּעִיר the youngest
 function twoWords(v){const th=v>286.25;const dm=(v>290.05&&v<293.55)?.3:1;keyW('אַלְפִּי',th?'':'“my clan”',1240,360,ap(v,284.1,.5)*dm,{hs:120,gy:115,gs:46});if(th)enLine([['“my ',0],['thousand',1],['”',0]],1240,475,66,dm);
   keyW('הַצָּעִיר','“the youngest”',680,360,ap(v,287.7,.5),{hs:120,gy:115,gs:46});}
 S(283.95,290.05,(v)=>{exBG(v);twoWords(v);});
 S(290.05,293.55,(v)=>{exBG(v);twoWords(v);
-  ln('the same word God used',960,640,60,v,290.2);ln('for Jacob before he was born.',960,720,60,v,291.4);cap('GENESIS 25:23',960,810,44,ap(v,290.6,.4),true,'7px');});
+  cap('SAME WORD AS GENESIS 25:23',960,680,46,ap(v,290.4,.4),true,'8px');});
 S(293.55,300.55,(v)=>{exBG(v);twoWords(v);gl(560,620,1360,.5);{const a=ap(v,297.2,.4);if(a>0){X.save();X.globalAlpha*=a;X.strokeStyle='rgba(217,180,106,.9)';X.lineWidth=2.5;X.shadowColor='rgba(255,190,90,.7)';X.shadowBlur=18;X.beginPath();X.roundRect(440,240,1040,320,24);X.stroke();X.restore();}}
   if(v<296.95){ln('So Gideon is the *youngest* son',960,700,60,v,293.7);ln('of the poorest *thousand*.',960,780,60,v,295.2);}
   else{lx('Those two words come back',960,700,60,v,297.1);lx('at the very end of this story.',1300,780,60,v,298.5);}});
 // 5:00 · Gideon needs an army: 32,000 men; “the people are too many”
 S(300.55,308.75,(v)=>{pic('36_army_32000',v,300.55,308.8,{side:'R',tx:1280,z:.86,push:.08,fade:760});blackL(700,1000);const c=400;
   if(v<303.35){lx('But first,',c,400,64,v,300.7);lx('Gideon needs an army.',c,485,64,v,301.5);}
-  else{bigNum('32,000',c,330,ap(v,303.5,.5),130);cap('MEN',c,450,50,ap(v,304.6,.4),false,'9px');}
-  gl(c-260,580,c+260,.6*ap(v,305.3,.4));vSide(ap(v,305.3,.45),c,'JUDGES 7:2','רַב הָעָם',['רַב'],[[['“The people',0]],[['are ',0],['too many',1],['.”',0]]],{cy:780,hs:96,es:66});});
+  else if(v<305.15){bigNum('32,000',c,480,ap(v,303.5,.5),150);cap('MEN',c,610,50,ap(v,304.6,.4),false,'9px');}
+  else vSide(ap(v,305.3,.45),c,'JUDGES 7:2','רַב הָעָם',['רַב'],[[['“The people',0]],[['are ',0],['too many',1],['.”',0]]],{cy:540,hs:110,es:66});});
 // 5:09 · the same word to Rebekah → רַב: older for twins, many for an army
 S(308.75,323.25,(v)=>{exBG(v);
     {const g=X.createLinearGradient(0,0,0,360);g.addColorStop(0,'rgba(5,4,3,.9)');g.addColorStop(1,'rgba(5,4,3,0)');X.fillStyle=g;X.fillRect(0,0,W,360);}
@@ -495,22 +495,22 @@ S(308.75,323.25,(v)=>{exBG(v);
   cap('EITHER WAY: THE BIGGER SIDE',960,760,46,ap(v,318.8,.35),true,'8px');lx('and God starts sending it home.',960,955,66,v,321.1);});
 // 5:23 · 22,000 leave; 10,000 left; still too many
 S(323.25,330.85,(v)=>{pic('37_22000_leave',v,323.25,330.9,{side:'R',tx:1280,z:.86,push:.08,drift:40,fade:760});blackL(700,1000);const c=400;
-  {const d=v>324.95?.55:1;bigNum('22,000',c,200,ap(v,323.4,.5)*d,110);cap('LEAVE',c,290,48,ap(v,323.6,.5)*d,false,'8px');}
-  bigNum('10,000',c,400,ap(v,325.1,.4),110);cap('LEFT',c,490,48,ap(v,325.4,.4),true,'8px');
-  gl(c-260,580,c+260,.6*ap(v,326.7,.4));vSide(ap(v,326.7,.45),c,'JUDGES 7:4','עוֹד הָעָם רָב',['עוֹד','רָב'],[[['“The people are',0]],[['still too many',1],['.”',0]]],{cy:800,hs:84,es:62});});
+  if(v<326.55){const d=v>324.95?.55:1;bigNum('22,000',c,330,ap(v,323.4,.5)*d,110);cap('LEAVE',c,420,48,ap(v,323.6,.5)*d,false,'8px');
+  bigNum('10,000',c,580,ap(v,325.1,.4),110);cap('LEFT',c,670,48,ap(v,325.4,.4),true,'8px');}
+  else vSide(ap(v,326.7,.45),c,'JUDGES 7:4','עוֹד הָעָם רָב',['עוֹד','רָב'],[[['“The people are',0]],[['still too many',1],['.”',0]]],{cy:540,hs:96,es:62});});
 // 5:31 · the water test
 S(330.85,335.45,(v)=>{pic('40_lap_water',v,330.85,335.5,{side:'L',tx:600,push:.07});const c=TC();
   lx('He tests them',c,380,66,v,331.0);lx('at the water.',c,460,66,v,331.9);bigNum('300',c,590,ap(v,333.0,.4),130);ln('lap the water',c,710,62,v,333.6);lx('from their hands.',c,785,62,v,334.5);});
 // 5:36 · the rest kneel; God keeps the 300 (split screen)
 S(335.45,341.25,(v)=>{BGd();const u=camE((v-335.6)/5);
   {const sc=H/768*.7;draw('40_lap_water',480-767*sc,720-384*sc,sc);}
-  {const sc=1.0*(1+.04*u);const [ox,oy]=at(688,420,1440,720,sc);X.save();X.beginPath();X.rect(960,0,960,H);X.clip();draw('41_kneel_drink',ox,oy,sc,.9);X.restore();const g=X.createLinearGradient(960,0,1160,0);g.addColorStop(0,'rgba(5,4,3,1)');g.addColorStop(1,'rgba(5,4,3,0)');X.fillStyle=g;X.fillRect(960,0,200,H);}
+  {const sc=1.0*(1+.04*u);const [ox,oy]=at(1060,420,1440,720,sc*1.15);X.save();X.beginPath();X.rect(960,0,960,H);X.clip();draw('41_kneel_drink',ox,oy,sc*1.15,.9);X.restore();const g=X.createLinearGradient(960,0,1160,0);g.addColorStop(0,'rgba(5,4,3,1)');g.addColorStop(1,'rgba(5,4,3,0)');X.fillStyle=g;X.fillRect(960,0,200,H);}
   band(1,330);
   bigNum('300',480,120,ap(v,335.6,.4),110);ln('lap the water',480,215,62,v,335.6);ln('*kept*',480,295,66,v,338.0);
   ln('The rest kneel',1440,120,64,v,335.6);ln('down to drink,',1440,205,64,v,336.7);ln('*sent home*',1440,295,66,v,339.5);});
 // 5:41 · Midian's army, like locusts (Judges 7:12)
 S(341.25,345.55,(v)=>{pic('42_midian_camp',v,341.25,345.6,{side:'R',tx:1400,push:.05,drift:-40,fade:760});const c=520;
-  lx('While down in the valley,',c,380,62,v,341.4);ln('“like *locusts*”',c,480,72,v,344.2);cap('JUDGES 7:12',c,670,40,ap(v,344.2,.4),true,'7px');});
+  lx('While down in the valley,',c,380,62,v,341.4);vSide(ap(v,344.1,.4),c,'JUDGES 7:12','כָּאַרְבֶּה',['כָּאַרְבֶּה'],[[['“like ',0],['locusts',1],['”',0]]],{cy:500,hs:110,es:68});});
 // 5:46 · the weapons: a shofar, an empty jar, a torch inside
 S(345.55,354.05,(v)=>{pic('43_props_rows',v,345.55,354.1,{side:'R',tx:1320,fx:.57,push:.1,fade:760});const c=540;
   lx('Then Gideon hands out',c,250,62,v,345.7);lx('the weapons:',c,330,62,v,346.6);gl(c-240,395,c+240,.5*ap(v,345.7,.4));
@@ -526,7 +526,7 @@ S(356.55,359.05,(v)=>{pic('44_jar_smash',v,356.55,359.1,{side:'L',tx:640,z:1.05,
 S(359.05,365.95,(v)=>{pic('45_torch_shofar',v,359.05,366,{side:'R',tx:1300,z:.7,push:.07,fade:640});const c=400;
   const [tx,ty]=P(1100,470),[sx,sy]=P(520,320);embers(v,1,[[tx,ty-40]],12);{const fl=.8+.2*Math.sin(v*13)*Math.sin(v*7.3);orb(tx,ty-70,150,.85*fl);orb(tx,ty-62,46,fl);}
   ringA(tx,ty,70,110,ap(v,360.3,.4)*(1-sm(361.2,361.5,v)),sm(360.3,361,v));
-  if(v<362.75)vSide(ap(v,359.2,.4),c,'JUDGES 7:20','',[],[[['“…the ',0],['torches',1]],[['in their left hands,',0]],[['and the ',0],['shofars',1]],[['in their right…”',0]]],{cy:480,es:62});
+  if(v<362.75)vSide(ap(v,359.2,.4),480,'JUDGES 7:20','',[],[[['“…',0],['torches',1],[' in their left hands,',0]],[['',0],['shofars',1],[' in their right…”',0]]],{cy:480,es:58});
   else{ln('Both hands are *full*.',c,450,66,v,362.9);ln('And not one of them',c,580,66,v,363.9);ln('is holding a *sword*.',c,665,66,v,365.1);}});
 // 6:06 · the shout
 S(365.95,368.95,(v)=>{BGd();glow(960,520,760,.28+.05*Math.sin(v*7));lx('They shout:',960,300,66,v,366.1);
@@ -536,7 +536,7 @@ S(368.95,373.65,(v)=>{exBG(v);campRing(v,960,640,620,250,1,1,{chaos:sm(373.0,373
   });
 // 6:14 · God turns every man's sword against the man beside him (Judges 7:22)
 S(373.65,378.55,(v)=>{pic('46_camp_chaos',v,373.65,378.6,{side:'L',tx:620,push:.07});const c=TC();
-  lx('Inside, God turns',c,400,64,v,374.3);lx('every man’s sword',c,485,64,v,375.9);lx('against the man beside him.',c,570,64,v,377.1);cap('JUDGES 7:22',c,670,40,ap(v,377.1,.4),true,'7px');});
+  lx('Inside, God turns',c,400,64,v,374.3);lx('every man’s sword',c,485,64,v,375.9);lx('against the man beside him.',c,570,64,v,377.1);vSide(ap(v,375.9,.4),c,'JUDGES 7:22','',[],[[['“…every man’s ',0],['sword',1]],[['against his fellow.”',0]]],{cy:520,es:62});});
 // 6:18 · why: “My own hand saved me”
 S(378.55,388.35,(v)=>{BGd();glow(960,520,820,.3+.04*Math.sin(v));motes(v,.6,200,100,1520,880);
   vFull(ap(v,378.7,.4),'JUDGES 7:2','יָדִי הוֹשִׁיעָה לִּי',['יָדִי'],[[['“',0],['My own hand',1],[' saved me.”',0]]],{hs:140,es:80});});
