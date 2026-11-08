@@ -345,10 +345,18 @@ S(128.75,139.75,(v)=>{pic('21_esau_plan',v,128.75,139.8,{side:'L',tx:520,push:.1
   else if(v<136.55)verse2(ap(v,131.4,.35),c,540,'GENESIS 27:41',['יִקְרְבוּ יְמֵי אֵבֶל אָבִי','וְאַהַרְגָה אֶת־יַעֲקֹב אָחִי'],['וְאַהַרְגָה'],[[['“The days of mourning',0]],[['for my father are coming;',0]],[['then I will ',0],['kill',1]],[['my brother Jacob.”',0]]],{hs:84,es:60});
   else{lx('Now a second older brother',c,480,64,v,136.7);lx('wants the younger one *dead*.',c,570,64,v,137.9);}});
 // 2:19 · Jacob runs to Laban
-S(139.75,144.65,(v)=>{pic('22_jacob_flees',v,139.75,144.7,{side:'L',tx:600,drift:60});const c=TC();
-  lx('Jacob runs for his life',c,440,64,v,139.9);lx('to his uncle Laban.',c,525,64,v,141.1);ln('And there, the pattern *flips*.',c,640,64,v,142.4);});
+S(139.75,142.25,(v)=>{pic('22_jacob_flees',v,139.75,144.7,{side:'L',tx:600,drift:60});const c=TC();
+  lx('Jacob runs for his life',c,440,64,v,139.9);lx('to his uncle Laban.',c,525,64,v,141.1);});
+// 2:22 · "and there, the pattern flips": a card turns over
+function flipCard(v,cx,cy,w,h,p,a,front,back){if(a<=.003)return;const ang=Math.PI*eio(clamp(p)),sx=Math.cos(ang),face=sx>=0?front:back;const k=Math.abs(sx);
+  X.save();X.globalAlpha*=a;X.translate(cx,cy);X.scale(Math.max(.02,k),1+.04*Math.sin(ang));
+  const g=X.createLinearGradient(0,-h/2,0,h/2);g.addColorStop(0,'rgba(34,26,15,.96)');g.addColorStop(1,'rgba(16,12,7,.96)');X.fillStyle=g;X.beginPath();X.roundRect(-w/2,-h/2,w,h,22);X.fill();
+  X.strokeStyle='rgba(217,180,106,.85)';X.lineWidth=2.5;X.shadowColor='rgba(255,190,90,.6)';X.shadowBlur=18;X.stroke();X.shadowBlur=0;X.strokeStyle='rgba(217,180,106,.35)';X.lineWidth=1.2;X.beginPath();X.roundRect(-w/2+16,-h/2+16,w-32,h-32,14);X.stroke();X.restore();
+  if(k>.15){X.save();X.translate(cx,cy);X.scale(k,1);X.translate(-cx,-cy);
+    nameH(face[0],face[1],cx,cy-120,a,96,46,true);cap('OVER',cx,cy+20,34,a*.8,false,'10px');nameH(face[2],face[3],cx,cy+170,a*.75,80,40,false);X.restore();}}
+S(142.25,146.45,(v)=>{exBG(v);flipCard(v,960,540,620,640,sm(143.4,144.1,v),ap(v,142.4,.4),['הַצָּעִיר','THE YOUNGER','הַבְּכֹר','THE OLDER'],['הַבְּכִירָה','THE OLDER','הַצְּעִירָה','THE YOUNGER']);});
 // 2:24 · Laban's two daughters
-S(144.65,150.85,(v)=>{pic('23_leah_rachel',v,144.65,150.9,{side:'L',tx:560,z:.84,ty:620});const c=TC();
+S(146.45,150.85,(v)=>{pic('23_leah_rachel',v,146.45,150.9,{side:'L',tx:560,z:.84,ty:620});const c=TC();
   tag('LEAH',620,40,ap(v,146.6,.35),false,{dx:0,y:110,tick:false});tag('RACHEL',860,40,ap(v,148.0,.35),true,{dx:60,y:110,tick:false});
   lx('Laban has two daughters:',c,360,62,v,144.8);ln('Leah, the older,',c,450,62,v,146.6);ln('and *Rachel*, the younger,',c,535,62,v,147.7);lx('whom Jacob loves.',c,620,62,v,149.5);});
 // 2:31 · Laban's trick and excuse
