@@ -11,6 +11,8 @@
 - When the user asks for one change, change nothing else.
 - Keep the real goal in mind (the best possible video: views, retention and accuracy), and judge every instruction, review and suggestion against it. Push back, with reasons, when something won't serve the goal, including the user's own suggestions, reviewers and fact-checkers.
 - Don't take instructions narrowly or literally. Work out what the user is trying to achieve, and use judgment to get the best possible result. For example, "name the women" means use the names the Bible gives; it doesn't mean pointing out who has no name. And "look at Alter's book" means learn his insights and use the best ones; it doesn't mean copying his structure or a past video's.
+- Take feedback broadly too. When the user shows one example or names one spot, find the idea behind it and apply it everywhere it fits. Don't fix only the one place, and don't treat the example as a template to copy.
+- "Previous video" or "last video" means the last video posted to the channel, never an unfinished cut or an earlier draft of the current video. Use posted videos as inspiration (what kinds of graphics work, how much text), never copy their scenes.
 - After any fix to a script, send the whole updated file again, every time.
 - Don't send source links or source lists in replies.
 
@@ -26,9 +28,10 @@
   - Before generating, check the balance and the price (simulate the cost).
   - Use the cheapest model that does the job.
   - Reuse good images we already have instead of making new ones.
+  - When a person already appears in another shot, upload that image as a reference so the face and look match.
   - Fix small problems with a region edit instead of a new image.
   - After each batch, say how many credits it used.
-- Don't be nitpicky when checking an image. Flag only what a viewer would actually notice: the wrong number of people, the wrong action or hand, a broken face or hand, or something obviously modern. Fix small things yourself for free (crop, mirror, grade, fade into black) without making a point of them.
+- Don't be nitpicky when checking an image. Flag only what a viewer would actually notice: the wrong number of people, the wrong action or hand, a broken face or hand, or something obviously modern. Fix small things yourself for free (crop, mirror, grade, fade into black) without making a point of them. Never retouch image content yourself (no cloning, blurring or painting over details); anything beyond crop, mirror, grade and fade is a region edit in the generator.
 
 # Writing scripts
 
@@ -87,6 +90,9 @@
 
 These are the user's standing notes from earlier videos. Apply all of them without being reminded.
 
+- Never use the same image twice in one video. An image may stay up across one continuous scene, but it never comes back later; a callback gets a new image or an explainer graphic.
+- Use explainer animations wherever an idea can be shown visually: comparisons (T-charts), family trees, chains, timelines, diagrams of an action (e.g. crossed hands as two arrows), counts as dots or tallies, word trees for Hebrew meanings. Prefer them over a second photo or a caption.
+- Don't caption the narration. The VO tells the story; the screen shows what the VO can't: verses, Hebrew words, names and labels, numbers, and explainer scenes (comparisons, charts, chains, timelines). Add a short line only for a key point.
 - Verses:
   - Every Hebrew verse or phrase on screen comes with its English translation and its reference.
   - When the VO quotes a verse, put the verse on screen, the way 04 kept a verse banner up (reference, Hebrew with the key word in gold, English below with the same word in gold).

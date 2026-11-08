@@ -465,3 +465,15 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - Women's head covering: in Genesis the veil is situational. Rebekah takes the צָּעִיף when she meets Isaac (Gen 24:65), and Tamar covers herself (Gen 38:14). The Lachish relief (701 BCE, much later) shows Judean women under long shawls from head to hem. Everyday veiling isn't attested for the patriarchs' era.
 - The keffiyeh-and-agal head cloth is a later Bedouin look and isn't attested for this period.
 - Test result (video 09): asking for dyed, striped or patterned wool made the image models produce costume looks (a Native American blanket, a striped bathrobe, a caveman in fur). Use plain undyed earth-toned wool instead. It's historically sound as everyday dress and suits the gold-on-black grade.
+
+## On-screen style of the posted videos (YouTube auto-frames, Nov 8, 2026)
+- Latest posted: "Why So Many Women in the Bible Were Barren". Before it: 04 Deception, 03 Well.
+- Names are labelled with the Hebrew name in gold and the English caps under it (שִׁמְשׁוֹן / SAMSON). Plain role labels sit under groups ("HIS FATHER", "THE BOY").
+- A short verse goes at the top (reference, English with the key word in gold, sometimes the Hebrew) over one central scene.
+- A Hebrew key word with its gloss goes under the scene (וְלֹא הִכִּירוּ "he did not recognize him").
+- Explainers are labelled pattern diagrams: 03 drew the recurring scene as a path with stations (JOURNEY, A WELL, WATER, …).
+- The narration isn't captioned.
+
+## Image generation (Nov 8, 2026)
+- Use Magnific with Nano Banana 2 (mode `imagen-nano-banana-2-flash`, 1k, 16:9): 75 credits per image, with references at the same price. ElevenLabs' Nano Banana 2 costs 204 per image.
+- Always upload the existing shots of a recurring person as references (`creations_request_upload` → PUT → `creations_finalize_upload`).
