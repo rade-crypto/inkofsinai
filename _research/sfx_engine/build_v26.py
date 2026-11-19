@@ -224,7 +224,7 @@ SCENES = [
  (6.7, [Line('Forty years later, Moses', 76, 0), Line('repeats the commandments.', 76, .45), Gap(70), Score(1.5), Gap(60), Line(R('This time, something is added.'), 72, 4.4)]),
  (6.2, [Label('DEUT. 5:15', 0, 66), Gap(20), Wipe(h515, .3, 1.2, lit=(*TETH515, 1.9)), TL([('beyad chazakah uvizroa ne', 0), ('t', 1), ('uyah', 0)], 1.7), Gap(30),
         Line('“Remember you were a slave', 66, 2.6, italic=True), Line('in Egypt, and God brought you', 66, 3.05, italic=True),
-        Line('out with a mighty hand and', 66, 3.5, italic=True), Line([('an ', INK), ('outstretched', RED), (' arm.”', INK)], 66, 3.95, italic=True)]),
+        Line('out from there with a mighty', 66, 3.5, italic=True), Line([('hand and an ', INK), ('outstretched', RED), (' arm.”', INK)], 66, 3.95, italic=True)]),
  (9.4, [Label('EXODUS 20:12', 0, 66), Line('“Honor your father and', 70, .2, italic=True), Line('your mother, so that your', 70, .85, italic=True), Line('days may be long…”', 70, 1.3, italic=True),
          Gap(30), Hair(2.4), Gap(30), Label('DEUT. 5:16', 3.0, 66), Line('“…so that your days', 70, 3.2, italic=True), Line('may be long,', 70, 3.65, italic=True),
          Line('and so that it may', 70, 4.6, italic=True), Line([('go well', RED), (' with you…”', INK)], 70, 5.05, italic=True), Gap(-30), Wipe(h516, 6.0, 1.1, lit=(281 + PADH, 353 + PADH, 7.3)), Gap(-30), TL([('ulema’an yi', 0), ('t', 1), ('av lach', 0)], 7.3)]),
