@@ -45,7 +45,7 @@ class Line(Item):
     def draw(s, c, x, y, t):
         for i, (im, wx) in enumerate(s.words):
             a = ease((t - s.t0 - i * s.stag) / .5)
-            if s.t0 == 0 and i <= 2 and t >= 0: a = max(a, .6)      # a cut never lands on empty parchment: the first word is already there
+            pass      # a cut never lands on empty parchment: the first word is already there
             if a > 0: c.alpha_composite(fade(im, a), (x + wx, y + int((1 - a) * 14)))
 def Label(t, t0, size=44, col=MUTED): return Line([(t, col)], size, t0, track=5)
 GOLD = (184, 134, 12)
@@ -76,7 +76,6 @@ class Wipe(Item):                      # Hebrew written in right to left; option
         return e
     def draw(s, c, x, y, t):
         p = (t - s.t0) / s.dur
-        if s.t0 == 0 and t >= 0: p = max(p, .12)
         if p <= 0: return
         if p >= 1: c.alpha_composite(s.im, (x, y))
         else:
@@ -89,7 +88,6 @@ class Pop(Item):
     def ev(s): return [(s.t0, 'stamp', 0)]
     def draw(s, c, x, y, t):
         a = ease((t - s.t0) / .35)
-        if s.t0 == 0 and t >= 0: a = max(a, .6)
         if a <= 0: return
         k = 1.25 - .25 * a; im = s.im.resize((int(s.w * k), int(s.h * k)), Image.BICUBIC)
         c.alpha_composite(fade(im, a), (x + (s.w - im.width) // 2, y + (s.h - im.height) // 2))
@@ -250,6 +248,7 @@ def ink_dx(it):
     c = Image.new('RGBA', (it.w + 80, it.h + 40), (0, 0, 0, 0)); it.draw(c, 40, 20, 99.0)
     cols = np.where((np.asarray(c.split()[3]) > 120).sum(0) >= 2)[0]
     return int(round((it.w + 80) / 2 - (cols.min() + cols.max()) / 2))
+CUT_OFFSET = 0.3
 def layout(items, center=900):
     tot = sum(i.h for i in items); assert tot <= 1200, tot
     center = min(max(center, 240 + tot // 2), 1440 - tot // 2); y = center - tot // 2; out = []
@@ -270,7 +269,7 @@ if __name__ == '__main__':
     for si, ((dur, items), s0) in enumerate(zip(SCENES, starts)):
         lay = layout(items); n = int(round(dur * FPS))
         for k in range(n):
-            c = PLATE.copy(); t = k / FPS
+            c = PLATE.copy(); t = k / FPS + CUT_OFFSET     # every scene opens already part-written, then carries on
             for it, x, y in lay: it.draw(c, x, y, t)
             if k == n - 1: c.convert('RGB').save(f'sb/c25_{si}.jpg', quality=80)
             wr.stdin.write(c.convert('RGB').tobytes())

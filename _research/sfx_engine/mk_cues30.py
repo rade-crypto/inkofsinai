@@ -3,8 +3,8 @@ Owner notes honoured: sparse, no doorbell bells, no risers/build-ups, quiet. Cou
 import sys, json; sys.path.insert(0, 'sb')
 import numpy as np
 import build_v26 as V
-c = []; S = [float(x) for x in V.starts]
-def add(ty, at, **k): c.append(dict(type=ty, t=round(max(0, at), 3), **k))
+c = []; S = [float(x) for x in V.starts]; OFF = V.CUT_OFFSET
+def add(ty, at, **k): c.append(dict(type=ty, t=round(max(0, at - OFF), 3), **k))   # the picture runs OFF seconds ahead of each scene start
 def inv_ease(q):
     lo, hi = 0.0, 1.0
     for _ in range(40):
