@@ -17,13 +17,14 @@ chords = []
 for si, ((dur, items), s0) in enumerate(zip(V.SCENES, S)):
     chords.append([round(s0, 2), CHORD[si % len(CHORD)]])
     if si: add('whoosh', s0 - .15, d=.7, v=.18)                                  # soft cut
-    first_line = True
+    first_line = True; prev_t = -9
     for it in items:
         n = type(it).__name__
         if n == 'Line':
-            if first_line: add('quill', it.t0 + s0, d=.5, v=.3); first_line = False
+            if first_line or it.t0 - prev_t > 1.0: add('quill', it.t0 + s0, d=.7 if not first_line else .5, v=.3)   # a new block of text being written
+            first_line = False; prev_t = it.t0
         elif n == 'Wipe':
-            add('quill', it.t0 + s0, d=min(it.dur, 1.2), v=.3)                   # Hebrew written
+            add('quill', it.t0 + s0, d=min(it.dur, 1.2), v=.3); prev_t = it.t0 + it.dur                   # Hebrew written
             if it.lit: add('pluck', it.tl + s0, note='A4', v=.26); add('pluck', it.tl + s0 + .08, note='D4', v=.2)
         elif n == 'Alphabet':
             for j in range(0, len(it.order), 2): add('tick', it.t0 + s0 + j * it.stag, v=.18)
