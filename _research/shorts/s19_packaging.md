@@ -1,5 +1,5 @@
 YOUTUBE SHORTS TITLE
-The Ten Commandments in Exodus 20 Are Missing a Hebrew Letter
+Exodus 20’s Ten Commandments Are Missing a Hebrew Letter
 
 YOUTUBE DESCRIPTION
 Same text as the Instagram / TikTok caption below. No related video to set (this Short is not cut from a long-form).
