@@ -62,13 +62,13 @@ class GlowLine(Line):                  # a gold line with a warm glow behind it 
         if q > 0: c.alpha_composite(fade(s.glow, q), (x - s.PAD, y - s.PAD))
         super().draw(c, x, y, t)
 class Wipe(Item):                      # Hebrew written in right to left; optional letter lit red later
-    def __init__(s, im, t0, dur=1.0, lit=None, kind='heb'):
+    def __init__(s, im, t0, dur=1.0, lit=None, kind='heb', col=None, gcol=None):
         s.im, s.t0, s.dur, s.w, s.h, s.lit, s.kind = im, t0, dur, im.width, im.height, lit, kind
         s.al = np.asarray(im.split()[3]).astype(np.float32)
         if lit:
-            x0, x1, s.tl = lit; m = np.zeros_like(s.al); m[:, x0:x1] = 1; s.red = tint(im, RED); s.red.putalpha(Image.fromarray((s.al * m).astype(np.uint8)))
+            x0, x1, s.tl = lit; m = np.zeros_like(s.al); m[:, x0:x1] = 1; s.red = tint(im, col or RED); s.red.putalpha(Image.fromarray((s.al * m).astype(np.uint8)))
             g = gaussian_filter(s.al * m, 22); g = g / (g.max() + 1e-6) * 110
-            s.glow = Image.fromarray(np.dstack([np.broadcast_to(np.array(GLOW, np.uint8), g.shape + (3,)), g.astype(np.uint8)]), 'RGBA')
+            s.glow = Image.fromarray(np.dstack([np.broadcast_to(np.array(gcol or GLOW, np.uint8), g.shape + (3,)), g.astype(np.uint8)]), 'RGBA')
     def ev(s):
         e = [(s.t0, s.kind, s.dur)]
         if s.lit: e.append((s.tl, 'lit', 0))
@@ -223,7 +223,7 @@ SCENES = [
         Line('“We will hear and do.”', 84, 1.7, italic=True, stag=.12)]),
  (4.6, [Line('God responded:', 92, 0, stag=.12), Gap(20), Line('“If only their hearts were', 70, .6, italic=True), Line('always like this, to fear Me', 70, 1.1, italic=True),
         Line('and keep all My commands…”', 70, 1.6, italic=True)]),
- (7.0, [Label('DEUT. 5:29', 0, 66), Gap(20), Wipe(h529a, 0, 1.3, lit=(386 + PADH, 461 + PADH, 1.8), kind='pay'), Gap(30), Line('“…so that it may', 72, 1.5, italic=True), GlowLine('go well with them', 96, 2.0, italic=True), Gap(50),
+ (7.0, [Label('DEUT. 5:29', 0, 66), Gap(20), Wipe(h529a, 0, 1.3, lit=(386 + PADH, 461 + PADH, 1.8), kind='pay', col=GOLD, gcol=GLOW_GOLD), Gap(30), Line('“…so that it may', 72, 1.5, italic=True), GlowLine('go well with them', 96, 2.0, italic=True), Gap(50),
         Wipe(h529b, 3.6, 1.0), Gap(20), Line('and with their children', 66, 4.6, italic=True), Line('forever.”', 66, 5.1, italic=True)]),
 ]
 starts = np.cumsum([0] + [d for d, _ in SCENES]); TOTAL = float(starts[-1])
