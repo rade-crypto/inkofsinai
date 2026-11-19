@@ -6,9 +6,9 @@ from build_v26 import *
 c = PLATE.copy()
 def put(it, y, t=99.0):
     ink = ink_dx(it); it.draw(c, (W - it.w) // 2 + ink, y, t); return y + it.h
-y = 340
-y = put(Line('Exodus 20 is missing', 84, 0), y)
-y = put(Line([('a Hebrew ', INK), ('letter', RED), ('.', INK)], 84, 0), y + 4)
+y = 320
+y = put(Line('Exodus 20', 124, 0), y)
+y = put(Line([('is missing a ', INK), ('letter', RED), ('.', INK)], 124, 0), y + 2)
 al = Alphabet(0, 'hole', k=1.0); al.tc = -10     # circle fully drawn
 al.draw(c, (W - al.w) // 2, 830, 99.0)
 tp = Pop(big_teth, 0); put(tp, 1160)
