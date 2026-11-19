@@ -269,7 +269,7 @@ if __name__ == '__main__':
     for si, ((dur, items), s0) in enumerate(zip(SCENES, starts)):
         lay = layout(items); n = int(round(dur * FPS))
         for k in range(n):
-            c = PLATE.copy(); t = k / FPS + CUT_OFFSET     # every scene opens already part-written, then carries on
+            c = PLATE.copy(); t = k / FPS + (CUT_OFFSET if si == 0 else 0)     # only the hook opens already half written, then carries on
             for it, x, y in lay: it.draw(c, x, y, t)
             if k == n - 1: c.convert('RGB').save(f'sb/c25_{si}.jpg', quality=80)
             wr.stdin.write(c.convert('RGB').tobytes())
