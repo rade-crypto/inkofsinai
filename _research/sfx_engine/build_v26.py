@@ -220,7 +220,6 @@ SCENES = [
  (6.9, [CounterSwap(620, 110, 0, 1.4, ' letters.', 5.1, 'One count is zero.'), Label('EXODUS 20:2–17', .5, 66), Gap(30), Chart(1.6)]),
  (4.6, [Pop(big_teth, 0), Gap(30), Label('TETH', .9, 66), Gap(40), Line('the first letter of', 80, 1.5), Gap(10), Wipe(tov, 2.1, .8, lit=(191 + PADH, 313 + PADH, 3.0), kind='heb'),
         Line('“good.”', 84, 3.0, italic=True)]),
- (3.4, [Line('So the word', 96, 0), Line('“good” is nowhere', 96, .45), Line('in these', 96, .95), Line(R('Ten Commandments.'), 96, 1.35)]),
  (6.7, [Line('Forty years later, Moses', 76, 0), Line('repeats the commandments.', 76, .45), Gap(70), Score(1.5), Gap(60), Line(R('This time, something is added.'), 72, 4.4)]),
  (7.4, [Label('DEUT. 5:15', 0, 66), Gap(30), Wipe(h515, .3, 1.2, lit=(*TETH515, 1.9)), Gap(20), Line('“with a mighty hand and', 70, 2.5, italic=True),
         Line([('an ', INK), ('outstretched', RED), (' arm”', INK)], 70, 2.95, italic=True), Gap(70),
