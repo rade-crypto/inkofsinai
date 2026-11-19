@@ -214,6 +214,7 @@ h516 = padim(crop('47.8', 305, 495, scale=1.15, recolor=INK))
 h529a = padim(crop('68.3', 505, 690, scale=1.2, recolor=INK)); h529b = crop('72.0', 505, 685, scale=1.2, recolor=INK)
 TETH515 = (105 + PADH, 166 + PADH)
 R = lambda s: [(s, INK)]
+def TL(segs, t0, hotcol=RED): return Line([(tx, hotcol if hot else MUTED) for tx, hot in segs], 66, t0, italic=True)   # Latin-letter reading of the Hebrew above it; the teth in red
 
 SCENES = [
  (4.3, [Line('One Hebrew letter', 92, 0), Line('never appears in the', 92, .3), Line(R('Ten Commandments.'), 92, .65), Gap(90), Alphabet(1.0, 'hole', k=1.0)]),
@@ -221,18 +222,18 @@ SCENES = [
  (4.6, [Pop(big_teth, 0), Gap(30), Label('TETH', .9, 66), Gap(40), Line('the first letter of', 80, 1.5), Gap(10), Wipe(tov, 2.1, .8, lit=(191 + PADH, 313 + PADH, 3.0), kind='heb'),
         Line('“good.”', 84, 3.0, italic=True)]),
  (6.7, [Line('Forty years later, Moses', 76, 0), Line('repeats the commandments.', 76, .45), Gap(70), Score(1.5), Gap(60), Line(R('This time, something is added.'), 72, 4.4)]),
- (6.2, [Label('DEUT. 5:15', 0, 66), Gap(20), Wipe(h515, .3, 1.2, lit=(*TETH515, 1.9)), Gap(30),
+ (6.2, [Label('DEUT. 5:15', 0, 66), Gap(20), Wipe(h515, .3, 1.2, lit=(*TETH515, 1.9)), TL([('beyad chazakah uvizroa ne', 0), ('t', 1), ('uyah', 0)], 1.7), Gap(30),
         Line('“Remember you were a slave', 66, 2.6, italic=True), Line('in Egypt, and God brought you', 66, 3.05, italic=True),
         Line('out with a mighty hand and', 66, 3.5, italic=True), Line([('an ', INK), ('outstretched', RED), (' arm.”', INK)], 66, 3.95, italic=True)]),
- (8.8, [Label('EXODUS 20:12', 0, 66), Line('“Honor your father and', 70, .2, italic=True), Line('your mother, so that your', 70, .85, italic=True), Line('days may be long…”', 70, 1.3, italic=True),
+ (9.4, [Label('EXODUS 20:12', 0, 66), Line('“Honor your father and', 70, .2, italic=True), Line('your mother, so that your', 70, .85, italic=True), Line('days may be long…”', 70, 1.3, italic=True),
          Gap(30), Hair(2.4), Gap(30), Label('DEUT. 5:16', 3.0, 66), Line('“…so that your days', 70, 3.2, italic=True), Line('may be long,', 70, 3.65, italic=True),
-         Line('and so that it may', 70, 4.6, italic=True), Line([('go well', RED), (' with you…”', INK)], 70, 5.05, italic=True), Gap(0), Wipe(h516, 6.0, 1.1, lit=(281 + PADH, 353 + PADH, 7.3))]),
+         Line('and so that it may', 70, 4.6, italic=True), Line([('go well', RED), (' with you…”', INK)], 70, 5.05, italic=True), Gap(-30), Wipe(h516, 6.0, 1.1, lit=(281 + PADH, 353 + PADH, 7.3)), Gap(-30), TL([('ulma’an yi', 0), ('t', 1), ('av lach', 0)], 7.3)]),
  (5.0, [Label('DEUT. 5:25–27', 0, 66), Gap(30), Line('At Sinai, the people feared', 84, .2, stag=.12), Line('God’s voice, and promised:', 84, .8, stag=.12), Gap(30),
         Line('“We will hear and do.”', 84, 1.7, italic=True, stag=.12)]),
  (4.6, [Line('God responded:', 92, 0, stag=.12), Gap(20), Line('“If only their hearts were', 70, .6, italic=True), Line('always like this, to fear Me', 70, 1.1, italic=True),
         Line('and keep all My commands…”', 70, 1.6, italic=True)]),
- (7.0, [Label('DEUT. 5:29', 0, 66), Gap(20), Wipe(h529a, 0, 1.3, lit=(386 + PADH, 461 + PADH, 1.8), kind='pay', col=GOLD, gcol=GLOW_GOLD), Gap(30), Line('“…so that it may', 72, 1.5, italic=True), GlowLine('go well with them', 96, 2.0, italic=True), Gap(50),
-        Wipe(h529b, 3.6, 1.0), Gap(20), Line('and with their children', 66, 4.6, italic=True), Line('forever.”', 66, 5.1, italic=True)]),
+ (7.0, [Label('DEUT. 5:29', 0, 66), Gap(-10), Wipe(h529a, 0, 1.3, lit=(386 + PADH, 461 + PADH, 1.8), kind='pay', col=GOLD, gcol=GLOW_GOLD), TL([('lema’an yi', 0), ('t', 1), ('av lahem', 0)], 1.4, GOLD), Gap(20), Line('“…so that it may', 72, 1.5, italic=True), GlowLine('go well with them', 96, 2.0, italic=True), Gap(20),
+        Wipe(h529b, 3.6, 1.0), TL([('velivneihem le’olam', 0)], 4.7), Gap(10), Line('and with their children', 66, 4.6, italic=True), Line('forever.”', 66, 5.1, italic=True)]),
 ]
 starts = np.cumsum([0] + [d for d, _ in SCENES]); TOTAL = float(starts[-1])
 EV = [(0.05, 'hook', 0), (float(starts[4]), 'rehook', 0), (float(starts[8]) - 2.2 + .3, 'swell', 0)]
