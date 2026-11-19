@@ -47,15 +47,16 @@ class Line(Item):
             a = ease((t - s.t0 - i * s.stag) / .5)
             if a > 0: c.alpha_composite(fade(im, a), (x + wx, y + int((1 - a) * 14)))
 def Label(t, t0, size=44, col=MUTED): return Line([(t, col)], size, t0, track=5)
-GOLD = (170, 108, 22)
+GOLD = (184, 134, 12)
+GLOW_GOLD = (246, 204, 88)
 class GlowLine(Line):                  # a gold line with a warm glow behind it (the 5:29 wish)
     PAD = 70
     def __init__(s, text, size, t0, italic=False, stag=.12):
         super().__init__([(text, GOLD)], size, t0, italic, stag=stag)
         base = Image.new('RGBA', (s.w + 2 * s.PAD, s.h + 2 * s.PAD), (0, 0, 0, 0))
         for im, wx in s.words: base.alpha_composite(im, (s.PAD + wx, s.PAD))
-        g = gaussian_filter(np.asarray(base.split()[3]).astype(np.float32), 24); g = g / (g.max() + 1e-6) * 150
-        s.glow = Image.fromarray(np.dstack([np.broadcast_to(np.array(GLOW, np.uint8), g.shape + (3,)), g.astype(np.uint8)]), 'RGBA')
+        g = gaussian_filter(np.asarray(base.split()[3]).astype(np.float32), 24); g = g / (g.max() + 1e-6) * 190
+        s.glow = Image.fromarray(np.dstack([np.broadcast_to(np.array(GLOW_GOLD, np.uint8), g.shape + (3,)), g.astype(np.uint8)]), 'RGBA')
     def draw(s, c, x, y, t):
         q = ease((t - s.t0) / .7)
         if q > 0: c.alpha_composite(fade(s.glow, q), (x - s.PAD, y - s.PAD))
@@ -218,8 +219,8 @@ SCENES = [
  (8.2, [Label('EXODUS 20:12', 0, 42), Line('“…so that your days', 70, .5, italic=True), Line('may be long”', 70, .95, italic=True),
          Gap(40), Hair(2.0), Gap(40), Label('DEUTERONOMY 5:16', 2.6, 42), Line('“…so that your days', 70, 2.8, italic=True), Line('may be long,', 70, 3.25, italic=True),
          Line('and so that it may', 70, 4.2, italic=True), Line([('go well', RED), (' with you”', INK)], 70, 4.65, italic=True), Gap(0), Wipe(h516, 5.6, 1.1, lit=(281 + PADH, 353 + PADH, 6.9))]),
- (5.4, [Line('At Sinai, the people', 92, 0, stag=.12), Line('begged not to hear', 92, .5, stag=.12), Line('God’s voice again.', 92, 1.0, stag=.12), Gap(80), Hair(1.8), Gap(80),
-        Line('So God tells Moses', 92, 2.3, stag=.12), Line(R('what He wishes'), 92, 2.8, stag=.12), Line(R('for them:'), 92, 3.3, stag=.12)]),
+ (5.0, [Label('DEUTERONOMY 5:25–27', 0, 42), Gap(30), Line('At Sinai, the people feared', 84, .2, stag=.12), Line('God’s voice, and promised:', 84, .8, stag=.12), Gap(30),
+        Line('“We will hear and do.”', 84, 1.7, italic=True, stag=.12)]),
  (4.4, [Label('DEUTERONOMY 5:29', 0, 42), Gap(40), Line('“If only their hearts', 78, .3, italic=True), Line('were always like this,', 78, .8, italic=True),
         Line('to fear Me and keep', 78, 1.3, italic=True), Line('all My commands…”', 78, 1.8, italic=True)]),
  (7.0, [Wipe(h529a, 0, 1.3, lit=(386 + PADH, 461 + PADH, 1.8), kind='pay'), Gap(30), Line('“…so that it may', 72, 1.5, italic=True), GlowLine('go well with them', 96, 2.0, italic=True), Gap(50),
