@@ -98,6 +98,15 @@ class Counter(Item):
         if t < s.t0: return
         p = ease((t - s.t0) / s.dur); txt = f'{int(round(s.n * p))}{s.suf}'
         ImageDraw.Draw(c).text((x + (s.w - s.f.getlength(f'{s.n}{s.suf}')) / 2, y), txt, font=s.f, fill=INK)
+class CounterSwap(Counter):               # counts to n, then the same slot says the point
+    def __init__(s, n, size, t0, dur, suffix, t_sw, msg, msize=96):
+        super().__init__(n, size, t0, dur, suffix); s.t_sw, s.mf, s.msg = t_sw, font(msize), msg; s.w = 900
+    def ev(s): return [(s.t0, 'count', s.dur)]
+    def draw(s, c, x, y, t):
+        if t < s.t_sw: return super().draw(c, x, y, t)
+        a = ease((t - s.t_sw) / .3)
+        im = Image.new('RGBA', (s.w, s.h), (0, 0, 0, 0)); ImageDraw.Draw(im).text(((s.w - s.mf.getlength(s.msg)) / 2, 0), s.msg, font=s.mf, fill=INK)
+        c.alpha_composite(fade(im, a), (x, y))
 class Hair(Item):
     def __init__(s, t0, w=360): s.t0, s.w, s.h = t0, w, 30
     def ev(s): return [(s.t0, 'hair', 0)]
@@ -147,7 +156,7 @@ class Alphabet(Item):
 
 class Chart(Item):
     def __init__(s, t0, stag=.12):
-        s.t0, s.stag = t0, stag; s.rowh, s.colw = 94, 430; s.w, s.h = s.colw * 2 + 40, s.rowh * 11; s.f = font(66)
+        s.t0, s.stag = t0, stag; s.rowh, s.colw = 84, 430; s.w, s.h = s.colw * 2 + 40, s.rowh * 11; s.f = font(66)
         s.order = [ch for ch in AB if ch != 'ט']; s.tz = t0 + len(s.order) * stag + .6
     def start(s, ch): return s.tz if ch == 'ט' else s.t0 + s.order.index(ch) * s.stag
     def ev(s): return [(s.start(ch), 'row', 0) for ch in s.order] + [(s.tz, 'zero', 0)]
@@ -158,11 +167,11 @@ class Chart(Item):
             a = ease((t - s.start(ch)) / .25)
             if a <= 0: continue
             red = ch == 'ט'; col = INK
-            letter_at(c, ch, x0 + s.colw - 50, yy + 80, .94, RED if red else None, a)
+            letter_at(c, ch, x0 + s.colw - 50, yy + 73, .86, RED if red else None, a)
             g = ease((t - s.start(ch)) / .45); n = int(round(EX[ch] * g)); bw = int(EX[ch] / 68 * 210 * g)
-            if bw: d.rounded_rectangle((x0 + s.colw - 118 - bw, yy + 36, x0 + s.colw - 118, yy + 58), 6, fill=(*MUTED, int(200 * a)))
+            if bw: d.rounded_rectangle((x0 + s.colw - 118 - bw, yy + 31, x0 + s.colw - 118, yy + 53), 6, fill=(*MUTED, int(200 * a)))
             txt = str(n); tw = s.f.getlength(txt)
-            d.text((x0 + s.colw - 132 - bw - tw, yy + 6), txt, font=s.f, fill=(*col, int(255 * a)))
+            d.text((x0 + s.colw - 132 - bw - tw, yy + 2), txt, font=s.f, fill=(*col, int(255 * a)))
 
 class Score(Item):
     def __init__(s, t0):
@@ -207,8 +216,7 @@ R = lambda s: [(s, INK)]
 
 SCENES = [
  (4.3, [Line('One Hebrew letter', 92, 0), Line('never appears in the', 92, .3), Line(R('Ten Commandments.'), 92, .65), Gap(90), Alphabet(1.0, 'hole', k=1.0)]),
- (3.2, [Counter(620, 110, 0, 1.4, ' letters.'), Gap(30), Label('EXODUS 20:2–17', .5, 66)]),
- (5.9, [Chart(0), Gap(40), Line(R('One count is zero.'), 80, 3.9)]),
+ (6.9, [CounterSwap(620, 110, 0, 1.4, ' letters.', 5.1, 'One count is zero.'), Label('EXODUS 20:2–17', .5, 66), Gap(30), Chart(1.6)]),
  (4.6, [Pop(big_teth, 0), Gap(30), Label('TETH', .9, 66), Gap(40), Line('the first letter of', 80, 1.5), Gap(10), Wipe(tov, 2.1, .8, lit=(191 + PADH, 313 + PADH, 3.0), kind='heb'),
         Line('“good.”', 84, 3.0, italic=True)]),
  (3.4, [Line('So the word', 96, 0), Line('“good” is nowhere', 96, .45), Line('in these', 96, .95), Line(R('Ten Commandments.'), 96, 1.35)]),
