@@ -45,6 +45,7 @@ class Line(Item):
     def draw(s, c, x, y, t):
         for i, (im, wx) in enumerate(s.words):
             a = ease((t - s.t0 - i * s.stag) / .5)
+            if s.t0 == 0 and i <= 2 and t >= 0: a = max(a, .6)      # a cut never lands on empty parchment: the first word is already there
             if a > 0: c.alpha_composite(fade(im, a), (x + wx, y + int((1 - a) * 14)))
 def Label(t, t0, size=44, col=MUTED): return Line([(t, col)], size, t0, track=5)
 GOLD = (184, 134, 12)
@@ -75,6 +76,7 @@ class Wipe(Item):                      # Hebrew written in right to left; option
         return e
     def draw(s, c, x, y, t):
         p = (t - s.t0) / s.dur
+        if s.t0 == 0 and t >= 0: p = max(p, .12)
         if p <= 0: return
         if p >= 1: c.alpha_composite(s.im, (x, y))
         else:
@@ -87,6 +89,7 @@ class Pop(Item):
     def ev(s): return [(s.t0, 'stamp', 0)]
     def draw(s, c, x, y, t):
         a = ease((t - s.t0) / .35)
+        if s.t0 == 0 and t >= 0: a = max(a, .6)
         if a <= 0: return
         k = 1.25 - .25 * a; im = s.im.resize((int(s.w * k), int(s.h * k)), Image.BICUBIC)
         c.alpha_composite(fade(im, a), (x + (s.w - im.width) // 2, y + (s.h - im.height) // 2))
@@ -224,7 +227,7 @@ SCENES = [
  (7.4, [Label('DEUT. 5:15', 0, 66), Gap(30), Wipe(h515, .3, 1.2, lit=(*TETH515, 1.9)), Gap(20), Line('“with a mighty hand and', 70, 2.5, italic=True),
         Line([('an ', INK), ('outstretched', RED), (' arm”', INK)], 70, 2.95, italic=True), Gap(70),
         Line('The arm that brought', 76, 4.8), Line('them out of Egypt.', 76, 5.2)]),
- (8.8, [Label('EXODUS 20:12', 0, 66), Line('“Honor your father and', 70, .4, italic=True), Line('your mother, so that your', 70, .85, italic=True), Line('days may be long…”', 70, 1.3, italic=True),
+ (8.8, [Label('EXODUS 20:12', 0, 66), Line('“Honor your father and', 70, .2, italic=True), Line('your mother, so that your', 70, .85, italic=True), Line('days may be long…”', 70, 1.3, italic=True),
          Gap(30), Hair(2.4), Gap(30), Label('DEUT. 5:16', 3.0, 66), Line('“…so that your days', 70, 3.2, italic=True), Line('may be long,', 70, 3.65, italic=True),
          Line('and so that it may', 70, 4.6, italic=True), Line([('go well', RED), (' with you…”', INK)], 70, 5.05, italic=True), Gap(0), Wipe(h516, 6.0, 1.1, lit=(281 + PADH, 353 + PADH, 7.3))]),
  (5.0, [Label('DEUT. 5:25–27', 0, 66), Gap(30), Line('At Sinai, the people feared', 84, .2, stag=.12), Line('God’s voice, and promised:', 84, .8, stag=.12), Gap(30),
