@@ -21,4 +21,4 @@ Send this to someone who knows the Ten Commandments by heart.
 #tencommandments #hebrewbible #torah #bible #biblestudy
 
 COVER
-s19_cover.jpg (1080x1920). Text: "Exodus 20 / is missing a letter." ("letter" in red, 124 px) over the alphabet with the empty teth slot circled and a red teth under it.
+s19_cover.jpg (1080x1920). Text: "Exodus 20 / is missing a letter." ("missing a letter" in red, 124 px) over the alphabet with the empty teth slot circled and a red teth under it, both moved up.
