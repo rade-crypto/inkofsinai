@@ -10,7 +10,9 @@ y = 300
 y = put(Line('Exodus 20 is missing', 84, 0), y)
 y = put(Line([('a Hebrew ', INK), ('letter', RED), ('.', INK)], 84, 0), y + 4)
 y = put(Line('Deuteronomy 5 has it.', 84, 0), y + 4)
-sc = Score(0); sc.draw(c, (W - sc.w) // 2, 900, 99.0)
+al = Alphabet(0, 'hole', k=1.0); al.tc = -10     # circle fully drawn
+al.draw(c, (W - al.w) // 2, 830, 99.0)
+tp = Pop(big_teth, 0); put(tp, 1160)
 d = ImageDraw.Draw(c); f = font(46)
 tw = sum(f.getlength(ch) + 8 for ch in 'INK OF SINAI'); xx = 540 - tw / 2
 for ch in 'INK OF SINAI': d.text((xx, 1790), ch, font=f, fill=(*MUTED, 255)); xx += f.getlength(ch) + 8

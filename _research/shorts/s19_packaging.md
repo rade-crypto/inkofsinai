@@ -21,4 +21,4 @@ Send this to someone who knows the Ten Commandments by heart.
 #tencommandments #hebrewbible #torah #bible #biblestudy
 
 COVER
-s19_cover.jpg (1080x1920). Text: "Exodus 20 is missing / a Hebrew letter. / Deuteronomy 5 has it." ("letter" in red) over the video's own 0 ט | 2 ט scoreboard.
+s19_cover.jpg (1080x1920). Text: "Exodus 20 is missing / a Hebrew letter. / Deuteronomy 5 has it." ("letter" in red) over the alphabet with the empty teth slot circled and a red teth under it.
