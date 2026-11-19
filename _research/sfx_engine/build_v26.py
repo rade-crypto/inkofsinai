@@ -147,7 +147,7 @@ class Alphabet(Item):
 
 class Chart(Item):
     def __init__(s, t0, stag=.12):
-        s.t0, s.stag = t0, stag; s.rowh, s.colw = 76, 460; s.w, s.h = s.colw * 2 + 40, s.rowh * 11; s.f = font(44)
+        s.t0, s.stag = t0, stag; s.rowh, s.colw = 94, 430; s.w, s.h = s.colw * 2 + 40, s.rowh * 11; s.f = font(66)
         s.order = [ch for ch in AB if ch != 'ט']; s.tz = t0 + len(s.order) * stag + .6
     def start(s, ch): return s.tz if ch == 'ט' else s.t0 + s.order.index(ch) * s.stag
     def ev(s): return [(s.start(ch), 'row', 0) for ch in s.order] + [(s.tz, 'zero', 0)]
@@ -158,29 +158,28 @@ class Chart(Item):
             a = ease((t - s.start(ch)) / .25)
             if a <= 0: continue
             red = ch == 'ט'; col = INK
-            letter_at(c, ch, x0 + s.colw - 40, yy + 64, .74, RED if red else None, a)
-            g = ease((t - s.start(ch)) / .45); n = int(round(EX[ch] * g)); bw = int(EX[ch] / 68 * 300 * g)
-            if bw: d.rounded_rectangle((x0 + s.colw - 90 - bw, yy + 26, x0 + s.colw - 90, yy + 46), 6, fill=(*MUTED, int(200 * a)))
+            letter_at(c, ch, x0 + s.colw - 50, yy + 80, .94, RED if red else None, a)
+            g = ease((t - s.start(ch)) / .45); n = int(round(EX[ch] * g)); bw = int(EX[ch] / 68 * 210 * g)
+            if bw: d.rounded_rectangle((x0 + s.colw - 118 - bw, yy + 36, x0 + s.colw - 118, yy + 58), 6, fill=(*MUTED, int(200 * a)))
             txt = str(n); tw = s.f.getlength(txt)
-            d.text((x0 + s.colw - 104 - bw - tw, yy + 8), txt, font=s.f, fill=(*col, int(255 * a)))
+            d.text((x0 + s.colw - 132 - bw - tw, yy + 6), txt, font=s.f, fill=(*col, int(255 * a)))
 
 class Score(Item):
     def __init__(s, t0):
-        s.t0, s.w, s.h = t0, 900, 420; s.lab, s.big = font(46), font(230)
+        s.t0, s.w, s.h = t0, 900, 470; s.lab, s.big = font(66), font(230)
     def ev(s): return [(s.t0, 'thud', 0), (s.t0 + 1.0, 'thud', 0), (s.t0 + 1.6, 'step', 0), (s.t0 + 2.2, 'lit', 0)]
     def draw(s, c, x, y, t):
         d = ImageDraw.Draw(c)
-        for k, (t1, t2) in enumerate((('EXODUS', '20'), ('DEUTERONOMY', '5'))):
+        for k, (t1, t2) in enumerate((('EXODUS', '20'), ('DEUT.', '5'))):
             a = ease((t - s.t0 - k * 1.0) / .35)
             if a <= 0: continue
             cx = x + s.w * (.25 + .5 * k)
-            for j, tx in enumerate((t1, t2)):
-                tw = sum(s.lab.getlength(ch) + 4 for ch in tx); xx = cx - tw / 2
-                for ch in tx: d.text((xx, y + j * 58), ch, font=s.lab, fill=(*MUTED, int(255 * a))); xx += s.lab.getlength(ch) + 4
+            tx = t1 + ' ' + t2; tw = sum(s.lab.getlength(ch) + 3 for ch in tx); xx = cx - tw / 2
+            for ch in tx: d.text((xx, y), ch, font=s.lab, fill=(*MUTED, int(255 * a))); xx += s.lab.getlength(ch) + 3
             n = '0' if k == 0 else ('0' if t < s.t0 + 1.6 else '1' if t < s.t0 + 2.2 else '2')
             col = INK
-            letter_at(c, 'ט', cx - 70, y + 330, 1.25, RED if k else INK, a)
-            d.text((cx + 10, y + 105 + (1 - a) * 20), n, font=s.big, fill=(*col, int(255 * a)))
+            letter_at(c, 'ט', cx - 70, y + 380, 1.25, RED if k else INK, a)
+            d.text((cx + 10, y + 120 + (1 - a) * 20), n, font=s.big, fill=(*col, int(255 * a)))
         p = ease((t - s.t0 - .6) / .4)
         if p > 0: d.line((x + s.w / 2, y + 20, x + s.w / 2, y + 20 + (s.h - 30) * p), fill=(*MUTED, 160), width=2)
 
@@ -199,7 +198,7 @@ def rightmost(im, k):
 _bt = rightmost(crop('20.8', 450, 625, 380, 700, recolor=RED), 3.0)
 _gi, _gp = glow_img(_bt.width, _bt.height, 38, 110)
 big_teth = Image.new('RGBA', _gi.size, (0, 0, 0, 0)); big_teth.alpha_composite(_gi); big_teth.alpha_composite(_bt, (_gp, _gp))
-big_teth = sc(big_teth, .78)
+big_teth = sc(big_teth, .62)
 h515 = padim(crop('38.5', 345, 485, scale=.98, recolor=INK))
 h516 = padim(crop('47.8', 305, 495, scale=1.15, recolor=INK))
 h529a = padim(crop('68.3', 505, 690, scale=1.2, recolor=INK)); h529b = crop('72.0', 505, 685, scale=1.2, recolor=INK)
@@ -207,23 +206,24 @@ TETH515 = (105 + PADH, 166 + PADH)
 R = lambda s: [(s, INK)]
 
 SCENES = [
- (4.3, [Line('One Hebrew letter', 92, 0), Line('never appears in the', 92, .3), Line(R('Ten Commandments.'), 92, .65), Gap(90), Alphabet(1.0, 'hole')]),
- (7.6, [Counter(620, 110, 0, 1.4, ' letters.'), Label('EXODUS 20:2–17', .5), Gap(50), Chart(1.6), Gap(40), Line(R('One count is zero.'), 80, 5.6)]),
- (4.6, [Pop(big_teth, 0), Gap(30), Label('TETH', .9, 52), Gap(40), Line('the first letter of', 80, 1.5), Gap(10), Wipe(tov, 2.1, .8, lit=(191 + PADH, 313 + PADH, 3.0), kind='heb'),
+ (4.3, [Line('One Hebrew letter', 92, 0), Line('never appears in the', 92, .3), Line(R('Ten Commandments.'), 92, .65), Gap(90), Alphabet(1.0, 'hole', k=1.0)]),
+ (3.2, [Counter(620, 110, 0, 1.4, ' letters.'), Gap(30), Label('EXODUS 20:2–17', .5, 66)]),
+ (5.9, [Chart(0), Gap(40), Line(R('One count is zero.'), 80, 3.9)]),
+ (4.6, [Pop(big_teth, 0), Gap(30), Label('TETH', .9, 66), Gap(40), Line('the first letter of', 80, 1.5), Gap(10), Wipe(tov, 2.1, .8, lit=(191 + PADH, 313 + PADH, 3.0), kind='heb'),
         Line('“good.”', 84, 3.0, italic=True)]),
  (3.4, [Line('So the word', 96, 0), Line('“good” is nowhere', 96, .45), Line('in these', 96, .95), Line(R('Ten Commandments.'), 96, 1.35)]),
- (6.7, [Line('Forty years later, Moses', 84, 0), Line('repeats the commandments.', 84, .45), Gap(70), Score(1.5), Gap(60), Line(R('This time, the letter is there.'), 72, 4.4)]),
- (7.4, [Label('DEUTERONOMY 5:15', 0, 46), Gap(30), Wipe(h515, .3, 1.2, lit=(*TETH515, 1.9)), Gap(20), Line('“with a mighty hand and', 70, 2.5, italic=True),
+ (6.7, [Line('Forty years later, Moses', 76, 0), Line('repeats the commandments.', 76, .45), Gap(70), Score(1.5), Gap(60), Line(R('This time, the letter is there.'), 72, 4.4)]),
+ (7.4, [Label('DEUT. 5:15', 0, 66), Gap(30), Wipe(h515, .3, 1.2, lit=(*TETH515, 1.9)), Gap(20), Line('“with a mighty hand and', 70, 2.5, italic=True),
         Line([('an ', INK), ('outstretched', RED), (' arm”', INK)], 70, 2.95, italic=True), Gap(70),
         Line('The arm that brought', 76, 4.8), Line('them out of Egypt.', 76, 5.2)]),
- (8.2, [Label('EXODUS 20:12', 0, 42), Line('“…so that your days', 70, .5, italic=True), Line('may be long”', 70, .95, italic=True),
-         Gap(40), Hair(2.0), Gap(40), Label('DEUTERONOMY 5:16', 2.6, 42), Line('“…so that your days', 70, 2.8, italic=True), Line('may be long,', 70, 3.25, italic=True),
+ (8.2, [Label('EXODUS 20:12', 0, 66), Line('“…so that your days', 70, .5, italic=True), Line('may be long”', 70, .95, italic=True),
+         Gap(40), Hair(2.0), Gap(40), Label('DEUT. 5:16', 2.6, 66), Line('“…so that your days', 70, 2.8, italic=True), Line('may be long,', 70, 3.25, italic=True),
          Line('and so that it may', 70, 4.2, italic=True), Line([('go well', RED), (' with you”', INK)], 70, 4.65, italic=True), Gap(0), Wipe(h516, 5.6, 1.1, lit=(281 + PADH, 353 + PADH, 6.9))]),
- (5.0, [Label('DEUTERONOMY 5:25–27', 0, 42), Gap(30), Line('At Sinai, the people feared', 84, .2, stag=.12), Line('God’s voice, and promised:', 84, .8, stag=.12), Gap(30),
+ (5.0, [Label('DEUT. 5:25–27', 0, 66), Gap(30), Line('At Sinai, the people feared', 84, .2, stag=.12), Line('God’s voice, and promised:', 84, .8, stag=.12), Gap(30),
         Line('“We will hear and do.”', 84, 1.7, italic=True, stag=.12)]),
- (4.4, [Label('DEUTERONOMY 5:29', 0, 42), Gap(40), Line('“If only their hearts', 78, .3, italic=True), Line('were always like this,', 78, .8, italic=True),
-        Line('to fear Me and keep', 78, 1.3, italic=True), Line('all My commands…”', 78, 1.8, italic=True)]),
- (7.0, [Wipe(h529a, 0, 1.3, lit=(386 + PADH, 461 + PADH, 1.8), kind='pay'), Gap(30), Line('“…so that it may', 72, 1.5, italic=True), GlowLine('go well with them', 96, 2.0, italic=True), Gap(50),
+ (4.6, [Line('God responded:', 92, 0, stag=.12), Gap(20), Line('“If only their hearts were', 70, .6, italic=True), Line('always like this, to fear Me', 70, 1.1, italic=True),
+        Line('and keep all My commands…”', 70, 1.6, italic=True)]),
+ (7.0, [Label('DEUT. 5:29', 0, 66), Gap(20), Wipe(h529a, 0, 1.3, lit=(386 + PADH, 461 + PADH, 1.8), kind='pay'), Gap(30), Line('“…so that it may', 72, 1.5, italic=True), GlowLine('go well with them', 96, 2.0, italic=True), Gap(50),
         Wipe(h529b, 3.6, 1.0), Gap(20), Line('and with their children', 66, 4.6, italic=True), Line('forever.”', 66, 5.1, italic=True)]),
 ]
 starts = np.cumsum([0] + [d for d, _ in SCENES]); TOTAL = float(starts[-1])
@@ -240,8 +240,8 @@ def ink_dx(it):
     cols = np.where((np.asarray(c.split()[3]) > 120).sum(0) >= 2)[0]
     return int(round((it.w + 80) / 2 - (cols.min() + cols.max()) / 2))
 def layout(items, center=900):
-    tot = sum(i.h for i in items); assert tot <= 1300, tot
-    y = center - tot // 2; out = []
+    tot = sum(i.h for i in items); assert tot <= 1200, tot
+    center = min(max(center, 240 + tot // 2), 1440 - tot // 2); y = center - tot // 2; out = []
     for it in items:
         assert it.w <= 960, (type(it).__name__, it.w)
         out.append((it, (W - it.w) // 2 + ink_dx(it), y)); y += it.h
