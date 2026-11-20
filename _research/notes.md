@@ -374,3 +374,56 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - תֵּבָה: 26 times in Gen 6:14–9:18, plus Exod 2:3 and 2:5 only, checked. Low demand for the link.
   - Babel נִלְבְּנָה / וְנָבְלָה (11:3, 11:7), UNVERIFIED. Smaller draw.
   - Eden "east" steps. Thin, and the idea is already known.
+
+## Outlier research (Nov 20, 2026)
+- **Method:** 74 similar channels, found through YouTube search; channeldb blocks automated access.
+  - For each channel, the multiplier is a video's views ÷ the median views of the channel's last ~80 long-forms.
+  - Only long-forms from the last 12 months count.
+  - Script: scratchpad `outliers.py`.
+- **Clusters that outlier on several channels (Tanakh-relevant only):**
+  - **Amalekites:**
+    - Deep Bible Insights 817k (115x)
+    - The Bible Told 514k (184x)
+    - Power of Wisdom 235k (23x)
+    - Black and White Bible 114k (9x)
+    - Every one of them is about origin and "why erase them". None shows the Saul → Esther rematch; the best video on that angle has 15k.
+  - **Hebrew word "doesn't mean what you think":** the biggest multipliers in the niche.
+    - "Helper" is a military term: 667k (1026x)
+    - Marriage, Gen 2:24: 199k (1137x)
+    - "Be still": 188k (289x)
+    - Proverbs 31 woman a soldier: 71k (109x)
+    - "Humble": 210k (54x) on two channels
+    - First word of Genesis: 134k (433x)
+    - Light in Genesis: 91k (253x)
+    - Aaron's rod almonds: 250k (32x)
+    - We have already done עֵזֶר and אֵשֶׁת חַיִל.
+  - **Spirit beings:**
+    - "Every Angel in the Bible": 6.2M (16x)
+    - "When Lucifer became Satan": 367k (45x)
+    - "Michael vs the Devil": 184k (48x)
+    - "Imprisoned angels": 1.2M (17x)
+    - "Many spirit beings": 12x
+    - "Satan isn't in the Hebrew Bible / is a title" is already saturated: Dan McClellan 267k, Data Over Dogma, Traced.
+  - **Pre-Flood, Nephilim and Noah:** the largest count of outliers.
+    - "Giants after the Flood": 899k (12x)
+    - "Last 24 hours before the Flood": 25x
+    - "900 years to 80": 53x
+    - "370 days in the ark": 26x
+    - It overlaps 05 through Gath.
+  - **Single laws:**
+    - Tattoos (Lev 19:28) on three channels in the last 2 months: 10x, 25x and 9.5x
+    - Pork: 1.1M (110x)
+  - **Forgotten figures:**
+    - Benaiah: 245x
+    - Eleazar: 174x
+    - Absalom: 120x
+    - Ham: 118x
+    - Leah: 99x
+    - Ishmael: 27x
+- **Verified in the WLC (Nov 20):**
+  - Mordecai is בֶּן קִישׁ אִישׁ יְמִינִי (Esth 2:5). Saul's father Kish is בֶּן אִישׁ יְמִינִי (1 Sam 9:1).
+  - Saul spared Agag: וַיַּחְמֹל שָׁאוּל … עַל אֲגָג (1 Sam 15:9). He "swooped on the plunder", וַתַּעַט אֶל הַשָּׁלָל (15:19; it contains the Divine Name, so show it in English).
+  - הָאֲגָגִי appears 5 times, all for Haman, all in Esther (3:1, 3:10, 8:3, 8:5, 9:24).
+  - Both decrees allow וּשְׁלָלָם לָבוֹז (Esth 3:13; 8:11). Then, three times, וּבַבִּזָּה לֹא שָׁלְחוּ אֶת יָדָם (9:10, 15, 16).
+  - The noun שָׂטָן appears 27 times. Its first is Num 22:22, God's own angel "as a satan" to Balaam (also 22:32). הַשָּׂטָן with the article appears only in Job 1–2 and Zech 3. The root appears earlier, in the well name שִׂטְנָה (Gen 26:21).
+  - הֵילֵל appears once (Isa 14:12). קַעֲקַע appears once (Lev 19:28).
