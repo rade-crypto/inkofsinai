@@ -199,3 +199,14 @@ Hebrew is checked in the WLC unless marked (U). Verses that contain the Divine N
 99. Lamentations Opens With the Question God Asked Adam | WHERE ARE YOU.
 100. Mordecai Is Joseph Again (The Ring Proves the Link) | THE KING'S RING.
      - Risk: Esther.
+
+## Keepers from the owner's outside list (Nov 20), checked in the WLC
+- **Moses and the rock:** Exodus calls it הַצּוּר (Exod 17:6), and Numbers calls it הַסֶּלַע (Num 20:8). Moses asks הֲמִן הַסֶּלַע הַזֶּה נוֹצִיא לָכֶם מָיִם, "shall *we* bring out water" (20:10). It outperformed at 14x (Deep Scripture Simple).
+- **The last time the Ark appears:** Jer 3:16, "they will no longer say 'the ark of the covenant'… it will not come to mind". The verse contains the Divine Name, so show it in English.
+- **Solomon against Deut 17:** לֹא יַרְבֶּה appears three times (17:16–17): horses, wives, silver and gold.
+- **Moses' unmarked grave:** Deut 34:6. It outperformed at 23x (Power of Wisdom, 228k).
+- **God's questions:** אַיֶּכָּה (Gen 3:9) and מַה לְּךָ פֹה אֵלִיָּהוּ (1 Kgs 19:9).
+- **Others to consider:** Balaam's donkey, the mother bird and honoring parents (same reward), Zelophehad's daughters, the red heifer (without the Midrash claim) and the bitter-water test.
+- **Errors in that list:**
+  - 2 Chronicles ends on a complete sentence, וְיָעַל (36:23).
+  - מָשִׁיחַ first appears in Lev 4:3 (הַכֹּהֵן הַמָּשִׁיחַ), not in Hannah's prayer.
