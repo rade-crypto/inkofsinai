@@ -332,3 +332,19 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
   - Attraction: a small pattern challenge or single-pattern course.
   - Validate before building.
+
+## Packaging research for the "six predictions / Jewish people" video (Nov 20, 2026)
+One quick pass per cluster, YouTube search, last 12 months. Published as "If God Isn't Real, Explain This": 6.9K views at 9 hours.
+- **"Proof God exists":** big demand (several 700K–5M videos) but owned by interview-clip channels and 1M+ on-location channels. Autocomplete points to philosophy, science and debates; no completion mentions prophecy, Israel, Jews or the Scrolls.
+  - "If God isn't real, explain this" has no demand: not in autocomplete, every exact match under 6K views.
+  - No winner has "prophecy" in the title.
+  - Small-channel breakouts are numbered lists of physical finds: "Unexpected Discoveries That Confirm The Bible" 963K (26.3K subs); "10 RARE Photos That Prove the Bible Is True!" 917K (139K subs).
+- **Jewish people:** "survived / outlasted empires" titles are dead (best 2.4K; most under 2K). Mark Twain: no recent videos. Only "why are Jews hated" has demand (1.0M, 292K, 74K), with a famous name and face, and a political, partly hostile audience.
+- **Prophecy / Israel:** "bible prophecies that came true" is about three-quarters end-times and news content. "Israel 1948 prophecy", "Deuteronomy 28" and "Ezekiel 37" searches are near dead or off-audience.
+- **Dead Sea Scrolls: the winnable keyword.** Many 100K–1.3M videos, none end-times.
+  - "The Dead Sea Scrolls Are Weirder Than You Think": 1.28M (Nils Glenn, 273K subs, about 3× his typical). Thumbnail: "they're hiding something".
+  - "The Dead Sea Scrolls Reveal What God REALLY Said About Israel": 344K in 1 month (3–5× that channel's norm).
+  - "The Dead Sea Scrolls: The Oldest Cover-Up In History": 55.8K in 2 weeks from a 10.1K-sub channel (30×+ its norm). Thumbnail: one scroll on a plinth, black background, spotlight, "WE WERE FOOLED".
+  - Title pattern: "The Dead Sea Scrolls" first, then a curiosity claim with a named subject.
+  - Thumbnail pattern: one physical scroll or one face, dark background with a warm spotlit subject, 2–4 words that never repeat the title.
+- **Peers (5 channels):** none ran a "this proves God" title. Curiosity about the object beat their typical views; prophecy-as-argument titles sat at or below typical (Data Over Dogma: 45K, 23K, 22K against ~45K).
