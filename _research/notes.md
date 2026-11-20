@@ -332,3 +332,44 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
   - Attraction: a small pattern challenge or single-pattern course.
   - Validate before building.
+
+## Channel numbers (YouTube feed, Nov 20, 2026)
+- Long-forms:
+  - Wells 621k
+  - Deception 221k
+  - Barren 158k
+  - Job 157k
+  - 5 Patterns 152k
+  - Marriage 151k
+  - Younger brother 138k
+  - Strange commands 25k (the only flop)
+- Shorts are mostly 4–24k. "Both of Abraham's Sons Were Saved the Same Way" got only 5.8k.
+
+## Topic scouts (Nov 20, 2026; three independent reviewers: search demand, outliers, Hebrew-first)
+- **Pick for most viral: biblically accurate angels.**
+  - Demand:
+    - "Why Bible Accurate Angels Are So Creepy": 16.8M
+    - "Every Angel in the Bible Drawn and Explained": 6.3M in 10 months
+    - "I Recreated Every Angel in the Bible": 2.4M in 5 months
+    - None of them shows the Hebrew. The only video with this angle has 1.4k views.
+  - Angle (UNVERIFIED): the many-winged, many-eyed beings are never called מַלְאָךְ; they are כְּרוּבִים (Gen 3:24), שְׂרָפִים (Isa 6:2) and חַיּוֹת (Ezek 1:5). The מַלְאָךְ who comes into a scene is taken for a man (Gen 18:2, 19:1; Judg 13:6; Dan 9:21). "Every" must be counted or dropped.
+  - Risks: Dan 9:21 ("flying swiftly"), Dan 10:5–6, Judg 13:6 "very awesome". Drop the seraph-as-serpent idea, because it overlaps 05.
+- **Runner-up: Nephilim after the Flood.** Two scouts found it.
+  - Outliers:
+    - "How Did Giants Return After the Flood?": 900k in 5 months, about 6x its channel
+    - "If the Flood Killed the Nephilim…": 601k
+    - "Why Did Giants Appear in Canaan…": 662k
+    - Tucker Carlson: 2.2M
+  - Angle (UNVERIFIED): נְפִלִים, "the fallen", and then "your carcasses shall fall" (יִפְּלוּ, Num 14:29, 32). The report is called דִּבָּה (13:32; 14:37). Moses retells it with no Nephilim (Deut 1:28).
+  - Risks: Gen 6:4 וְגַם אַחֲרֵי־כֵן; the Anakim were real (Josh 14:12); overlap with 05 through Gath.
+- **Third: Abraham's two sons (Gen 21 and 22).** Two scouts found it. The short on it got only 5.8k, and it overlaps the younger-brother video.
+  - Outliers: Ishmael videos at 1.47M (13x its channel), 1.23M and 704k.
+  - Checked in the WLC by the scout:
+    - לֶךְ־לְךָ from God only at Gen 12:1 and 22:2.
+    - An angel calling "from heaven" only at 21:17, 22:11 and 22:15.
+    - וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר also at 19:27, so don't say "only".
+- **Other leads:**
+  - תְּשׁוּקָה exactly 3 times (Gen 3:16, 4:7; Song 7:11), checked. It lands in the gender fight.
+  - תֵּבָה: 26 times in Gen 6:14–9:18, plus Exod 2:3 and 2:5 only, checked. Low demand for the link.
+  - Babel נִלְבְּנָה / וְנָבְלָה (11:3, 11:7), UNVERIFIED. Smaller draw.
+  - Eden "east" steps. Thin, and the idea is already known.
