@@ -332,3 +332,46 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
   - Attraction: a small pattern challenge or single-pattern course.
   - Validate before building.
+
+## Eden research (Nov 20, 2026; Genesis 2–3)
+- **Channel now (19.5k subs, Nov 20):**
+  - Wells 621k (3 wk), Deception 221k (2 wk), Job 160k (3 days), Barren 158k, Marriage in Hebrew 152k, 5 Patterns 152k, Younger Brother 139k, Strangest Commands 25k (8 days), Dead Sea Scrolls 7k (9 hours).
+  - Median about 150k. The winners are one "Why…" question answered by one Hebrew pattern across several stories. The list video ("Strangest Commands") is the only flop.
+  - Eden short "Not good to be alone": 13.9k (mid). Best shorts are patterns (center, mirror).
+- **Autocomplete (YouTube):**
+  - "the serpent in the garden was not a snake", "the serpent was right", "eve wasn't talking to a snake"
+  - "why did god put the tree of knowledge in the garden", "tree of knowledge vs tree of life"
+  - "why did adam eat the forbidden fruit", "why did eve eat the apple", "what was the forbidden fruit"
+  - "where was the garden of eden located", "was the garden of eden real", "eden was a temple", "eden wasn't just a garden"
+  - "adam and eve were not the first humans", "eve from adam's rib meaning"
+  - "cherubim" and "flaming sword" have little Bible demand.
+- **Demand, top Eden videos (views ÷ channel median):**
+  - Serpent: Power of Wisdom "Secret of the Serpent… Hebrew Text" 1.26M (105x); Beyond The Verses 253k (15x); Wise Disciple "Eve Wasn't Talking to a Snake" 592k (7x); Nils Glenn 213k (0.6x).
+  - Tree of knowledge: Wise Disciple 959k (12x); Discernment Made Clear 234k (8x); Sam Shamoun 436k (48x).
+  - Rib: Power of Wisdom 523k (44x); Barley Harvest 102k (12x); Jake Doubleyoo 331k (1.3x).
+  - Eden as temple: Nils Glenn 718k (1.9x); Kingdom Story Films 251k (5x).
+  - Location: HolyLandSite 3.05M (64x); Expedition Bible "Pishon" 7.9M (5x); BLK SHP 439k (1.7x).
+  - Whole-story retellings: Tales From Ancient Lands 508k (181x), Bible Story Films 475k (26x), Daily Bread 1.7M. All are animated movie retellings for a general or kids audience.
+  - Ethiopian-Bible "Eve revealed" videos: 400k+ (100x+). Not Tanakh; off-limits.
+- **Saturated angles (each has several 100k+ videos):** serpent not a snake, rib means side, Eden was a temple, where Eden was, why God put the tree there.
+- **Format verdict: one video, one angle.**
+  - Series decay: Aleph Beta "Inside Eden" parts 1–7: 14k, 11.6k, 8.8k, 5.3k, 4.6k, 2.9k, 3.9k. Power of Wisdom "Genesis movie Part 1" 0.6x. gclmedia's run of Eden episodes: 0.7–0.9x each.
+  - A second video on the same Eden angle sinks: Power of Wisdom's second serpent video 6.6k (0.5x) after 1.26M; Nils Glenn's serpent 0.6x after his Eden video.
+  - Whole-story retellings only win as animated movies, and the channel rule bans retelling.
+  - Any later Eden video must stand alone with its own keyword; no "Part 1/2".
+- **Picked idea (owner to approve):** "The Forbidden Fruit Is Hidden in the Ten Commandments". Thumbnail: "SAME TWO WORDS." with "TWO" in gold, a glowing circle on the fruit in the woman's hand.
+  - Insight: the two words that make the fruit attractive in Gen 3:6 (תַאֲוָה, נֶחְמָד) appear together in only one other verse: Deut 5:21, the last commandment (לֹא תַחְמֹד… לֹא תִתְאַוֶּה).
+  - Beats: (1) Gen 3:6 → Deut 5:21 in the first minute. (2) Before her, only God "saw that it was good" (6 times in Gen 1); she is the first human to say it, and then she takes. (3) Re-hook: the sons of God "saw… good… took" (Gen 6:2), and the Flood follows. (4) Achan: saw, good, coveted, took (Josh 7:21), all four Eden verbs, right after Jericho; then David (2 Sam 11:2–4). (5) Payoff: one other woman "sees that it is good", Moses' mother (Exod 2:2), and she hides him, then takes an ark for him (2:3).
+- **Runners-up:**
+  - "Where are you?" אַיֶּכָּה (Gen 3:9) has the same four letters as אֵיכָה, the first word of Lamentations (Lam 1:1, 2:1, 4:1). The link comes from later tradition; put that in the pinned comment.
+  - Naked and cunning: עֲרוּמִּים (2:25) and עָרוּם (3:1). Moderate surprise; partly known.
+- **Verified Hebrew (WLC):**
+  - Gen 3:6: וַתֵּרֶא הָאִשָּׁה כִּי טוֹב… תַאֲוָה… וְנֶחְמָד… וַתִּקַּח. It has see, good, desire, desirable, take.
+  - Verses with both the חמד family and the אוה family: only Gen 3:6 and Deut 5:21. Exod 20:17 has תַחְמֹד twice and no אוה.
+  - Verses with see + good + take in narration: Gen 3:6, Gen 6:2 and Josh 7:21 (Araunah's offer in 2 Sam 24:22 and 1 Chr 21:23 also has the three lemmas, but as speech, not a taking).
+  - Josh 7:21: וָאֵרֶא… טוֹבָה… וָאֶחְמְדֵם וָאֶקָּחֵם.
+  - 2 Sam 11:2: וַיַּרְא… טוֹבַת מַרְאֶה; 11:4: וַיִּקָּחֶהָ (two verses, not one).
+  - ראה + כִּי טוֹב in Genesis 1: 1:4, 10, 12, 18, 21, 25 (six). 1:31 is וְהִנֵּה טוֹב מְאֹד.
+  - וַתֵּרֶא with כִּי טוֹב: only Gen 3:6 and Exod 2:2. Exod 2:3: וַתִּקַּח לוֹ תֵּבַת גֹּמֶא.
+  - אַיֶּכָּה appears only at Gen 3:9.
+  - Gen 12:15 (Pharaoh's officials) has saw and took but no טוֹב; don't use it.
