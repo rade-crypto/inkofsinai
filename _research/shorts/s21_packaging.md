@@ -1,5 +1,5 @@
 YOUTUBE SHORTS TITLE
-Psalm 119, the Longest Chapter, Opens Five Verses With “Good”
+Psalm 119, the Longest Chapter, Opens 5 Verses With “Good”
 
 YOUTUBE DESCRIPTION
 Same text as the Instagram / TikTok caption below. No related video to set (this Short is not cut from a long-form).
