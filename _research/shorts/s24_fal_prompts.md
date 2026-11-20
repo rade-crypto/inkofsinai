@@ -1,10 +1,11 @@
 S24 BABEL: FAL STILLS (Nano Banana Pro)
 
+NOT USED in the current cut: the Short is engine-only. These prompts are kept in case stills are wanted later. Nothing gets generated without the owner's OK and a credit estimate first.
+
 HOW TO RUN
 Model: fal-ai/nano-banana-pro for the two sheets; fal-ai/nano-banana-pro/edit for S1–S5, with both sheets passed in image_urls.
 Every call: aspect_ratio "5:4", resolution "2K", num_images 1, output_format "png". The sheets use "16:9".
 Make the sheets first and approve them. Then make S1–S5 against them.
-Save the files as s24/img/S1.png … S5.png, then re-render: node engine/render.cjs video out.mp4 mix.wav.
 The engine does everything else: the warm grade, the paper grain, the feathered edges, the slow push-in, all text, and the glowing circles.
 So every image has: no text, no letters, no symbols, no logos, no watermark, no frame or border.
 God is never shown: no figure, face or hand in the sky.

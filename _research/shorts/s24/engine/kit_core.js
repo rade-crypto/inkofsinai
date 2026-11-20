@@ -43,7 +43,7 @@ function paper() {
   return c;
 }
 K.STAGE = (v, at, o = {}) => {
-  const X = K.X; X.drawImage(K.PAPER, 0, 0);
+  if (K.NOSTAGE) return; const X = K.X; X.drawImage(K.PAPER, 0, 0);
   const cx = o.cx ?? 540, cy = o.cy ?? 860, g = X.createRadialGradient(cx, cy, 20, cx, cy, o.r || 760);
   g.addColorStop(0, `rgba(255,247,222,${.55 * (o.k ?? 1)})`); g.addColorStop(1, 'rgba(255,247,222,0)'); X.fillStyle = g; X.fillRect(0, 0, W, H);
 };
@@ -57,7 +57,7 @@ K.ink = (v, t, draw, o = {}) => {   // the ink-on reveal used by every text elem
   if (v < t) return; const X = K.X, k = (v - t) / (o.d || .6); X.save();
   X.globalAlpha *= K.sm(k * 1.1); const blur = (1 - K.eo(k)) * (o.blur ?? 6); if (blur > .3) X.filter = `blur(${blur.toFixed(2)}px)`;
   X.translate(0, (1 - K.eo(k)) * (o.rise ?? 14)); draw(); X.restore(); };
-K.glow = (x, y, rx, ry, a) => { if (a <= 0) return; const X = K.X; X.save(); X.translate(x, y); X.scale(1, ry / rx);
+K.glow = (x, y, rx, ry, a) => { if (a <= 0 || !K.GLOWOK) return; const X = K.X;   /* amber is for the ring only (set by RING) */ X.save(); X.translate(x, y); X.scale(1, ry / rx);
   const g = X.createRadialGradient(0, 0, 0, 0, 0, rx); g.addColorStop(0, K.GOLD(.55 * a)); g.addColorStop(.55, K.GOLD(.2 * a)); g.addColorStop(1, K.GOLD(0)); X.fillStyle = g; X.fillRect(-rx, -rx, rx * 2, rx * 2); X.restore(); };
 // one rich line, centred on x; size = Latin size; Hebrew runs are drawn 1.18x in the Hebrew face
 K.rich = (s, x, y, size, v, o = {}) => {
@@ -85,11 +85,20 @@ K.heb = (s, x, y, size, v, o = {}) => {
   const X = K.X, words = s.split(' '); X.save(); X.font = K.font(size, { face: K.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.textBaseline = 'alphabetic';
   const sp = size * .28, ws = words.map(w => X.measureText(w).width), tot = ws.reduce((p, q) => p + q, 0) + sp * (words.length - 1);
   K.inSafe(x - tot / 2, y - size * .95, x + tot / 2, y + size * .35, 'heb ' + s);
-  let r = x + tot / 2; const hk = o.hotAt == null ? 1 : K.sm((v - o.hotAt) / .55);
+  let r = x + tot / 2; const hk = (o.hotAt == null ? 1 : K.sm((v - o.hotAt) / .55)) * (o.hotOff == null ? 1 : 1 - K.sm((v - o.hotOff) / .45));
   words.forEach((w, i) => { const hot = (o.hot || []).includes(w);
     if (hot) K.glow(r - ws[i] / 2, y - size * .3, ws[i] * .7 + 30, size * .85, hk * .75);
-    X.fillStyle = hot ? K.mix(hk) : (o.color || K.INKC); X.fillText(w, r, y);
-    const hl = o.hotLetter; if (hl && hl.word === w && v >= hl.at) {   // one letter: clip its advance box and redraw in red
+    const hl = o.hotLetter && o.hotLetter.word === w ? o.hotLetter : null;
+    X.fillStyle = hot ? K.mix(hk) : (o.color || K.INKC);
+    if (hl && hl.drop) { const c = K.clusters(w), pre = X.measureText(c.slice(0, hl.idx).join('')).width, upto = X.measureText(c.slice(0, hl.idx + 1).join('')).width, x1 = r - pre, x0 = r - upto;
+      const gap = hl.gap || 0; X.save(); X.translate(gap / 2, 0); X.beginPath(); X.rect(x1 - 1, y - size * 1.3, 2000, size * 2); X.clip(); X.fillText(w, r, y); X.restore();   // the word without that letter
+      X.save(); X.translate(-gap / 2, 0);
+      const p = (v - hl.drop.t) / (hl.drop.d || 1.1); K.lastLetter = { x: (x0 + x1) / 2 - gap / 2, y: y - size * .42, w: x1 - x0, p };
+      if (p > 0) { const dy = -(1 - K.eio(p)) * (hl.drop.h || 300); K.glow((x0 + x1) / 2, y - size * .4 + dy, (x1 - x0) * .9 + 30, size * .9, .5 + .3 * K.cl(p));
+        X.save(); X.globalAlpha *= K.sm(p * 4); X.translate(0, dy); X.beginPath(); X.rect(x0 - size * .2, y - size * 1.3, x1 - x0 + size * .2 + 1, size * 2); X.clip(); X.fillStyle = K.HOT; X.fillText(w, r, y); X.restore(); }
+      X.restore();
+    } else X.fillText(w, r, y);
+    if (hl && !hl.drop && v >= hl.at) {   // one letter: clip its advance box and redraw in red
       const c = K.clusters(w), pre = X.measureText(c.slice(0, hl.idx).join('')).width, upto = X.measureText(c.slice(0, hl.idx + 1).join('')).width, k = K.sm((v - hl.at) / .55);
       const x1 = r - pre, x0 = r - upto; K.glow((x0 + x1) / 2, y - size * .4, (x1 - x0) * .9 + 30, size * .9, k * .8);
       X.save(); X.beginPath(); X.rect(x0 - 1, y - size * 1.2, x1 - x0 + 2, size * 1.6); X.clip(); X.fillStyle = K.mix(k); X.fillText(w, r, y); X.restore();
@@ -97,7 +106,7 @@ K.heb = (s, x, y, size, v, o = {}) => {
     r -= ws[i] + sp; });
   X.restore(); return tot;
 };
-K.REF = (s, y, v, t) => K.ink(v, t, () => K.rich(s, 540, y, 44, v, { caps: true, ls: 6, color: K.INK(.62), plain: true }), { blur: 3 });
+K.REF = (s, y, v, t) => K.ink(v, t, () => K.rich(s, 540, y, 54, v, { caps: true, ls: 4, color: K.INK(.66), plain: true }), { blur: 3 });
 // ENDVERSE: the closing verse alone. English-only when o.heb is absent (verses with the Divine Name).
 K.ENDVERSE = (v, a, b, o) => {
   K.STAGE(v, a, { cy: 900 }); const cy = o.cy ?? 900, en = o.en, es = o.es || 76, lh = es * 1.32;
@@ -109,14 +118,15 @@ K.ENDVERSE = (v, a, b, o) => {
 // LOGO: the channel name in spaced capitals, a quill hairline drawn under it
 K.LOGO = (v, a, b) => {
   K.STAGE(v, a, { cy: 900 }); const X = K.X;
-  K.ink(v, a + .55, () => K.rich('INK OF SINAI', 540, 930, 84, v, { caps: true, ls: 14, color: K.INKC, plain: true }), { blur: 4 });
-  const p = K.eio((v - a - 1.0) / .7); if (p > 0) { X.save(); X.strokeStyle = K.HOT; X.lineWidth = 3; X.lineCap = 'round'; X.beginPath(); X.moveTo(540 - 230 * p, 990); X.lineTo(540 + 230 * p, 990); X.stroke(); X.restore(); }
+  K.ink(v, a + .55, () => K.rich('INK OF SINAI', 540, 930, 96, v, { caps: true, ls: 16, color: K.INKC, plain: true }), { blur: 4 });
+  const p = K.eio((v - a - 1.0) / .7); if (p > 0) { X.save(); X.strokeStyle = K.HOT; X.lineWidth = 3; X.lineCap = 'round'; X.beginPath(); X.moveTo(540 - 300 * p, 1000); X.lineTo(540 + 300 * p, 1000); X.stroke(); X.restore(); }
 };
 // ROLLTO: the previous step rolls up and off as the next rolls in from below (the posted outro move), .75 s
 K.ROLLTO = (v, a, b, o) => {
   const X = K.X, k = K.eio((v - a) / .75);
-  if (k < 1) { X.save(); X.translate(0, -H * k); o.prev(Math.min(v, o.pb - .001), o.pa, o.pb); X.restore(); }
-  X.save(); X.translate(0, H * (1 - k)); o.next(v, a, b); X.restore();
+  K.STAGE(v, a, { cy: 900 }); K.NOSTAGE = true;   // the page stays; only the writing rolls
+  try { if (k < 1) { X.save(); X.translate(0, -H * k); o.prev(Math.min(v, o.pb - .001), o.pa, o.pb); X.restore(); }
+    X.save(); X.translate(0, H * (1 - k)); o.next(v, a, b); X.restore(); } finally { K.NOSTAGE = false; }
 };
 // frame entry point
 K.draw = v => { const s = SCENES.find(z => v >= z.a && v < z.b) || SCENES[SCENES.length - 1]; K.X.save(); s.f(v, s.a, s.b); K.X.restore(); return s.n; };

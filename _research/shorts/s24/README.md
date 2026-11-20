@@ -7,9 +7,10 @@ The voiceover isn't recorded yet. Once it is, time everything to it:
 2. Run `python3 retime.py .` to rewrite the timing block.
 3. Run `python3 mk_cues.py .` to rebuild cues.json.
 4. Run `python3 synth_s24.py cues.json mix.wav vo.wav 0.3`: the score, ducked under the VO.
-5. Run `node engine/render.cjs video ../s24_babel.mp4 mix.wav` to render the final video.
+5. Run `python3 mk_html.py . mix.wav ../s24_babel.html` for the one-file playable version (about 5 s).
+6. Run `node engine/render.cjs video ../s24_babel.mp4 mix.wav` to render the MP4 (about 3 min).
 
-Stills: put S1–S5 into `img/` (prompts in `../s24_fal_prompts.md`, JSON in `fal/`). Without them, the render draws labelled placeholders.
+The Short is engine-only: no photo stills. `../s24_fal_prompts.md` is kept only in case stills are wanted later.
 
 Engine setup:
 - Run `cd engine && npm i opentype.js flubber` (only needed to rebuild morph_data.js).

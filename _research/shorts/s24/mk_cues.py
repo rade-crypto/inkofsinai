@@ -16,22 +16,22 @@ def pl(at, *notes, v=.26): [add('pluck', at + i * .1, note=nt, v=v - i * .04) fo
 def bricks(t0, t1, every=.16, v=.24):
     x = t0
     while x < t1: add('tick', x, v=v); x += every
-CUTS = ['SAY', 'TOWER', 'ANSWER', 'SIDE', 'NAME', 'END VERSE']   # real scene changes only; steps inside one scene don't whoosh
+CUTS = ['ANSWER', 'SIDE', 'NAME', 'END VERSE']   # 0–15 s is one scene   # real scene changes only; steps inside one scene don't whoosh
 for n in CUTS: add('whoosh', st[n] - .15, d=.7, v=.18)
-q(.1); q(sub('HOOK', 1)); bricks(.2, sub('HOOK2', 1) + .4); pl(sub('HOOK', 1) + .5, 'D4')
+q(.1); q(sub('HOOK', 1)); bricks(.1, sub('HOOK2', 1) + .3); pl(sub('HOOK', 1) + .5, 'D4')
 q(st['HOOK2'] + .1); q(sub('HOOK2', 1)); pl(sub('HOOK2', 1) + .9, 'A3', 'D4', v=.3)
-q(st['SAY'] + .1); q(sub('SAY', 1), d=.8); pl(sub('SAY', 1) + .7, 'A4', 'D4'); bricks(st['SAY'] + .2, en('COME'), .22, .2)
+q(st['SAY'] + .1); q(sub('SAY', 1), d=.8); pl(sub('SAY', 1) + .7, 'A4', 'D4'); bricks(st['COME'] + .5, en('COME'), .16, .22)
 q(st['COME'] + .1); pl(st['COME'] + .8, 'F#4')
 q(st['TOWER'] + .1); q(sub('TOWER', 1)); bricks(st['TOWER'], en('TOWER') - .7, .1, .22); add('swell', st['TOWER'] + .3, d=2.2); pl(en('TOWER') - .7, 'D5', 'A4')
 q(st['ANSWER'] + .1); q(sub('ANSWER', 1)); q(sub('ANSWER', 2), d=.7); pl(sub('ANSWER', 2) + .55, 'D4', 'A4', v=.3)
 q(st['DOWN'] + .1); q(sub('DOWN', 1), d=.7); q(sub('DOWN', 2)); q(sub('DOWN', 3), d=.8); pl(sub('DOWN', 3) + .7, 'A4', 'F#4')
-q(st['SIDE'] + .1); add('swell', st['SIDE'], d=1.0)
+q(st['SIDE'] + .1); add('swell', st['SIDE'], d=1.0); add('whoosh', st['SIDE'] + 1.3, d=.8, v=.16)
 pl(st['BUILD'] + .05, 'D4', 'A4'); q(sub('BUILD', 1))
 pl(st['CONFUSE'] + .05, 'A4', 'F#4'); q(sub('CONFUSE', 1))
-x = st['CHANGED']; q(x + .1); add('tick', x + .7, v=.3); m = sub('CHANGED', 1) + .2; q(sub('CHANGED', 1)); add('swell', m - .2, d=1.6)
-pl(m + 1.6, 'D4', 'A4', 'D5', v=.34)
-q(st['NAME'] + .1); q(st['NAME'] + 1.2, d=.8); pl(st['NAME'] + 1.9, 'F#4')
-q(st['CITY'] + .1); q(sub('CITY', 1), d=.8); pl(sub('CITY', 1) + .95, 'D5', 'A4', v=.3)
+x = st['CHANGED']; q(x + .1); add('tick', x + .7, v=.3); m = sub('CHANGED', 1) + .05; q(sub('CHANGED', 1)); add('swell', m, d=1.8)
+pl(m + 2.0, 'D4', 'A4', 'D5', v=.34)
+q(st['NAME'] + .1); q(st['NAME'] + .9, d=.8); pl(st['NAME'] + 1.6, 'F#4')
+q(st['CITY'] + .1); q(sub('CITY', 1), d=.8); pl(sub('CITY', 1) + 1.35, 'D4', 'A4', 'D5', v=.34)
 x = st['END VERSE']; add('swell', x + .2, d=2.6); q(x + .3, d=.9); q(sub('END VERSE', 1), d=.9); pl(x + 2.6, 'D4', 'A4', v=.32)
 x = st['LOGO']; add('roll', x, d=.7); add('quill', x + 1.0, d=.7, v=.45); add('hit', x + 1.45, v=.5)
 for i, n in enumerate(['D4', 'A4', 'D5', 'F#5']): add('pluck', x + 1.45 + i * .16, note=n, v=.45 - i * .05)
