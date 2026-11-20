@@ -332,3 +332,10 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
   - Attraction: a small pattern challenge or single-pattern course.
   - Validate before building.
+
+## Reel ideas (Nov 20, 2026)
+- 100 new short-form ideas, each checked against the WLC, are in `_research/reel_ideas_100.md` (plus checked spares and two dropped claims).
+- Owner's own 100-idea list (pillars: scroll anomalies, centers and mirrors, acrostics and codes, word echoes, numbers) is not repeated there.
+- Top pick by demand: the Nephilim (two verses; see "Verified Hebrew" above).
+- Checks worth reusing: "sin" (חטאת) first appears at Gen 4:7; שטן never appears in Genesis; ירושלם never appears in the Torah; וישאל את נפשו למות only in 1 Kgs 19:4 and Jonah 4:8; מוריה only in Gen 22:2 and 2 Chr 3:1; אשת חיל only in Prov 12:4, 31:10, Ruth 3:11; the verb משה only in Exod 2:10, 2 Sam 22:17, Ps 18:17.
+- `data/shorts.json` lists only the 8 newest shorts, so overlap with older shorts was not checked.
