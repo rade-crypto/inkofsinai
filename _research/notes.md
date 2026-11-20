@@ -332,3 +332,18 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
   - Attraction: a small pattern challenge or single-pattern course.
   - Validate before building.
+
+## Short s24 Babel (Nov 20, 2026)
+- **Verified (WLC, Gen 11):**
+  - 11:4 הָבָה נִבְנֶה … וְנַעֲשֶׂה לָּנוּ שֵׁם
+  - 11:7 הָבָה נֵרְדָה וְנָבְלָה (no Divine Name in the verse)
+  - 11:9 בָּבֶל … בָּלַל (the verse has the Divine Name, so it is shown in English only)
+  - נִבְנֶה (root בנה) and נָבְלָה (root בלל) are different roots. The only claim on screen is that the written letters נבנה / נבלה differ by one, so the vowel points dissolve before "One letter changed".
+  - Also in 11:3: הָבָה נִלְבְּנָה לְבֵנִים. Not used (one proof per beat).
+- **Autocomplete (YouTube):**
+  - "tower of babel": explained / meaning / bible story / summary / analysis / theory
+  - "genesis 11": explained / 1-9 / bible study / tower of babel / summary / commentary
+  - "babel bible story"
+- **Build:** the studio KIT (engine/lf12) is not in any branch, so `_research/shorts/s24/engine/` holds a self-contained rebuild:
+  - kit_core.js, render.cjs (Playwright), the fonts, and mk_morph.cjs (a true outline morph of נ into ל, made with opentype.js and flubber)
+  - synth_s24.py renders cues.json in the posted palette.

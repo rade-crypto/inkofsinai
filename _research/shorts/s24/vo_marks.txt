@@ -1,0 +1,30 @@
+# s24 VO marks: seconds on the VO file's own clock (where each line, or each later part of a line, starts being spoken).
+# Fill these in from the recording (or send the WAV and they get marked), then: python3 retime.py . && python3 mk_cues.py .
+# STEP.1 / STEP.2 = the later parts of the line, in the order shown. END = the end of the last word.
+HOOK      0.00   # "Let us build"
+HOOK.1    1.30   # and "let us confuse."
+APART     2.90   # In Hebrew, they're one letter apart.
+SAY       5.50   # At Babel, the builders say:
+SAY.1     7.40   # הָבָה נִבְנֶה.
+COME      9.10   # Come, let us build.
+TOWER    11.10   # A city, and a tower
+TOWER.1  12.60   # with its top in the sky.
+ANSWER   14.50   # Then God answers
+ANSWER.1 15.90   # with their own word.
+ANSWER.2 17.00   # הָבָה.
+DOWN     18.10   # Come, let us go down…
+DOWN.1   20.00   # and confuse.
+DOWN.2   21.10   # וְנָבְלָה.
+SIDE     22.70   # Put them side by side.
+BUILD    24.90   # נִבְנֶה.
+BUILD.1  25.90   # Build.
+CONFUSE  27.30   # נָבְלָה.
+CONFUSE.1 28.40  # Confuse.
+CHANGED  29.90   # One letter changed.
+CHANGED.1 31.50  # נ became ל.
+NAME     34.70   # They wanted to make a name.
+CITY     37.30   # The city got one:
+CITY.1   38.70   # בָּבֶל.
+END VERSE 40.70  # Because there, God confused
+END VERSE.1 42.60  # the language of all the earth.
+END      44.60   # (end of the last word)

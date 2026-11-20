@@ -1,0 +1,11 @@
+{
+ "prompt": "Wide, slightly low angle on the unfinished top of THE TOWER (as in the reference sheets) against a vast, heavy evening sky. The clouds above it part, and one broad shaft of warm light falls straight down onto the summit and its scaffolds. Tiny builders on the top terrace stop and look up. Nothing and no one is in the sky: only cloud and light. Stillness before something happens. Photoreal cinematic film still, ancient Mesopotamia (the plain of Shinar), Early Bronze Age. One warm low sun as the key light, with long soft shadows. Amber dust haze in the air. Palette: ochre, umber, sun-baked clay, burnt-brick red, gold highlights. The sky is pale warm haze, never blue. 35mm film grain, anamorphic lens, shallow depth of field. Quiet, serious, epic scale. Modest clothing. No text, no letters, no logos, no watermark, no border.",
+ "aspect_ratio": "5:4",
+ "resolution": "2K",
+ "num_images": 1,
+ "output_format": "png",
+ "image_urls": [
+  "<C1 sheet url>",
+  "<C2 sheet url>"
+ ]
+}
