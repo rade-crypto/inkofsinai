@@ -74,7 +74,7 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Pharaoh's hardened heart:** ~0.7M; widely answered by GotQuestions, BibleHub and others.
 
 ## Topic verdicts
-- **Owner rule (Nov 20):** when picking a topic, our own channel's hits are the main reference. Other channels' views come second. All seven of our hits share one shape: something keeps happening across famous stories, viewers have half-noticed it, and the Hebrew shows it's on purpose. One-word reveals also work (Marriage). Grab-bags lose (Strange Commands, 25k).
+- **Owner rule (Nov 20):** view counts, from other channels or our own, are not the main reference for viral potential. Judge the idea itself: how big the surprise is for someone who knows the story, whether it holds up in the text, and whether they'll want to tell someone.
 - **Rejected by the owner:**
   - Jacob wrestling, as 05 ("What is your name?"): too close to 04
   - Hanukkah ("missing eighth day")
