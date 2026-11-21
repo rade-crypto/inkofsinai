@@ -7,7 +7,7 @@
 
 A soldier walks back to the front carrying a letter from the king, and the letter is his own death order.
 
-King David wrote it. He has already taken this man's wife, and for both crimes he never leaves his palace.
+King David wrote it. He has already taken this man's wife, and he commits both crimes from his own palace.
 
 His orders go out through one Hebrew word: שָׁלַח. Send.
 
@@ -15,7 +15,7 @@ In 2 Samuel 11, that word appears twelve times, and no chapter in the Bible has 
 
 It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling: it's read "kings," but the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
 
-And David sends. He sends Joab, his general, with the whole army, and he stays home in Jerusalem.
+And the first send is David's: he sends Joab, his general, with the whole army, and stays home in Jerusalem.
 
 One evening David gets up from his bed and walks on the roof of the king's house, and from the roof he sees a woman bathing, a very beautiful woman.
 
@@ -45,9 +45,9 @@ The messenger tells David everything Joab sent him to say, and David's answer fo
 
 Bathsheba mourns her husband. When the mourning is over, David sends once more and brings her into his house, and she becomes his wife and bears him a son. As far as anyone can see, it worked.
 
-That's twelve sends, and eight of them are David's. Uriah never sends anything; he's the one who gets sent. And David thinks the sending is over.
+That's twelve sends, and eight of them are David's. Uriah never sends anything; he's the one who gets sent.
 
-But the chapter's last line throws his own words back at him. He told Joab not to let this be evil in his eyes, and the narrator answers with the same words: וַיֵּרַע הַדָּבָר אֲשֶׁר עָשָׂה דָוִד. "But the thing David had done was evil in the eyes of God."
+But the chapter's last line uses David's own words against him. David told Joab, "Don't let this be evil in your eyes," and the narrator answers with the same words: וַיֵּרַע הַדָּבָר אֲשֶׁר עָשָׂה דָוִד. "But the thing David had done was evil in the eyes of God."
 
 One verse later, chapter 12 opens with the same word and a new sender: "And God sent Nathan to David."
 
@@ -61,15 +61,15 @@ David has no idea the story is about him. He explodes: "The man who did this is 
 
 And Nathan answers with two words: אַתָּה הָאִישׁ. "You are the man."
 
-Then the verdict throws David's shrug about the sword back at him: "You struck Uriah the Hittite with the sword, you took his wife, and you killed him with the sword of the Ammonites. So now, the sword will never leave your house." לֹא תָסוּר חֶרֶב מִבֵּיתְךָ.
+Then the verdict throws David's shrug about the sword back at him: "You struck Uriah the Hittite with the sword, you took his wife, and you killed him with the sword of the Ammonites. So now, לֹא תָסוּר חֶרֶב מִבֵּיתְךָ, the sword will never leave your house."
 
 This time David doesn't send anyone. He answers Nathan himself: חָטָאתִי. "I have sinned against God."
 
-And Nathan answers at once: "God has taken away your sin. You will not die."
+And Nathan replies at once: "God has taken away your sin. You will not die."
 
 David sent to take and sent to hide, but God sent Nathan to bring him back.
 
-Long before this, in a psalm, David had written it with our word: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
+Long before this, in a psalm, David had already written why God sends: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
 
 ---
 
