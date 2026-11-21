@@ -1,0 +1,57 @@
+[
+ {
+  "id": "P01",
+  "age": 54,
+  "gender": "F",
+  "country": "USA (Texas)",
+  "income": "middle",
+  "faith": "Southern Baptist, teaches adult Sunday school",
+  "bible": "reads daily, knows the stories well",
+  "hebrew": "none",
+  "habits": "watches on TV after dinner, 10–20 min videos, shares with her class group chat"
+ },
+ {
+  "id": "P02",
+  "age": 33,
+  "gender": "M",
+  "country": "USA (Ohio)",
+  "income": "middle",
+  "faith": "non-denominational evangelical",
+  "bible": "knows the big stories, reads in spurts",
+  "hebrew": "none",
+  "habits": "phone during lunch break, clicks on curiosity titles, leaves fast if it drags"
+ },
+ {
+  "id": "P03",
+  "age": 41,
+  "gender": "M",
+  "country": "Israel (Jerusalem)",
+  "income": "upper-middle",
+  "faith": "Modern Orthodox Jew",
+  "bible": "reads the weekly portion in Hebrew",
+  "hebrew": "fluent",
+  "habits": "skeptical of Christian typology, catches mistranslations, comments when something is wrong"
+ },
+ {
+  "id": "P04",
+  "age": 27,
+  "gender": "F",
+  "country": "UK (Manchester)",
+  "income": "lower-middle",
+  "faith": "none, raised Anglican",
+  "bible": "knows a few stories from school",
+  "hebrew": "none",
+  "habits": "watches mystery and history explainers (Lemmino, Nexpo), leaves within 10 seconds if the opening is slow"
+ },
+ {
+  "id": "P05",
+  "age": 62,
+  "gender": "M",
+  "country": "USA (Florida)",
+  "income": "retired, comfortable",
+  "faith": "Messianic believer",
+  "bible": "studies Torah portions weekly",
+  "hebrew": "reads slowly with vowels",
+  "habits": "watches long videos fully, loves Hebrew word studies, wants verse references"
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "P11",
+  "age": 35,
+  "gender": "M",
+  "country": "Canada (Toronto)",
+  "income": "upper-middle",
+  "faith": "secular Jew",
+  "bible": "Hebrew school as a kid, rusty",
+  "hebrew": "can sound out letters",
+  "habits": "curious about heritage, rolls eyes at Christian channels, likes clever literary readings"
+ },
+ {
+  "id": "P12",
+  "age": 50,
+  "gender": "M",
+  "country": "South Africa (Cape Town)",
+  "income": "middle",
+  "faith": "Reformed Christian",
+  "bible": "deep, owns commentaries",
+  "hebrew": "studied one semester",
+  "habits": "long-form on desktop, checks claims against an interlinear"
+ },
+ {
+  "id": "P13",
+  "age": 31,
+  "gender": "F",
+  "country": "USA (New York)",
+  "income": "upper-middle",
+  "faith": "spiritual but not religious",
+  "bible": "light",
+  "hebrew": "none",
+  "habits": "loves literature and symbolism podcasts, cares about craft and storytelling"
+ },
+ {
+  "id": "P14",
+  "age": 24,
+  "gender": "M",
+  "country": "India (Kerala)",
+  "income": "lower-middle",
+  "faith": "Syrian Christian",
+  "bible": "good",
+  "hebrew": "learning the alphabet from this channel's guide",
+  "habits": "watches on phone, wants to read the Hebrew himself, asks to slow down"
+ },
+ {
+  "id": "P15",
+  "age": 67,
+  "gender": "F",
+  "country": "USA (Minnesota)",
+  "income": "retired",
+  "faith": "Lutheran",
+  "bible": "lifelong reader",
+  "hebrew": "none",
+  "habits": "watches on iPad, dislikes sensational or creepy titles, loves 'I never noticed that' moments"
+ }
+]

@@ -11,40 +11,24 @@ import json, sys, collections
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
+# Six sets per question, short and generic, as in the paper (Maier et al. 2025, App. C.1):
+# 1 = unlikely, 3 = indifferent/unsure, 5 = clear intent. pmfs are averaged across sets.
 ANCHORS = {
     "click": [
-        ["I would scroll right past this. It doesn't interest me at all.",
-         "Probably not. It doesn't really grab me.",
-         "Maybe. I might click it if I had some time.",
-         "I'd probably click on this.",
-         "I'd click this immediately. I have to know."],
-        ["No, I would never click that.",
-         "Unlikely, it's not for me.",
-         "I'm on the fence about clicking it.",
-         "Yes, that looks interesting enough to click.",
-         "Absolutely, I'm clicking that right now."],
-        ["This title and thumbnail leave me cold.",
-         "It's a little interesting but I'd skip it.",
-         "It's mildly intriguing.",
-         "It makes me curious and I want to see it.",
-         "It hooks me completely and I can't resist it."],
+        ["I wouldn't click on it.", "I probably wouldn't click on it.", "I'm not sure if I'd click on it.", "I'd probably click on it.", "I'd definitely click on it."],
+        ["It's very unlikely that I'd click this.", "It's somewhat unlikely that I'd click this.", "I might or might not click this.", "It's somewhat likely that I'd click this.", "It's very likely that I'd click this."],
+        ["No way, I'd scroll past.", "Probably not, I'd likely scroll past.", "Maybe, hard to say.", "Probably yes, I'd want to see it.", "Yes, I'd open it right away."],
+        ["This doesn't interest me.", "This barely interests me.", "I'm indifferent to this.", "This interests me.", "This really grabs me."],
+        ["Definitely not for me.", "Probably not for me.", "Could go either way.", "Probably for me.", "Definitely for me."],
+        ["I'd skip it.", "I'd likely skip it.", "I don't know.", "I'd likely watch it.", "I'd watch it for sure."],
     ],
     "love": [
-        ["I'd be bored or annoyed and leave early.",
-         "It sounds dull. I probably wouldn't finish it.",
-         "It's okay. I'd watch some of it.",
-         "I'd enjoy this and likely watch to the end.",
-         "I'd love this, watch every minute and share it with someone."],
-        ["This would disappoint me.",
-         "Not much here for me.",
-         "Somewhat interesting, nothing special.",
-         "That's a really good insight. I'd like this video.",
-         "Wow. This would blow my mind and stay with me."],
-        ["I don't care about this at all.",
-         "I'm not very interested in this.",
-         "It's fine, I'm neutral about it.",
-         "I find this genuinely interesting.",
-         "I find this fascinating and I'd tell people about it."],
+        ["I wouldn't enjoy it.", "I probably wouldn't enjoy it.", "I'm not sure if I'd enjoy it.", "I'd probably enjoy it.", "I'd definitely love it."],
+        ["It's very unlikely I'd watch it to the end.", "It's somewhat unlikely I'd watch it to the end.", "I might or might not finish it.", "It's somewhat likely I'd watch it to the end.", "It's very likely I'd watch it to the end and share it."],
+        ["That would bore me.", "That would mostly bore me.", "That's okay, nothing special.", "That's interesting to me.", "That's fascinating to me."],
+        ["I'd leave early.", "I'd probably leave before the end.", "I might stay, might leave.", "I'd probably stay to the end.", "I'd stay to the end and want more."],
+        ["Disappointing.", "Not very satisfying.", "Fine.", "Satisfying.", "Amazing."],
+        ["I wouldn't recommend it.", "I probably wouldn't recommend it.", "I'm not sure I'd recommend it.", "I'd probably recommend it.", "I'd definitely recommend it to people."],
     ],
 }
 

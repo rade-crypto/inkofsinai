@@ -1,0 +1,57 @@
+[
+ {
+  "id": "P06",
+  "age": 22,
+  "gender": "M",
+  "country": "Nigeria (Lagos)",
+  "income": "lower",
+  "faith": "Pentecostal",
+  "bible": "strong, preaches at youth fellowship",
+  "hebrew": "none",
+  "habits": "phone, data-conscious, shares powerful revelations on WhatsApp"
+ },
+ {
+  "id": "P07",
+  "age": 38,
+  "gender": "F",
+  "country": "Brazil (São Paulo)",
+  "income": "middle",
+  "faith": "Evangelical (Assembleia de Deus)",
+  "bible": "good, reads in Portuguese",
+  "hebrew": "none",
+  "habits": "watches English videos with auto-subtitles, prefers clear visuals"
+ },
+ {
+  "id": "P08",
+  "age": 29,
+  "gender": "M",
+  "country": "USA (California)",
+  "income": "upper",
+  "faith": "agnostic, ex-evangelical",
+  "bible": "grew up with it, now skeptical",
+  "hebrew": "none",
+  "habits": "watches religious-studies channels (Ehrman, Dan McClellan), hates overclaiming and apologetics"
+ },
+ {
+  "id": "P09",
+  "age": 46,
+  "gender": "F",
+  "country": "Philippines (Cebu)",
+  "income": "lower-middle",
+  "faith": "Catholic",
+  "bible": "knows the Gospels better than the Old Testament",
+  "hebrew": "none",
+  "habits": "night-time YouTube on phone, likes inspiring and beautiful videos"
+ },
+ {
+  "id": "P10",
+  "age": 19,
+  "gender": "F",
+  "country": "USA (Georgia)",
+  "income": "student",
+  "faith": "Christian, new in faith",
+  "bible": "beginner",
+  "hebrew": "none",
+  "habits": "came from Shorts and TikTok, short attention span, clicks on 'hidden' and 'secret'"
+ }
+]
