@@ -67,7 +67,7 @@ And Nathan says two words: אַתָּה הָאִישׁ. "You are the man."
 
 Then the verdict throws David's shrug about the sword back at him. "You struck Uriah the Hittite with the sword. You took his wife. You killed him with the sword of the Ammonites. So now, the sword will never leave your house." לֹא תָסוּר חֶרֶב מִבֵּיתְךָ.
 
-David answers to his face. No messenger this time. חָטָאתִי. "I have sinned against God."
+This time David sends no messenger. He says it to Nathan's face: חָטָאתִי. "I have sinned against God."
 
 Nathan answers, "God has taken away your sin. You will not die." But the child will, and on the seventh day the baby dies.
 
@@ -77,7 +77,7 @@ David's letter went out וַיִּשְׁלַח בְּיַד אוּרִיָּה, 
 
 David's letter carried a man's death. God's message carries a name for the boy: Jedidiah. Its first half is יְדִיד, beloved. Beloved, because of God.
 
-A king can send in secret and hide behind his messengers. God sees every message, and He still sends His own. Here, the last one He sends is love.
+A king can send in secret, but God sees every message, and He still sends His own. Into the very house the sword will never leave, what He sends is love.
 
 A psalm of David says it with our word. יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
 
