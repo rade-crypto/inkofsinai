@@ -347,7 +347,7 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
 - **Hook (v2, after the owner rejected "one letter apart"):** "The builders of Babel say, 'Let us build.' God changes one letter, and the building stops." Gen 11:8 וַיַּחְדְּלוּ לִבְנֹת הָעִיר backs "the building stops".
 - **הָבָה opens three sentences in Genesis 11:** 11:3, 11:4 (the builders) and 11:7 (God). Used in the caption only.
 - **Rules live on another branch:** `_research/hooks.md`, `copywriting.md`, `scripts_playbook.md` and the fuller CLAUDE.md are on `claude/answer-first-rules`, not on main. Read them there before any hook, script or caption.
-- **Sound:** synth_s24.py was tuned by measuring the posted s23 audio (same cue sheet in, band levels per cue type matched within about 3 dB): steady D drone, quill, soft whoosh, plucks; no booms or risers.
+- **Sound:** mix_s24.py uses the real sounds of our own reels: quill, scene-change whoosh, plucks, tick and the logo outro were lifted from the s23 / s20 audio (pad removed by spectral subtraction) into `s24/sfx/`, and the bed is the reels' own pad. A synthesized imitation was rejected by the owner as bad.
 - **Build:** the studio KIT (engine/lf12) is not in any branch, so `_research/shorts/s24/engine/` holds a self-contained rebuild:
   - kit_core.js, render.cjs (Playwright), the fonts, and mk_morph.cjs (a true outline morph of נ into ל, made with opentype.js and flubber)
-  - synth_s24.py renders cues.json in the posted palette.
+  - mix_s24.py renders cues.json in the posted palette.

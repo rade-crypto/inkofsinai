@@ -6,7 +6,7 @@ The voiceover isn't recorded yet. Once it is, time everything to it:
 1. Put the line starts into `vo_marks.txt`, on the VO file's own clock.
 2. Run `python3 retime.py .` to rewrite the timing block.
 3. Run `python3 mk_cues.py .` to rebuild cues.json.
-4. Run `python3 synth_s24.py cues.json mix.wav vo.wav 0.3`: the score, ducked under the VO.
+4. Run `python3 mix_s24.py cues.json mix.wav vo.wav 0.3`: the score, ducked under the VO.
 5. Run `python3 mk_html.py . mix.wav ../s24_babel.html` for the one-file playable version (about 5 s).
 6. Run `node engine/render.cjs video ../s24_babel.mp4 mix.wav` to render the MP4 (about 3 min).
 

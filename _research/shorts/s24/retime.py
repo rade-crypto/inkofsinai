@@ -2,7 +2,7 @@
 """Times s24 to the owner's voiceover. Reads vo_marks.txt (VO-clock seconds for each line and each later part of a line), rewrites the
 /*TIMING*/ block in scenes.js, so every step, every Hebrew word and every sub-line lands where it is spoken. mk_cues.py reads the same block.
 Video clock = VO clock + LEAD (the VO starts LEAD s into the video). The closing verse holds HOLD s after the last word, then the logo outro (3.25 s).
-Usage: python3 retime.py s24 [LEAD=0.3] [HOLD=1.8]   then: python3 mk_cues.py s24 ; python3 synth_s24.py s24/cues.json mix.wav vo.wav LEAD ; node engine/render.cjs video out.mp4 mix.wav"""
+Usage: python3 retime.py s24 [LEAD=0.3] [HOLD=1.8]   then: python3 mk_cues.py s24 ; python3 mix_s24.py s24/cues.json mix.wav vo.wav LEAD ; node engine/render.cjs video out.mp4 mix.wav"""
 import json, re, sys
 B = sys.argv[1].rstrip('/'); LEAD = float(sys.argv[2]) if len(sys.argv) > 2 else .3; HOLD = float(sys.argv[3]) if len(sys.argv) > 3 else 1.8
 marks = {}

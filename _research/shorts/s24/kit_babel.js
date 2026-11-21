@@ -24,7 +24,7 @@ K.ringPath = (cx, cy, rx, ry, p) => { const X = K.X, n = 120, m = Math.max(2, Ma
     const px = cx + rx * Math.sign(c) * Math.pow(Math.abs(c), ry > rx * 1.4 ? .55 : 1), py = cy + ry * Math.sign(s) * Math.pow(Math.abs(s), ry > rx * 1.4 ? .55 : 1);
     i ? X.lineTo(px, py) : X.moveTo(px, py); } };
 K.RING = (cx, cy, rx, ry, v, t, o = {}) => {
-  if (v < t) return; const X = K.X, p = K.eo((v - t) / (o.d || .8)), ga = (o.glow ?? 1) * K.sm((v - t) / .9);
+  if (v < t) return; const X = K.X, p = K.eo((v - t) / (o.d || .8)), ga = (o.glow ?? 1) * K.sm((v - t) / .9) * (1 + .18 * Math.sin((v - t) * 3.2));
   K.GLOWOK = true; K.glow(cx, cy, rx * 1.9, ry * 1.6, ga * .9); K.GLOWOK = false;
   X.save(); X.strokeStyle = K.HOT; X.lineWidth = o.lw || 4; X.lineCap = 'round'; X.setLineDash(o.solid ? [] : [12, 10]); K.ringPath(cx, cy, rx, ry, p); X.stroke(); X.restore();
 };
@@ -48,7 +48,9 @@ K.STACK = (v, a, b, o) => {
     if (o.col && i === o.col.i) hk = Math.max(hk, colHot);
     if (o.red && o.red.row === ri && o.red.i === i) hk = 1;
     if (hk > .02 && (!o.dim || o.dim.keep === i || dim < 1)) K.glow(colX(i), r.y - size * .36, cw * .62, size * .6, hk * .45 * al);
+    let wave = 0; (o.hot || []).forEach(h => { if (h.row === ri) wave = Math.max(wave, Math.sin(Math.PI * K.cl((v - h.t0 - i * .08) / .5))); });
     K.ink(v, t, () => { X.font = K.font(size, { face: K.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.textBaseline = 'alphabetic'; X.fillStyle = K.mix(hk);
+      if (wave > 0) { const cx0 = colX(i), cy0 = r.y - size * .3, sw = 1 + .09 * wave; X.translate(cx0, cy0 - wave * 10); X.scale(sw, sw); X.translate(-cx0, -cy0); }
       X.globalAlpha *= al; X.fillText(c[0], colX(i), r.y); if (strip < 1 && c.length > 1) { X.globalAlpha *= 1 - strip; X.fillText(c, colX(i), r.y); } }, { rise: 10 });
   }));
   (o.gloss || []).forEach(g => { if (g.t1 == null || v < g.t1) K.WORDS(v, { s: g.s, y: g.y, size: 88, t: g.t }); });
@@ -72,7 +74,11 @@ K.WORDS = (v, o) => {
     if (w.hot) K.glow(wx + w.w / 2, o.y - size * .32, w.w * .7 + 26, size * .85, hk * .6);
     const put = () => { X.font = fnt(w); X.textBaseline = 'alphabetic'; X.fillStyle = w.hot ? K.mix(hk) : K.INKC;
       if (w.heb) { X.direction = 'rtl'; X.textAlign = 'right'; X.fillText(w.t, wx + w.w, o.y); } else { X.direction = 'ltr'; X.textAlign = 'left'; X.fillText(w.t, wx, o.y); } };
-    if (o.pre != null) { X.save(); X.globalAlpha *= K.lerp(o.pre, 1, K.sm((v - t) / .25)); put(); X.restore(); } else K.ink(v, t, put, { d: .34, rise: 12, blur: 5 });
+    const pop = w.hot ? 1 + .16 * (1 - K.back((v - t) / .5)) : 1, cxw = wx + w.w / 2;
+    X.save(); if (pop !== 1) { X.translate(cxw, o.y - size * .3); X.scale(pop, pop); X.translate(-cxw, -(o.y - size * .3)); }
+    if (o.pre != null) { X.globalAlpha *= K.lerp(o.pre, 1, K.sm((v - t) / .25)); put(); }
+    else { const k = K.eo((v - t) / .38); X.globalAlpha *= K.sm((v - t) / .16); X.beginPath(); X.rect(wx - 10, o.y - size * 1.3, (w.w + 20) * k, size * 1.9); X.clip(); X.translate(-(1 - k) * 22, (1 - k) * 8); put(); }   // written on: wipe + settle
+    X.restore();
     w.x0 = wx; w.tt = t;
   });
   let run = null; const runs = []; ws.forEach(w => { if (w.hot && !w.heb && !w.sp) { if (!run) runs.push(run = { a: w, b: w }); else run.b = w; } else if (!w.sp) run = null; });
@@ -90,7 +96,17 @@ K.HEBW = (v, o) => {
   const tot = words.reduce((p, w) => p + X.measureText(w).width, 0) + sp * (words.length - 1); X.restore();
   const cx = o.right != null ? o.right - tot / 2 : (o.x ?? 540), x0 = cx - tot / 2, x1 = cx + tot / 2;
   let r = x1; X.save(); X.font = K.font(size, { face: K.F.g }); words.forEach(w => { const ww = X.measureText(w).width; K.pos[(o.key || '') + w] = { cx: r - ww / 2, y: o.y, w: ww, size }; r -= ww + sp; }); X.restore();
-  if (v < o.t) return; const d = o.d || Math.max(.45, Math.min(1.1, tot / 700)), p = (v - o.t) / d;
+  if (v < o.t) return;
+  if (!o.wipe && !o.hotLetter) {   // letters land one by one, right to left, each dropping in with a small overshoot
+    const hotAt = o.hotAt ?? o.t + .5, hk = K.sm((v - hotAt) / .5) * (o.hotOff == null ? 1 : 1 - K.sm((v - o.hotOff) / .45)); let rr = x1, n = 0;
+    X.save(); X.font = K.font(size, { face: K.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.textBaseline = 'alphabetic';
+    words.forEach(w => { const ww = X.measureText(w).width, cs = K.clusters(w), hot = (o.hot || []).includes(w); let pre = '';
+      cs.forEach(c => { const xr = rr - X.measureText(pre).width, cw = X.measureText(c).width; pre += c; const k = (v - o.t - n * (o.step || .075)) / .42; n++; if (k <= 0) return;
+        const e = K.back(k), sc = K.lerp(.72, 1, e); X.save(); X.globalAlpha *= K.sm(k * 2.2); X.translate(xr - cw / 2, o.y - size * .3 - (1 - e) * size * .22); X.scale(sc, sc);
+        X.fillStyle = hot ? K.mix(hk) : (o.color || K.INKC); X.fillText(c, cw / 2, size * .3); X.restore(); });
+      rr -= ww + sp; });
+    X.restore(); return; }
+  const d = o.d || Math.max(.45, Math.min(1.1, tot / 700)), p = (v - o.t) / d;
   const draw = () => K.heb(o.s, cx, o.y, size, v, { hot: o.hot || [], hotAt: o.hotAt ?? o.t + d * .8, hotOff: o.hotOff, hotLetter: o.hotLetter, color: o.color });
   if (p >= 1) return draw();
   const pad = 60, bw = Math.ceil(tot + pad * 2), bh = Math.ceil(size * 2), c = off('hebw', K.W, K.H), x = c.getContext('2d'), soft = 70;
@@ -114,7 +130,7 @@ K.TOWER = (v, o) => {
   if (o.sky && v >= o.sky.t) { const a = K.sm((v - o.sky.t) / 1.2), top = base - BR.rows * bh; X.strokeStyle = K.INK(.5 * a); X.lineWidth = 4;   // cloud lines the top reaches
     [[-330, 20, 300], [60, 60, 280], [-160, 104, 220]].forEach(([dx, dy, w], q) => { const sh = ((v - o.sky.t) * 15) * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 16, 540 + dx + w * .6 + sh, top + dy + 12, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
   const brick = (x, y, w, a) => { X.globalAlpha = a; X.fillStyle = 'rgba(244,234,208,.55)'; X.strokeStyle = K.INK(.88); X.lineWidth = 3; X.lineJoin = 'round'; X.beginPath(); X.rect(x, y, w, bh); X.fill(); X.stroke(); };
-  BR.list.forEach(b => { const f = placed - b.i; if (f <= 0) return; const e = K.eo(Math.min(1, f / 2.4)); brick(540 + b.x, base - (b.row + 1) * bh - (1 - e) * 12, b.w, Math.min(1, f / 1.2)); });
+  BR.list.forEach(b => { let f = placed - b.i; if (f <= 0) return; f += o.settle || 0; /* when the building stops, the bricks already thrown still land */ const e = K.eo(Math.min(1, f / 2.4)); brick(540 + b.x, base - (b.row + 1) * bh - (1 - K.back(Math.min(1, f / 3.2))) * 70, b.w, Math.min(1, f / 1.4)); });
   if (o.city && v >= o.city.t) [-1, 1].forEach(sd => { for (let r = 0; r < 3; r++) for (let i = 0; i < 2; i++) { const q = r * 2 + i, f = (v - o.city.t) / .09 - q; if (f <= 0) continue; const e = K.eo(Math.min(1, f / 2.4));   // "a city": low houses
     brick(540 + sd * 386 + (i - 1) * 46 + (r % 2 ? 0 : 0), base - (r + 1) * bh - (1 - e) * 12, 46, Math.min(1, f / 1.2)); } });
   if (o.hang && v >= o.hang.t) { const b = BR.list[Math.min(n - 1, Math.ceil(placed))], fall = o.hang.drop != null ? K.eio((v - o.hang.drop) / .45) : 0, sw = fall ? 0 : Math.sin((v - o.hang.t) * 1.7) * .05;   // the brick that does not land

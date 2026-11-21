@@ -15,6 +15,7 @@ K.sm = x => { x = cl(x); return x * x * (3 - 2 * x); };
 K.eo = x => { x = cl(x); return 1 - Math.pow(1 - x, 3); };
 K.eio = x => { x = cl(x); return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2; };
 K.on = (v, t, d = .5) => K.sm((v - t) / d);
+K.back = x => { x = cl(x); const c1 = 1.70158, c3 = c1 + 1; return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2); };   // ease-out with a small overshoot
 K.live = (v, a, b) => v >= a - 1e-6 && v < b + 1e-6;
 K.INKC = '#2a1e12'; K.INK = a => `rgba(42,30,18,${a})`; K.HOT = '#a63a22'; K.HOTA = a => `rgba(166,58,34,${a})`; K.GOLD = a => `rgba(236,178,84,${a})`;
 K.mix = (k, a = 1) => `rgba(${Math.round(42 + (166 - 42) * k)},${Math.round(30 + (58 - 30) * k)},${Math.round(18 + (34 - 18) * k)},${a})`;   // ink -> red
