@@ -436,7 +436,7 @@ const eio = KIT.eio, eo = KIT.eo, sm = KIT.sm;
 const ST_ = o => v => KIT.STAM(v, o);
 const LAB = (str, x, y, t, o) => v => KIT.LABEL(str, x, y, v, t, o);
 const EN1 = (str, y, t, end, o = {}) => v => KIT.WORDS(v, { s: str, y, size: o.size || 80, t, end, italic: o.italic ?? true });
-const RING_ = (key, word, idx, t, o = {}) => v => { const p = KIT.SP[key + word + idx]; if (!p || v < t) return; KIT.RING(p.x, p.y - p.size * .5, p.w * .5 + 14, p.size * .66, v, t, { d: .5, solid: o.solid ? v >= o.solid : false, glow: o.glow ?? 1, lw: 4 }); };
+const RING_ = (key, word, idx, t, o = {}) => v => { const p = KIT.SP[key + word + idx]; if (!p || v < t) return; KIT.RING(p.x, p.y - p.size * .5, p.w * .5 + 14, p.size * .66, v, t, { d: o.d ?? .5, solid: o.solid ? v >= o.solid : false, glow: o.glow ?? 1, lw: 4 }); };
 
 // 1. HOOK: the builders' word, huge and crowned; one of its letters already ringed. On "one letter" it turns red; on "stops" it lifts out and leaves a "?"
 const stopT = s('HOOK2', 1) + .3;
@@ -456,7 +456,7 @@ P('COME', all(STG(), CAP([['In Hebrew, they say:', -9, -9]], { pre: 1 }), B4, EN
 P('TOWER', all(STG(), v => KIT.ETOWER(v, { p: lerp(.15, 1, eio((v - ST.TOWER) / (TM.TOWER[0] - .5))), base: 1480, scale: .74, sky: { t: s('TOWER', 1) - .2 } }), v => KIT.CITY(v, ST.TOWER + .2, 1480),
   CAP([['A city, and a tower', ST.TOWER, s('TOWER', 1)], ['with its top in the *sky*.', s('TOWER', 1), EN('TOWER') - .4]])));
 // 4. two verses, one under the other; a red arrow links the same word
-const RX = 960, Y1 = 760, Y2 = 1080, MZ = 120;
+const RX = 975, Y1 = 830, Y2 = 1150, MZ = 120;
 const MATCH = v => { const tm = s('ANSWER', 2), off = s('DOWN', 3) + .3;
   LAB('Genesis 11:4', RX - 160, Y1 - 190, ST.ANSWER)(v); KIT.STAM(v, { key: 'M1', s: 'הָבָה נִבְנֶה', right: RX, y: Y1, size: MZ, t: ST.ANSWER, step: .04, hot: ['הָבָה'], hotAt: tm + .5, hotOff: off });
   if (v >= tm) LAB('Genesis 11:7', RX - 160, Y2 - 190, tm)(v);
@@ -467,7 +467,7 @@ const MATCH = v => { const tm = s('ANSWER', 2), off = s('DOWN', 3) + .3;
 P('ANSWER', all(STG(), MATCH, CAP([['Then God answers', ST.ANSWER, s('ANSWER', 1)], ['with their own *word*.', s('ANSWER', 1), s('ANSWER', 2)]])));
 P('DOWN', all(STG(), MATCH, CAP([['“Come, let us go down…', ST.DOWN, s('DOWN', 2)], ['and *confuse*.”', s('DOWN', 2), s('DOWN', 3)]], { italic: true, size: 82 })));
 // 5. side by side: a split panel, builders on the right, God on the left
-const XR = 780, XL = 300, SZ5 = 190;
+const XR = 765, XL = 315, SZ5 = 165;
 const SPLIT = v => { const t0 = ST.SIDE + .1, k = eo((v - t0) / .7);
   KIT.RULE(540, 620, 540, 1240, eo((v - t0) / .6));
   KIT.LABEL('Genesis 11:4', XR, 700, v, t0 + .1); KIT.LABEL('Genesis 11:7', XL, 700, v, t0 + .3);
@@ -492,7 +492,7 @@ P('NAME', all(STG(), CAP([['They wanted', ST.NAME, ST.NAME + .7], ['to make a *n
   ST_({ s: 'שֵׁם', y: 1080, size: 360, t: ST.NAME + .25, step: .15, hot: ['שֵׁם'], hotAt: ST.NAME + 1.2 }), EN1('“a name”', 1220, ST.NAME + 1.1, ST.NAME + 1.6, { size: 72 }), REF('Genesis 11:4', 1310, ST.NAME + 1.6)));
 const tb = s('CITY', 1);
 P('CITY', all(STG(), CAP([['The city got one:', ST.CITY, tb]]), v => { if (v < tb) KIT.STAM(v, { s: 'שֵׁם', y: 1080, size: 360, t: -9 }); },
-  ST_({ key: 'C', s: 'בָּבֶל', y: 1080, size: 360, t: tb, step: .15, red: { word: 'בָּבֶל', idx: 2, at: tb + .7 } }), RING_('C', 'בָּבֶל', 2, tb + .8, { solid: tb + .8, glow: 1.3 }),
+  ST_({ key: 'C', s: 'בָּבֶל', y: 1080, size: 360, t: tb, step: .15, red: { word: 'בָּבֶל', idx: 2, at: tb + .7 } }), RING_('C', 'בָּבֶל', 2, tb + .8, { solid: tb + .8, glow: 1.3, d: .25 }),
   LAB('Babel', 540, 1220, tb + .9, { size: 56 }), REF('Genesis 11:9', 1310, tb + 1.3)));
 // 8. END VERSE, alone (Gen 11:9 has the Divine Name: English only)
 const ENDV = (v, a, b) => { const e = TM['END VERSE']; KIT.STAGE(v, a, { cy: 900 }); KIT.REF('Genesis 11:9', 620, v, a + .1);
