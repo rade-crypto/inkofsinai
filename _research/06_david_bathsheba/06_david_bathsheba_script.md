@@ -21,7 +21,7 @@ One evening David gets up from his bed and walks on the roof of the king's house
 
 He stays where he is and sends someone to ask who she is. The answer names her husband: "Bathsheba, daughter of Eliam, wife of Uriah the Hittite."
 
-So now he knows she's married, but he sends again. וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ. "David sent messengers, and took her," and lay with her. There are the messengers from the first verse.
+So now he knows she's married, but he sends again. וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ. "David sent messengers, and took her," and lay with her. There they are: the messengers from the first verse.
 
 She goes home, and when she finds she is pregnant, she sends David two words: הָרָה אָנֹכִי, "I'm pregnant." In all of 2 Samuel, those are the only words of hers it quotes.
 
@@ -63,13 +63,13 @@ And Nathan answers with two words: אַתָּה הָאִישׁ. "You are the man
 
 Then the verdict throws David's shrug about the sword back at him: "You struck Uriah the Hittite with the sword, you took his wife, and you killed him with the sword of the Ammonites. So now, the sword will never leave your house." לֹא תָסוּר חֶרֶב מִבֵּיתְךָ.
 
-This time there's no messenger in between. David answers Nathan to his face: חָטָאתִי. "I have sinned against God."
+This time David doesn't send anyone. He answers Nathan himself: חָטָאתִי. "I have sinned against God."
 
 And Nathan answers at once: "God has taken away your sin. You will not die."
 
-David sent to take, and then to hide, but God sent Nathan to bring him back.
+David sent to take and sent to hide, but God sent Nathan to bring him back.
 
-A psalm of David says it with our word: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
+Long before this, in a psalm, David had written it with our word: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
 
 ---
 
