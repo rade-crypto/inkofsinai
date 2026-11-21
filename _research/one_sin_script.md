@@ -1,6 +1,6 @@
 The One Sin the Bible Keeps Repeating
 
-The sin in Eden takes three words in Hebrew: the woman saw, the fruit was good, and she took. The Bible uses those same three words, in the same order, three more times: in the days before the flood, at the fall of Jericho, and on the roof of King David's palace. And the two words Genesis uses for why the fruit was tempting appear together in only one other verse in the whole Hebrew Bible.
+There is one sin the Bible tells four times. It happens first in a garden, then in the days before the flood, then at the fall of Jericho, and last on the roof of a king's palace. Each time, the Hebrew tells it with the same three words, in the same order. And the two words Genesis uses for why the fruit was tempting appear together in only one other verse in the whole Hebrew Bible.
 
 Here is the verse at the tree:
 
