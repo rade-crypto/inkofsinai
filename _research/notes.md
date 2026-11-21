@@ -80,6 +80,7 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - Esther as a mirror, and the Esther hidden-names version: not the next video
   - Job: it retold the story with no differentiator
 - **Picked:** 05 = David and Goliath, "Goliath Was Dressed as the Serpent". Script: `_share/05_goliath_serpent_script.md`.
+- **Picked:** 06 = David and Bathsheba, "The One Word Behind the Crime" (שָׁלַח ×12). It was the top concept in the viewer panel, Nov 21. Script: `_research/06_david_bathsheba/06_david_bathsheba_script.md`.
 - **Alter (The Art of Biblical Narrative) long-form list, in his order:**
   1. wells (done, 03)
   2. six barren mothers (a draft VO exists)

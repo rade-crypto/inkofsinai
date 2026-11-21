@@ -1,6 +1,6 @@
-# 06 · David and Bathsheba: The One Word That Tells the Whole Crime. Voiceover, draft 2
+# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 3
 
-**Title:** David and Bathsheba: The One Word That Tells the Whole Crime
+**Title:** David and Bathsheba: The One Word Behind the Crime
 **Thumbnail:** David on the palace roof at night, in gold ink. Glowing circle on the sealed letter in his hand. Text: "HE **SENT.**"
 
 ---
@@ -9,13 +9,13 @@ A soldier walks back to the front carrying a letter from the king. It's his own 
 
 King David wrote it. He has already taken this man's wife. And for both crimes, he never leaves his palace.
 
-Every move goes out through one Hebrew word: שָׁלַח. Send.
+Both crimes go out through one Hebrew word: שָׁלַח. Send.
 
-In 2 Samuel 11, that word appears twelve times. That ties the most of any chapter in the Bible.
+In 2 Samuel 11, that word appears twelve times. No chapter in the Bible has more.
 
 Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
 
-It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. Your Bible says "kings" here. But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an aleph no one pronounces. As it's written, the chapter opens at the time when messengers go out.
+It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. Your Bible says "kings" here. But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
 
 And David sends. He sends Joab and the whole army to war, and he stays in Jerusalem.
 
@@ -25,7 +25,7 @@ He stays where he is, and sends. He sends to ask who she is, and the answer name
 
 So now he knows she's married. But he sends again. וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ. "David sent messengers, and took her," and lay with her. There are the messengers.
 
-She goes home. Then she sends something back. Two words: הָרָה אָנֹכִי. "I'm pregnant." In all of 2 Samuel, those are the only words she speaks. And she sends them.
+She goes home. Then she sends something back. Two words: הָרָה אָנֹכִי. "I'm pregnant." In all of 2 Samuel, those are the only words of hers it quotes. And she sends them.
 
 Now David needs her husband home, fast. One verse, three sends. David sends to Joab: שְׁלַח אֵלַי אֶת אוּרִיָּה, "send me Uriah." And Joab sends Uriah.
 
@@ -35,7 +35,7 @@ But Uriah sleeps at the palace door, with the servants. David asks why. Uriah sa
 
 Eat. Drink. Lie with my wife. לֶאֱכֹל וְלִשְׁתּוֹת וְלִשְׁכַּב. A prophet is going to hand those three words back to David.
 
-So David says, "Stay today too. Tomorrow I'll send you off." That evening Uriah eats at the king's table and drinks till he's drunk. Then he goes out to lie down, with his master's servants. He never goes home.
+So David says, "Stay today too. Tomorrow I'll send you off." David calls him in to eat and drink, and gets him drunk. That evening Uriah goes out to lie down, with his master's servants. He never goes home.
 
 So the cover-up turns into a murder plan. And Uriah is going to deliver it himself.
 
@@ -43,11 +43,11 @@ In the morning David writes a letter to Joab, וַיִּשְׁלַח בְּיַ�
 
 The letter says: "Put Uriah in front, where the fighting is fiercest. Then pull back from him, so that he is struck and dies."
 
-Joab does it. Uriah dies, and other soldiers with him. Joab sends a messenger with the report, and coaches him: if the king gets angry about the losses, add one line. "Your servant Uriah the Hittite is dead too."
+Joab puts Uriah where he knows the strongest enemy fighters are. Uriah dies, and other soldiers with him. Joab sends a messenger with the report, and coaches him: if the king gets angry about the losses, add one line. "Your servant Uriah the Hittite is dead too."
 
 The messenger tells David everything Joab sent him to say. And David's answer for Joab is a shrug: אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה. "Don't let this thing be evil in your eyes. The sword devours this one and that one."
 
-Bathsheba mourns her husband. When the mourning is over, David sends one last time and brings her into his house. She becomes his wife and bears him a son. As far as anyone can see, it worked.
+Bathsheba mourns her husband. When the mourning is over, David sends once more and brings her into his house. She becomes his wife and bears him a son. As far as anyone can see, it worked.
 
 That's twelve. Eight of them are David's. Uriah sends none. He's the one who gets sent. And David thinks the sending is over.
 
@@ -68,3 +68,37 @@ And Nathan says two words: אַתָּה הָאִישׁ. "You are the man."
 Then the verdict throws David's shrug about the sword back at him. "You struck Uriah the Hittite with the sword. You took his wife. You killed him with the sword of the Ammonites. So now, the sword will never leave your house." לֹא תָסוּר חֶרֶב מִבֵּיתְךָ.
 
 David answers to his face. No messenger this time. חָטָאתִי. "I have sinned against God."
+
+---
+
+## Checked in the Hebrew (Westminster Leningrad Codex)
+- **Send:**
+  - שָׁלַח appears 12× in 2 Sam 11: 11:1, 3, 4, 5, 6 (×3), 12, 14, 18, 22, 27.
+  - No chapter in the Tanakh has more. Exodus 9 ties it at 12. In Samuel, the next highest chapters have 8.
+  - Eight are David's: 11:1, 3, 4, 6 (to Joab), 6 ("send me", his order), 12 (אֲשַׁלְּחֶךָּ), 14, 27.
+  - Joab has three (11:6, 18, 22). Bathsheba has one (11:5). Uriah is never the subject.
+- **11:1:**
+  - The Codex writes הַמַּלְאֿכִים with a silent א, tagged as "kings". BHS keeps Leningrad's form.
+  - 1 Chr 20:1 has הַמְּלָכִים.
+- **The roof:** 11:2 has גַּג בֵּית הַמֶּלֶךְ … מֵעַל הַגָּג. It is the only roof in the verse.
+- **Bathsheba:**
+  - Her only quoted words in 2 Samuel: הָרָה אָנֹכִי (11:5).
+  - In 12:24 the read text says וַתִּקְרָא, "she named", but no words are quoted. She speaks in 1 Kgs 1–2.
+- **Uriah:**
+  - לֶאֱכֹל וְלִשְׁתּוֹת וְלִשְׁכַּב עִם אִשְׁתִּי (11:11), in booths, with the oath חַיֶּךָ וְחֵי נַפְשֶׁךָ.
+  - 11:13 has וַיְשַׁכְּרֵהוּ, then "in the evening to lie … with his master's servants".
+- **The letter:** 11:14–15. Joab places Uriah where the strong men are (11:16–17); the "pull back" step is never narrated.
+- **The report:**
+  - Joab's line about Uriah: 11:21.
+  - כָּל אֲשֶׁר שְׁלָחוֹ יוֹאָב: 11:22.
+  - אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה … כָזֹה וְכָזֶה תֹּאכַל הֶחָרֶב: 11:25.
+- **The verdict:**
+  - וַיֵּרַע הַדָּבָר אֲשֶׁר עָשָׂה דָוִד (11:27); the on-screen Hebrew stops before the Name.
+  - 12:1 follows 11:27, with God as the subject of שָׁלַח. Show it in English only.
+- **The parable:**
+  - 12:3 has מִפִּתּוֹ תֹאכַל וּמִכֹּסוֹ תִשְׁתֶּה וּבְחֵיקוֹ תִשְׁכָּב, the same roots in the same order as 11:11.
+  - Taking the lamb (12:4); בֶן מָוֶת (12:5; the on-screen fragment leaves out חַי יְהוָה); אַרְבַּעְתָּיִם (12:6); אַתָּה הָאִישׁ (12:7).
+- **The sword:**
+  - 12:9 (English only) and לֹא תָסוּר חֶרֶב מִבֵּיתְךָ (12:10).
+  - David's חָטָאתִי (12:13): show only חָטָאתִי on screen.
+- **"Once more", not "last":** David sends again in 13:7.
