@@ -19,7 +19,7 @@ pl(st['TOWER'] + 2.6, 'D5', v=.18)                             # the top reaches
 pl(sub('ANSWER', 2) + .5, 'D4', 'A4'); add('quill', sub('ANSWER', 2), d=.5, v=.22)   # the same word, answered
 pl(sub('DOWN', 3) + .5, 'F#4')                                 # וְנָבְלָה
 pl(st['BUILD'] + .05, 'D4'); pl(st['CONFUSE'] + .05, 'A4')
-m = sub('CHANGED', 1) + .05; pl(m + 2.0, 'D4', 'A4', 'D5', v=.3)   # THE MOMENT: ל lands
+m = sub('CHANGED', 1); pl(m + 1.85, 'D4', 'A4', 'D5', v=.3)   # THE MOMENT: ל lands
 pl(sub('CITY', 1) + 1.35, 'D4', 'A4', 'D5', v=.26)              # the same ל in בָּבֶל
 add('quill', st['END VERSE'] + .2, d=.9, v=.24); pl(st['END VERSE'] + 2.6, 'D4', 'A4', v=.24)
 add('outro', st['LOGO'])

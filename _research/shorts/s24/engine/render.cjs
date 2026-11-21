@@ -12,9 +12,10 @@ const html = `<!doctype html><meta charset="utf-8"><style>
 @font-face{font-family:'Frank Ruhl Libre';font-weight:500;src:url('${url(E + '/fonts/FrankRuhlLibre-Medium.ttf')}')}
 @font-face{font-family:'Newsreader';font-style:italic;font-weight:400;src:url('${url(E + '/fonts/Newsreader-Italic.ttf')}')}
 @font-face{font-family:'Newsreader';font-weight:400;src:url('${url(E + '/fonts/Newsreader-Regular.ttf')}')}
+@font-face{font-family:'Stam';src:url('${url(E + '/fonts/StamAshkenazCLM.ttf')}')}
 html,body{margin:0;background:#000}</style><canvas id="c" width="1080" height="1920"></canvas>
-<script src="${url(E + '/kit_core.js')}"></script><script src="${url(D + '/morph_data.js')}"></script><script src="${url(D + '/kit_babel.js')}"></script>
-<script>window.ready=(async()=>{await Promise.all(["500 80px 'Frank Ruhl Libre'","italic 400 80px 'Newsreader'","400 80px 'Newsreader'"].map(f=>document.fonts.load(f,'Abc אב')));
+<script src="${url(E + '/kit_core.js')}"></script><script src="${url(D + '/morph_data.js')}"></script><script src="${url(D + '/morph_stam.js')}"></script><script src="${url(D + '/kit_babel.js')}"></script><script src="${url(D + '/kit_beats.js')}"></script>
+<script>window.ready=(async()=>{await Promise.all(["500 80px 'Frank Ruhl Libre'","italic 400 80px 'Newsreader'","400 80px 'Newsreader'","80px 'Stam'"].map(f=>document.fonts.load(f,'Abc אב')));
 for(const f of ${JSON.stringify(imgs)}){const im=new Image();im.src=${JSON.stringify(url(D + '/img'))}+'/'+f;await im.decode().catch(()=>{});KIT.IMG=KIT.IMG||{};KIT.IMG[f.split('.')[0]]=im;}
 KIT.init(document.getElementById('c'));})();</script>
 <script src="${url(D + (mode === 'cover' ? '/cover_scenes.js' : '/scenes.js'))}"></script>`;
