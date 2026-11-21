@@ -117,11 +117,16 @@ K.ENDVERSE = (v, a, b, o) => {
   en.forEach((s, i) => K.ink(v, a + (o.enAt ?? .35) + i * (o.enStep ?? .9), () => K.rich(s, 540, y0 + i * lh, es, v, { italic: true, hotAt: a + 1.0 + i * .9 })));
 };
 // LOGO: the channel name in spaced capitals, a quill hairline drawn under it
-K.LOGO = (v, a, b) => {
-  K.STAGE(v, a, { cy: 900 }); const X = K.X;
-  K.ink(v, a + .55, () => K.rich('INK OF SINAI', 540, 930, 96, v, { caps: true, ls: 16, color: K.INKC, plain: true }), { blur: 4 });
-  const p = K.eio((v - a - 1.0) / .7); if (p > 0) { X.save(); X.strokeStyle = K.HOT; X.lineWidth = 3; X.lineCap = 'round'; X.beginPath(); X.moveTo(540 - 300 * p, 1000); X.lineTo(540 + 300 * p, 1000); X.stroke(); X.restore(); }
+K.LOGO = (v, a, b) => {   // the posted outro mark: two scroll rods with a red א between them, the name, the handle
+  K.STAGE(v, a, { cy: 900 }); const X = K.X, k = K.eo((v - a - .4) / .6);
+  X.save(); X.globalAlpha = K.sm((v - a - .4) / .4); X.strokeStyle = K.INK(.85); X.fillStyle = K.INK(.85); X.lineWidth = 5; X.lineCap = 'round';
+  [-72, 72].forEach(dx => { const x = 540 + dx * k; X.beginPath(); X.moveTo(x, 640); X.lineTo(x, 860); X.stroke(); [640, 860].forEach(y => { X.beginPath(); X.arc(x, y, 9, 0, 6.2832); X.fill(); }); });
+  X.restore();
+  K.ink(v, a + .7, () => { X.save(); X.font = K.font(110, { face: K.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.fillStyle = K.HOT; X.fillText('א', 540, 790); X.restore(); }, { blur: 3 });
+  K.ink(v, a + .9, () => K.rich('INK OF SINAI', 540, 990, 84, v, { caps: true, ls: 14, color: K.INKC, plain: true }), { blur: 3 });
+  K.ink(v, a + 1.2, () => K.rich('@inkofsinai', 540, 1060, 48, v, { color: K.HOT, plain: true }), { blur: 2 });
 };
+
 // ROLLTO: the previous step rolls up and off as the next rolls in from below (the posted outro move), .75 s
 K.ROLLTO = (v, a, b, o) => {
   const X = K.X, k = K.eio((v - a) / .75);

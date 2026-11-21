@@ -35,7 +35,7 @@ function pointsOnly(c, size, col) { const k = c + size + col; if (PO[k]) return 
   x.fillText(c, bx, by); x.globalCompositeOperation = 'destination-out'; x.lineWidth = 4; x.strokeStyle = '#000'; x.fillText(c[0], bx, by); x.strokeText(c[0], bx, by); return PO[k] = cv; }
 K.STACK = (v, a, b, o) => {
   const X = K.X, f = o.from, n = o.rows[0].cl.length, size0 = o.size || 230, cw0 = o.cw || 212;
-  const k1 = f ? K.eio((v - f.t) / f.d1) : 1, u2 = f ? (v - f.t - f.d1 - f.hold) / f.d2 : 1, k2 = u2 >= 1 ? 1 : K.eio((u2 - .3) / .7), ky = K.eio(u2 / .6), kx = K.eio((u2 - .35) / .65), fk = k2;   // the lower word drops first, then both centre and grow   // phase 1: onto one line, side by side; phase 2: one under the other
+  const k1 = f ? K.eio((v - f.t) / f.d1) : 1, u2 = f ? (v - f.t - f.d1 - f.hold) / f.d2 : 1, k2 = u2 >= 1 ? 1 : f && f.straight ? K.eio(u2) : K.eio((u2 - .3) / .7), ky = f && f.straight ? k2 : K.eio(u2 / .6), kx = f && f.straight ? k2 : K.eio((u2 - .35) / .65), fk = k2;   // the lower word drops first, then both centre and grow   // phase 1: onto one line, side by side; phase 2: one under the other
   const rows = o.rows.map((r, ri) => { if (!f || k2 >= 1) return { ...r, cx: 540, t: f ? -9 : r.t }; const m = f.mid.rows[ri], s0 = f.rows[ri];
     return { ...r, t: -9, cx: K.lerp(K.lerp(s0.cx, m.cx, k1), 540, kx), y: K.lerp(K.lerp(s0.y, m.y, k1), r.y, ky) }; });
   const size = f ? K.lerp(K.lerp(f.size, f.mid.size, k1), size0, k2) : size0, cw = f ? K.lerp(K.lerp(f.size * .5, f.mid.cw, k1), cw0, k2) : cw0; let rowCx = 540; const colX = i => rowCx + (1.5 - i) * cw;
@@ -84,7 +84,7 @@ K.WORDS = (v, o) => {
     const pop = w.hot ? 1 + .16 * (1 - K.back((v - t) / .5)) : 1, cxw = wx + w.w / 2;
     X.save(); if (pop !== 1) { X.translate(cxw, o.y - size * .3); X.scale(pop, pop); X.translate(-cxw, -(o.y - size * .3)); }
     if (o.pre != null) { X.globalAlpha *= K.lerp(o.pre, 1, K.sm((v - t) / .25)); put(); }
-    else { const k = K.eo((v - t) / .38); X.globalAlpha *= K.sm((v - t) / .16); X.beginPath(); X.rect(wx - 10, o.y - size * 1.3, (w.w + 20) * k, size * 1.9); X.clip(); X.translate(-(1 - k) * 22, (1 - k) * 8); put(); }   // written on: wipe + settle
+    else { const k = K.eo((v - t) / .32); X.globalAlpha *= K.sm((v - t) / .18); X.translate(0, (1 - k) * 12); put(); }   // each whole word lands (never a part of a letter)
     X.restore();
     w.x0 = wx; w.tt = t;
   });

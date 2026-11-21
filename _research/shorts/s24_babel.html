@@ -128,11 +128,16 @@ K.ENDVERSE = (v, a, b, o) => {
   en.forEach((s, i) => K.ink(v, a + (o.enAt ?? .35) + i * (o.enStep ?? .9), () => K.rich(s, 540, y0 + i * lh, es, v, { italic: true, hotAt: a + 1.0 + i * .9 })));
 };
 // LOGO: the channel name in spaced capitals, a quill hairline drawn under it
-K.LOGO = (v, a, b) => {
-  K.STAGE(v, a, { cy: 900 }); const X = K.X;
-  K.ink(v, a + .55, () => K.rich('INK OF SINAI', 540, 930, 96, v, { caps: true, ls: 16, color: K.INKC, plain: true }), { blur: 4 });
-  const p = K.eio((v - a - 1.0) / .7); if (p > 0) { X.save(); X.strokeStyle = K.HOT; X.lineWidth = 3; X.lineCap = 'round'; X.beginPath(); X.moveTo(540 - 300 * p, 1000); X.lineTo(540 + 300 * p, 1000); X.stroke(); X.restore(); }
+K.LOGO = (v, a, b) => {   // the posted outro mark: two scroll rods with a red א between them, the name, the handle
+  K.STAGE(v, a, { cy: 900 }); const X = K.X, k = K.eo((v - a - .4) / .6);
+  X.save(); X.globalAlpha = K.sm((v - a - .4) / .4); X.strokeStyle = K.INK(.85); X.fillStyle = K.INK(.85); X.lineWidth = 5; X.lineCap = 'round';
+  [-72, 72].forEach(dx => { const x = 540 + dx * k; X.beginPath(); X.moveTo(x, 640); X.lineTo(x, 860); X.stroke(); [640, 860].forEach(y => { X.beginPath(); X.arc(x, y, 9, 0, 6.2832); X.fill(); }); });
+  X.restore();
+  K.ink(v, a + .7, () => { X.save(); X.font = K.font(110, { face: K.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.fillStyle = K.HOT; X.fillText('א', 540, 790); X.restore(); }, { blur: 3 });
+  K.ink(v, a + .9, () => K.rich('INK OF SINAI', 540, 990, 84, v, { caps: true, ls: 14, color: K.INKC, plain: true }), { blur: 3 });
+  K.ink(v, a + 1.2, () => K.rich('@inkofsinai', 540, 1060, 48, v, { color: K.HOT, plain: true }), { blur: 2 });
 };
+
 // ROLLTO: the previous step rolls up and off as the next rolls in from below (the posted outro move), .75 s
 K.ROLLTO = (v, a, b, o) => {
   const X = K.X, k = K.eio((v - a) / .75);
@@ -185,7 +190,7 @@ function pointsOnly(c, size, col) { const k = c + size + col; if (PO[k]) return 
   x.fillText(c, bx, by); x.globalCompositeOperation = 'destination-out'; x.lineWidth = 4; x.strokeStyle = '#000'; x.fillText(c[0], bx, by); x.strokeText(c[0], bx, by); return PO[k] = cv; }
 K.STACK = (v, a, b, o) => {
   const X = K.X, f = o.from, n = o.rows[0].cl.length, size0 = o.size || 230, cw0 = o.cw || 212;
-  const k1 = f ? K.eio((v - f.t) / f.d1) : 1, u2 = f ? (v - f.t - f.d1 - f.hold) / f.d2 : 1, k2 = u2 >= 1 ? 1 : K.eio((u2 - .3) / .7), ky = K.eio(u2 / .6), kx = K.eio((u2 - .35) / .65), fk = k2;   // the lower word drops first, then both centre and grow   // phase 1: onto one line, side by side; phase 2: one under the other
+  const k1 = f ? K.eio((v - f.t) / f.d1) : 1, u2 = f ? (v - f.t - f.d1 - f.hold) / f.d2 : 1, k2 = u2 >= 1 ? 1 : f && f.straight ? K.eio(u2) : K.eio((u2 - .3) / .7), ky = f && f.straight ? k2 : K.eio(u2 / .6), kx = f && f.straight ? k2 : K.eio((u2 - .35) / .65), fk = k2;   // the lower word drops first, then both centre and grow   // phase 1: onto one line, side by side; phase 2: one under the other
   const rows = o.rows.map((r, ri) => { if (!f || k2 >= 1) return { ...r, cx: 540, t: f ? -9 : r.t }; const m = f.mid.rows[ri], s0 = f.rows[ri];
     return { ...r, t: -9, cx: K.lerp(K.lerp(s0.cx, m.cx, k1), 540, kx), y: K.lerp(K.lerp(s0.y, m.y, k1), r.y, ky) }; });
   const size = f ? K.lerp(K.lerp(f.size, f.mid.size, k1), size0, k2) : size0, cw = f ? K.lerp(K.lerp(f.size * .5, f.mid.cw, k1), cw0, k2) : cw0; let rowCx = 540; const colX = i => rowCx + (1.5 - i) * cw;
@@ -234,7 +239,7 @@ K.WORDS = (v, o) => {
     const pop = w.hot ? 1 + .16 * (1 - K.back((v - t) / .5)) : 1, cxw = wx + w.w / 2;
     X.save(); if (pop !== 1) { X.translate(cxw, o.y - size * .3); X.scale(pop, pop); X.translate(-cxw, -(o.y - size * .3)); }
     if (o.pre != null) { X.globalAlpha *= K.lerp(o.pre, 1, K.sm((v - t) / .25)); put(); }
-    else { const k = K.eo((v - t) / .38); X.globalAlpha *= K.sm((v - t) / .16); X.beginPath(); X.rect(wx - 10, o.y - size * 1.3, (w.w + 20) * k, size * 1.9); X.clip(); X.translate(-(1 - k) * 22, (1 - k) * 8); put(); }   // written on: wipe + settle
+    else { const k = K.eo((v - t) / .32); X.globalAlpha *= K.sm((v - t) / .18); X.translate(0, (1 - k) * 12); put(); }   // each whole word lands (never a part of a letter)
     X.restore();
     w.x0 = wx; w.tt = t;
   });
@@ -368,7 +373,7 @@ const hw = (w, size) => { KIT.X.save(); KIT.X.font = KIT.font(size, { face: KIT.
 const letterX = (word, idx, right, size) => { const c = KIT.clusters(word); return right - (hw(c.slice(0, idx).join(''), size) + hw(c.slice(0, idx + 1).join(''), size)) / 2; };
 const stopT = s('HOOK2', 1) + .35;
 const towerP = v => v < stopT ? lerp(.5, .62, cl(v / stopT)) : v < ST.COME ? .62 : v < ST.TOWER ? lerp(.62, .7, eio((v - ST.COME) / TM.COME[0])) : lerp(.7, 1, eio((v - ST.TOWER) / (TM.TOWER[0] - .6)));
-const towerS = v => v < ST.SIDE ? 1 : lerp(1, .55, eio((v - ST.SIDE) / .9));
+const towerS = v => v < ST.SIDE ? 1 : lerp(1, .5, eio((v - ST.SIDE) / .9));
 const TW = v => KIT.ETOWER(v, { p: towerP(v), scale: towerS(v), stop: { t: stopT, drop: ST.COME }, sky: { t: s('TOWER', 1) - .3 } });
 // the builders' word on the tower's top
 const BS = 150, SPc = 36, GS = 112, GY = 650; let LZ = null;   // widths are measured on first draw, once the fonts are in
@@ -389,7 +394,7 @@ const GOD = v => { const tm = s('ANSWER', 2), off = s('DOWN', 3); let r = M().GR
   if (v >= tm + .5 && v < off + .4) { const X = KIT.X, k = eo((v - tm - .5) / .35), b = band(v), x = M().GR - hw('הָבָה', GS) / 2, y0 = GY + 26, y1 = b.y - BS * .82;
     X.save(); X.globalAlpha = 1 - sm((v - off) / .4); X.strokeStyle = KIT.HOT; X.lineWidth = 4; X.lineCap = 'round'; X.setLineDash([10, 12]); X.beginPath(); X.moveTo(x, y0); X.lineTo(x, y0 + (y1 - y0) * k); X.stroke(); X.restore(); } };
 
-P('HOOK', all(STG(), TW, BAND, CAP([['The builders of Babel say,', 0, s('HOOK', 1)], ['“Let us *build*.”', s('HOOK', 1), EN('HOOK')]], { pre: .75 })));
+P('HOOK', all(STG(), TW, BAND, CAP([['The builders of Babel say,', 0, s('HOOK', 1)], ['“Let us *build*.”', s('HOOK', 1), EN('HOOK')]], { pre: 1 })));
 P('HOOK2', all(STG(), TW, BAND, CAP([['God changes *one letter*,', ST.HOOK2, s('HOOK2', 1)], ['and the building *stops*.', s('HOOK2', 1), EN('HOOK2')]])));
 P('SAY', all(STG(), TW, BAND, CAP([['In Hebrew, they say:', ST.SAY, s('SAY', 1)]])));
 P('COME', all(STG(), TW, BAND, CAP([['“Come, let us *build*.”', ST.COME, EN('COME') - .5]], { italic: true, size: 84 }), REF('Genesis 11:4', 312, ST.COME + .8)));
@@ -401,10 +406,10 @@ const SY0 = 700, SY1 = 965, SK = { size: 200, cw: 190, rows: [{ cl: ['נִ', 'ב
   hot: [{ row: 0, t0: ST.BUILD + .05, t1: ST.CONFUSE }, { row: 1, t0: ST.CONFUSE + .05, t1: ST.CHANGED + .2 }] };
 const colX2 = 540 - .5 * SK.cw;
 const STACK = extra => (v, a, b) => { const bb = band(ST.SIDE - .01), gx = M().GR - hw('הָבָה', GS) - hw('נֵרְדָה', GS) - 2 * SPc, vav = hw('וְ', GS), wb = hw('וְנָבְלָה', GS);
-  if (v < ST.SIDE + .6) { const X = KIT.X; X.save(); X.globalAlpha = 1 - sm((v - ST.SIDE) / .5); X.font = KIT.font(GS, { face: KIT.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.fillStyle = KIT.INKC; X.fillText('וְ', gx, GY); X.restore(); }   // "and" stays behind
-  KIT.STACK(v, a, b, { ...SK, from: { t: ST.SIDE, d1: .9, hold: .4, d2: .9, size: 121, rows: [{ cx: bb.rN - M().wN / 2, y: bb.y }, { cx: gx - vav - (wb - vav) / 2, y: GY }], mid: { size: 150, cw: 100, rows: [{ cx: 770, y: 800 }, { cx: 310, y: 800 }] } },
-    join: { t: ST.SIDE + 2.3, diff: 2, t1: ST.CHANGED }, col: { i: 2, t: ST.SIDE + 2.8, t1: ST.CHANGED + .5 }, ...extra }); };
-const GL = [{ row: 0, s: '*Build*.', y: 478, t: s('BUILD', 1), t1: ST.CHANGED }, { row: 1, s: '*Confuse*.', y: 1082, t: s('CONFUSE', 1), t1: ST.CHANGED }];
+  if (v < ST.SIDE + .6) { const X = KIT.X; X.save(); X.globalAlpha = 1 - sm((v - ST.SIDE) / .3); X.font = KIT.font(GS, { face: KIT.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.fillStyle = KIT.INKC; X.fillText('וְ', gx, GY); X.restore(); }   // "and" stays behind
+  KIT.STACK(v, a, b, { ...SK, from: { t: ST.SIDE + .1, d1: .001, hold: 0, d2: 1.1, size: 121, rows: [{ cx: bb.rN - M().wN / 2, y: bb.y }, { cx: gx - vav - (wb - vav) / 2, y: GY }], mid: { size: 150, cw: 100, rows: [{ cx: 770, y: 800 }, { cx: 310, y: 800 }] } },
+    join: { t: ST.SIDE + 1.1, diff: 2, t1: ST.CHANGED }, col: { i: 2, t: ST.SIDE + 1.6, t1: ST.CHANGED + .5 }, ...extra }); };
+const GL = [{ row: 0, s: '*Build*.', y: 478, t: s('BUILD', 1), t1: ST.CHANGED }, { row: 1, s: '*Confuse*.', y: 1072, t: s('CONFUSE', 1), t1: ST.CHANGED }];
 P('SIDE', all(STG(), TW, CAP([['Put them side by side.', ST.SIDE, ST.SIDE + 1.3]]), STACK({})));
 P('BUILD', all(STG(), TW, STACK({ gloss: GL })));
 P('CONFUSE', all(STG(), TW, STACK({ gloss: GL })));
@@ -415,10 +420,10 @@ P('CHANGED', all(STG(), TW, CAP([['*One letter* changed.', ST.CHANGED, s('CHANGE
 const LR = (x, y, v, t) => { const X = KIT.X; KIT.RING(x, y - 200 * .36 - 8, 84, 112, v, -9, { glow: 1.3, solid: true, lw: 5 }); X.save(); X.font = KIT.font(200, { face: KIT.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.fillStyle = KIT.HOT; X.fillText('ל', x, y); X.restore(); };
 const tb = s('CITY', 1);
 const SHEM = HW({ s: 'שֵׁם', y: 650, size: 200, t: ST.NAME + .9, hot: ['שֵׁם'], hotOff: ST.CITY + .1 });
-P('NAME', all(STG(), TW, CAP([['They wanted', ST.NAME, ST.NAME + .7], ['to make a *name*.', ST.NAME + .7, EN('NAME') - .5]]), SHEM, v => LR(colX2, SY1, v)));
+P('NAME', all(STG(), TW, CAP([['They wanted', ST.NAME, ST.NAME + .7], ['to make a *name*.', ST.NAME + .7, EN('NAME') - .5]]), SHEM, v => LR(lerp(colX2, 540, eio((v - ST.NAME) / .6)), SY1, v)));
 P('CITY', all(STG(), TW, CAP([['The city got one:', ST.CITY, tb]]), SHEM,
-  v => { const k = eio((v - tb) / .7), x = lerp(colX2, M().lxB - 46, k), y = SY1 - Math.sin(Math.PI * k) * 90; LR(x, y, v); },
-  v => KIT.HEBW(v, { s: 'בָּבֶ', right: M().BR, y: SY1, size: 200, t: tb + .45 }),
+  v => { const k = eio((v - tb) / .7), x = lerp(540, M().lxB - 30, k), y = SY1 - Math.sin(Math.PI * k) * 90; LR(x, y, v); },
+  v => { if (v < tb) return; const X = KIT.X, k = eio((v - tb) / .7); X.save(); X.globalAlpha = sm((v - tb) / .3); const wb = hw('בָּבֶ', 200), xr = lerp(1000 + wb / 2, M().BR + 15 - wb / 2, k); KIT.heb('בָּבֶ', xr, SY1, 200, v, {}); X.restore(); },
   v => KIT.ink(v, tb + .9, () => KIT.rich('Babel', 540, 1075, 54, v, { caps: true, ls: 6, color: KIT.INK(.66), plain: true }), { blur: 3 })));
 // END VERSE, alone (Gen 11:9 has the Divine Name: English only)
 const ENDV = (v, a, b) => { const e = TM['END VERSE']; KIT.STAGE(v, a, { cy: 900 }); KIT.REF('Genesis 11:9', 620, v, a + .1);

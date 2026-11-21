@@ -29,7 +29,7 @@ const hw = (w, size) => { KIT.X.save(); KIT.X.font = KIT.font(size, { face: KIT.
 const letterX = (word, idx, right, size) => { const c = KIT.clusters(word); return right - (hw(c.slice(0, idx).join(''), size) + hw(c.slice(0, idx + 1).join(''), size)) / 2; };
 const stopT = s('HOOK2', 1) + .35;
 const towerP = v => v < stopT ? lerp(.5, .62, cl(v / stopT)) : v < ST.COME ? .62 : v < ST.TOWER ? lerp(.62, .7, eio((v - ST.COME) / TM.COME[0])) : lerp(.7, 1, eio((v - ST.TOWER) / (TM.TOWER[0] - .6)));
-const towerS = v => v < ST.SIDE ? 1 : lerp(1, .55, eio((v - ST.SIDE) / .9));
+const towerS = v => v < ST.SIDE ? 1 : lerp(1, .5, eio((v - ST.SIDE) / .9));
 const TW = v => KIT.ETOWER(v, { p: towerP(v), scale: towerS(v), stop: { t: stopT, drop: ST.COME }, sky: { t: s('TOWER', 1) - .3 } });
 // the builders' word on the tower's top
 const BS = 150, SPc = 36, GS = 112, GY = 650; let LZ = null;   // widths are measured on first draw, once the fonts are in
@@ -50,7 +50,7 @@ const GOD = v => { const tm = s('ANSWER', 2), off = s('DOWN', 3); let r = M().GR
   if (v >= tm + .5 && v < off + .4) { const X = KIT.X, k = eo((v - tm - .5) / .35), b = band(v), x = M().GR - hw('הָבָה', GS) / 2, y0 = GY + 26, y1 = b.y - BS * .82;
     X.save(); X.globalAlpha = 1 - sm((v - off) / .4); X.strokeStyle = KIT.HOT; X.lineWidth = 4; X.lineCap = 'round'; X.setLineDash([10, 12]); X.beginPath(); X.moveTo(x, y0); X.lineTo(x, y0 + (y1 - y0) * k); X.stroke(); X.restore(); } };
 
-P('HOOK', all(STG(), TW, BAND, CAP([['The builders of Babel say,', 0, s('HOOK', 1)], ['“Let us *build*.”', s('HOOK', 1), EN('HOOK')]], { pre: .75 })));
+P('HOOK', all(STG(), TW, BAND, CAP([['The builders of Babel say,', 0, s('HOOK', 1)], ['“Let us *build*.”', s('HOOK', 1), EN('HOOK')]], { pre: 1 })));
 P('HOOK2', all(STG(), TW, BAND, CAP([['God changes *one letter*,', ST.HOOK2, s('HOOK2', 1)], ['and the building *stops*.', s('HOOK2', 1), EN('HOOK2')]])));
 P('SAY', all(STG(), TW, BAND, CAP([['In Hebrew, they say:', ST.SAY, s('SAY', 1)]])));
 P('COME', all(STG(), TW, BAND, CAP([['“Come, let us *build*.”', ST.COME, EN('COME') - .5]], { italic: true, size: 84 }), REF('Genesis 11:4', 312, ST.COME + .8)));
@@ -62,10 +62,10 @@ const SY0 = 700, SY1 = 965, SK = { size: 200, cw: 190, rows: [{ cl: ['נִ', 'ב
   hot: [{ row: 0, t0: ST.BUILD + .05, t1: ST.CONFUSE }, { row: 1, t0: ST.CONFUSE + .05, t1: ST.CHANGED + .2 }] };
 const colX2 = 540 - .5 * SK.cw;
 const STACK = extra => (v, a, b) => { const bb = band(ST.SIDE - .01), gx = M().GR - hw('הָבָה', GS) - hw('נֵרְדָה', GS) - 2 * SPc, vav = hw('וְ', GS), wb = hw('וְנָבְלָה', GS);
-  if (v < ST.SIDE + .6) { const X = KIT.X; X.save(); X.globalAlpha = 1 - sm((v - ST.SIDE) / .5); X.font = KIT.font(GS, { face: KIT.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.fillStyle = KIT.INKC; X.fillText('וְ', gx, GY); X.restore(); }   // "and" stays behind
-  KIT.STACK(v, a, b, { ...SK, from: { t: ST.SIDE, d1: .9, hold: .4, d2: .9, size: 121, rows: [{ cx: bb.rN - M().wN / 2, y: bb.y }, { cx: gx - vav - (wb - vav) / 2, y: GY }], mid: { size: 150, cw: 100, rows: [{ cx: 770, y: 800 }, { cx: 310, y: 800 }] } },
-    join: { t: ST.SIDE + 2.3, diff: 2, t1: ST.CHANGED }, col: { i: 2, t: ST.SIDE + 2.8, t1: ST.CHANGED + .5 }, ...extra }); };
-const GL = [{ row: 0, s: '*Build*.', y: 478, t: s('BUILD', 1), t1: ST.CHANGED }, { row: 1, s: '*Confuse*.', y: 1082, t: s('CONFUSE', 1), t1: ST.CHANGED }];
+  if (v < ST.SIDE + .6) { const X = KIT.X; X.save(); X.globalAlpha = 1 - sm((v - ST.SIDE) / .3); X.font = KIT.font(GS, { face: KIT.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.fillStyle = KIT.INKC; X.fillText('וְ', gx, GY); X.restore(); }   // "and" stays behind
+  KIT.STACK(v, a, b, { ...SK, from: { t: ST.SIDE + .1, d1: .001, hold: 0, d2: 1.1, size: 121, rows: [{ cx: bb.rN - M().wN / 2, y: bb.y }, { cx: gx - vav - (wb - vav) / 2, y: GY }], mid: { size: 150, cw: 100, rows: [{ cx: 770, y: 800 }, { cx: 310, y: 800 }] } },
+    join: { t: ST.SIDE + 1.1, diff: 2, t1: ST.CHANGED }, col: { i: 2, t: ST.SIDE + 1.6, t1: ST.CHANGED + .5 }, ...extra }); };
+const GL = [{ row: 0, s: '*Build*.', y: 478, t: s('BUILD', 1), t1: ST.CHANGED }, { row: 1, s: '*Confuse*.', y: 1072, t: s('CONFUSE', 1), t1: ST.CHANGED }];
 P('SIDE', all(STG(), TW, CAP([['Put them side by side.', ST.SIDE, ST.SIDE + 1.3]]), STACK({})));
 P('BUILD', all(STG(), TW, STACK({ gloss: GL })));
 P('CONFUSE', all(STG(), TW, STACK({ gloss: GL })));
@@ -76,10 +76,10 @@ P('CHANGED', all(STG(), TW, CAP([['*One letter* changed.', ST.CHANGED, s('CHANGE
 const LR = (x, y, v, t) => { const X = KIT.X; KIT.RING(x, y - 200 * .36 - 8, 84, 112, v, -9, { glow: 1.3, solid: true, lw: 5 }); X.save(); X.font = KIT.font(200, { face: KIT.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.fillStyle = KIT.HOT; X.fillText('ל', x, y); X.restore(); };
 const tb = s('CITY', 1);
 const SHEM = HW({ s: 'שֵׁם', y: 650, size: 200, t: ST.NAME + .9, hot: ['שֵׁם'], hotOff: ST.CITY + .1 });
-P('NAME', all(STG(), TW, CAP([['They wanted', ST.NAME, ST.NAME + .7], ['to make a *name*.', ST.NAME + .7, EN('NAME') - .5]]), SHEM, v => LR(colX2, SY1, v)));
+P('NAME', all(STG(), TW, CAP([['They wanted', ST.NAME, ST.NAME + .7], ['to make a *name*.', ST.NAME + .7, EN('NAME') - .5]]), SHEM, v => LR(lerp(colX2, 540, eio((v - ST.NAME) / .6)), SY1, v)));
 P('CITY', all(STG(), TW, CAP([['The city got one:', ST.CITY, tb]]), SHEM,
-  v => { const k = eio((v - tb) / .7), x = lerp(colX2, M().lxB - 46, k), y = SY1 - Math.sin(Math.PI * k) * 90; LR(x, y, v); },
-  v => KIT.HEBW(v, { s: 'בָּבֶ', right: M().BR, y: SY1, size: 200, t: tb + .45 }),
+  v => { const k = eio((v - tb) / .7), x = lerp(540, M().lxB - 30, k), y = SY1 - Math.sin(Math.PI * k) * 90; LR(x, y, v); },
+  v => { if (v < tb) return; const X = KIT.X, k = eio((v - tb) / .7); X.save(); X.globalAlpha = sm((v - tb) / .3); const wb = hw('בָּבֶ', 200), xr = lerp(1000 + wb / 2, M().BR + 15 - wb / 2, k); KIT.heb('בָּבֶ', xr, SY1, 200, v, {}); X.restore(); },
   v => KIT.ink(v, tb + .9, () => KIT.rich('Babel', 540, 1075, 54, v, { caps: true, ls: 6, color: KIT.INK(.66), plain: true }), { blur: 3 })));
 // END VERSE, alone (Gen 11:9 has the Divine Name: English only)
 const ENDV = (v, a, b) => { const e = TM['END VERSE']; KIT.STAGE(v, a, { cy: 900 }); KIT.REF('Genesis 11:9', 620, v, a + .1);
