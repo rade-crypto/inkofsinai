@@ -1,79 +1,75 @@
-# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 7
+# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 8
 
 **Title:** David and Bathsheba: The One Word Behind the Crime
 **Thumbnail:** David on the palace roof at night, in gold ink. Glowing circle on the sealed letter in his hand. Text: "HE **SENT.**"
 
 ---
 
-A soldier walks back to the front carrying a letter from the king. It's his own death order.
+A soldier walks back to the front carrying a letter from the king, and the letter is his own death order.
 
-King David wrote it. He has already taken this man's wife. And for both crimes, he never leaves his palace.
+King David wrote it. He has already taken this man's wife, and for both crimes he never leaves his palace.
 
 His orders go out through one Hebrew word: שָׁלַח. Send.
 
-In 2 Samuel 11, that word appears twelve times. No chapter in the Bible has more.
+In 2 Samuel 11, that word appears twelve times, and no chapter in the Bible has more. Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
 
-Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
+It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling: it's read "kings," but the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
 
-It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. It's read "kings." But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
+And David sends. He sends Joab, his general, with the whole army, and he stays home in Jerusalem.
 
-And David sends. He sends Joab and the whole army to war, and he stays in Jerusalem.
+One evening David gets up from his bed and walks on the roof of the king's house, and from the roof he sees a woman bathing, a very beautiful woman.
 
-One evening David gets up from his bed and walks on the roof of the king's house. From the roof he sees a woman bathing, and she is very beautiful.
+He stays where he is and sends someone to ask who she is. The answer names her husband: "Bathsheba, daughter of Eliam, wife of Uriah the Hittite."
 
-He stays where he is, and sends. He sends to ask who she is, and the answer names her husband: "Bathsheba, daughter of Eliam, wife of Uriah the Hittite."
+So now he knows she's married, but he sends again. וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ. "David sent messengers, and took her," and lay with her. There are the messengers from the first verse.
 
-So now he knows she's married. But he sends again. וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ. "David sent messengers, and took her," and lay with her. There are the messengers.
+She goes home, and when she finds she is pregnant, she sends David two words: הָרָה אָנֹכִי, "I'm pregnant." In all of 2 Samuel, those are the only words of hers it quotes.
 
-She goes home. Then she sends something back. Two words: הָרָה אָנֹכִי. "I'm pregnant." In all of 2 Samuel, those are the only words of hers it quotes. And she sends them.
+Now David needs her husband home, fast, and one verse holds three sends. David sends to Joab, שְׁלַח אֵלַי אֶת אוּרִיָּה, "send me Uriah," and Joab sends Uriah.
 
-Now David needs her husband home, fast. One verse, three sends. David sends to Joab: שְׁלַח אֵלַי אֶת אוּרִיָּה, "send me Uriah." And Joab sends Uriah.
+The plan is simple: if Uriah sleeps at home with his wife, the baby will pass as his. So David tells him, "Go down to your house and wash your feet," which means go home and spend the night.
 
-The plan is simple. If Uriah sleeps at home, the baby will pass as his. So David tells him, "Go down to your house and wash your feet."
+But Uriah sleeps at the palace door with the servants. When David asks why, Uriah says, "The ark, and Israel, and Judah are living in booths, and my master Joab is camped in the open field. And I should go home to eat, and to drink, and to lie with my wife? By your life, I won't do it."
 
-But Uriah sleeps at the palace door, with the servants. David asks why. Uriah says, "The ark, and Israel, and Judah are living in booths. My master Joab is camped in the open field. And I should go home to eat, and to drink, and to lie with my wife? By your life, I won't do it."
+Eat, drink, lie with my wife: לֶאֱכֹל וְלִשְׁתּוֹת וְלִשְׁכַּב. A prophet is going to hand those three words back to David.
 
-Eat. Drink. Lie with my wife. לֶאֱכֹל וְלִשְׁתּוֹת וְלִשְׁכַּב. A prophet is going to hand those three words back to David.
+So David says, "Stay today too, and tomorrow I'll send you off." He calls Uriah in to eat and drink with him and gets him drunk, but that evening Uriah still goes out to lie down with his master's servants. He never goes home.
 
-So David says, "Stay today too. Tomorrow I'll send you off." David calls him in to eat and drink, and gets him drunk. That evening Uriah goes out to lie down, with his master's servants. He never goes home.
+So the cover-up turns into a murder plan, and Uriah is going to deliver it himself.
 
-So the cover-up turns into a murder plan. And Uriah is going to deliver it himself.
+In the morning David writes a letter to Joab, וַיִּשְׁלַח בְּיַד אוּרִיָּה, and sends it by the hand of Uriah. The letter says, "Put Uriah in front, where the fighting is fiercest, then pull back from him, so that he is struck and dies."
 
-In the morning David writes a letter to Joab, וַיִּשְׁלַח בְּיַד אוּרִיָּה, and sends it by the hand of Uriah.
+Joab puts Uriah where he knows the strongest enemy fighters are, and Uriah dies along with other soldiers. Joab sends a messenger with the report and coaches him: if the king gets angry about the losses, add one line, "Your servant Uriah the Hittite is dead too."
 
-The letter says: "Put Uriah in front, where the fighting is fiercest. Then pull back from him, so that he is struck and dies."
+The messenger tells David everything Joab sent him to say, and David's answer for Joab is a shrug: אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה. "Don't let this thing be evil in your eyes. The sword devours this one and that one."
 
-Joab puts Uriah where he knows the strongest enemy fighters are. Uriah dies, and other soldiers with him. Joab sends a messenger with the report, and coaches him: if the king gets angry about the losses, add one line. "Your servant Uriah the Hittite is dead too."
+Bathsheba mourns her husband. When the mourning is over, David sends once more and brings her into his house, and she becomes his wife and bears him a son. As far as anyone can see, it worked.
 
-The messenger tells David everything Joab sent him to say. And David's answer for Joab is a shrug: אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה. "Don't let this thing be evil in your eyes. The sword devours this one and that one."
+That's twelve sends, and eight of them are David's. Uriah never sends anything; he's the one who gets sent. And David thinks the sending is over.
 
-Bathsheba mourns her husband. When the mourning is over, David sends once more and brings her into his house. She becomes his wife and bears him a son. As far as anyone can see, it worked.
+But the chapter's last line throws his own words back at him. He told Joab not to let this be evil in his eyes, and the narrator answers with the same words: וַיֵּרַע הַדָּבָר אֲשֶׁר עָשָׂה דָוִד. "But the thing David had done was evil in the eyes of God."
 
-That's twelve. Eight of them are David's. Uriah sends none. He's the one who gets sent. And David thinks the sending is over.
+One verse later, chapter 12 opens with the same word and a new sender: "And God sent Nathan to David."
 
-But the chapter's last line throws his own words back at him. He told Joab, don't let this be evil in your eyes. The narrator answers with the same words: וַיֵּרַע הַדָּבָר אֲשֶׁר עָשָׂה דָוִד. "But the thing David had done was evil in the eyes of God."
+Nathan the prophet comes with a case for the king to judge. A rich man has flocks and herds, and a poor man has nothing but one little ewe lamb that he raised with his children. "It ate from his bread, drank from his cup, and lay in his arms."
 
-One verse later, chapter 12 opens with the same word, and a new sender. "And God sent Nathan to David."
+Eat, drink, lie: תֹאכַל, תִשְׁתֶּה, תִשְׁכָּב. These are Uriah's three verbs in the same order, and the lamb lives the life Uriah wouldn't let himself have.
 
-Nathan comes with a case for the king to judge. A rich man with flocks and herds. A poor man with one little ewe lamb, raised with his children. "It ate from his bread, drank from his cup, and lay in his arms."
+When a traveler comes to the rich man, he won't take from his own flock, so he takes the poor man's lamb and serves it.
 
-Eat. Drink. Lie. תֹאכַל, תִשְׁתֶּה, תִשְׁכָּב. Uriah's three verbs, in the same order. The lamb lives the life Uriah wouldn't let himself have.
+David has no idea the story is about him. He explodes: "The man who did this is בֶן מָוֶת, a son of death, and he must repay the lamb four times over."
 
-A traveler comes to the rich man. He won't take from his own flock. He takes the poor man's lamb and serves it.
+And Nathan answers with two words: אַתָּה הָאִישׁ. "You are the man."
 
-David explodes. "The man who did this is בֶן מָוֶת, a son of death. He must repay the lamb four times over."
+Then the verdict throws David's shrug about the sword back at him: "You struck Uriah the Hittite with the sword, you took his wife, and you killed him with the sword of the Ammonites. So now, the sword will never leave your house." לֹא תָסוּר חֶרֶב מִבֵּיתְךָ.
 
-And Nathan says two words: אַתָּה הָאִישׁ. "You are the man."
+This time there's no messenger in between. David answers Nathan to his face: חָטָאתִי. "I have sinned against God."
 
-Then the verdict throws David's shrug about the sword back at him. "You struck Uriah the Hittite with the sword. You took his wife. You killed him with the sword of the Ammonites. So now, the sword will never leave your house." לֹא תָסוּר חֶרֶב מִבֵּיתְךָ.
+And Nathan answers at once: "God has taken away your sin. You will not die."
 
-David answers to his face. No messenger this time. חָטָאתִי. "I have sinned against God."
+David sent to take, and then to hide, but God sent Nathan to bring him back.
 
-Nathan answers at once: "God has taken away your sin. You will not die."
-
-David sent to take, and then to hide. God sent Nathan to bring him back.
-
-A psalm of David says it with our word. יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
+A psalm of David says it with our word: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
 
 ---
 

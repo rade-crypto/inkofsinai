@@ -54,6 +54,7 @@
 - No chapter titles or section cards in scripts. Write plain narration only.
 - Always write Hebrew words in Hebrew letters, never spelled out the way they're pronounced (no transliteration).
 - Before sending: one quick, time-limited reviewer (facts + skeptical viewer), apply the fixes, then send only the script.
+- The owner review comes last. Make every fix first, including the facts and skeptic pass. Then run one owner reviewer, who reads `_research/scripts_playbook.md` and reviews as the owner. If it finds anything, fix it and run the owner review again. Send only after it passes.
 
 # Titles, thumbnails, captions
 
