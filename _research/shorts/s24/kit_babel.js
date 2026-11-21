@@ -138,4 +138,35 @@ K.TOWER = (v, o) => {
       X.beginPath(); X.rect(-b.w / 2, -bh / 2, b.w, bh); X.fill(); X.stroke(); } }
   X.restore();
 };
+
+// ---------- the tower built of the word נבנה ("let us build") ----------
+// KIT.WTOWER(v,{p,base?,size?,hang?:{t,drop?},red?:{t,t1},wave?:{t},sky?:{t},city?:{t}}): a stepped tower whose bricks are the word נבנה,
+//   laid course by course (each word drops 26 px and settles). p = share of words placed. hang: from t, the next word stays half-written (two letters)
+//   until drop; red: from t to t1, the נ in the third place of the top word turns red inside a small glowing ring (the letter that will change);
+//   wave: a red light runs up the courses (every brick is "let us build"); sky: cloud strokes the top reaches; city: low word-houses either side.
+const WT = (() => { const tiers = [6, 5, 4, 3, 2, 1], per = [2, 2, 2, 2, 2, 2], out = []; let row = 0;
+  tiers.forEach((n, ti) => { for (let r = 0; r < per[ti]; r++, row++) { const odd = row % 2, m = Math.max(1, n - (odd ? 1 : 0));
+    for (let i = 0; i < m; i++) out.push({ k: (i - (m - 1) / 2), row, i: out.length, ti }); } });
+  return { list: out, rows: row }; })();
+K.WTOWER = (v, o) => {
+  const X = K.X, base = o.base ?? 1500, fs = o.size || 62, cw = fs * 2.08, ch = fs * 1.14, n = WT.list.length, placed = o.p * n;
+  X.save(); X.font = K.font(fs, { face: K.F.g }); X.direction = 'rtl'; X.textBaseline = 'alphabetic';
+  const L = ['נ', 'ב', 'נ', 'ה'], lw = L.map(c => X.measureText(c).width), W = lw.reduce((a, b) => a + b, 0);
+  const word = (cx, by, cnt, alpha, col3, wv) => { let r = cx + W / 2; for (let j = 0; j < cnt; j++) { X.globalAlpha = alpha; const c = j === 2 && col3 ? col3 : (wv > 0 ? K.mix(wv * .75) : K.INKC);
+      X.fillStyle = c; X.textAlign = 'right'; X.fillText(L[j], r, by); r -= lw[j]; } };
+  X.strokeStyle = K.INK(.55); X.lineWidth = 3; X.lineCap = 'round'; X.beginPath(); X.moveTo(130, base + 16); X.lineTo(950, base + 16); X.stroke();
+  if (o.sky && v >= o.sky.t) { const a = K.sm((v - o.sky.t) / 1.2), top = base - WT.rows * ch; X.strokeStyle = K.INK(.45 * a); X.lineWidth = 4;
+    [[-340, 6, 290], [70, 44, 270], [-170, 86, 230]].forEach(([dx, dy, w], q) => { const sh = ((v - o.sky.t) * 14) * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 14, 540 + dx + w * .6 + sh, top + dy + 12, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
+  if (o.city && v >= o.city.t) [-1, 1].forEach(sd => { for (let r = 0; r < 2; r++) { const f = (v - o.city.t) / .18 - r - (sd > 0 ? .5 : 0); if (f <= 0) continue; const e = K.eo(Math.min(1, f));
+    word(540 + sd * 400, base - r * ch - (1 - e) * 26, 4, Math.min(1, f), null, 0); } });
+  let top = null;
+  WT.list.forEach(b => { const f = placed - b.i; if (f <= 0) return; const e = K.back(Math.min(1, f / 2.2)), cx = 540 + b.k * cw, by = base - b.row * ch - (1 - e) * 40;
+    const wv = o.wave ? Math.sin(Math.PI * K.cl((v - o.wave.t - (WT.rows - b.row) * .035) / .55)) : 0;
+    const isTop = f >= 1 && Math.floor(placed) - 1 === b.i, red = o.red && isTop && v >= o.red.t && v < (o.red.t1 ?? 1e9);
+    word(cx, by, 4, Math.min(1, f / 1.4), red ? K.mix(K.sm((v - o.red.t) / .4)) : null, wv); if (isTop) top = { cx, by }; });
+  if (o.hang && v >= o.hang.t && (o.hang.drop == null || v < o.hang.drop)) { const b = WT.list[Math.min(n - 1, Math.floor(placed))], cx = 540 + b.k * cw, by = base - b.row * ch;   // a word left half-written
+    word(cx, by, 2, 1, null, 0); X.globalAlpha = .25 + .15 * Math.sin((v - o.hang.t) * 4); X.fillStyle = K.INKC; X.textAlign = 'right'; X.fillText('נ', cx + W / 2 - lw[0] - lw[1], by); }
+  X.restore();
+  if (o.red && top && v >= o.red.t && v < (o.red.t1 ?? 1e9)) { const x = top.cx + W / 2 - lw[0] - lw[1] - lw[2] / 2; K.RING(x, top.by - fs * .3, 27, 34, v, o.red.t + .1, { d: .5, glow: 1.2, solid: true, lw: 4 }); }
+};
 })();
