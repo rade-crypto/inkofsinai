@@ -1,13 +1,13 @@
-# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 4
+# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 5
 
 **Title:** David and Bathsheba: The One Word Behind the Crime
 **Thumbnail:** David on the palace roof at night, in gold ink. Glowing circle on the sealed letter in his hand. Text: "HE **SENT.**"
 
 ---
 
-King David hands a soldier a letter to carry back to the front. It's the soldier's own death order.
+A soldier walks back to the front carrying a letter from the king. It's his own death order.
 
-The king has already taken this man's wife. And for both crimes, he never leaves his palace.
+King David wrote it. He has already taken this man's wife. And for both crimes, he never leaves his palace.
 
 His orders go out through one Hebrew word: שָׁלַח. Send.
 
@@ -15,11 +15,11 @@ In 2 Samuel 11, that word appears twelve times. No chapter in the Bible has more
 
 Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
 
-It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. English Bibles say "kings" here. But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
+It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. Your Bible says "kings" here. But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
 
 And David sends. He sends Joab and the whole army to war, and he stays in Jerusalem.
 
-Bathsheba gets blamed for bathing on a roof to be seen. But read the verse. David gets up from his bed in the evening and walks on the roof of the king's house, and from the roof he sees a woman bathing. The only roof in that verse is his.
+You may have heard that Bathsheba bathed on her roof to be seen. Read the verse. David gets up from his bed in the evening and walks on the roof of the king's house, and from the roof he sees a woman bathing. The only roof in that verse is his.
 
 He stays where he is, and sends. He sends to ask who she is, and the answer names her husband: "Bathsheba, daughter of Eliam, wife of Uriah the Hittite."
 
@@ -67,9 +67,9 @@ And Nathan says two words: אַתָּה הָאִישׁ. "You are the man."
 
 Then the verdict throws David's shrug about the sword back at him. "You struck Uriah the Hittite with the sword. You took his wife. You killed him with the sword of the Ammonites. So now, the sword will never leave your house." לֹא תָסוּר חֶרֶב מִבֵּיתְךָ.
 
-This time David sends no messenger. He says it to Nathan's face: חָטָאתִי. "I have sinned against God."
+David answers to his face. No messenger this time. חָטָאתִי. "I have sinned against God."
 
-Nathan answers, "God has taken away your sin. You will not die." But the child will, and on the seventh day the baby dies.
+Nathan tells him, "God has taken away your sin. You will not die." But the child will, and on the seventh day the baby dies.
 
 Bathsheba bears another son, Solomon. And there's our word again, in a phrase we've already heard.
 
