@@ -170,8 +170,8 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - Religion has the top open rate (MailerLite: 55.7% vs 43.5% median).
 - **Avoid:**
   - Pictograph letter-meaning charts (not from the Tanakh, and disputable).
-  - "Names of God" and the Aaronic Blessing (Divine Name).
-  - Wallpapers (low demand, Divine Name).
+  - "Names of God" and the Aaronic Blessing. Since Nov 21 the Divine Name is allowed, written as ה׳, so these are no longer ruled out on that ground.
+  - Wallpapers (low demand).
   - Angel-number "biblical numbers".
   - A Torah calendar as the magnet (Hebcal and Chabad give it away free, and it skews Jewish).
 - **Audience asks (539 YouTube comments, Nov 4):**

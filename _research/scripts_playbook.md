@@ -225,7 +225,7 @@ Quotes from the owner are in quotation marks, with dates as MM-DD.
   - The owner once said "use the scrolls, not the Leningrad codex" (10-26), but CLAUDE.md is later and stands: the WLC.
 - **Keep interpretation separate from the text,** and translate conservatively ("struggle", not "crush"). Don't stretch a pattern past the text (Rebekah has no rival wife).
 - **Watch for the objections a commenter will raise.** "Would someone say Solomon isn't a prophet?"
-- **Tanakh only as authority.** Say "God", never "Hashem", and no Divine Name in on-screen Hebrew. Keep manuscripts off screen ("Dont mention leningrad codex"). Outside sources go in the pinned comment.
+- **Tanakh only as authority.** Say "God", never "Hashem". The Divine Name may appear in on-screen Hebrew, written as ה׳ (owner, Nov 21; this replaces the old ban). Keep manuscripts off screen ("Dont mention leningrad codex"). Outside sources go in the pinned comment.
 - **Name people where the Bible names them.** Unnamed is fine: "if theyre not named its fine, obviously".
 - **Facts are the floor.** After the fact-check, rework every line for attention (11-04).
 
