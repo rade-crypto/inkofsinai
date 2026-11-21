@@ -332,3 +332,34 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
   - Attraction: a small pattern challenge or single-pattern course.
   - Validate before building.
+
+## Viewer-panel ranking (Nov 21, 2026; semantic similarity rating)
+- **Method** (Colgate/PyMC Labs, "LLMs Reproduce Human Purchase Intent…", 2025): AI personas with demographics answer in brief free text, never numbers. Each answer is embedded and compared with 6 sets of 5 generic anchor sentences, and the resulting distribution's mean is the score. The paper reached 90% of human test–retest reliability. Without demographics, ranking signal fell from 92% to ~50%. Direct numeric ratings cluster at 3.
+- **Ours:**
+  - 20 personas (`_research/ssr_panel/personas.json`), in 4 panels of 5 with a shuffled order per panel.
+  - Click (title + thumbnail) and love (the reveal) were asked separately, with each video judged on its own.
+  - Embeddings: bge-large-en-v1.5, which matched hand-labelled reactions at Spearman 0.91 for click and 0.96 for love.
+  - Scorer: `_research/ssr_panel/ssr_score.py`. Run files: `_research/ssr_panel/runs/2026-11-21/`.
+- **Differences from the paper:** one sample per persona, not two. Five personas share one context, not one call each. No human baseline yet, so check it against real CTR.
+- **Result (17 concepts from 3 independent finders):**
+  - Robust top 4, each in the top 5 in 91–97% of resamples:
+    - David and Bathsheba, "send" ×12
+    - Samson's eyes
+    - Cain and Abel as Eden told again
+    - Noah's ark = Moses' basket (תֵּבָה)
+  - Fifth is a toss-up: Witch of Endor's robe (40%) vs Ehud (43%).
+  - Bottom: Nephilim spies, Jonah "evil", Elijah's voice, Bridegroom of Blood.
+  - Skeptic/secular/Jewish viewers favor David, Ehud, Endor. Believers favor Cain/Eden, Noah/Moses, Samson.
+- **Verified (WLC):**
+  - שׁלח 12× in 2 Sam 11. Then 12:1 has God send Nathan. God also sends earlier in Samuel (1 Sam 12:8, 15:1), so don't say "first".
+  - אַל יֵרַע בְּעֵינֶיךָ (11:25) vs וַיֵּרַע הַדָּבָר (11:27).
+  - הַיָּשָׁר בְּעֵינָיו יַעֲשֶׂה only Judg 17:6, 21:25.
+  - תֵּבָה only Gen 6–9 and Exod 2:3, 5. חֵמָר only Gen 11:3, 14:10, Exod 2:3.
+  - תְּשׁוּקָה only Gen 3:16, 4:7, Song 7:11.
+  - מְעִיל 7× in 1 Samuel (2:19; 15:27; 18:4; 24:5; 24:12 ×2; 28:14).
+  - אִטֵּר יַד יְמִינוֹ only Judg 3:15, 20:16.
+  - לִבְרֹחַ תַּרְשִׁישָׁה only Jonah 1:3, 4:2.
+  - root רעע 10× in Jonah.
+  - "40 days and 40 nights": Gen 7:4, 12; Exod 24:18; 34:28; Deut 9:9, 11, 18, 25; 10:10; 1 Kgs 19:8.
+  - 1 Kgs 19:10 = 19:14 word for word (25 words).
+  - נְפִלִים only Gen 6:4 and Num 13:33 (×2).
