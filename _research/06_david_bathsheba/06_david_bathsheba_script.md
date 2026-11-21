@@ -1,4 +1,4 @@
-# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 5
+# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 6
 
 **Title:** David and Bathsheba: The One Word Behind the Crime
 **Thumbnail:** David on the palace roof at night, in gold ink. Glowing circle on the sealed letter in his hand. Text: "HE **SENT.**"
@@ -69,17 +69,11 @@ Then the verdict throws David's shrug about the sword back at him. "You struck U
 
 David answers to his face. No messenger this time. חָטָאתִי. "I have sinned against God."
 
-Nathan tells him, "God has taken away your sin. You will not die." But the child will, and on the seventh day the baby dies.
+Nathan answers at once: "God has taken away your sin. You will not die."
 
-Bathsheba bears another son, Solomon. And there's our word again, in a phrase we've already heard.
+David sent message after message to keep his own hands clean, and none of it was hidden from God. But the moment he stopped sending and said it himself, God took the sin away.
 
-David's letter went out וַיִּשְׁלַח בְּיַד אוּרִיָּה, "sent by the hand of Uriah." Now the text says, "God loved him, וַיִּשְׁלַח בְּיַד נָתָן הַנָּבִיא, and He sent by the hand of Nathan the prophet." In 2 Samuel, those words appear only these two times.
-
-David's letter carried a man's death. God's message carries a name for the boy: Jedidiah. Its first half is יְדִיד, beloved. Beloved, because of God.
-
-A king can send in secret, but God sees every message, and He still sends His own. Into the very house the sword will never leave, what He sends is love.
-
-A psalm of David says it with our word. יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
+A psalm of David says how far He takes it. כִּרְחֹק מִזְרָח מִמַּעֲרָב הִרְחִיק מִמֶּנּוּ אֶת פְּשָׁעֵינוּ. "As far as the east is from the west, so far has He removed our transgressions from us."
 
 ---
 
