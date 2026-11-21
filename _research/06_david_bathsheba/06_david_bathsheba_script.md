@@ -15,7 +15,7 @@ In 2 Samuel 11, that word appears twelve times. No chapter in the Bible has more
 
 Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
 
-It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. Your Bible says "kings" here. But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
+It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. It's read "kings." But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
 
 And David sends. He sends Joab and the whole army to war, and he stays in Jerusalem.
 
