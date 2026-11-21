@@ -67,6 +67,11 @@
   - No fade-outs: scenes hold, then cut.
   - Text and graphics are centered together, inside the 9:16 safe zone, with no floating icons.
 
+# Past work lives on every branch
+
+- Before writing any script, hook, title or caption, run `git fetch --all` and search every branch for past scripts and notes. Don't rely only on the current checkout.
+- Read `_research/scripts_playbook.md` in full first. It holds the owner's notes and the formula of the finished scripts, including how endings work. Then run its checklist.
+
 # Research notes
 
 `_research/notes.md` holds everything researched so far: demand data, channel hits, writing principles, topic verdicts and verified Hebrew. Read it before picking a topic or writing, and add new findings to it.

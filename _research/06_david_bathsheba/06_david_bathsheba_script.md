@@ -1,13 +1,13 @@
-# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 3
+# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 4
 
 **Title:** David and Bathsheba: The One Word Behind the Crime
 **Thumbnail:** David on the palace roof at night, in gold ink. Glowing circle on the sealed letter in his hand. Text: "HE **SENT.**"
 
 ---
 
-A soldier walks back to the front carrying a letter from the king. It's his own death order.
+King David hands a soldier a letter to carry back to the front. It's the soldier's own death order.
 
-King David wrote it. He has already taken this man's wife. And for both crimes, he never leaves his palace.
+The king has already taken this man's wife. And for both crimes, he never leaves his palace.
 
 His orders go out through one Hebrew word: שָׁלַח. Send.
 
@@ -15,11 +15,11 @@ In 2 Samuel 11, that word appears twelve times. No chapter in the Bible has more
 
 Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
 
-It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. Your Bible says "kings" here. But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
+It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling. English Bibles say "kings" here. But the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
 
 And David sends. He sends Joab and the whole army to war, and he stays in Jerusalem.
 
-You may have heard that Bathsheba bathed on her roof to be seen. Read the verse. David gets up from his bed in the evening and walks on the roof of the king's house, and from the roof he sees a woman bathing. The only roof in that verse is his.
+Bathsheba gets blamed for bathing on a roof to be seen. But read the verse. David gets up from his bed in the evening and walks on the roof of the king's house, and from the roof he sees a woman bathing. The only roof in that verse is his.
 
 He stays where he is, and sends. He sends to ask who she is, and the answer names her husband: "Bathsheba, daughter of Eliam, wife of Uriah the Hittite."
 
@@ -69,6 +69,18 @@ Then the verdict throws David's shrug about the sword back at him. "You struck U
 
 David answers to his face. No messenger this time. חָטָאתִי. "I have sinned against God."
 
+Nathan answers, "God has taken away your sin. You will not die." But the child will, and on the seventh day the baby dies.
+
+Bathsheba bears another son, Solomon. And there's our word again, in a phrase we've already heard.
+
+David's letter went out וַיִּשְׁלַח בְּיַד אוּרִיָּה, "sent by the hand of Uriah." Now the text says, "God loved him, וַיִּשְׁלַח בְּיַד נָתָן הַנָּבִיא, and He sent by the hand of Nathan the prophet." In 2 Samuel, those words appear only these two times.
+
+David's letter carried a man's death. God's message carries a name for the boy: Jedidiah. Its first half is יְדִיד, beloved. Beloved, because of God.
+
+A king can send in secret and hide behind his messengers. God sees every message, and He still sends His own. Here, the last one He sends is love.
+
+A psalm of David says it with our word. יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
+
 ---
 
 ## Checked in the Hebrew (Westminster Leningrad Codex)
@@ -102,3 +114,11 @@ David answers to his face. No messenger this time. חָטָאתִי. "I have sin
   - 12:9 (English only) and לֹא תָסוּר חֶרֶב מִבֵּיתְךָ (12:10).
   - David's חָטָאתִי (12:13): show only חָטָאתִי on screen.
 - **"Once more", not "last":** David sends again in 13:7.
+- **Ending:**
+  - 12:13 (English only); 12:14, 18 (the seventh day); 12:24, "God loved him" (English only).
+  - וַיִּשְׁלַח בְּיַד appears in 2 Samuel only at 11:14 and 12:25; the only other place in the Tanakh is 1 Sam 16:20. The subject in 12:25 follows וַיהוָה אֲהֵבוֹ.
+  - "Another son", because 1 Chr 3:5 lists four sons of Bathsheba.
+  - יְדִידְיָהּ appears in English only; on screen show just יְדִיד.
+- **Closing verse:**
+  - Ps 57:1 is headed לְדָוִד.
+  - Ps 57:4: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי … יִשְׁלַח אֱלֹהִים חַסְדּוֹ וַאֲמִתּוֹ. On screen, show the Hebrew only up to וְיוֹשִׁיעֵנִי and put "God will send…" in English.
