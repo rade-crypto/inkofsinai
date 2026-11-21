@@ -29,6 +29,10 @@ K.RING = (cx, cy, rx, ry, v, t, o = {}) => {
   X.save(); X.strokeStyle = K.HOT; X.lineWidth = o.lw || 4; X.lineCap = 'round'; X.setLineDash(o.solid ? [] : [12, 10]); K.ringPath(cx, cy, rx, ry, p); X.stroke(); X.restore();
 };
 
+const PO = {};
+function pointsOnly(c, size, col) { const k = c + size + col; if (PO[k]) return PO[k]; const cv = document.createElement('canvas'); cv.width = Math.ceil(size * 1.4); cv.height = Math.ceil(size * 1.6);
+  const x = cv.getContext('2d'); x.font = K.font(size, { face: K.F.g }); x.textAlign = 'center'; x.direction = 'rtl'; x.textBaseline = 'alphabetic'; x.fillStyle = col; const bx = cv.width / 2, by = cv.height * .62;
+  x.fillText(c, bx, by); x.globalCompositeOperation = 'destination-out'; x.lineWidth = 4; x.strokeStyle = '#000'; x.fillText(c[0], bx, by); x.strokeText(c[0], bx, by); return PO[k] = cv; }
 K.STACK = (v, a, b, o) => {
   const X = K.X, f = o.from, n = o.rows[0].cl.length, size0 = o.size || 230, cw0 = o.cw || 212;
   const k1 = f ? K.eio((v - f.t) / f.d1) : 1, u2 = f ? (v - f.t - f.d1 - f.hold) / f.d2 : 1, k2 = u2 >= 1 ? 1 : K.eio((u2 - .3) / .7), ky = K.eio(u2 / .6), kx = K.eio((u2 - .35) / .65), fk = k2;   // the lower word drops first, then both centre and grow   // phase 1: onto one line, side by side; phase 2: one under the other
@@ -38,11 +42,13 @@ K.STACK = (v, a, b, o) => {
   if (fk >= 1) K.inSafe(540 - cw * n / 2, rows[0].y - size * .9, 540 + cw * n / 2, rows[rows.length - 1].y + size * .3, 'STACK');
   const strip = o.strip ? K.sm((v - o.strip.t) / (o.strip.d || .9)) : (o.bare ? 1 : 0), dim = o.dim ? K.sm((v - o.dim.t) / .8) : 0;
   const colHot = o.col ? K.sm((v - o.col.t - .3) / .6) : 0, mk = o.morph ? (v - o.morph.t) / (o.morph.d || 1.5) : -1;
-  if (o.col) { const yt = rows[0].y - size * .98, yb = rows[rows.length - 1].y + size * .24; K.RING(colX(o.col.i), (yt + yb) / 2, cw * .48, (yb - yt) / 2, v, o.col.t, { d: .9 }); }
+  if (o.col && (o.col.t1 == null || v < o.col.t1)) { const yt = rows[0].y - size * .98, yb = rows[rows.length - 1].y + size * .24; K.RING(colX(o.col.i), (yt + yb) / 2, cw * .48, (yb - yt) / 2, v, o.col.t, { d: .7 }); }
+  if (o.join) { const X = K.X; [0, 1, 2, 3].filter(i => i !== o.join.diff).forEach((i, q) => { const t = o.join.t + q * .15, k = K.eo((v - t) / .3); if (k <= 0 || (o.join.t1 != null && v >= o.join.t1)) return;   // matching letters joined
+      X.save(); X.strokeStyle = K.INK(.5); X.lineWidth = 3; X.lineCap = 'round'; const y0 = rows[0].y + size * .14, y1 = rows[1].y - size * .74; X.beginPath(); X.moveTo(colX(i), y0); X.lineTo(colX(i), y0 + (y1 - y0) * k); X.stroke(); X.restore(); }); }
   if (o.gap) { const r = rows[o.gap.row], cy = r.y - size * .36; K.RING(colX(o.gap.i), cy - 8, 135, 135, v, o.gap.t + .25, { d: .8, glow: mk >= 1 ? 1.5 : .8, solid: mk >= 1, lw: mk >= 1 ? 4 + 2.5 * K.sm((v - o.morph.t - (o.morph.d || 1.5)) / 2) : 4 }); }
   rows.forEach((r, ri) => r.cl.forEach((c, i) => {
     rowCx = r.cx ?? 540; const t = r.t + i * .07; if (v < t) return;
-    let al = 1; if (dim && !(o.dim.keep === i)) al *= 1 - .66 * dim;
+    let al = 1; if (dim && !(o.dim.keep === i)) al *= 1 - .42 * dim;
     if (o.gap && ri === o.gap.row && i === o.gap.i) { al *= 1 - K.sm((v - o.gap.t) / .55); if (al <= 0) return; }
     let hk = 0; (o.hot || []).forEach(h => { if (h.row === ri) hk = Math.max(hk, K.on(v, h.t0, .55) * (1 - K.on(v, h.t1 ?? 1e9, .45))); });
     if (o.col && i === o.col.i) hk = Math.max(hk, colHot);
@@ -51,7 +57,8 @@ K.STACK = (v, a, b, o) => {
     let wave = 0; (o.hot || []).forEach(h => { if (h.row === ri) wave = Math.max(wave, Math.sin(Math.PI * K.cl((v - h.t0 - i * .08) / .5))); });
     K.ink(v, t, () => { X.font = K.font(size, { face: K.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.textBaseline = 'alphabetic'; X.fillStyle = K.mix(hk);
       if (wave > 0) { const cx0 = colX(i), cy0 = r.y - size * .3, sw = 1 + .09 * wave; X.translate(cx0, cy0 - wave * 10); X.scale(sw, sw); X.translate(-cx0, -cy0); }
-      X.globalAlpha *= al; X.fillText(c[0], colX(i), r.y); if (strip < 1 && c.length > 1) { X.globalAlpha *= 1 - strip; X.fillText(c, colX(i), r.y); } }, { rise: 10 });
+      X.globalAlpha *= al; X.fillText(c[0], colX(i), r.y);
+      if (strip < 1 && c.length > 1) { const pc = pointsOnly(c, size, X.fillStyle), dy = strip * 46; X.globalAlpha *= 1 - strip; X.drawImage(pc, colX(i) - pc.width / 2, r.y - pc.height * .62 + dy); } }, { rise: 10 });   // the vowel points fall away
   }));
   (o.gloss || []).forEach(g => { if (g.t1 == null || v < g.t1) K.WORDS(v, { s: g.s, y: g.y, size: 88, t: g.t }); });
   if (mk >= 0) {   // the letter comes down into the ring, then changes there
@@ -145,13 +152,14 @@ K.TOWER = (v, o) => {
 //   stop: from t the unfinished tier keeps its scaffold poles and stays half drawn (drop: building resumes). letter: a red נ in a glowing ring
 //   floats over the unfinished top (the "one letter"). sky: cloud strokes the finished top passes through.
 const ET = { w: [780, 640, 510, 390, 280, 180], h: [150, 132, 118, 104, 92, 80] };
+K.etTop = (p, base = 1500, sc = 1) => { let h = 0; const pp = p * ET.w.length; ET.h.forEach((hh, i) => { h += hh * K.eo(Math.min(1, K.cl(pp - i) / .45)); }); return base - h * sc; };
 K.ETOWER = (v, o) => {
-  const X = K.X, base = o.base ?? 1500, nT = ET.w.length, pp = o.p * nT; let y = base;
-  X.save(); X.lineCap = 'round'; X.lineJoin = 'round';
+  const X = K.X, base = o.base ?? 1500, nT = ET.w.length, pp = o.p * nT, sc = o.scale ?? 1; let y = base;
+  X.save(); X.translate(540, base); X.scale(sc, sc); X.translate(-540, -base); X.lineCap = 'round'; X.lineJoin = 'round';
   X.strokeStyle = K.INK(.6); X.lineWidth = 3; X.beginPath(); X.moveTo(90, base + 2); X.lineTo(990, base + 2); X.stroke();   // ground
   const tiers = []; for (let i = 0; i < nT; i++) { const w = ET.w[i], h = ET.h[i]; tiers.push({ x0: 540 - w / 2, x1: 540 + w / 2, y1: y, y0: y - h, w, h }); y -= h; }
   if (o.sky && v >= o.sky.t) { const a = K.sm((v - o.sky.t) / 1.4), top = tiers[nT - 1].y0; X.strokeStyle = K.INK(.42 * a); X.lineWidth = 4;
-    [[-360, 10, 300], [60, 52, 300], [-190, 96, 250]].forEach(([dx, dy, w], q) => { const sh = (v - o.sky.t) * 12 * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 16, 540 + dx + w * .6 + sh, top + dy + 14, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
+    [[-380, 70, 300], [80, 112, 300], [-200, 156, 250]].forEach(([dx, dy, w], q) => { const sh = (v - o.sky.t) * 12 * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 16, 540 + dx + w * .6 + sh, top + dy + 14, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
   tiers.forEach((T, i) => { const q = K.cl(pp - i); if (q <= 0) return;
     const ol = K.eio(q / .55), fill = K.eio((q - .35) / .65), top = T.y1 - T.h * K.eo(Math.min(1, q / .45));   // the tier rises out of the one below
     // body: paper-light face, shade on the right third
@@ -175,8 +183,6 @@ K.ETOWER = (v, o) => {
       X.beginPath(); X.moveTo(540 - T.w * .38, T.y0 - 26); X.lineTo(540 + T.w * .38, T.y0 - 26); X.stroke(); X.restore(); }
   });
   X.restore();
-  if (o.letter && v >= o.letter.t && v < (o.letter.t1 ?? 1e9)) { const i = Math.min(nT - 1, Math.floor(pp)), T = tiers[i], y0 = T.y0 - 150, k = K.back((v - o.letter.t) / .5);
-    X.save(); X.globalAlpha = K.sm((v - o.letter.t) / .25); X.translate(540, y0); X.scale(k, k); X.font = K.font(150, { face: K.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.fillStyle = K.HOT; X.fillText('נ', 0, 50); X.restore();
-    K.RING(540, y0, 78, 78, v, o.letter.t + .15, { d: .5, glow: 1.2, solid: true, lw: 4 }); }
+
 };
 })();

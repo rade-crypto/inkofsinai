@@ -179,6 +179,10 @@ K.RING = (cx, cy, rx, ry, v, t, o = {}) => {
   X.save(); X.strokeStyle = K.HOT; X.lineWidth = o.lw || 4; X.lineCap = 'round'; X.setLineDash(o.solid ? [] : [12, 10]); K.ringPath(cx, cy, rx, ry, p); X.stroke(); X.restore();
 };
 
+const PO = {};
+function pointsOnly(c, size, col) { const k = c + size + col; if (PO[k]) return PO[k]; const cv = document.createElement('canvas'); cv.width = Math.ceil(size * 1.4); cv.height = Math.ceil(size * 1.6);
+  const x = cv.getContext('2d'); x.font = K.font(size, { face: K.F.g }); x.textAlign = 'center'; x.direction = 'rtl'; x.textBaseline = 'alphabetic'; x.fillStyle = col; const bx = cv.width / 2, by = cv.height * .62;
+  x.fillText(c, bx, by); x.globalCompositeOperation = 'destination-out'; x.lineWidth = 4; x.strokeStyle = '#000'; x.fillText(c[0], bx, by); x.strokeText(c[0], bx, by); return PO[k] = cv; }
 K.STACK = (v, a, b, o) => {
   const X = K.X, f = o.from, n = o.rows[0].cl.length, size0 = o.size || 230, cw0 = o.cw || 212;
   const k1 = f ? K.eio((v - f.t) / f.d1) : 1, u2 = f ? (v - f.t - f.d1 - f.hold) / f.d2 : 1, k2 = u2 >= 1 ? 1 : K.eio((u2 - .3) / .7), ky = K.eio(u2 / .6), kx = K.eio((u2 - .35) / .65), fk = k2;   // the lower word drops first, then both centre and grow   // phase 1: onto one line, side by side; phase 2: one under the other
@@ -188,11 +192,13 @@ K.STACK = (v, a, b, o) => {
   if (fk >= 1) K.inSafe(540 - cw * n / 2, rows[0].y - size * .9, 540 + cw * n / 2, rows[rows.length - 1].y + size * .3, 'STACK');
   const strip = o.strip ? K.sm((v - o.strip.t) / (o.strip.d || .9)) : (o.bare ? 1 : 0), dim = o.dim ? K.sm((v - o.dim.t) / .8) : 0;
   const colHot = o.col ? K.sm((v - o.col.t - .3) / .6) : 0, mk = o.morph ? (v - o.morph.t) / (o.morph.d || 1.5) : -1;
-  if (o.col) { const yt = rows[0].y - size * .98, yb = rows[rows.length - 1].y + size * .24; K.RING(colX(o.col.i), (yt + yb) / 2, cw * .48, (yb - yt) / 2, v, o.col.t, { d: .9 }); }
+  if (o.col && (o.col.t1 == null || v < o.col.t1)) { const yt = rows[0].y - size * .98, yb = rows[rows.length - 1].y + size * .24; K.RING(colX(o.col.i), (yt + yb) / 2, cw * .48, (yb - yt) / 2, v, o.col.t, { d: .7 }); }
+  if (o.join) { const X = K.X; [0, 1, 2, 3].filter(i => i !== o.join.diff).forEach((i, q) => { const t = o.join.t + q * .15, k = K.eo((v - t) / .3); if (k <= 0 || (o.join.t1 != null && v >= o.join.t1)) return;   // matching letters joined
+      X.save(); X.strokeStyle = K.INK(.5); X.lineWidth = 3; X.lineCap = 'round'; const y0 = rows[0].y + size * .14, y1 = rows[1].y - size * .74; X.beginPath(); X.moveTo(colX(i), y0); X.lineTo(colX(i), y0 + (y1 - y0) * k); X.stroke(); X.restore(); }); }
   if (o.gap) { const r = rows[o.gap.row], cy = r.y - size * .36; K.RING(colX(o.gap.i), cy - 8, 135, 135, v, o.gap.t + .25, { d: .8, glow: mk >= 1 ? 1.5 : .8, solid: mk >= 1, lw: mk >= 1 ? 4 + 2.5 * K.sm((v - o.morph.t - (o.morph.d || 1.5)) / 2) : 4 }); }
   rows.forEach((r, ri) => r.cl.forEach((c, i) => {
     rowCx = r.cx ?? 540; const t = r.t + i * .07; if (v < t) return;
-    let al = 1; if (dim && !(o.dim.keep === i)) al *= 1 - .66 * dim;
+    let al = 1; if (dim && !(o.dim.keep === i)) al *= 1 - .42 * dim;
     if (o.gap && ri === o.gap.row && i === o.gap.i) { al *= 1 - K.sm((v - o.gap.t) / .55); if (al <= 0) return; }
     let hk = 0; (o.hot || []).forEach(h => { if (h.row === ri) hk = Math.max(hk, K.on(v, h.t0, .55) * (1 - K.on(v, h.t1 ?? 1e9, .45))); });
     if (o.col && i === o.col.i) hk = Math.max(hk, colHot);
@@ -201,7 +207,8 @@ K.STACK = (v, a, b, o) => {
     let wave = 0; (o.hot || []).forEach(h => { if (h.row === ri) wave = Math.max(wave, Math.sin(Math.PI * K.cl((v - h.t0 - i * .08) / .5))); });
     K.ink(v, t, () => { X.font = K.font(size, { face: K.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.textBaseline = 'alphabetic'; X.fillStyle = K.mix(hk);
       if (wave > 0) { const cx0 = colX(i), cy0 = r.y - size * .3, sw = 1 + .09 * wave; X.translate(cx0, cy0 - wave * 10); X.scale(sw, sw); X.translate(-cx0, -cy0); }
-      X.globalAlpha *= al; X.fillText(c[0], colX(i), r.y); if (strip < 1 && c.length > 1) { X.globalAlpha *= 1 - strip; X.fillText(c, colX(i), r.y); } }, { rise: 10 });
+      X.globalAlpha *= al; X.fillText(c[0], colX(i), r.y);
+      if (strip < 1 && c.length > 1) { const pc = pointsOnly(c, size, X.fillStyle), dy = strip * 46; X.globalAlpha *= 1 - strip; X.drawImage(pc, colX(i) - pc.width / 2, r.y - pc.height * .62 + dy); } }, { rise: 10 });   // the vowel points fall away
   }));
   (o.gloss || []).forEach(g => { if (g.t1 == null || v < g.t1) K.WORDS(v, { s: g.s, y: g.y, size: 88, t: g.t }); });
   if (mk >= 0) {   // the letter comes down into the ring, then changes there
@@ -289,35 +296,44 @@ K.TOWER = (v, o) => {
   X.restore();
 };
 
-// ---------- the tower built of the word נבנה ("let us build") ----------
-// KIT.WTOWER(v,{p,base?,size?,hang?:{t,drop?},red?:{t,t1},wave?:{t},sky?:{t},city?:{t}}): a stepped tower whose bricks are the word נבנה,
-//   laid course by course (each word drops 26 px and settles). p = share of words placed. hang: from t, the next word stays half-written (two letters)
-//   until drop; red: from t to t1, the נ in the third place of the top word turns red inside a small glowing ring (the letter that will change);
-//   wave: a red light runs up the courses (every brick is "let us build"); sky: cloud strokes the top reaches; city: low word-houses either side.
-const WT = (() => { const tiers = [6, 5, 4, 3, 2, 1], per = [2, 2, 2, 2, 2, 2], out = []; let row = 0;
-  tiers.forEach((n, ti) => { for (let r = 0; r < per[ti]; r++, row++) { const odd = row % 2, m = Math.max(1, n - (odd ? 1 : 0));
-    for (let i = 0; i < m; i++) out.push({ k: (i - (m - 1) / 2), row, i: out.length, ti }); } });
-  return { list: out, rows: row }; })();
-K.WTOWER = (v, o) => {
-  const X = K.X, base = o.base ?? 1500, fs = o.size || 62, cw = fs * 2.08, ch = fs * 1.14, n = WT.list.length, placed = o.p * n;
-  X.save(); X.font = K.font(fs, { face: K.F.g }); X.direction = 'rtl'; X.textBaseline = 'alphabetic';
-  const L = ['נ', 'ב', 'נ', 'ה'], lw = L.map(c => X.measureText(c).width), W = lw.reduce((a, b) => a + b, 0);
-  const word = (cx, by, cnt, alpha, col3, wv) => { let r = cx + W / 2; for (let j = 0; j < cnt; j++) { X.globalAlpha = alpha; const c = j === 2 && col3 ? col3 : (wv > 0 ? K.mix(wv * .75) : K.INKC);
-      X.fillStyle = c; X.textAlign = 'right'; X.fillText(L[j], r, by); r -= lw[j]; } };
-  X.strokeStyle = K.INK(.55); X.lineWidth = 3; X.lineCap = 'round'; X.beginPath(); X.moveTo(130, base + 16); X.lineTo(950, base + 16); X.stroke();
-  if (o.sky && v >= o.sky.t) { const a = K.sm((v - o.sky.t) / 1.2), top = base - WT.rows * ch; X.strokeStyle = K.INK(.45 * a); X.lineWidth = 4;
-    [[-340, 6, 290], [70, 44, 270], [-170, 86, 230]].forEach(([dx, dy, w], q) => { const sh = ((v - o.sky.t) * 14) * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 14, 540 + dx + w * .6 + sh, top + dy + 12, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
-  if (o.city && v >= o.city.t) [-1, 1].forEach(sd => { for (let r = 0; r < 2; r++) { const f = (v - o.city.t) / .18 - r - (sd > 0 ? .5 : 0); if (f <= 0) continue; const e = K.eo(Math.min(1, f));
-    word(540 + sd * 400, base - r * ch - (1 - e) * 26, 4, Math.min(1, f), null, 0); } });
-  let top = null;
-  WT.list.forEach(b => { const f = placed - b.i; if (f <= 0) return; const e = K.back(Math.min(1, f / 2.2)), cx = 540 + b.k * cw, by = base - b.row * ch - (1 - e) * 40;
-    const wv = o.wave ? Math.sin(Math.PI * K.cl((v - o.wave.t - (WT.rows - b.row) * .035) / .55)) : 0;
-    const isTop = f >= 1 && Math.floor(placed) - 1 === b.i, red = o.red && isTop && v >= o.red.t && v < (o.red.t1 ?? 1e9);
-    word(cx, by, 4, Math.min(1, f / 1.4), red ? K.mix(K.sm((v - o.red.t) / .4)) : null, wv); if (isTop) top = { cx, by }; });
-  if (o.hang && v >= o.hang.t && (o.hang.drop == null || v < o.hang.drop)) { const b = WT.list[Math.min(n - 1, Math.floor(placed))], cx = 540 + b.k * cw, by = base - b.row * ch;   // a word left half-written
-    word(cx, by, 2, 1, null, 0); X.globalAlpha = .25 + .15 * Math.sin((v - o.hang.t) * 4); X.fillStyle = K.INKC; X.textAlign = 'right'; X.fillText('נ', cx + W / 2 - lw[0] - lw[1], by); }
+// ---------- the tower: one line engraving of a stepped tower ----------
+// KIT.ETOWER(v,{p,base?,stop?:{t,drop?},letter?:{t,t1},sky?:{t}}): six set-back tiers drawn in ink line, rising smoothly as p goes 0→1.
+//   Each tier: its outline draws on, then fine course lines and the shade hatching on its right face wipe in; a ramp climbs the front.
+//   stop: from t the unfinished tier keeps its scaffold poles and stays half drawn (drop: building resumes). letter: a red נ in a glowing ring
+//   floats over the unfinished top (the "one letter"). sky: cloud strokes the finished top passes through.
+const ET = { w: [780, 640, 510, 390, 280, 180], h: [150, 132, 118, 104, 92, 80] };
+K.etTop = (p, base = 1500, sc = 1) => { let h = 0; const pp = p * ET.w.length; ET.h.forEach((hh, i) => { h += hh * K.eo(Math.min(1, K.cl(pp - i) / .45)); }); return base - h * sc; };
+K.ETOWER = (v, o) => {
+  const X = K.X, base = o.base ?? 1500, nT = ET.w.length, pp = o.p * nT, sc = o.scale ?? 1; let y = base;
+  X.save(); X.translate(540, base); X.scale(sc, sc); X.translate(-540, -base); X.lineCap = 'round'; X.lineJoin = 'round';
+  X.strokeStyle = K.INK(.6); X.lineWidth = 3; X.beginPath(); X.moveTo(90, base + 2); X.lineTo(990, base + 2); X.stroke();   // ground
+  const tiers = []; for (let i = 0; i < nT; i++) { const w = ET.w[i], h = ET.h[i]; tiers.push({ x0: 540 - w / 2, x1: 540 + w / 2, y1: y, y0: y - h, w, h }); y -= h; }
+  if (o.sky && v >= o.sky.t) { const a = K.sm((v - o.sky.t) / 1.4), top = tiers[nT - 1].y0; X.strokeStyle = K.INK(.42 * a); X.lineWidth = 4;
+    [[-380, 70, 300], [80, 112, 300], [-200, 156, 250]].forEach(([dx, dy, w], q) => { const sh = (v - o.sky.t) * 12 * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 16, 540 + dx + w * .6 + sh, top + dy + 14, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
+  tiers.forEach((T, i) => { const q = K.cl(pp - i); if (q <= 0) return;
+    const ol = K.eio(q / .55), fill = K.eio((q - .35) / .65), top = T.y1 - T.h * K.eo(Math.min(1, q / .45));   // the tier rises out of the one below
+    // body: paper-light face, shade on the right third
+    X.save(); X.beginPath(); X.rect(T.x0, top, T.w, T.y1 - top); X.clip();
+    X.fillStyle = 'rgba(250,242,222,.55)'; X.fillRect(T.x0, top, T.w, T.y1 - top);
+    if (fill > 0) { X.save(); X.beginPath(); X.rect(T.x0, top, T.w * fill, T.y1 - top); X.clip();
+      X.strokeStyle = K.INK(.28); X.lineWidth = 1.6; for (let yy = T.y1 - 16; yy > top + 4; yy -= 16) { X.beginPath(); X.moveTo(T.x0 + 6, yy); X.lineTo(T.x1 - 6, yy); X.stroke(); }   // courses
+      X.strokeStyle = K.INK(.22); X.lineWidth = 1.4; const sx = T.x1 - T.w * .3; for (let xx = sx - T.h; xx < T.x1; xx += 11) { X.beginPath(); X.moveTo(Math.max(sx, xx), T.y1 - Math.max(0, sx - xx)); X.lineTo(Math.min(T.x1, xx + T.h), T.y1 - T.h + Math.max(0, xx + T.h - T.x1)); X.stroke(); }   // shade
+      X.restore(); }
+    X.restore();
+    // outline, drawn on
+    const pts = [[T.x0, T.y1], [T.x0, top], [T.x1, top], [T.x1, T.y1]], seg = [T.y1 - top, T.w, T.y1 - top], tot = seg.reduce((a, b) => a + b, 0); let left = ol * tot;
+    X.strokeStyle = K.INK(.9); X.lineWidth = 3.2; X.beginPath(); X.moveTo(...pts[0]);
+    for (let k = 0; k < 3 && left > 0; k++) { const f = Math.min(1, left / seg[k]); X.lineTo(pts[k][0] + (pts[k + 1][0] - pts[k][0]) * f, pts[k][1] + (pts[k + 1][1] - pts[k][1]) * f); left -= seg[k]; } X.stroke();
+    if (i < 2 && fill > 0) { X.save(); X.globalAlpha = fill; X.strokeStyle = K.INK(.75); X.lineWidth = 2.4; const rw = 70 - i * 18;   // the ramp up the front
+      X.beginPath(); X.moveTo(540 - rw, T.y1); X.lineTo(540 - rw * .55, top); X.moveTo(540 + rw, T.y1); X.lineTo(540 + rw * .55, top); X.stroke();
+      X.lineWidth = 1.4; for (let yy = T.y1 - 12; yy > top + 4; yy -= 12) { const u = (T.y1 - yy) / (T.y1 - top), hw = rw * (1 - .45 * u); X.beginPath(); X.moveTo(540 - hw, yy); X.lineTo(540 + hw, yy); X.stroke(); } X.restore(); }
+    if (o.stop && v >= o.stop.t && (o.stop.drop == null || v < o.stop.drop) && q < 1) {   // left unfinished: scaffold poles
+      X.save(); X.globalAlpha = K.sm((v - o.stop.t) / .4); X.strokeStyle = K.INK(.7); X.lineWidth = 2.6;
+      [-.32, 0, .32].forEach(f => { const xx = 540 + T.w * f; X.beginPath(); X.moveTo(xx, top); X.lineTo(xx, T.y0 - 46); X.stroke(); });
+      X.beginPath(); X.moveTo(540 - T.w * .38, T.y0 - 26); X.lineTo(540 + T.w * .38, T.y0 - 26); X.stroke(); X.restore(); }
+  });
   X.restore();
-  if (o.red && top && v >= o.red.t && v < (o.red.t1 ?? 1e9)) { const x = top.cx + W / 2 - lw[0] - lw[1] - lw[2] / 2; K.RING(x, top.by - fs * .3, 27, 34, v, o.red.t + .1, { d: .5, glow: 1.2, solid: true, lw: 4 }); }
+
 };
 })();
 
@@ -339,63 +355,75 @@ const P = (n, f) => { const d = n === 'LOGO' ? 3.25 : TM[n][0]; addP(n, d, f); T
 const s = (n, i) => ST[n] + TM[n][i];   // absolute time of sub-line i of step n
 const all = (...fs) => (v, a, b) => fs.forEach(f => f(v, a, b));
 const STG = (cy = 900) => (v, a) => KIT.STAGE(v, a, { cy });
-const CAP = (lines, o = {}) => v => KIT.WLINES(v, { top: 400, size: 78, lines, ...o });   // the spoken line: always at the same height
+const CAP = (lines, o = {}) => v => KIT.WLINES(v, { top: 380, size: 78, lines, ...o });   // the spoken line: always at the same height
 const HW = o => v => KIT.HEBW(v, o);
 const REF = (str, y, t) => v => KIT.REF(str, y, v, t);
 const lerp = KIT.lerp, cl = KIT.cl;
 
-// 1–2. ONE OPENING SCENE (0–15 s): the tower is being laid from the first frame; on "the building stops" one brick hangs and never lands;
-// it stays frozen under the builders' words, falls into place on "Come, let us build", and the tower is finished into the sky.
+// ONE CENTRAL GRAPHIC, frame 1 to the payoff (the way the posted Shorts carry a bead chain or a slot): a drawn stepped tower, and on its top
+// the builders' word נִבְנֶה with a ring already round one letter (the open question). The tower rises, stops, finishes into the sky; God's words
+// come down from above onto the same word; the two words stack letter over letter on the tower; the ringed letter changes; the same ל ends in בָּבֶל.
+const eio = KIT.eio, eo = KIT.eo, sm = KIT.sm;
+const hw = (w, size) => { KIT.X.save(); KIT.X.font = KIT.font(size, { face: KIT.F.g }); const m = KIT.X.measureText(w).width; KIT.X.restore(); return m; };
+const letterX = (word, idx, right, size) => { const c = KIT.clusters(word); return right - (hw(c.slice(0, idx).join(''), size) + hw(c.slice(0, idx + 1).join(''), size)) / 2; };
 const stopT = s('HOOK2', 1) + .35;
-const towerP = v => v < stopT ? lerp(.42, .6, cl(v / stopT)) : v < ST.SAY + .2 ? .6 : v < ST.TOWER ? lerp(.6, .7, cl((v - ST.COME - .5) / (EN('COME') - ST.COME - .5))) : lerp(.7, 1, cl((v - ST.TOWER) / (TM.TOWER[0] - .7)));
-const TW = v => KIT.WTOWER(v, { p: towerP(v), hang: { t: stopT, drop: ST.SAY + .2 }, red: { t: ST.HOOK2 + 1.0, t1: ST.SAY + .2 }, wave: { t: ST.COME + .1 }, sky: { t: s('TOWER', 1) - .3 } });
-P('HOOK', all(STG(), TW, CAP([['The builders of Babel say,', .15, s('HOOK', 1)], ['“Let us *build*.”', s('HOOK', 1), EN('HOOK')]], { pre: .34 })));
-P('HOOK2', all(STG(), TW, CAP([['God changes *one letter*,', ST.HOOK2, s('HOOK2', 1)], ['and the building *stops*.', s('HOOK2', 1), EN('HOOK2')]])));
-const V4 = all(CAP([['In Hebrew, they say:', ST.SAY, s('SAY', 1)]]), HW({ s: 'הָבָה נִבְנֶה', y: 650, size: 176, t: s('SAY', 1), hot: ['נִבְנֶה'] }));
-P('SAY', all(STG(), TW, V4));
-P('COME', all(STG(), TW, V4, v => KIT.WORDS(v, { s: '“Come, let us *build*.”', y: 780, size: 80, t: ST.COME, end: EN('COME') - .5, italic: true }), REF('Genesis 11:4', 872, ST.COME + .9)));
-P('TOWER', all(STG(), TW, CAP([['A city, and a tower', ST.TOWER, s('TOWER', 1)], ['with its top in the *sky*.', s('TOWER', 1), EN('TOWER') - .4]])));
-// 3. God answers with their word (Gen 11:7): the builders' line, God's line under it, the same word exactly above itself
-const SZ = 132, SP = SZ * .28, hw = (w, size = SZ) => { KIT.X.save(); KIT.X.font = KIT.font(size, { face: KIT.F.g }); const m = KIT.X.measureText(w).width; KIT.X.restore(); return m; };
-const rowB = () => hw('הָבָה') + hw('נֵרְדָה') + hw('וְנָבְלָה') + 2 * SP, RXf = () => 540 + rowB() / 2 - 14, YA = 850, YB = 1150;
-const LBL = (str, y, t) => v => KIT.ink(v, t, () => { const X = KIT.X; X.save(); X.font = KIT.font(52); X.letterSpacing = '4px'; X.textAlign = 'right'; X.fillStyle = KIT.INK(.66); X.fillText(str.toUpperCase(), RXf(), y); X.restore(); }, { blur: 3 });
-const ROWS = v => { const RX = RXf(), tm = s('ANSWER', 2), off = s('DOWN', 3);
-  LBL('The builders', YA - 150, -9)(v); KIT.HEBW(v, { key: 'A', s: 'הָבָה נִבְנֶה', right: RX, y: YA, size: SZ, t: -9, hot: ['הָבָה'], hotAt: tm + .5, hotOff: off });
-  LBL('God', YB - 150, s('ANSWER', 1) + .4)(v);
-  KIT.HEBW(v, { key: 'B', s: 'הָבָה', right: RX, y: YB, size: SZ, t: tm, hot: ['הָבָה'], hotAt: tm + .5, hotOff: off });
-  if (v >= tm + .5 && v < off + .4) { const X = KIT.X, k = KIT.eo((v - tm - .5) / .5), x = RX + 14, y0 = YA - 46, y1 = YB - 46; X.save(); X.globalAlpha = 1 - KIT.sm((v - off) / .4); X.strokeStyle = KIT.HOT; X.lineWidth = 4; X.lineCap = 'round'; X.setLineDash([10, 12]);   // the link: same word
-    X.beginPath(); X.moveTo(x, y0); X.lineTo(x + 22, y0); X.lineTo(x + 22, y0 + (y1 - y0) * k); if (k >= 1) X.lineTo(x, y1); X.stroke(); X.restore(); }
-  let r = RX - hw('הָבָה') - SP; const t1 = s('DOWN', 1), t2 = s('DOWN', 3);
-  KIT.HEBW(v, { key: 'B', s: 'נֵרְדָה', right: r, y: YB - (1 - KIT.eo((v - t1) / .8)) * 50, size: SZ, t: t1 }); r -= hw('נֵרְדָה') + SP;
-  KIT.HEBW(v, { key: 'B', s: 'וְנָבְלָה', right: r, y: YB, size: SZ, t: t2, hot: ['וְנָבְלָה'] }); };
-P('ANSWER', all(STG(), ROWS, CAP([['Then God answers', ST.ANSWER, s('ANSWER', 1)], ['with their own *word*.', s('ANSWER', 1), s('ANSWER', 2)]])));
-P('DOWN', all(STG(), ROWS, CAP([['“Come, let us go down…', ST.DOWN, s('DOWN', 2)], ['and *confuse*.”', s('DOWN', 2), s('DOWN', 3)]], { italic: true, size: 80 }), REF('Genesis 11:7', 1290, s('DOWN', 3) + .5)));
-// 4. side by side: the two words leave their lines, stand on one line, then one slides under the other, letter over letter
-const SK = { size: 230, cw: 212, rows: [{ cl: ['נִ', 'בְ', 'נֶ', 'ה'], y: 830, t: 0 }, { cl: ['נָ', 'בְ', 'לָ', 'ה'], y: 1200, t: 0 }],
+const towerP = v => v < stopT ? lerp(.5, .62, cl(v / stopT)) : v < ST.COME ? .62 : v < ST.TOWER ? lerp(.62, .7, eio((v - ST.COME) / TM.COME[0])) : lerp(.7, 1, eio((v - ST.TOWER) / (TM.TOWER[0] - .6)));
+const towerS = v => v < ST.SIDE ? 1 : lerp(1, .55, eio((v - ST.SIDE) / .9));
+const TW = v => KIT.ETOWER(v, { p: towerP(v), scale: towerS(v), stop: { t: stopT, drop: ST.COME }, sky: { t: s('TOWER', 1) - .3 } });
+// the builders' word on the tower's top
+const BS = 150, SPc = 36, GS = 112, GY = 650; let LZ = null;   // widths are measured on first draw, once the fonts are in
+const M = () => LZ || (LZ = (() => { const wN = hw('נִבְנֶה', BS), wH = hw('הָבָה', BS), GW = hw('הָבָה', GS) + hw('נֵרְדָה', GS) + hw('וְנָבְלָה', GS) + 2 * SPc, BW = hw('בָּבֶל', 200), BR = 540 + BW / 2;
+  return { wN, wH, GW, GR: 540 + GW / 2, BW, BR, lxB: letterX('בָּבֶל', 2, BR, 200) }; })());
+const bandY = v => KIT.etTop(towerP(v)) - 36;
+const band = v => { const kj = eio((v - s('SAY', 1)) / .6), tot = M().wH + SPc + M().wN, kA = eio((v - s('ANSWER', 2) - .2) / .7);
+  let rN = lerp(540 + M().wN / 2, 540 - tot / 2 + M().wN, kj), rH = 540 + tot / 2; const dx = kA * (M().GR - rH); return { rN: rN + dx, rH: rH + dx, y: bandY(v) }; };
+const BAND = v => { const b = band(v), hotA = s('ANSWER', 2) + .45, off = s('DOWN', 3);
+  const redL = v >= ST.HOOK2 + 1.0 && v < ST.SAY + .2;
+  KIT.HEBW(v, { key: 'B', s: 'נִבְנֶה', right: b.rN, y: b.y, size: BS, t: -9, hotLetter: redL ? { word: 'נִבְנֶה', idx: 2, at: ST.HOOK2 + 1.0 } : null });
+  if (v >= s('SAY', 1)) KIT.HEBW(v, { key: 'B', s: 'הָבָה', right: b.rH, y: b.y, size: BS, t: s('SAY', 1) + .15, hot: ['הָבָה'], hotAt: hotA, hotOff: off });
+  if (v < s('ANSWER', 2)) { const lx = letterX('נִבְנֶה', 2, b.rN, BS); KIT.RING(lx, b.y - BS * .36, 50, 64, v, v < .01 ? -9 : -9, { d: .5, glow: redL ? 1.3 : .5, solid: redL, lw: redL ? 4 : 3 }); } };
+// God's words come down from above, the first word exactly over the builders' הָבָה
+const GOD = v => { const tm = s('ANSWER', 2), off = s('DOWN', 3); let r = M().GR;
+  [['הָבָה', tm], ['נֵרְדָה', s('DOWN', 1)], ['וְנָבְלָה', s('DOWN', 3)]].forEach(([w, t], i) => { const y = GY - (1 - eo((v - t) / .6)) * 150;
+    if (v >= t) KIT.HEBW(v, { key: 'G', s: w, right: r, y, size: GS, t, hot: i === 1 ? [] : [w], hotAt: t + .45, hotOff: i === 0 ? off : null, step: .06 }); r -= hw(w, GS) + SPc; });
+  if (v >= tm + .5 && v < off + .4) { const X = KIT.X, k = eo((v - tm - .5) / .35), b = band(v), x = M().GR - hw('הָבָה', GS) / 2, y0 = GY + 26, y1 = b.y - BS * .82;
+    X.save(); X.globalAlpha = 1 - sm((v - off) / .4); X.strokeStyle = KIT.HOT; X.lineWidth = 4; X.lineCap = 'round'; X.setLineDash([10, 12]); X.beginPath(); X.moveTo(x, y0); X.lineTo(x, y0 + (y1 - y0) * k); X.stroke(); X.restore(); } };
+
+P('HOOK', all(STG(), TW, BAND, CAP([['The builders of Babel say,', 0, s('HOOK', 1)], ['“Let us *build*.”', s('HOOK', 1), EN('HOOK')]], { pre: .75 })));
+P('HOOK2', all(STG(), TW, BAND, CAP([['God changes *one letter*,', ST.HOOK2, s('HOOK2', 1)], ['and the building *stops*.', s('HOOK2', 1), EN('HOOK2')]])));
+P('SAY', all(STG(), TW, BAND, CAP([['In Hebrew, they say:', ST.SAY, s('SAY', 1)]])));
+P('COME', all(STG(), TW, BAND, CAP([['“Come, let us *build*.”', ST.COME, EN('COME') - .5]], { italic: true, size: 84 }), REF('Genesis 11:4', 312, ST.COME + .8)));
+P('TOWER', all(STG(), TW, BAND, CAP([['A city, and a tower', ST.TOWER, s('TOWER', 1)], ['with its top in the *sky*.', s('TOWER', 1), EN('TOWER') - .4]])));
+P('ANSWER', all(STG(), TW, BAND, GOD, CAP([['Then God answers', ST.ANSWER, s('ANSWER', 1)], ['with their own *word*.', s('ANSWER', 1), s('ANSWER', 2)]])));
+P('DOWN', all(STG(), TW, BAND, GOD, CAP([['“Come, let us go down…', ST.DOWN, s('DOWN', 2)], ['and *confuse*.”', s('DOWN', 2), s('DOWN', 3)]], { italic: true, size: 80 }), REF('Genesis 11:7', 312, s('DOWN', 3) + .5)));
+// side by side: the two words leave their lines, stand side by side, then one slides under the other on top of the (now smaller) tower
+const SY0 = 700, SY1 = 965, SK = { size: 200, cw: 190, rows: [{ cl: ['נִ', 'בְ', 'נֶ', 'ה'], y: SY0, t: 0 }, { cl: ['נָ', 'בְ', 'לָ', 'ה'], y: SY1, t: 0 }],
   hot: [{ row: 0, t0: ST.BUILD + .05, t1: ST.CONFUSE }, { row: 1, t0: ST.CONFUSE + .05, t1: ST.CHANGED + .2 }] };
-const STACK = extra => (v, a, b) => { const RX = RXf(), ax = RX - hw('הָבָה') - SP - hw('נִבְנֶה') / 2, wb = hw('וְנָבְלָה'), bxr = RX - hw('הָבָה') - hw('נֵרְדָה') - 2 * SP, vav = hw('וְ');
-  if (v < ST.SIDE + .7) { const X = KIT.X; X.save(); X.globalAlpha = 1 - KIT.sm((v - ST.SIDE - .1) / .6); X.font = KIT.font(SZ, { face: KIT.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.fillStyle = KIT.INKC; X.fillText('וְ', bxr, YB); X.restore(); }   // the "and" stays behind
-  KIT.STACK(v, a, b, { ...SK, from: { t: ST.SIDE, d1: .9, hold: .5, d2: .9, size: SZ, rows: [{ cx: ax, y: YA }, { cx: bxr - vav - (wb - vav) / 2, y: YB }], mid: { size: 150, cw: 98, rows: [{ cx: 780, y: 960 }, { cx: 300, y: 960 }] } }, ...extra }); };
-const GL = [{ row: 0, s: '*Build*.', y: 590, t: s('BUILD', 1), t1: ST.CHANGED }, { row: 1, s: '*Confuse*.', y: 1370, t: s('CONFUSE', 1), t1: ST.CHANGED }];
-P('SIDE', all(STG(), CAP([['Put them side by side.', ST.SIDE, ST.SIDE + 1.3]]), STACK({})));
-P('BUILD', all(STG(), STACK({ gloss: GL })));
-P('CONFUSE', all(STG(), STACK({ gloss: GL })));
-// 5. THE MOMENT: the points dissolve, the ל lifts out and leaves a ring; the נ comes down into the ring, and there it becomes ל
-P('CHANGED', all(STG(), CAP([['*One letter* changed.', ST.CHANGED, s('CHANGED', 1)], ['{נ} became {ל}.', s('CHANGED', 1), s('CHANGED', 1) + 1.5]]),
-  STACK({ strip: { t: ST.CHANGED + .15, d: .8 }, dim: { t: ST.CHANGED + .4, keep: 2 }, gap: { row: 1, i: 2, t: ST.CHANGED + .5 }, morph: { t: s('CHANGED', 1) + .05, d: 2.0, i: 2 } })));
-// 6. the name they wanted, and the name the city got (Gen 11:4, 11:9): שֵׁם stays, בָּבֶל lands under it, and its ל comes down the same way
-const SHEM = HW({ s: 'שֵׁם', y: 800, size: 270, t: ST.NAME + .9, hot: ['שֵׁם'], hotOff: ST.CITY + .1 }), tb = s('CITY', 1);
-P('NAME', all(STG(), CAP([['They wanted', ST.NAME, ST.NAME + .7], ['to make a *name*.', ST.NAME + .7, EN('NAME') - .5]]), SHEM));
-P('CITY', all(STG(), CAP([['The city got one:', ST.CITY, tb]]), SHEM,
-  HW({ s: 'בָּבֶל', y: 1190, size: 270, t: tb, hot: [], hotLetter: { word: 'בָּבֶל', idx: 2, gap: 64, drop: { t: tb + .35, d: 1.0, h: 210 } } }),
-  v => { const l = KIT.lastLetter; if (l && v >= tb + 1.3) KIT.RING(l.x, l.y + 14, 135, 135, v, tb + 1.3, { d: .7, glow: 1.3, solid: true, lw: 4 + 2.5 * KIT.sm((v - tb - 2) / 2) }); },
-  HW({ s: 'בָּבֶל', y: 1190, size: 270, t: tb, hot: [], hotLetter: { word: 'בָּבֶל', idx: 2, gap: 64, drop: { t: tb + .35, d: 1.0, h: 210 } } }),   // again, on top of the ring's glow
-  v => KIT.ink(v, tb + .5, () => KIT.rich('Babel', 540, 1340, 54, v, { caps: true, ls: 6, color: KIT.INK(.66), plain: true }), { blur: 3 })));
-// 7. END VERSE, alone (Gen 11:9 has the Divine Name: English only)
+const colX2 = 540 - .5 * SK.cw;
+const STACK = extra => (v, a, b) => { const bb = band(ST.SIDE - .01), gx = M().GR - hw('הָבָה', GS) - hw('נֵרְדָה', GS) - 2 * SPc, vav = hw('וְ', GS), wb = hw('וְנָבְלָה', GS);
+  if (v < ST.SIDE + .6) { const X = KIT.X; X.save(); X.globalAlpha = 1 - sm((v - ST.SIDE) / .5); X.font = KIT.font(GS, { face: KIT.F.g }); X.direction = 'rtl'; X.textAlign = 'right'; X.fillStyle = KIT.INKC; X.fillText('וְ', gx, GY); X.restore(); }   // "and" stays behind
+  KIT.STACK(v, a, b, { ...SK, from: { t: ST.SIDE, d1: .9, hold: .4, d2: .9, size: 121, rows: [{ cx: bb.rN - M().wN / 2, y: bb.y }, { cx: gx - vav - (wb - vav) / 2, y: GY }], mid: { size: 150, cw: 100, rows: [{ cx: 770, y: 800 }, { cx: 310, y: 800 }] } },
+    join: { t: ST.SIDE + 2.3, diff: 2, t1: ST.CHANGED }, col: { i: 2, t: ST.SIDE + 2.8, t1: ST.CHANGED + .5 }, ...extra }); };
+const GL = [{ row: 0, s: '*Build*.', y: 478, t: s('BUILD', 1), t1: ST.CHANGED }, { row: 1, s: '*Confuse*.', y: 1082, t: s('CONFUSE', 1), t1: ST.CHANGED }];
+P('SIDE', all(STG(), TW, CAP([['Put them side by side.', ST.SIDE, ST.SIDE + 1.3]]), STACK({})));
+P('BUILD', all(STG(), TW, STACK({ gloss: GL })));
+P('CONFUSE', all(STG(), TW, STACK({ gloss: GL })));
+// THE MOMENT: the vowel points fall away, the ל lifts out and leaves a ring; the נ comes down into the ring, and there it becomes ל
+P('CHANGED', all(STG(), TW, CAP([['*One letter* changed.', ST.CHANGED, s('CHANGED', 1)], ['{נ} became {ל}.', s('CHANGED', 1), s('CHANGED', 1) + 1.5]]),
+  STACK({ strip: { t: ST.CHANGED + .15, d: .7 }, dim: { t: ST.CHANGED + .4, keep: 2 }, gap: { row: 1, i: 2, t: ST.CHANGED + .5 }, morph: { t: s('CHANGED', 1) + .05, d: 2.0, i: 2 } })));
+// the name they wanted, and the name the city got: the same red ל, in its ring, travels into בָּבֶל
+const LR = (x, y, v, t) => { const X = KIT.X; KIT.RING(x, y - 200 * .36 - 8, 84, 112, v, -9, { glow: 1.3, solid: true, lw: 5 }); X.save(); X.font = KIT.font(200, { face: KIT.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.fillStyle = KIT.HOT; X.fillText('ל', x, y); X.restore(); };
+const tb = s('CITY', 1);
+const SHEM = HW({ s: 'שֵׁם', y: 650, size: 200, t: ST.NAME + .9, hot: ['שֵׁם'], hotOff: ST.CITY + .1 });
+P('NAME', all(STG(), TW, CAP([['They wanted', ST.NAME, ST.NAME + .7], ['to make a *name*.', ST.NAME + .7, EN('NAME') - .5]]), SHEM, v => LR(colX2, SY1, v)));
+P('CITY', all(STG(), TW, CAP([['The city got one:', ST.CITY, tb]]), SHEM,
+  v => { const k = eio((v - tb) / .7), x = lerp(colX2, M().lxB - 46, k), y = SY1 - Math.sin(Math.PI * k) * 90; LR(x, y, v); },
+  v => KIT.HEBW(v, { s: 'בָּבֶ', right: M().BR, y: SY1, size: 200, t: tb + .45 }),
+  v => KIT.ink(v, tb + .9, () => KIT.rich('Babel', 540, 1075, 54, v, { caps: true, ls: 6, color: KIT.INK(.66), plain: true }), { blur: 3 })));
+// END VERSE, alone (Gen 11:9 has the Divine Name: English only)
 const ENDV = (v, a, b) => { const e = TM['END VERSE']; KIT.STAGE(v, a, { cy: 900 }); KIT.REF('Genesis 11:9', 620, v, a + .1);
   KIT.WLINES(v, { cy: 960, size: 98, lh: 128, italic: true, lines: [['“Because there,', a + .05, a + .9], ['God *confused*', a + .8, a + e[1]], ['the language', a + e[1], a + e[1] + .8], ['of all the earth.”', a + e[1] + .7, a + e[1] + 1.8]] }); };
 P('END VERSE', ENDV);
-// 8. the posted logo outro
 P('LOGO', (v, a, b) => KIT.ROLLTO(v, a, b, { prev: ENDV, pa: a - TM['END VERSE'][0], pb: a, next: KIT.LOGO }));
 </script>
 <script>(async()=>{await Promise.all(["500 80px 'Frank Ruhl Libre'","italic 400 80px 'Newsreader'","400 80px 'Newsreader'"].map(f=>document.fonts.load(f,'Abc אב')));
