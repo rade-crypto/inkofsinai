@@ -32,7 +32,7 @@ Three chapters later the same three words come back, and five verses after them 
 
 וַיִּרְאוּ בְנֵי הָאֱלֹהִים אֶת בְּנוֹת הָאָדָם כִּי טֹבֹת הֵנָּה וַיִּקְחוּ לָהֶם נָשִׁים מִכֹּל אֲשֶׁר בָּחָרוּ
 
-"The sons of God saw the daughters of men, that they were good, and they took wives for themselves, whoever they chose." The text calls them the sons of God and says nothing more about who they are. What it does give is the order of the verbs: they saw, the women were good, and they took.
+"The sons of God saw the daughters of men, that they were good, and they took wives for themselves, whoever they chose." The verbs come in the same order as at the tree: they saw, the women were good, and they took.
 
 Three verses later, someone sees again, and this time it is God. "God saw that the evil of man was great on the earth." In chapter one he looked at the world seven times and saw that it was good. Now he looks and sees evil, and the flood comes.
 
