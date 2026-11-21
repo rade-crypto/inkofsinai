@@ -1,4 +1,4 @@
-# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 6
+# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 7
 
 **Title:** David and Bathsheba: The One Word Behind the Crime
 **Thumbnail:** David on the palace roof at night, in gold ink. Glowing circle on the sealed letter in his hand. Text: "HE **SENT.**"
@@ -71,9 +71,9 @@ David answers to his face. No messenger this time. חָטָאתִי. "I have sin
 
 Nathan answers at once: "God has taken away your sin. You will not die."
 
-David sent message after message to keep his own hands clean, and none of it was hidden from God. But the moment he stopped sending and said it himself, God took the sin away.
+David sent to take, and then to hide. God sent Nathan to bring him back.
 
-A psalm of David says how far He takes it. כִּרְחֹק מִזְרָח מִמַּעֲרָב הִרְחִיק מִמֶּנּוּ אֶת פְּשָׁעֵינוּ. "As far as the east is from the west, so far has He removed our transgressions from us."
+A psalm of David says it with our word. יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
 
 ---
 
