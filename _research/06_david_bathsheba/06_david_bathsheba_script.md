@@ -19,7 +19,7 @@ It begins in spring, "the time when kings go out" to war. Even that line has a s
 
 And David sends. He sends Joab and the whole army to war, and he stays in Jerusalem.
 
-You may have heard that Bathsheba bathed on her roof to be seen. Read the verse. David gets up from his bed in the evening and walks on the roof of the king's house, and from the roof he sees a woman bathing. The only roof in that verse is his.
+One evening David gets up from his bed and walks on the roof of the king's house. From the roof he sees a woman bathing, and she is very beautiful.
 
 He stays where he is, and sends. He sends to ask who she is, and the answer names her husband: "Bathsheba, daughter of Eliam, wife of Uriah the Hittite."
 
