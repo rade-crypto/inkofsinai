@@ -139,34 +139,44 @@ K.TOWER = (v, o) => {
   X.restore();
 };
 
-// ---------- the tower built of the word נבנה ("let us build") ----------
-// KIT.WTOWER(v,{p,base?,size?,hang?:{t,drop?},red?:{t,t1},wave?:{t},sky?:{t},city?:{t}}): a stepped tower whose bricks are the word נבנה,
-//   laid course by course (each word drops 26 px and settles). p = share of words placed. hang: from t, the next word stays half-written (two letters)
-//   until drop; red: from t to t1, the נ in the third place of the top word turns red inside a small glowing ring (the letter that will change);
-//   wave: a red light runs up the courses (every brick is "let us build"); sky: cloud strokes the top reaches; city: low word-houses either side.
-const WT = (() => { const tiers = [6, 5, 4, 3, 2, 1], per = [2, 2, 2, 2, 2, 2], out = []; let row = 0;
-  tiers.forEach((n, ti) => { for (let r = 0; r < per[ti]; r++, row++) { const odd = row % 2, m = Math.max(1, n - (odd ? 1 : 0));
-    for (let i = 0; i < m; i++) out.push({ k: (i - (m - 1) / 2), row, i: out.length, ti }); } });
-  return { list: out, rows: row }; })();
-K.WTOWER = (v, o) => {
-  const X = K.X, base = o.base ?? 1500, fs = o.size || 62, cw = fs * 2.08, ch = fs * 1.14, n = WT.list.length, placed = o.p * n;
-  X.save(); X.font = K.font(fs, { face: K.F.g }); X.direction = 'rtl'; X.textBaseline = 'alphabetic';
-  const L = ['נ', 'ב', 'נ', 'ה'], lw = L.map(c => X.measureText(c).width), W = lw.reduce((a, b) => a + b, 0);
-  const word = (cx, by, cnt, alpha, col3, wv) => { let r = cx + W / 2; for (let j = 0; j < cnt; j++) { X.globalAlpha = alpha; const c = j === 2 && col3 ? col3 : (wv > 0 ? K.mix(wv * .75) : K.INKC);
-      X.fillStyle = c; X.textAlign = 'right'; X.fillText(L[j], r, by); r -= lw[j]; } };
-  X.strokeStyle = K.INK(.55); X.lineWidth = 3; X.lineCap = 'round'; X.beginPath(); X.moveTo(130, base + 16); X.lineTo(950, base + 16); X.stroke();
-  if (o.sky && v >= o.sky.t) { const a = K.sm((v - o.sky.t) / 1.2), top = base - WT.rows * ch; X.strokeStyle = K.INK(.45 * a); X.lineWidth = 4;
-    [[-340, 6, 290], [70, 44, 270], [-170, 86, 230]].forEach(([dx, dy, w], q) => { const sh = ((v - o.sky.t) * 14) * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 14, 540 + dx + w * .6 + sh, top + dy + 12, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
-  if (o.city && v >= o.city.t) [-1, 1].forEach(sd => { for (let r = 0; r < 2; r++) { const f = (v - o.city.t) / .18 - r - (sd > 0 ? .5 : 0); if (f <= 0) continue; const e = K.eo(Math.min(1, f));
-    word(540 + sd * 400, base - r * ch - (1 - e) * 26, 4, Math.min(1, f), null, 0); } });
-  let top = null;
-  WT.list.forEach(b => { const f = placed - b.i; if (f <= 0) return; const e = K.back(Math.min(1, f / 2.2)), cx = 540 + b.k * cw, by = base - b.row * ch - (1 - e) * 40;
-    const wv = o.wave ? Math.sin(Math.PI * K.cl((v - o.wave.t - (WT.rows - b.row) * .035) / .55)) : 0;
-    const isTop = f >= 1 && Math.floor(placed) - 1 === b.i, red = o.red && isTop && v >= o.red.t && v < (o.red.t1 ?? 1e9);
-    word(cx, by, 4, Math.min(1, f / 1.4), red ? K.mix(K.sm((v - o.red.t) / .4)) : null, wv); if (isTop) top = { cx, by }; });
-  if (o.hang && v >= o.hang.t && (o.hang.drop == null || v < o.hang.drop)) { const b = WT.list[Math.min(n - 1, Math.floor(placed))], cx = 540 + b.k * cw, by = base - b.row * ch;   // a word left half-written
-    word(cx, by, 2, 1, null, 0); X.globalAlpha = .25 + .15 * Math.sin((v - o.hang.t) * 4); X.fillStyle = K.INKC; X.textAlign = 'right'; X.fillText('נ', cx + W / 2 - lw[0] - lw[1], by); }
+// ---------- the tower: one line engraving of a stepped tower ----------
+// KIT.ETOWER(v,{p,base?,stop?:{t,drop?},letter?:{t,t1},sky?:{t}}): six set-back tiers drawn in ink line, rising smoothly as p goes 0→1.
+//   Each tier: its outline draws on, then fine course lines and the shade hatching on its right face wipe in; a ramp climbs the front.
+//   stop: from t the unfinished tier keeps its scaffold poles and stays half drawn (drop: building resumes). letter: a red נ in a glowing ring
+//   floats over the unfinished top (the "one letter"). sky: cloud strokes the finished top passes through.
+const ET = { w: [780, 640, 510, 390, 280, 180], h: [150, 132, 118, 104, 92, 80] };
+K.ETOWER = (v, o) => {
+  const X = K.X, base = o.base ?? 1500, nT = ET.w.length, pp = o.p * nT; let y = base;
+  X.save(); X.lineCap = 'round'; X.lineJoin = 'round';
+  X.strokeStyle = K.INK(.6); X.lineWidth = 3; X.beginPath(); X.moveTo(90, base + 2); X.lineTo(990, base + 2); X.stroke();   // ground
+  const tiers = []; for (let i = 0; i < nT; i++) { const w = ET.w[i], h = ET.h[i]; tiers.push({ x0: 540 - w / 2, x1: 540 + w / 2, y1: y, y0: y - h, w, h }); y -= h; }
+  if (o.sky && v >= o.sky.t) { const a = K.sm((v - o.sky.t) / 1.4), top = tiers[nT - 1].y0; X.strokeStyle = K.INK(.42 * a); X.lineWidth = 4;
+    [[-360, 10, 300], [60, 52, 300], [-190, 96, 250]].forEach(([dx, dy, w], q) => { const sh = (v - o.sky.t) * 12 * (q % 2 ? -1 : 1); X.beginPath(); X.moveTo(540 + dx + sh, top + dy); X.bezierCurveTo(540 + dx + w * .3 + sh, top + dy - 16, 540 + dx + w * .6 + sh, top + dy + 14, 540 + dx + w + sh, top + dy - 4); X.stroke(); }); }
+  tiers.forEach((T, i) => { const q = K.cl(pp - i); if (q <= 0) return;
+    const ol = K.eio(q / .55), fill = K.eio((q - .35) / .65), top = T.y1 - T.h * K.eo(Math.min(1, q / .45));   // the tier rises out of the one below
+    // body: paper-light face, shade on the right third
+    X.save(); X.beginPath(); X.rect(T.x0, top, T.w, T.y1 - top); X.clip();
+    X.fillStyle = 'rgba(250,242,222,.55)'; X.fillRect(T.x0, top, T.w, T.y1 - top);
+    if (fill > 0) { X.save(); X.beginPath(); X.rect(T.x0, top, T.w * fill, T.y1 - top); X.clip();
+      X.strokeStyle = K.INK(.28); X.lineWidth = 1.6; for (let yy = T.y1 - 16; yy > top + 4; yy -= 16) { X.beginPath(); X.moveTo(T.x0 + 6, yy); X.lineTo(T.x1 - 6, yy); X.stroke(); }   // courses
+      X.strokeStyle = K.INK(.22); X.lineWidth = 1.4; const sx = T.x1 - T.w * .3; for (let xx = sx - T.h; xx < T.x1; xx += 11) { X.beginPath(); X.moveTo(Math.max(sx, xx), T.y1 - Math.max(0, sx - xx)); X.lineTo(Math.min(T.x1, xx + T.h), T.y1 - T.h + Math.max(0, xx + T.h - T.x1)); X.stroke(); }   // shade
+      X.restore(); }
+    X.restore();
+    // outline, drawn on
+    const pts = [[T.x0, T.y1], [T.x0, top], [T.x1, top], [T.x1, T.y1]], seg = [T.y1 - top, T.w, T.y1 - top], tot = seg.reduce((a, b) => a + b, 0); let left = ol * tot;
+    X.strokeStyle = K.INK(.9); X.lineWidth = 3.2; X.beginPath(); X.moveTo(...pts[0]);
+    for (let k = 0; k < 3 && left > 0; k++) { const f = Math.min(1, left / seg[k]); X.lineTo(pts[k][0] + (pts[k + 1][0] - pts[k][0]) * f, pts[k][1] + (pts[k + 1][1] - pts[k][1]) * f); left -= seg[k]; } X.stroke();
+    if (i < 2 && fill > 0) { X.save(); X.globalAlpha = fill; X.strokeStyle = K.INK(.75); X.lineWidth = 2.4; const rw = 70 - i * 18;   // the ramp up the front
+      X.beginPath(); X.moveTo(540 - rw, T.y1); X.lineTo(540 - rw * .55, top); X.moveTo(540 + rw, T.y1); X.lineTo(540 + rw * .55, top); X.stroke();
+      X.lineWidth = 1.4; for (let yy = T.y1 - 12; yy > top + 4; yy -= 12) { const u = (T.y1 - yy) / (T.y1 - top), hw = rw * (1 - .45 * u); X.beginPath(); X.moveTo(540 - hw, yy); X.lineTo(540 + hw, yy); X.stroke(); } X.restore(); }
+    if (o.stop && v >= o.stop.t && (o.stop.drop == null || v < o.stop.drop) && q < 1) {   // left unfinished: scaffold poles
+      X.save(); X.globalAlpha = K.sm((v - o.stop.t) / .4); X.strokeStyle = K.INK(.7); X.lineWidth = 2.6;
+      [-.32, 0, .32].forEach(f => { const xx = 540 + T.w * f; X.beginPath(); X.moveTo(xx, top); X.lineTo(xx, T.y0 - 46); X.stroke(); });
+      X.beginPath(); X.moveTo(540 - T.w * .38, T.y0 - 26); X.lineTo(540 + T.w * .38, T.y0 - 26); X.stroke(); X.restore(); }
+  });
   X.restore();
-  if (o.red && top && v >= o.red.t && v < (o.red.t1 ?? 1e9)) { const x = top.cx + W / 2 - lw[0] - lw[1] - lw[2] / 2; K.RING(x, top.by - fs * .3, 27, 34, v, o.red.t + .1, { d: .5, glow: 1.2, solid: true, lw: 4 }); }
+  if (o.letter && v >= o.letter.t && v < (o.letter.t1 ?? 1e9)) { const i = Math.min(nT - 1, Math.floor(pp)), T = tiers[i], y0 = T.y0 - 150, k = K.back((v - o.letter.t) / .5);
+    X.save(); X.globalAlpha = K.sm((v - o.letter.t) / .25); X.translate(540, y0); X.scale(k, k); X.font = K.font(150, { face: K.F.g }); X.textAlign = 'center'; X.direction = 'rtl'; X.fillStyle = K.HOT; X.fillText('נ', 0, 50); X.restore();
+    K.RING(540, y0, 78, 78, v, o.letter.t + .15, { d: .5, glow: 1.2, solid: true, lw: 4 }); }
 };
 })();

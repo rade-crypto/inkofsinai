@@ -25,7 +25,7 @@ const lerp = KIT.lerp, cl = KIT.cl;
 // it stays frozen under the builders' words, falls into place on "Come, let us build", and the tower is finished into the sky.
 const stopT = s('HOOK2', 1) + .35;
 const towerP = v => v < stopT ? lerp(.42, .6, cl(v / stopT)) : v < ST.SAY + .2 ? .6 : v < ST.TOWER ? lerp(.6, .7, cl((v - ST.COME - .5) / (EN('COME') - ST.COME - .5))) : lerp(.7, 1, cl((v - ST.TOWER) / (TM.TOWER[0] - .7)));
-const TW = v => KIT.WTOWER(v, { p: towerP(v), hang: { t: stopT, drop: ST.SAY + .2 }, red: { t: ST.HOOK2 + 1.0, t1: ST.SAY + .2 }, wave: { t: ST.COME + .1 }, sky: { t: s('TOWER', 1) - .3 } });
+const TW = v => KIT.ETOWER(v, { p: towerP(v), stop: { t: stopT, drop: ST.SAY + .2 }, letter: { t: ST.HOOK2 + 1.0, t1: ST.SAY + .2 }, sky: { t: s('TOWER', 1) - .3 } });
 P('HOOK', all(STG(), TW, CAP([['The builders of Babel say,', .15, s('HOOK', 1)], ['“Let us *build*.”', s('HOOK', 1), EN('HOOK')]], { pre: .34 })));
 P('HOOK2', all(STG(), TW, CAP([['God changes *one letter*,', ST.HOOK2, s('HOOK2', 1)], ['and the building *stops*.', s('HOOK2', 1), EN('HOOK2')]])));
 const V4 = all(CAP([['In Hebrew, they say:', ST.SAY, s('SAY', 1)]]), HW({ s: 'הָבָה נִבְנֶה', y: 650, size: 176, t: s('SAY', 1), hot: ['נִבְנֶה'] }));
