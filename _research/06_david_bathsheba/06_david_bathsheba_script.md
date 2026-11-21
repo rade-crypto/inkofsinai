@@ -9,7 +9,7 @@ A soldier walks back to the front carrying a letter from the king. It's his own 
 
 King David wrote it. He has already taken this man's wife. And for both crimes, he never leaves his palace.
 
-Both crimes go out through one Hebrew word: שָׁלַח. Send.
+His orders go out through one Hebrew word: שָׁלַח. Send.
 
 In 2 Samuel 11, that word appears twelve times. No chapter in the Bible has more.
 
