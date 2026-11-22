@@ -17,7 +17,7 @@ Quotes from the owner are in quotation marks, with dates as MM-DD.
 ## 1. The job
 
 - **The goal:** people come to love the Hebrew Bible and learn it (owner, 11-22).
-  - **How:** Hebrew insights they've never heard, shown beautifully.
+  - **How:** insights they've never heard, shown beautifully.
   - **Retention serves the insight.** Views and retention measure how many people we reach, and hooks and pacing keep them watching long enough to receive the insight. They are the means, never the point.
   - An accurate insight still has to be made gripping: "facts dont mean views" (11-04).
   - Methods such as "clear pattern" or "hooks up front" are "a way to achieve it", not the goal (11-04).

@@ -3,7 +3,7 @@
 ## Why Ink of Sinai exists (read first, every chat)
 
 - **The goal:** people come to love the Hebrew Bible and learn it.
-- **How:** Hebrew insights they've never heard, shown beautifully.
+- **How:** insights they've never heard, shown beautifully.
 - **Retention serves the insight.** Hooks, pacing and open loops exist so viewers stay long enough to receive the insight. They are the means, never the point.
 - Judge every topic, script, title, thumbnail and edit by one question: will this make someone love the Hebrew Bible more and learn something real from it?
 
