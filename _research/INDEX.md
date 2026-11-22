@@ -7,6 +7,7 @@ Open this when a task needs past work. It points to every rule, note, script and
 - `_research/scripts_playbook.md`: the owner's quoted notes plus the formula of the finished scripts (hooks, structure, endings, checklist). Read it in full before writing any script, hook, title or caption.
 - `_research/hooks.md`: the hook research and its checklist.
 - `_research/copywriting.md`: the copywriting research.
+- `_research/retention_techniques.md`: 14 YouTube retention techniques for long-form scripts (Nov 22, from the Eden session).
 
 ## Research and topic history
 - `_research/notes.md`: all research so far.

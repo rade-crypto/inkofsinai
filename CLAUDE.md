@@ -77,6 +77,7 @@
 # Titles, thumbnails, captions
 
 - Hooks: before writing any hook, title or first line, read `_research/hooks.md` and run its checklist.
+- Retention: before writing or reviewing a long-form script, read `_research/retention_techniques.md` and apply it. It covers 14 techniques, among them the three-part first 30 seconds, the master loop plus rolling loops, handoffs, progressive information, the midpoint false resolution and the strongest instance at two-thirds. Reviewers get it too.
 - Copy: before writing any script, reel text or caption, read `_research/copywriting.md` and apply it.
 
 - Title: the searchable keyword plus the insight (e.g., "Goliath Was Dressed as the Serpent"). It must match the first minute and contain nothing a commenter can disprove.
