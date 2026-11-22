@@ -1,0 +1,14 @@
+piece 1 (35.608-71.217) try1 frames=1069 want=1069
+piece 0 (0.0-35.608) try1 frames=1068 want=1068
+piece 2 (71.217-106.825) try1 frames=1068 want=1068
+piece 3 (106.825-142.433) try1 frames=1068 want=1068
+piece 4 (142.433-178.042) try1 frames=1068 want=1068
+piece 5 (178.042-213.65) try1 frames=1069 want=1069
+piece 6 (213.65-249.258) try1 frames=1068 want=1068
+piece 7 (249.258-284.867) try1 frames=1068 want=1068
+piece 8 (284.867-320.475) try1 frames=1068 want=1068
+piece 10 (356.083-391.692) try1 frames=1069 want=1069
+piece 11 (391.692-427.3) try1 frames=1068 want=1068
+piece 9 (320.475-356.083) try1 frames=1068 want=1068
+total=12819
+MUXED 12819

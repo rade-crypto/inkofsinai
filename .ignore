@@ -1,0 +1,26 @@
+# Search exclusions to save tokens. Search tools (ripgrep) skip these paths, so media and
+# big generated files never get pulled into the conversation. The files stay in the repo;
+# open one directly by path only when a task needs it.
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.ogg
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.log
+_handoff09/b06_v2/fonts_embed06.css
+_handoff09/b09/index.html
+_handoff09/b09/asr*.json
+_handoff09/b09/words.json
+_research/shorts/s24_babel.html
+_research/shorts/s24/morph_stam.js
+_research/shorts/s24/morph_data.js
+_research/ssr_panel/runs/

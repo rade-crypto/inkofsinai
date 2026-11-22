@@ -1,12 +1,13 @@
 # Ink of Sinai: where everything lives
 
-Read this first in any new session. It points to every rule, note, script and engine in the repo. It also lists the large media files that stay on their branches.
+Open this when a task needs past work. It points to every rule, note, script and engine in the repo. It also covers the large media files, which are in the repo but skipped by search.
 
-## Rules (read before any work)
+## Rules
 - `CLAUDE.md`: every standing rule from the owner (working style, content, scripts, titles and thumbnails, on screen).
 - `_research/scripts_playbook.md`: the owner's quoted notes plus the formula of the finished scripts (hooks, structure, endings, checklist). Read it in full before writing any script, hook, title or caption.
 - `_research/hooks.md`: the hook research and its checklist.
 - `_research/copywriting.md`: the copywriting research.
+- `_research/retention_techniques.md`: 14 YouTube retention techniques for long-form scripts (Nov 22, from the Eden session).
 
 ## Research and topic history
 - `_research/notes.md`: all research so far.
@@ -36,15 +37,12 @@ Read this first in any new session. It points to every rule, note, script and en
   - the s24 engine
 - `_research/sfx_engine/`, `_research/sfx_library/`, `_research/sfx_review/`: the sound-effects scoring engine and its small effect files.
 
-## Large media left on their branches (not copied, ~750 MB)
-Fetch a file with `git show origin/<branch>:<path> > <path>`. You can also `git checkout origin/<branch> -- <path>` to get it.
-- **`claude/video09-handoff`:**
-  - `_handoff09/09_shots/` (generated stills, ~150 MB)
-  - `_handoff09/b09/` (vo16.wav, mix09.mp3)
-  - `_handoff09/b09p/` (mixfull.mp3)
-- **`claude/babel-short`** (this includes everything on `claude/great-allen-3a1lbe`):
-  - `_research/shorts/*.mp4` (rendered Shorts s19–s24, ~290 MB)
-  - `_research/sfx_review/`
+## Large media (in the repo, skipped by search to save tokens)
+About 480 MB, listed in `.ignore` so search never pulls it into the conversation. Open a file by its path only when a task needs it.
+- `_handoff09/09_shots/`: generated stills for video 09. `rest/` and `user/` hold more shots and the owner's picks.
+- `_handoff09/b09/` and `_handoff09/b09p/`: the VO (`vo16.wav`), the mixes (`mix09.mp3`, `mixfull.mp3`) and render outputs.
+- `_research/shorts/*.mp4`: rendered Shorts s19–s24.
+- `_research/sfx_review/`: sound-effect review audio.
 
 ## Every branch, and what it was for
 - `claude/answer-first-rules`, `claude/video09-handoff`: video 09 and the Nov 8 rules. Its rules and playbook are now in CLAUDE.md and `_research/`.
@@ -56,4 +54,4 @@ Fetch a file with `git show origin/<branch>:<path> > <path>`. You can also `git 
 - `claude/focused-lamport-8c9jid`: this consolidation, the viewer panel and David and Bathsheba.
 - `main`: the website and the shared rules.
 
-Every text file from those branches is copied here. When a new branch adds rules or notes, merge them into main so the next session starts with them.
+Every file from those branches, media included, is now in main. When a new branch adds rules or notes, merge them into main so the next session starts with them.
