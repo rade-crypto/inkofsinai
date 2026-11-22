@@ -1,69 +1,46 @@
-# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 8
+# 06 · David and Bathsheba: The One Word Behind the Crime. Voiceover, draft 9
 
 **Title:** David and Bathsheba: The One Word Behind the Crime
 **Thumbnail:** David on the palace roof at night, in gold ink. Glowing circle on the sealed letter in his hand. Text: "HE **SENT.**"
 
 ---
-
 A soldier walks back to the front carrying a letter from the king, and the letter is his own death order.
 
 King David wrote it. He has already taken this man's wife, and he commits both crimes from his own palace.
 
-His orders go out through one Hebrew word: שָׁלַח. Send.
+His orders go out through one Hebrew word: שָׁלַח. Send. In 2 Samuel 11, that word appears twelve times, and no chapter in the Bible has more.
 
-In 2 Samuel 11, that word appears twelve times, and no chapter in the Bible has more. Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
+But the next chapter is stranger. When God answers David, the answer is built out of David's own words, and one by one, the things he sent out come back to him.
 
-It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling: read aloud, the word is "kings," but its Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
+It starts in the first verse. Spring is "the time when kings go out" to war, but this king stays home and sends Joab, his general, with the army. Even the spelling of that line points to what's coming: read aloud, the word is "kings," but its Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. In this chapter, a king's work is done by messengers.
 
-And the first send is David's: he sends Joab, his general, with the whole army, and stays home in Jerusalem.
+From his roof, David sees a woman bathing, and he sends to ask who she is. The answer names her husband, Uriah the Hittite, one of David's own soldiers. David sends again: וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ, "David sent messengers, and took her." That verb, took, will come back.
 
-One evening David gets up from his bed and walks on the roof of the king's house, and from the roof he sees a woman bathing, a very beautiful woman.
+When she sends word that she's pregnant, David sends for her husband and tells him to go home for the night, so the baby will pass as his. But Uriah sleeps at the palace door. His fellow soldiers are camped in the open field, he says, "and I should go home לֶאֱכֹל וְלִשְׁתּוֹת וְלִשְׁכַּב עִם אִשְׁתִּי, to eat, and to drink, and to lie with my wife?"
 
-He stays where he is and sends someone to ask who she is. The answer names her husband: "Bathsheba, daughter of Eliam, wife of Uriah the Hittite."
+Eat, drink, lie with my wife. Those three verbs are the first thing to come back.
 
-So now he knows she's married, but he sends again. וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ. "David sent messengers, and took her," and lay with her. There they are: the messengers from the first verse.
+So the cover-up turns into a murder plan, and Uriah delivers it himself. David writes a letter to Joab, וַיִּשְׁלַח בְּיַד אוּרִיָּה, and sends it by the hand of Uriah: put him where the fighting is fiercest, then pull back, so he dies.
 
-She goes home, and when she finds she is pregnant, she sends David two words: הָרָה אָנֹכִי, "I'm pregnant." In all of 2 Samuel, they're the only words she's quoted saying.
+When the news comes back that Uriah is dead, David sends Joab a shrug: אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה, "Don't let this thing be evil in your eyes. The sword devours this one and that one."
 
-Now David needs her husband home, fast, and one verse holds three sends. David sends to Joab, שְׁלַח אֵלַי אֶת אוּרִיָּה, "send me Uriah," and Joab sends Uriah.
+Count the sends, and the design shows. Eight of the twelve are David's, and Uriah never sends anything; he is only sent. The king never goes to her house, never goes near the battle, and never holds a sword. As far as anyone can see, his hands are clean.
 
-The plan is simple: if Uriah sleeps at home with his wife, the baby will pass as his. So David tells him, "Go down to your house and wash your feet," which means go home and spend the night.
+Then the words start coming back. The chapter's last line takes David's shrug and turns it around: "The thing David had done was evil in the eyes of God." And after twelve sends, the thirteenth comes from God: "And God sent Nathan to David."
 
-But Uriah sleeps at the palace door with the servants. When David asks why, Uriah says, "The ark, and Israel, and Judah are living in booths, and my master Joab is camped in the open field. And I should go home to eat, and to drink, and to lie with my wife? By your life, I won't do it."
+Nathan brings the king a case to judge. A rich man has huge flocks, and a poor man has nothing but one little ewe lamb, raised with his children. מִפִּתּוֹ תֹאכַל וּמִכֹּסוֹ תִשְׁתֶּה וּבְחֵיקוֹ תִשְׁכָּב, "It ate from his bread, drank from his cup, and lay in his arms."
 
-Eat, drink, lie with my wife: לֶאֱכֹל וְלִשְׁתּוֹת וְלִשְׁכַּב. A prophet is going to hand those three words back to David.
+Eat, drink, lie: Uriah's three verbs, in the same order. Uriah gave up his home and his wife out of loyalty to David's army. In Nathan's story, that home comes back as a little lamb that eats at a poor man's table and sleeps in his arms.
 
-David tries again: "Stay today too, and tomorrow I'll send you off." He calls Uriah in to eat and drink with him and gets him drunk, but that evening Uriah still goes out to lie down with his master's servants. He never goes home.
+Then the next word comes back. A guest arrives, and the rich man won't take from his own flock. וַיִּקַּח, he takes the poor man's lamb, the same verb as "David sent messengers, and took her."
 
-So the cover-up turns into a murder plan, and Uriah is going to deliver it himself.
+David has no idea the story is about him. He explodes: "The man who did this is בֶן מָוֶת, a son of death." And Nathan answers with two words: אַתָּה הָאִישׁ. "You are the man."
 
-In the morning David writes a letter to Joab, וַיִּשְׁלַח בְּיַד אוּרִיָּה, and sends it by the hand of Uriah. The letter says, "Put Uriah in front, where the fighting is fiercest, then pull back from him, so that he is struck and dies."
+One echo could be chance. But the verdict keeps using David's words. "You struck Uriah the Hittite with the sword, and his wife you took for yourself." David had said the sword devours this one and that one. Now: לֹא תָסוּר חֶרֶב מִבֵּיתְךָ, "the sword will never leave your house."
 
-Joab puts Uriah where he knows the strongest enemy fighters are, and Uriah dies along with other soldiers. Joab sends a messenger with the report and coaches him: if the king gets angry about the losses, add one line, "Your servant Uriah the Hittite is dead too."
+And the reason for all those messengers comes back last. Nathan says, כִּי אַתָּה עָשִׂיתָ בַסָּתֶר, "You did it in secret." What comes next, God says, will happen before all Israel and before the sun.
 
-The messenger tells David everything Joab sent him to say, and David's answer for Joab is a shrug: אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה. "Don't let this thing be evil in your eyes. The sword devours this one and that one."
-
-Bathsheba mourns her husband. When the mourning is over, David sends once more and brings her into his house, and she becomes his wife and bears him a son. As far as anyone can see, it worked.
-
-That's twelve sends, and eight of them are David's. Uriah never sends anything; he's the one who gets sent.
-
-But the chapter's last line uses David's own words against him. David told Joab, "Don't let this be evil in your eyes," and the narrator answers with the same words: וַיֵּרַע הַדָּבָר אֲשֶׁר עָשָׂה דָוִד. "But the thing David had done was evil in the eyes of God."
-
-One verse later, chapter 12 opens with שָׁלַח again, and a new sender: "And God sent Nathan to David."
-
-Nathan the prophet comes with a case for the king to judge. A rich man has flocks and herds, and a poor man has nothing but one little ewe lamb that he raised with his children. "It ate from his bread, drank from his cup, and lay in his arms."
-
-Eat, drink, lie: תֹאכַל, תִשְׁתֶּה, תִשְׁכָּב. These are Uriah's three verbs in the same order, and the lamb lives the life Uriah wouldn't let himself have.
-
-When a traveler comes to the rich man, he won't take from his own flock, so he takes the poor man's lamb and serves it.
-
-David has no idea the story is about him. He explodes: "The man who did this is בֶן מָוֶת, a son of death, and he must repay the lamb four times over."
-
-And Nathan answers with two words: אַתָּה הָאִישׁ. "You are the man."
-
-Then the verdict throws David's shrug about the sword back at him: "You struck Uriah the Hittite with the sword, you took his wife, and you killed him with the sword of the Ammonites. So now, לֹא תָסוּר חֶרֶב מִבֵּיתְךָ, the sword will never leave your house."
-
-This time David doesn't send anyone. He answers Nathan himself: חָטָאתִי. "I have sinned against God."
+Everything David sent out has come back to him: the verb, the taking, the eyes, the sword, the secret. Only one thing is left that he has never sent, and this time he doesn't send anyone. He answers Nathan himself: חָטָאתִי. "I have sinned against God."
 
 And Nathan replies at once: "God has taken away your sin. You will not die."
 
@@ -112,3 +89,11 @@ Long before this, in a psalm, David had already written why God sends: יִשְ�
 - **Closing verse:**
   - Ps 57:1 is headed לְדָוִד.
   - Ps 57:4: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי … יִשְׁלַח אֱלֹהִים חַסְדּוֹ וַאֲמִתּוֹ. On screen, show the Hebrew only up to וְיוֹשִׁיעֵנִי and put "God will send…" in English.
+
+- **Draft 9 echoes (chapter 11 → chapter 12):**
+  - לקח: 11:4 → 12:4 (×2), 12:9, 12:10 (and 12:11).
+  - "Evil … in eyes": 11:25 → 11:27 (and 12:9).
+  - חֶרֶב: 11:25 → 12:9 (×2), 12:10.
+  - Eat/drink/lie: 11:11 → 12:3.
+  - בַסָּתֶר: 12:12, set against נֶגֶד הַשָּׁמֶשׁ. In 2 Samuel, it appears only at 12:12.
+  - 12:1 is the 13th שָׁלַח, after the 12 in chapter 11.
