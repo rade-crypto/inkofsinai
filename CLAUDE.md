@@ -5,13 +5,6 @@
 - **The goal:** people come to love the Hebrew Bible and learn it.
 - **How:** Hebrew insights they've never heard, shown beautifully.
 - **Retention serves the insight.** Hooks, pacing and open loops exist so viewers stay long enough to receive the insight. They are the means, never the point.
-- **When they clash, this order wins:**
-  1. love and learning
-  2. the insight
-  3. how it's shown
-  4. retention tactics
-
-  Never cheapen the text or the insight to hold attention.
 - Judge every topic, script, title, thumbnail and edit by one question: will this make someone love the Hebrew Bible more and learn something real from it?
 
 This repo is the channel's website. It also holds the media archive from old chats: renders, voiceovers, mixes and stills in `_handoff09/` and `_research/shorts/`, which are too big for the studio.
