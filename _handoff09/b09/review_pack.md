@@ -1,0 +1,101 @@
+# 09 · Why the Bible Keeps Choosing the Younger Brother — review pack
+
+Video time = VO time + 0.4 s. Frames: /tmp/claude-0/lf12/b09/frames/f_TTTT.T.jpg (every 2.5 s, 960x540). Contact sheets (12 frames each, timestamps in red): /tmp/claude-0/lf12/b09/sheets/sheet_00.jpg … sheet_14.jpg.
+Script: /home/user/inkofsinai/_share/09_younger_brother_script.md
+Style: gold-line animation on black (channel 'Ink of Sinai'). Verses: banner at top (reference · Hebrew with key word gold · English with same word gold), or full-screen for big reveals and the ending. No Divine Name in Hebrew on screen. No music yet in this draft.
+
+## VO transcript with times (VO seconds)
+- 0.0–4.9: In his old age, Jacob can't see, and two boys are brought to him for a blessing.
+- 5.5–9.9: The right hand is meant for the firstborn, so the firstborn stands at his right hand
+- 9.9–13.6: and the younger at his left. But Jacob crosses his arms,
+- 14.0–16.8: so his right hand comes down on the younger boy's head.
+- 17.3–21.4: The boy's father, Jacob's own son, grabs his hand to move it.
+- 21.7–25.7: Not so, father. This one is the firstborn, and Jacob says,
+- 25.7–32.8: says, I know my son, I know. Jacob was a younger brother himself, and so was his father, Isaac.
+- 33.4–37.6: From the first two brothers in the world, the Bible keeps passing over the firstborn
+- 37.6–43.7: and choosing the younger one, and three times an older brother wants him dead. Genesis never
+- 43.7–49.9: says why, and the reason only comes centuries later, before a battle where 300 men surround
+- 49.9–55.3: an army and not one of them is holding a sword. The first younger brother doesn't survive.
+- 56.0–59.7: God accepts Abel's offering instead of Cain's, so out in the field,
+- 60.2–65.7: Cain rises up against his little brother and kills him. But God keeps choosing the younger anyway.
+- 66.4–70.3: Isaac is picked over his older brother, Ishmael, and when Isaac has twins,
+- 71.0–74.4: God chooses before they're even born, telling their mother Rebecca,
+- 76.4–78.6: The older will serve the younger.
+- 79.1–85.2: The word for older there is raab, and centuries later God says that word again about an army,
+- 85.7–87.6: and most of that army gets sent home.
+- 88.1–92.5: Isaac loves Esau, the first born twin, while Rebecca loves Jacob.
+- 93.0–98.4: Esau sells his birthright to Jacob for a bowl of stew, but Isaac, who can't see anymore,
+- 98.9–100.9: still means to give the blessing to Esau.
+- 100.9–107.3: Esau is a hairy man, so Rebecca wraps Jacob's hands in goatskin, and Isaac feels those hairy
+- 107.3–109.4: hands and blesses Jacob instead.
+- 110.0–116.6: When Esau finds out, he cries, he took b'chorati, my birthright, and now he has taken b'chati,
+- 117.0–117.7: my blessing.
+- 118.2–121.5: In Hebrew, those two words are almost twins themselves.
+- 122.2–125.2: Swap two letters, and birthright becomes blessing.
+- 125.9–128.9: Both belong to the firstborn, and both went to the younger.
+- 128.9–130.8: So Esau makes a plan.
+- 131.4–136.0: The days of mourning for my father are coming, and then I will kill my brother Jacob.
+- 136.7–139.3: Now a second older brother wants the younger one dead.
+- 139.9–144.1: Jacob runs for his life to his uncle Laban, and there the pattern flips.
+- 144.8–150.3: Laban has two daughters, Leah, the older, and Rachel, the younger, whom Jacob loves.
+- 151.0–155.2: But Laban tricks him into marrying Leah first, and his excuse stings.
+- 155.2–160.1: Around here, we don't give Hazar-e-Ra, the Younger, before the Firstborn.
+- 160.6–164.3: Jacob, of all people, is told the Firstborn comes first.
+- 164.9–168.4: But God sees that Leah is unloved and opens her womb,
+- 168.9–171.9: and from Leah comes Judah, the tribe of King David.
+- 172.4–174.8: So this time, it's Jacob who picks the Younger,
+- 175.3–178.9: and God who sides with the older, the one Jacob passed over.
+- 179.4–182.2: Isaac favored Esau and Jacob favored Rachel,
+- 182.2–188.5: And both times God went to the one the father didn't favor, so it can't be only about who was born second.
+- 189.2–195.2: And Jacob, his mother's favorite, now has a favorite of his own, a son who is about to pay for it.
+- 195.5–201.9: It's Joseph, Rachel's son, and because Jacob loves him more than all his brothers, the brothers hate him.
+- 202.2–205.2: When they see him coming from far off, they say to each other,
+- 205.2–206.8: Come! Let's kill him!
+- 207.3–210.1: Cain did it alone, and Esau planned it alone.
+- 210.4–212.7: But this time, it's a whole group of brothers.
+- 213.3–215.0: They sell him as a slave instead.
+- 215.5–216.5: But Joseph survives.
+- 217.1–220.6: And years later, he's the boy's father from the start of this story.
+- 221.0–222.8: The one who grabs Jacob's hand.
+- 223.3–227.5: Those two boys are his sons, Manasseh, the older, and Ephraim.
+- 228.0–232.6: Jacob's right hand lands on Ephraim, Vihuhatsa'il, though he was the younger.
+- 232.6–235.5: And when Joseph tries to move it, Jacob says,
+- 236.1–237.7: I know my son, I know.
+- 238.3–241.8: He too will be great, but his little brother will be greater than he.
+- 242.3–246.0: Isaac was fooled by a pair of hands, and Jacob can't see either,
+- 246.3–249.6: but he's the only one in the room who knows exactly what he's doing.
+- 250.1–255.2: And this time, the two brothers stand side by side, and nobody wants anybody dead.
+- 255.7–258.1: But Jacob never says why he crossed his hands.
+- 258.1–265.3: The answer comes centuries later, to a man from the tribe of Manasseh, the older boy who didn't get the right hand.
+- 265.8–273.8: His name is Gideon, and while Midian is crushing Israel, an angel finds him threshing wheat inside a winepress to hide it from Midian.
+- 274.3–276.0: Gideon says he's the wrong man.
+- 276.4–280.8: My clan is the poorest in Manasseh, and I am the youngest in my father's house.
+- 280.8–287.0: In Hebrew, the word he uses for his clan is alfi, which literally means, my thousand,
+- 287.5–293.0: and the youngest is hatsa'ir, the same word God used for Jacob before he was born.
+- 293.7–298.7: So Gideon is the youngest son of the poorest thousand, and those two words come back at
+- 298.7–300.2: the very end of this story.
+- 300.7–307.3: But first, Gideon needs an army, so he gathers 32,000 men, and God tells him, Rav ha'am,
+- 307.6–308.9: the people are too many.
+- 308.9–313.3: It's the same word God said to Rebecca about the older twin, Rav.
+- 313.8–318.2: For the twins, it meant older, and for an army, it means many.
+- 318.7–322.7: But either way, it's the bigger side, and God starts sending it home.
+- 323.4–330.5: 22,000 leave, and with 10,000 left, God says it again, Od Ha'am Rav, still too many.
+- 331.0–336.3: So he tests them at the water, where 300 lap the water from their hands, and the rest
+- 336.3–337.4: kneel down to drink.
+- 337.4–342.3: God keeps the 300 and sends everyone else home. While down in the valley,
+- 342.8–348.1: Midian's army is spread out like locusts. Then Gideon hands out the weapons. Every
+- 348.1–353.7: man gets a shofar, a horn to blow, and an empty clay jar with a torch hidden inside.
+- 354.2–358.9: In the middle of the night, they surround the camp, blow the shofars and smash the jars,
+- 359.2–363.9: with the torches in their left hands and the shofars in their right. Both hands are full,
+- 363.9–369.1: and not one of them is holding a sword they shout a sword for God and for Gideon
+- 369.1–374.3: but nobody charges each man just stands in his place around the camp while
+- 374.3–379.6: inside it God turns every man's sword against the man beside him God had told
+- 379.6–384.3: Gideon why before the first man went home so that Israel could never boast
+- 384.3–390.6: and say yadi hoshi Ali my own hand saved me nobody in that army could ever say
+- 390.6–393.7: it, because their hands were full of light and noise.
+- 394.3–396.1: Now go back to Jacob's crossed hands.
+- 396.6–400.1: When the firstborn wins, it can look like his own hand did it.
+- 400.4–405.3: But when the younger one wins, or the unloved one, everyone knows whose hand it was.
+- 405.8–411.6: And centuries after Gideon, through the prophet Isaiah, God takes those same two words, the
+- 411.6–415.4: thousand and the youngest, and makes them a promise to his people.
+- 419.1–423.7: The little one will become a thousand and the youngest a mighty nation.

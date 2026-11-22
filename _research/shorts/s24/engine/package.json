@@ -1,0 +1,5 @@
+{
+ "name": "s24-engine",
+ "private": true,
+ "dependencies": { "flubber": "^0.4.2", "opentype.js": "^2.0.0" }
+}
