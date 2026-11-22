@@ -1,0 +1,57 @@
+[
+ {
+  "id": "P16",
+  "age": 43,
+  "gender": "M",
+  "country": "Australia (Brisbane)",
+  "income": "middle",
+  "faith": "none, atheist",
+  "bible": "knows it as literature",
+  "hebrew": "none",
+  "habits": "watches ancient-history and archaeology content, wants evidence, not sermons"
+ },
+ {
+  "id": "P17",
+  "age": 28,
+  "gender": "F",
+  "country": "Kenya (Nairobi)",
+  "income": "middle",
+  "faith": "Anglican",
+  "bible": "good",
+  "hebrew": "none",
+  "habits": "watches women-of-the-Bible content, shares to her church women's group"
+ },
+ {
+  "id": "P18",
+  "age": 36,
+  "gender": "M",
+  "country": "Germany (Berlin)",
+  "income": "upper-middle",
+  "faith": "Catholic, non-practising",
+  "bible": "moderate",
+  "hebrew": "none",
+  "habits": "binge-watches cinematic history docs, judges production quality fast"
+ },
+ {
+  "id": "P19",
+  "age": 58,
+  "gender": "M",
+  "country": "USA (Tennessee)",
+  "income": "middle",
+  "faith": "Church of Christ, deacon",
+  "bible": "very strong in narrative books",
+  "hebrew": "none",
+  "habits": "watches end-to-end, loves David and the kings, suspicious of 'secret code' content"
+ },
+ {
+  "id": "P20",
+  "age": 25,
+  "gender": "F",
+  "country": "USA (Illinois)",
+  "income": "lower-middle",
+  "faith": "Christian, doubting",
+  "bible": "moderate",
+  "hebrew": "none",
+  "habits": "watches when anxious about faith, wants intellectually honest content that strengthens trust in the text"
+ }
+]

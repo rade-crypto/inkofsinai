@@ -74,12 +74,14 @@ Everything researched for topics and scripts. Read this before picking a topic, 
 - **Pharaoh's hardened heart:** ~0.7M; widely answered by GotQuestions, BibleHub and others.
 
 ## Topic verdicts
+- **Owner rule (Nov 20):** view counts, from other channels or our own, are not the main reference for viral potential. Judge the idea itself: how big the surprise is for someone who knows the story, whether it holds up in the text, and whether they'll want to tell someone.
 - **Rejected by the owner:**
   - Jacob wrestling, as 05 ("What is your name?"): too close to 04
   - Hanukkah ("missing eighth day")
   - Esther as a mirror, and the Esther hidden-names version: not the next video
   - Job: it retold the story with no differentiator
 - **Picked:** 05 = David and Goliath, "Goliath Was Dressed as the Serpent". Script: `_share/05_goliath_serpent_script.md`.
+- **David and Bathsheba, "send" ×12 (Nov 21–22): dropped by the owner.** Draft 10 is kept in `_research/david_bathsheba/david_bathsheba_script.md`. Owner verdicts: "this whole video is just you narrating"; the Nathan-parable angle is "how metaphors work". Lesson: a word count plus a moral isn't an insight. Note that "send" is Alter's known observation (his list, #5), so it isn't new.
 - **Alter (The Art of Biblical Narrative) long-form list, in his order:**
   1. wells (done, 03)
   2. six barren mothers (a draft VO exists)
@@ -169,8 +171,8 @@ Everything researched for topics and scripts. Read this before picking a topic, 
   - Religion has the top open rate (MailerLite: 55.7% vs 43.5% median).
 - **Avoid:**
   - Pictograph letter-meaning charts (not from the Tanakh, and disputable).
-  - "Names of God" and the Aaronic Blessing (Divine Name).
-  - Wallpapers (low demand, Divine Name).
+  - "Names of God" and the Aaronic Blessing. Since Nov 21 the Divine Name is allowed, written as ה׳, so these are no longer ruled out on that ground.
+  - Wallpapers (low demand).
   - Angel-number "biblical numbers".
   - A Torah calendar as the magnet (Hebcal and Chabad give it away free, and it skews Jewish).
 - **Audience asks (539 YouTube comments, Nov 4):**
@@ -332,3 +334,546 @@ Full notes are in the session scratchpad: hormozi_frameworks.md, offers_market.m
   - Continuity: a "Portion Room" membership (~$18/mo), given as a bonus first.
   - Attraction: a small pattern challenge or single-pattern course.
   - Validate before building.
+
+## Viewer-panel ranking (Nov 21, 2026; semantic similarity rating)
+- **Method** (Colgate/PyMC Labs, "LLMs Reproduce Human Purchase Intent…", 2025): AI personas with demographics answer in brief free text, never numbers. Each answer is embedded and compared with 6 sets of 5 generic anchor sentences, and the resulting distribution's mean is the score. The paper reached 90% of human test–retest reliability. Without demographics, ranking signal fell from 92% to ~50%. Direct numeric ratings cluster at 3.
+- **Ours:**
+  - 20 personas (`_research/ssr_panel/personas.json`), in 4 panels of 5 with a shuffled order per panel.
+  - Click (title + thumbnail) and love (the reveal) were asked separately, with each video judged on its own.
+  - Embeddings: bge-large-en-v1.5, which matched hand-labelled reactions at Spearman 0.91 for click and 0.96 for love.
+  - Scorer: `_research/ssr_panel/ssr_score.py`. Run files: `_research/ssr_panel/runs/2026-11-21/`.
+- **Differences from the paper:** one sample per persona, not two. Five personas share one context, not one call each. No human baseline yet, so check it against real CTR.
+- **Result (17 concepts from 3 independent finders):**
+  - Robust top 4, each in the top 5 in 91–97% of resamples:
+    - David and Bathsheba, "send" ×12
+    - Samson's eyes
+    - Cain and Abel as Eden told again
+    - Noah's ark = Moses' basket (תֵּבָה)
+  - Fifth is a toss-up: Witch of Endor's robe (40%) vs Ehud (43%).
+  - Bottom: Nephilim spies, Jonah "evil", Elijah's voice, Bridegroom of Blood.
+  - Skeptic/secular/Jewish viewers favor David, Ehud, Endor. Believers favor Cain/Eden, Noah/Moses, Samson.
+- **Verified (WLC):**
+  - שׁלח 12× in 2 Sam 11. Then 12:1 has God send Nathan. God also sends earlier in Samuel (1 Sam 12:8, 15:1), so don't say "first".
+  - אַל יֵרַע בְּעֵינֶיךָ (11:25) vs וַיֵּרַע הַדָּבָר (11:27).
+  - הַיָּשָׁר בְּעֵינָיו יַעֲשֶׂה only Judg 17:6, 21:25.
+  - תֵּבָה only Gen 6–9 and Exod 2:3, 5. חֵמָר only Gen 11:3, 14:10, Exod 2:3.
+  - תְּשׁוּקָה only Gen 3:16, 4:7, Song 7:11.
+  - מְעִיל 7× in 1 Samuel (2:19; 15:27; 18:4; 24:5; 24:12 ×2; 28:14).
+  - אִטֵּר יַד יְמִינוֹ only Judg 3:15, 20:16.
+  - לִבְרֹחַ תַּרְשִׁישָׁה only Jonah 1:3, 4:2.
+  - root רעע 10× in Jonah.
+  - "40 days and 40 nights": Gen 7:4, 12; Exod 24:18; 34:28; Deut 9:9, 11, 18, 25; 10:10; 1 Kgs 19:8.
+  - 1 Kgs 19:10 = 19:14 word for word (25 words).
+  - נְפִלִים only Gen 6:4 and Num 13:33 (×2).
+
+## 05 Goliath length review (Nov 3, 2026, three reviewers plus a unanimous vote)
+- **Verdict:** don't stretch to 8:00. All three said the climax lands about 3:00, and anything added after it pads the tail. Their targets were about 6:05–6:40.
+- **Agreed by all three:**
+  - Add 17:26 as the first of the three הֵסִיר…מֵעַל (17:26, 17:39, 17:46).
+  - Compress the Philistine flight to two sentences.
+- **Checked, but not agreed (save for other videos):**
+  - **Saul's first war is against נָחָשׁ הָעַמּוֹנִי** (1 Sam 11:1–2), with חֶרְפָּה עַל כָּל יִשְׂרָאֵל. Don't say "only": Josh 5:9 has חֶרְפַּת מִצְרַיִם מֵעֲלֵיכֶם.
+  - **Israel has no swords** (1 Sam 13:19, 22): only Saul and Jonathan have חֶרֶב וַחֲנִית.
+  - **רֹאשׁ appears 6 times in 1 Sam 17** (vv. 5, 38, 46, 51, 54, 57). 17:57 has וְרֹאשׁ הַפְּלִשְׁתִּי בְּיָדוֹ before Saul. It is not the chapter's last line; 17:58 follows.
+  - **Ezek 29:5:** the dragon goes to the beasts and birds. This is a stock curse, and the order is reversed from 17:46.
+  - **Josh 11:22:** the עֲנָקִים are left only in Gaza, Gath and Ashdod.
+- **Rejected:**
+  - **The four stones for Goliath's brothers:** the text never says it, and 2 Sam 21:19 (Elhanan) invites comments disproving it.
+  - **טבע "sank like a stone" (Exod 15):** the root appears in 10 verses, and the link mixes up two pharaohs.
+  - **The spies' forty days:** אַרְבָּעִים יוֹם appears in 17 verses. The giants come from the report the Torah calls דִּבָּה. Better as the spine of a Nephilim video.
+  - **Staff נָחָשׁ (Exod 4:3) / תַּנִּין (Exod 7:10):** Moses' staff vs Aaron's, so "the same staff" can be knocked down.
+- **Round 2 (Bible scholar, YouTube strategist, story editor, core fan), unanimous:**
+  - Plant 17:26 when David arrives.
+  - Sword set-up inside ch. 17 (17:39 → 17:50).
+  - A second loop in the cold open ("the fourth is in Israel's own camp").
+  - "This leg-armor word" (line 12).
+  - Gen 3:15 "the woman's offspring… 'it will strike your head'".
+  - The shorter flight.
+  - Cut "the giant's own threat, turned around".
+  - The pinned comment notes the Masoretic Text.
+- **3 of 4, so left out:** Nahash (the editor said no), 17:57 head in hand (the editor), cutting the line 44 dust/face-down (the core fan), cutting "bronze down to the shins" (the editor).
+- **YouTube strategist:** 8:00 adds no average view duration (6:30 at 50% ≈ 8:00 at 40%). Save 8+ minutes for the Nephilim video. Open on the thumbnail's composition.
+
+## Reel topic scout (Nov 3, 2026): verified in WLC
+- **Babel (Gen 11:1–9):** הָבָה three times: 11:3 נִלְבְּנָה לְבֵנִים, 11:4 נִבְנֶה, 11:7 נֵרְדָה וְנָבְלָה. Center 11:5 וַיֵּרֶד (Divine Name in the verse, so show it in English). 11:4 פֶּן נָפוּץ עַל פְּנֵי כָל הָאָרֶץ comes back in 11:8 וַיָּפֶץ…עַל פְּנֵי כָל הָאָרֶץ. 11:3 אִישׁ אֶל רֵעֵהוּ / 11:7 אִישׁ שְׂפַת רֵעֵהוּ. The tower (מִגְדָּל) is named only in 11:4–5 and is never destroyed: 11:8 "they stopped building the city". לבן/בלל are different roots, so call it a sound reversal.
+- **Plagues:** morning warnings at 1, 4, 7 (7:15 לֵךְ…בַּבֹּקֶר; 8:16 and 9:13 הַשְׁכֵּם בַּבֹּקֶר); בֹּא אֶל פַּרְעֹה at 2, 5, 8 (7:26; 9:1; 10:1); no warning at 3, 6, 9 (8:12; 9:8; 10:21). The tenth strikes בַּחֲצִי הַלַּיְלָה (12:29; announced 11:4). Known from the Haggadah grouping, so expect "old news" comments.
+- **Tabernacle as creation:** seven speeches in Exod 25–31 (25:1; 30:11, 17, 22, 34; 31:1, 12), and the seventh is the Sabbath. Exod 39:43 וַיַּרְא…אֶת כָּל…וְהִנֵּה…וַיְבָרֶךְ ~ Gen 1:31 and 2:3; Exod 40:33 וַיְכַל מֹשֶׁה אֶת הַמְּלָאכָה ~ Gen 2:2. The order differs, so don't claim the same order.
+- **Eden:** 2:25 עֲרוּמִּים / 3:1 עָרוּם; 3:7, 10, 11 use עֵירֹם. This is heavily covered online, so it's low on differentiation.
+- **Already made:** Babel = short 21, Tabernacle as creation = short 17, plagues in threes = short 18. Check the full episode list (shorts 1–119) before pitching.
+
+## Next reel (Nov 3, 2026): Psalm 100:3, one letter. Unanimous pick (strategist, scholar, hook writer)
+- **Verified (WLC):**
+  - The ketiv is ולא and the qere is וְלוֹ. KJV: "and not we ourselves". NIV: "and we are his".
+  - לְתוֹדָה appears only at Ps 100:1. This was cut from the script as a post-payoff tangent; the KJV title reads "A Psalm of praise".
+  - The ketiv לא / qere לו swap appears in 19 verses (incl. Job 13:15, Isa 63:9), so never say "only".
+  - On-screen Hebrew starts after יְהוָה and אֱלֹהִים: הוּא־עָשָׂנוּ ולא / וְלוֹ אֲנַחְנוּ.
+- **Post it** in Thanksgiving week (Nov 19–24).
+- **Runner-up (all accepted):** בֹּעֵר בָּאֵשׁ appears 4 times: the bush (Exod 3:2) and Sinai (Deut 4:11; 5:23; 9:15).
+- **Also accepted by some:** Samson's eyes (Judg 14:3, 16:21, 17:6, 21:25); Daniel's Aramaic mirror (2↔7, 3↔6, 4↔5, center 4:22 = Eng 4:25).
+
+## Reel scout v2 (Nov 3, 2026): verified in WLC
+- **127:** only Gen 23:1 (Sarah's life) and Esth 1:1, 8:9, 9:30 (Ahasuerus's 127 provinces). No other 127 in the Tanakh. Mirror: יְפַת מַרְאֶה (Gen 12:11) / יְפַת תֹּאַר וְטוֹבַת מַרְאֶה (Esth 2:7); וַתֻּקַּח הָאִשָּׁה בֵּית פַּרְעֹה (Gen 12:15) / וַתִּלָּקַח אֶסְתֵּר אֶל בֵּית הַמֶּלֶךְ (Esth 2:8); אֲחֹתִי אָתְּ (Gen 12:13) / לֹא הִגִּידָה אֶסְתֵּר אֶת עַמָּהּ (Esth 2:10, 20). The provinces are Ahasuerus's, not Esther's.
+- **בְּכֶסֶף מָלֵא:** exactly 3 verses: Gen 23:9 (Machpelah), 1 Chr 21:22, 24 (the Temple site). Both sellers offer it free: נָתַתִּי לָךְ (Gen 23:11), הַכֹּל נָתָתִּי (1 Chr 21:23). עוֹלָה/עֹלוֹת חִנָּם in 1 Chr 21:24 and 2 Sam 24:24 (Divine Name in both, so English). Samuel and Chronicles give different prices, so never state David's price.
+- **יֶשׁ לִי רָב / יֶשׁ לִי כֹל:** each only once (Gen 33:9 Esau, 33:11 Jacob; 33:11 has אֱלֹהִים). בַּכֹּל Gen 24:1 (Divine Name in verse), מִכֹּל Gen 27:33 (Isaac ate, then blessed). The בַּכֹּל מִכֹּל כֹּל line is from the Grace After Meals (liturgy, pinned comment only).
+
+## Reel scout v2 (Nov 3, 2026): computed in WLC
+- **70 nations, 70 souls:** Gen 10 names every "son of"/"begot" after Shem, Ham, Japheth: Japheth 14, Ham 30 (Nimrod in, the Philistines "who came out" of Casluhim out), Shem 26 = 70. Gen 10 never says "70"; other counting rules give 69–71. Jacob's house = שִׁבְעִים (Gen 46:27; Exod 1:5; Deut 10:22). Deut 32:8 MT: יַצֵּב גְּבֻלֹת עַמִּים לְמִסְפַּר בְּנֵי יִשְׂרָאֵל (the Dead Sea Scrolls and LXX read "sons of God"). Don't sum the Gen 46 list (Leah's 33 is off by one).
+- **Jacob ↔ Esther:** כַּאֲשֶׁר + the same verb twice in the 1cs perfect appears only at Gen 43:14 (שָׁכֹלְתִּי שָׁכָלְתִּי, sending Benjamin; the verse opens with אֵל שַׁדַּי, so show only the end) and Esth 4:16 (אָבַדְתִּי אָבָדְתִּי). Also only twice: רָע/רָעָה אֲשֶׁר יִמְצָא אֶת (Gen 44:34, Judah; Esth 8:6). Mordecai is אִישׁ יְמִינִי (2:5); Esther is בַּת דֹּדוֹ, daughter of Abihail (2:7, 15); דֹּד = father's brother (Lev 10:4).
+- **Num 7:** the longest chapter in the Torah (89 verses; second in the Tanakh after Ps 119's 176). Twelve 6-verse gift paragraphs (7:12–83), identical except name, tribe, day and spelling (עתודים/עתדים); then the totals (7:84–88, זֹאת חֲנֻכַּת הַמִּזְבֵּחַ) and the Voice (7:89, no Name).
+- **Also checked:** כַּאֲשֶׁר צִוָּה (Name) אֶת מֹשֶׁה appears exactly 7× in Exod 39 and 7× in Exod 40 (it's close to short 17, and the ככל variants in 39:32, 42 break the count). בְּרִית appears 13× in Gen 17. In Ps 119, verses 3, 37, 90 and 122 have none of the 8 Torah words (drop it). אַבְרָהָם appears 151× (not 175).
+
+## Reel scout v2 (Nov 3, 2026): verified in WLC
+- **Psalm 136:** 26 verses, and all 26 end with כִּי לְעוֹלָם חַסְדּוֹ (v. 3 spells it לְעֹלָם). The line appears in 15 other verses (Jer 33:11; Ps 106:1; 107:1; 118:1–4, 29; Ezra 3:11; 1 Chr 16:34, 41; 2 Chr 5:13; 7:3, 6; 20:21), so 41 verses in all. הוֹדוּ opens vv. 1–3 and v. 26. Divine names in vv. 1, 2, 3, 26: show those in English.
+- **Numbers 7:** 89 verses, the longest chapter in the Torah (next: Deut 28, 69). Twelve gift sections (7:12–83) are the same text apart from the day, the name and one opening word, so say "nearly word for word". חֲנֻכַּת הַמִּזְבֵּחַ at 7:10, 11, 84, 88. מִבֵּין שְׁנֵי הַכְּרֻבִים appears only at Exod 25:22 (the promise) and Num 7:89 (Moses hears the voice). 7:89 has no Divine Name.
+- **Two Lamechs:** Cain's line puts Lamech 7th from Adam (4:17–18); he boasts of killing and says שִׁבְעִים וְשִׁבְעָה (4:23–24; the phrase also occurs at Judg 8:14 and Ezra 8:35). Seth's line puts Enoch 7th; וַיִּתְהַלֵּךְ חֲנוֹךְ אֶת הָאֱלֹהִים (5:22, 24; show Hebrew only up to חֲנוֹךְ). Seth's Lamech lives שֶׁבַע וְשִׁבְעִים שָׁנָה וּשְׁבַע מֵאוֹת שָׁנָה, 777 years (5:31, the only place this number appears).
+- **וַיִּזְכֹּר אֱלֹהִים:** exactly 4 times in the Tanakh: Gen 8:1 (Noah), 19:29 (Abraham, so Lot is saved), 30:22 (Rachel), Exod 2:24 (the covenant, slaves in Egypt). The long-form "5 patterns" and the barren-mothers draft already use part of this.
+
+## Friday parasha reel, Chayei Sarah (Nov 7, 2026): "full price". The owner's pick
+- בְּכֶסֶף מָלֵא appears only in Gen 23:9 (Abraham) and 1 Chr 21:22, 24 (David). Both owners say נָתַתִּי (Gen 23:11 נָתַתִּי לָךְ; 1 Chr 21:23 הַכֹּל נָתָתִּי).
+- Abraham sets the terms before Ephron speaks (23:9; Ephron first speaks in 23:10), and Ephron names the 400 (23:15). So don't say "Abraham named the price".
+- In 1 Chr 21:24, show only לֹא כִּי קָנֹה אֶקְנֶה בְּכֶסֶף מָלֵא on screen. The negation of חִנָּם sits in the cut part, and לַיהוָה follows.
+- Keep it off politics: no "bought/ours/deed", no modern photos of the Machpelah building or the Temple Mount.
+- 127 (Sarah and Esther) is held for a later Chayei Sarah or Purim.
+
+## 122 "The last word": the deeper layer (verified in the WLC, Nov 3)
+- The hitpael of הלך first appears in Gen 3:8: קוֹל … מִתְהַלֵּךְ בַּגָּן (the Divine Name sits in the verse, so show it in English only). The man and his wife hide (וַיִּתְחַבֵּא). Before that, only the qal (2:14, a river). Note: מִתְהַלֵּךְ can grammatically go with קוֹל, so say "hear God walking", not "God is the one walking".
+- Gen 3:19: עַד שׁוּבְךָ אֶל־הָאֲדָמָה כִּי מִמֶּנָּה לֻקָּחְתָּ, with לקח in the pual. Gen 5:24 has both וַיִּתְהַלֵּךְ and לָקַח (qal). The two share a root but not a stem. לקח appears earlier too (2:15, 2:21–23, 3:6), so say "go back to Eden", not "first".
+- Elijah: 2 Kgs 2:9 בְּטֶרֶם אֶלָּקַח מֵעִמָּךְ. In 2:11 הֹלְכִים הָלוֹךְ וְדַבֵּר is a qal, and he walks with Elisha, not "with God".
+- Micah 6:8 uses the qal לֶכֶת עִם, where Enoch has the hitpael אֶת. Let the viewer make the link; don't say "the same walk".
+- All four reviewers wanted Elijah cut (a new name, no shared verb in the VO). He stays, because the owner asked for the two men who didn't die, now tied in with his own word אֶלָּקַח.
+
+## 06 Alter pattern 2, the barren mothers (Nov 4, 2026): verified in WLC
+- **כָּעֵת חַיָּה:** exactly 4 verses: Gen 18:10, 14 (Sarah) and 2 Kgs 4:16, 17 (the Shunammite). KJV renders it "according to the time of life". It's an idiom for "this time next year"; חַיָּה is an adjective, so don't render it as a verb ("comes alive"). Both promises also have לַמּוֹעֵד.
+- **עֲקָרָה / עֲקֶרֶת:** Gen 11:30; 25:21; 29:31; Exod 23:26; Deut 7:14; Judg 13:2, 3; 1 Sam 2:5; Isa 54:1; Ps 113:9; Job 24:21. The Shunammite and Hannah (in the narrative) are never called עֲקָרָה. The same letters as "uproot" (Eccl 3:2; Zeph 2:4): say "same letters", not etymology.
+- **Sarah outside Genesis:** only Isa 51:2 in the Hebrew Bible (the NT names her too, so always say "Hebrew Bible"). 51:1–2 is God speaking.
+- **Hannah:** 1 Sam 2:6 מֵמִית וּמְחַיֶּה shares the root חיה with כָּעֵת חַיָּה. 1:20 says "in time" (לִתְקֻפוֹת הַיָּמִים), not "a year".
+- **Shunammite:** שָׁלוֹם 4:23 (KJV "It shall be well", to her husband) and 4:26 (KJV "It is well", to Gehazi). The Abraham parallel can't rest on saddling (a stock formula; Balaam matches Gen 22:3 better), only on the mountain and the son at stake. Gen 22 never says Abraham rode.
+- **Don't say "six women"** (commenters add Ruth and Elizabeth). Use "again and again".
+- **Pinned comment:** seven barren women with Zion in Pesikta de-Rav Kahana 20; Alter's annunciation type-scene; Isa 54:1 in Gal 4:27.
+- **Draft 14 (Alter's type-scene structure, Hannah at the center):** וּמוֹרָה לֹא־יַעֲלֶה עַל־רֹאשׁוֹ appears in exactly two verses: Judg 13:5 (the angel) and 1 Sam 1:11 (Hannah's vow). Num 6:5 says it with תַּעַר, so always say "in Hebrew, these exact words". Before 1 Sam 2:10, the title מָשִׁיחַ is only for the priest (Lev 4:3, 5, 16; 6:15). The verb is used for a king earlier (Judg 9:8), and "his king" appears at Num 24:7, so say "first to say מְשִׁיחוֹ about a king". Abraham laughs first (17:17) and God names Isaac in 17:19. 1 Sam 9:16 וְהוֹשִׁיעַ אֶת־עַמִּי מִיַּד פְּלִשְׁתִּים echoes Judg 13:5. 1 Sam 2:1 is a prayer (וַתִּתְפַּלֵּל), not a song. Alter's research: his definition is "a woman long barren who is vouchsafed a divine promise of progeny… and who then gives birth to a hero" (Art of Biblical Narrative, 2011 pp. 57–58). On the Shunammite, he says the focus moves from the child to Elisha's power to give and restore life. His readings of the other five weren't verified.
+- **Alter's own readings of the annunciation type-scene** (from the uploaded *The Art of Biblical Narrative*, 2011; text at scratchpad/alter/alter.txt; read it before guessing):
+  - **Definition (ch. 3):** "a woman long barren who is vouchsafed a divine promise of progeny, whether by God himself or through a divine messenger or oracle, and who then gives birth to a hero."
+  - **Fixed parts (on 1 Sam 1):** strife between co-wives; the husband's special love for the barren wife; the central motif is an oracle, a man of God's prophecy or an angel's promise of a son, "sometimes with an explicit indication of the son's destiny, often with the invocation of the formula, 'At this season next year, you will be embracing a son.'"
+  - **Why the convention:** "The very use of the convention… points to a weighty role in history for the child who is to be born, since only for such portentous figures is this sort of divine intervention in the natural order of conception required." The Shunammite's son is "the sole exception": the scene "clearly occurs, but the child remains anonymous and without a momentous future."
+  - **Hannah:** the promise is oddly oblique. We hear her prayer and no answer from God, and her bitterness is unusually prominent. Eli misreads her and offers a superfluous blessing (he doesn't even know what she asked for), which "subverts the priest's role as intercessor." This foreshadows Eli's house being cut off and Samuel, who hears God directly. A prophet's authority comes from God's call, not from cult or arms, and that makes this "just the right kind of annunciation."
+  - **Samson's mother:** she repeats the angel's words to Manoah but changes the end. The angel's "he will begin to rescue Israel from the Philistines" (13:5) becomes "a Nazirite to God from the womb to the day of his death" (13:7, עַד־יוֹם מוֹתוֹ). The rescue is dropped and death is added, foreshadowing "a powerful but spiritually dubious savior" who sows as much destruction as salvation. Nobody tells Manoah about the hair.
+  - **Rachel:** a "pointed reversal" of the type-scene. She is set up to receive an annunciation (favored, barren, with a rival), but she demands sons from her husband instead of praying (Hannah) or being visited (Sarah, Manoah's wife). Jacob's "Am I instead of God?" is "virtually an explicit reference… to the traditional requirements of the type-scene." Ominously, she dies at the second son, and the kings come from Leah's Judah, not from Joseph. הָבָה is used for crude demands (Judah to Tamar), and her "I'm dead" echoes Esau's "I'm about to die."
+  - **Rebekah:** he only poses the question of how her scene differs from the others.
+
+## 06 barren mothers: Hebrew checked for the edit (WLC)
+- Eccl 3:2 has the form לַעֲקוֹר ("to uproot"), not עָקַר; show the root as ע־ק־ר.
+- Gen 11:29: שֵׁם אֵשֶׁת־אַבְרָם שָׂרָי (no leading vav in this clause).
+- Lev 4:3, 4:5, 4:16, 6:15 (Eng 6:22): הַכֹּהֵן הַמָּשִׁיחַ, "the anointed priest".
+- Gen 25:23 ends וְרַב יַעֲבֹד צָעִיר (that clause has no Divine Name; the verse opens with it).
+- 1 Sam 10:1 פַּךְ הַשֶּׁמֶן (flask, Saul); 1 Sam 16:13 קֶרֶן הַשֶּׁמֶן (horn, David).
+- Visual lesson: a lens-shaped oil lamp reads as the Christian fish symbol; use the menorah (Exod 25:31–37) for the sanctuary lamp.
+
+## Reel: Saul and the water (Nov 5, 2026), a sequel to the well hit. Verified in WLC.
+- **The phrase:** יֹצְאוֹת לִשְׁאֹב מָיִם (plural, with מָיִם) appears in exactly 2 verses:
+  - Gen 24:13 (spelled יֹצְאֹת, with בְנוֹת);
+  - 1 Sam 9:11 (נְעָרוֹת יֹצְאוֹת לִשְׁאֹב מָיִם).
+- **Other uses of the verb:** Gen 24:43 is the same scene, singular, with no מָיִם. The infinitive לִשְׁאֹב appears only in Gen 24:13, 20, 43 and 1 Sam 9:11.
+- **What not to claim:** never say "exact words" (the nouns differ), and never say Saul reaches a well. He meets the girls on the ascent (9:11) and goes up into the town (9:14).
+- **Hurry:** מַהֵר עַתָּה (9:12). Rebekah וַתְּמַהֵר (Gen 24:18, 20); Rebekah runs home (24:28); Rachel runs (29:12); מִהַרְתֶּן (Exod 2:18).
+- **The ending:**
+  - 10:1: oil on his head.
+  - 10:8: שִׁבְעַת יָמִים תּוֹחֵל, "wait seven days".
+  - 13:8: he waits seven days and Samuel doesn't come.
+  - 13:9: he offers the sacrifice himself.
+  - 13:10: Samuel arrives as he finishes.
+  - 13:14: וְעַתָּה מַמְלַכְתְּךָ לֹא־תָקוּם. That clause has no Divine Name; the verse goes on with it.
+  - The reason in 13:13 is "you did not keep the command", and the command was to wait. 13:1's numbers are unclear, so never say "years later".
+- **Seer = prophet:** 1 Sam 9:9.
+- **Alter:** ch. 3, "The type-scene has been aborted" (1 Sam 9:11–12).
+- **Backup Reels, verified:**
+  - **The robe:** כְּנַף and מְעִיל together appear in only 3 verses (1 Sam 15:27; 24:5; 24:12). מְעִיל in 1 Samuel: 2:19 (Hannah's little robe), 15:27, 18:4, 24:5, 24:12, 28:14 ("an old man… wrapped in a robe"). 15:28 and 28:17 קרע the kingdom "to your neighbor" (Divine Name, so English only). 24:21 מָלֹךְ תִּמְלוֹךְ.
+  - **Milk and honey:** זָבַת חָלָב וּדְבַשׁ is in 20 verses; only Num 16:13 (Dathan and Abiram) means Egypt.
+
+## Viral engagement for Reels and Shorts (researched Nov 5, 2026)
+- **Ranking signals:** Mosseri (Jan 2025) names watch time, likes per reach and sends per reach as Instagram's top three. Sends weigh most for reaching non-followers. The often-quoted "3–5x" weighting comes from creator blogs and isn't confirmed.
+- **Shorts:** viewed vs swiped is the first gate (aim for 70%+ viewed). Replays count as views since Mar 31, 2025, so a loop that flows back into frame 1 adds watch time.
+- **Why people engage:** comments come from reaction or debate; saves from future value (a grid or list to come back to); sends from social value. Berger & Milkman: high-arousal emotion (awe, hope) drives shares, and sadness lowers them.
+- **Applied to the 06 Reel:** a famous story in the hook (Jacob and Esau), the proof in the next line, stakes that climb (fate, laughter, death, life restored), and a hopeful close for anyone waiting for a child (the send trigger). Close on Psalm 113:9, shown without הַלְלוּ־יָהּ; the long-form ends on 1 Sam 2:6.
+
+## 06 Short v8 (Nov 5, 2026): extra pairs verified in WLC
+- **Rachel:** מֵתָה appears in Genesis only at 30:1 (וְאִם־אַיִן מֵתָה אָנֹכִי), 35:18 (בְּצֵאת נַפְשָׁהּ כִּי מֵתָה) and 48:7. 30:1 is a participle and 35:18 a perfect, so say "the same word", never "the same form". She never asked for death: write "Sons, or I die."
+- **Sarah:** God names יִצְחָק in 17:19 (said to Abraham; the verse has אֱלֹהִים). At the birth, 21:6 כָּל־הַשֹּׁמֵעַ יִצְחַק־לִי (the clause has no Divine Name).
+- **Shunammite:** 4:18 וַיִּגְדַּל הַיָּלֶד, so he grows up before he dies on her knees (4:20).
+- **Jerusalem:** 54:1 never names the city; the identification rests on 52:1–2, 9. Don't call her the "last" barren woman, because Ps 113:9 comes later in the canon. Optional: Isa 66:8 כִּי־חָלָה גַּם־יָלְדָה צִיּוֹן אֶת־בָּנֶיהָ answers 54:1 לֹא יָלָדָה … לֹא־חָלָה.
+- **Rebekah:** 25:23 וְרַב יַעֲבֹד צָעִיר comes true in 2 Sam 8:14 וַיְהִי כָל־אֱדוֹם עֲבָדִים לְדָוִד (the verse goes on with the Divine Name). Left out of the Short for length.
+- **v9 insight (death or life):** the words that come back are all from מות or חיה: Rachel מֵתָה (Gen 30:1, 35:18), Samson מוֹתוֹ / בְּמוֹתוֹ (Judg 13:7, 16:30; 16:30 also has בְּחַיָּיו), Samuel חַיָּיו (1 Sam 1:11, 7:15), and the Shunammite's son חַיָּה → הֶחֱיָה (2 Kgs 4:16, 8:5; he dies with וַיָּמֹת in 4:20). Hannah's prayer, 1 Sam 2:6 מֵמִית וּמְחַיֶּה, uses both roots; 2:5 עַד־עֲקָרָה יָלְדָה שִׁבְעָה uses Isaiah's word עֲקָרָה. Scope the claim to the words shown ("Four words came back"), because others come back too (Isaac's laugh, Hannah's שְׁאִלְתִּיו). כָּל־יְמֵי חַיָּיו is a stock phrase (Gen 3:17, Deut 17:19), which makes Samuel the weakest pair. Isa 52:5 כִּי־לֻקַּח עַמִּי, "my people are taken away".
+
+## Long-form topic scout (Nov 6, 2026): verified in WLC
+- **The ark's exodus (1 Sam 2–6, 2 Sam 6):** the Philistines say Egypt twice: 4:8 (the gods "who struck Egypt with every plague") and 6:6 (לָמָּה תְכַבְּדוּ אֶת לְבַבְכֶם כַּאֲשֶׁר כִּבְּדוּ מִצְרַיִם וּפַרְעֹה). הִתְעַלֵּל in 6:6 and Exod 10:2 (also Num 22:29 and other forms, so never "only"). אַל תְּשַׁלְּחוּ אֹתוֹ רֵיקָם (6:3) ~ לֹא תֵלְכוּ רֵיקָם (Exod 3:21); רֵיקָם is in 15 verses. כְּלֵי הַזָּהָב 6:8, 15 ~ Exod 3:22; 11:2; 12:35. Root כבד: 2:29 וַתְּכַבֵּד אֶת בָּנֶיךָ, 2:30, 4:18 (Eli זָקֵן…וְכָבֵד), 4:21–22 גָּלָה כָבוֹד מִיִּשְׂרָאֵל, 5:6, 5:11, 6:5, 6:6. כבד and קלל in one verse: 1 Sam 2:30, 6:5 (כָּבוֹד…יָקֵל אֶת יָדוֹ), 2 Sam 6:22 (וּנְקַלֹּתִי…אִכָּבֵדָה), plus Isa 8:23, 23:9, 1 Kgs 12:10, 2 Chr 10:10. עֲגָלָה חֲדָשָׁה only in 1 Sam 6:7, 2 Sam 6:3, 1 Chr 13:7. 2 Sam 6:20 מַה נִּכְבַּד הַיּוֹם. Ps 24:7 has no Divine Name; 1 Kgs 8:11, Exod 40:35, 5:3–4, 5:6, 6:1, 6:8, 6:19, 6:20 do. Avoid the 6:19 numbers.
+- **Death wish:** וַיִּשְׁאַל אֶת נַפְשׁוֹ לָמוּת only in 1 Kgs 19:4 and Jonah 4:8; קַח (נָא אֶת) נַפְשִׁי only in 1 Kgs 19:4 and Jonah 4:3; טוֹב מוֹתִי only Jonah 4:3, 8. תַּחַת אַחַד הַשִּׂיחִם (Gen 21:15) / תַּחַת רֹתֶם אחת (1 Kgs 19:4 ketiv, also 19:5), both near Beersheba (Gen 21:14; 1 Kgs 19:3). Jonah 4:2 quotes Exod 34:6 (Name in verse). Jonah 4:11 has no Name.
+- **Giants:** נְפִלִים as giants only Gen 6:4, Num 13:33; the same consonants mean "the fallen" elsewhere (Josh 8:25, Judg 7:12, Ezek 32:22–27). Sheshai, Ahiman, Talmai: Num 13:22, Josh 15:14, Judg 1:10. Caleb is 85, "45 years" (Josh 14:10). Last giants: וַיִּפְּלוּ בְיַד דָּוִד וּבְיַד עֲבָדָיו (2 Sam 21:22; 1 Chr 20:8).
+
+## 07 the ark's exodus (Nov 6, 2026): script draft 3, verified in WLC
+- **Pick:** the ark's capture and return (1 Sam 4–6, 2 Sam 6, 1 Kgs 8), told as the Exodus replayed, with the root כבד ("heavy" and "glory") as its spine.
+  - Demand: the "ark of the covenant" searches are huge, and the autocomplete includes "philistines captured the ark" and "why did god kill uzzah".
+  - Runners-up: Abraham's two sons (Gen 21–22), the Nephilim, and the death wishes of Elijah and Jonah.
+- **הִתְעַלֵּל (hitpael) with God as subject:** only Exod 10:2 and 1 Sam 6:6.
+  - The other hitpael uses have other subjects: Num 22:29, Judg 19:25, 1 Sam 31:4, Jer 38:19, 1 Chr 10:4.
+  - Other forms with God as subject do exist (Lam 1:12, 1:22, 2:20, עוֹלַל), so say "this form".
+  - Exod 10:2 is the "tell your son" verse, and it follows 10:1, הִכְבַּדְתִּי אֶת־לִבּוֹ.
+- **Pharaoh's heart and כבד:** six times (7:14, 8:11, 8:28, 9:7, 9:34, 10:1). The exact phrase כָּבֵד לֵב פַּרְעֹה appears only at 7:14. Re-hardening after relief comes at 8:11, 8:28 and 9:34. At the sea, the root turns to God: וְאִכָּבְדָה בְּפַרְעֹה (14:4, 14:17; 14:17 has no Name).
+- **The root כבד in 1 Sam 2:29–6:6:** 12 words, counting the name אִי־כָבוֹד and both end verses. It's a common root, so give the number no meaning (it was cut from the script).
+- **Honor, despise, light:** 1 Sam 2:30 (מְכַבְּדַי אֲכַבֵּד וּבֹזַי יֵקָלּוּ) is echoed in 2 Sam 6:16 (וַתִּבֶז, root בזה), 6:20 (נִּכְבַּד) and 6:22 (וּנְקַלֹּתִי, אִכָּבֵדָה), all on one day (הַיּוֹם twice in 6:20).
+- **Further echoes:**
+  - 2 Sam 6:20 also has גלה three times ("uncovered"), echoing גָּלָה כָבוֹד in 4:21. This is unused.
+  - כִּסֵּא כָבוֹד appears in Hannah's song (2:8), and Eli falls off the כִּסֵּא (4:18). This is unused.
+- **The new cart and the shoulder:**
+  - עֲגָלָה חֲדָשָׁה: 1 Sam 6:7 and 2 Sam 6:3, with 1 Chr 13:7 repeating 2 Sam 6:3, so two scenes.
+  - Num 7:6–9: wagons go to Gershon and Merari, and none to Kohath, בַּכָּתֵף יִשָּׂאוּ (no Name).
+  - 2 Sam 6:13 has נֹשְׂאֵי.
+- **Details checked:**
+  - The cows never wore a yoke, and their calves were shut at home (6:7, 10). They went הָלֹךְ וְגָעוֹ (6:12).
+  - Beth Shemesh: men struck for looking into the ark (6:19). Avoid the numbers. They sent messengers to Kiriath-jearim (6:21).
+  - Eli scolded his sons (2:23–25) but didn't restrain them (3:13). The warning goes on past 2:30 (to 2:36).
+  - The linen ephod is a priest's garment (1 Sam 22:18).
+  - David "feared God" (6:9). Uzzah and Ahio drove David's cart (נֹהֲגִים, 6:3).
+- **On-screen Hebrew without the Name:** 2:29; the 2:30 fragment; 4:8, 4:18, 4:21–22; 5:11; 6:3–6, 6:9, 6:12; Exod 3:21; 14:17; Num 7:9; 2 Sam 6:6, 6:20, 6:22; Ps 24:7.
+- **English only (Name in the verse):** 5:3–4, 5:6, 6:8 (show the fragment without the Name), 6:19–20, 1 Kgs 8:10–11 (fragment), Exod 40:35, 1 Chr 15:15.
+- **Don't** tie Ps 24 to the ark's entry. That link is rabbinic, and Christians use the verse too.
+
+## Jonah research (Nov 8, 2026): verified in WLC. Paused by the owner; held for a later long-form
+- **Demand:** top Jonah videos are kids' and Christian ones (Minno 6.78M, Superbook 6.5M, BibleProject 3.98M). Jewish: Manis Friedman "doesn't make sense - until now" 455k. "The Jonah Paradox" 397k. About 12 new AI-made "Why did Jonah run? Jonah 4:2" videos have tiny views, so 4:2 as the motive alone is known. No video found on the Sinai/golden-calf echo, Elijah, Cain or the Flood links. Autocomplete: "why did jonah not want to go to nineveh / run from god / is the story of jonah real", "jonah 4 explained".
+- **Golden calf (strongest):** אֲשֶׁר דִּבֶּר לַעֲשׂוֹת appears only at Exod 32:14 (Name) and Jonah 3:10 (no Name): וַיִּנָּחֶם … עַל־הָרָעָה אֲשֶׁר דִּבֶּר לַעֲשׂוֹת. חֲרוֹן + נחם in one verse only at Exod 32:12 and Jonah 3:9 (שׁוּב מֵחֲרוֹן אַפֶּךָ וְהִנָּחֵם / וְשָׁב מֵחֲרוֹן אַפּוֹ). שׁוּב מֵחֲרוֹן אַף is in 6 verses (Deut 13:18, Josh 7:26 …). Exod 32:32 מְחֵנִי נָא (no Name) vs Jonah 4:3 קַח־נָא.
+- **Exod 34:6 formula:** the full line ending וְנִחָם עַל־הָרָעָה is only Joel 2:13 and Jonah 4:2 (Name in both). Exod 34:6 and Ps 86:15 end וֶאֱמֶת; Ps 103:8, 145:8, Neh 9:17 also drop וֶאֱמֶת, so the "son of Amittai drops truth" line is wordplay only. אֲמִתַּי (name) only 2 Kgs 14:25, Jonah 1:1. Jonah and Joel order it חַנּוּן וְרַחוּם (Exod: רַחוּם וְחַנּוּן). מִי יוֹדֵעַ יָשׁוּב וְנִחַם: Joel 2:14, Jonah 3:9. Nahum (מַשָּׂא נִינְוֵה, 1:1) quotes the other half: 1:3 אֶרֶךְ אַפַּיִם וּגְדָל כֹּחַ וְנַקֵּה לֹא יְנַקֶּה (Name).
+- **רָעָה spine:** root רעע 10 times in Jonah in 8 verses (1:2, 1:7, 1:8, 3:8, 3:10 ×2, 4:1 ×2 incl. וַיֵּרַע, 4:2, 4:6). It rises from Nineveh (1:2), God relents of it (3:10), it lands on Jonah (4:1), the plant saves him מֵרָעָתוֹ (4:6). 3:7 אַל יִרְעוּ is "graze" (another root). וַיֵּרַע … רָעָה גְדוֹלָה only Jonah 4:1 and Neh 2:10 (Sanballat). רָעָה גְדוֹלָה 3 verses; שִׂמְחָה גְדוֹלָה 7.
+- **Captain and king:** קוּם קְרָא only Jonah 1:6 (echo of God's 1:2). וְלֹא נֹאבֵד only 1:6 and 3:9; the form נֹאבֵד/נֹאבְדָה only in Jonah (1:6, 1:14, 3:9). None has the Name.
+- **Fear:** יִרְאָה גְדוֹלָה only Jonah 1:10, 1:16 (1:16 has the Name); steps 1:5 → 1:10 → 1:16, with Jonah's אֲנִי יָרֵא (1:9, Name).
+- **Appointed:** וַיְמַן with God as subject only Jonah 2:1, 4:6, 4:7, 4:8 (Dan 1:5 is a king). Hiphil טול 4× in Jonah 1 (1:4, 5, 12, 15); 14 words in the Tanakh.
+- **Descent:** ירד 1:3 ×2, 1:5, 2:7 (2:7 bottom and lift in one verse, Name); וַיֵּרָדַם 1:5, נִרְדָּם 1:6. קום 6×: 1:2, 1:3, 1:6, 3:2, 3:3, 3:6. Midpoint of 48 verses falls after 2:8 (Eng 2:7).
+- **Flood reversed:** וַיַּרְא (הָ)אֱלֹהִים אֶת + דֶּרֶךְ only Gen 6:12 and Jonah 3:10 (no Name in either). חָמָס Gen 6:11, 13 / Jonah 3:8; וַיִּנָּחֶם Gen 6:6 / Jonah 3:10; Gen 6:7 מֵאָדָם עַד־בְּהֵמָה, הָאָדָם וְהַבְּהֵמָה only Exod 9:19, Jonah 3:7, 3:8. עוֹד אַרְבָּעִים only Jonah 3:4 (Gen 7:4 לְיָמִים עוֹד שִׁבְעָה … אַרְבָּעִים יוֹם). Dove in Gen 8:8–12. Skeptic: the case is the cluster.
+- **Cain:** God says חָרָה לָךְ only to Cain (Gen 4:6, Name) and Jonah (4:4 Name, 4:9 no Name); 4th use 2 Sam 19:43 (not God). הַהֵיטֵב only 4:4, 4:9 (cf. Gen 4:7 תֵּיטִיב). Gen 4:16 וַיֵּצֵא … וַיֵּשֶׁב … קִדְמַת־עֵדֶן (Name) ~ Jonah 4:5 וַיֵּצֵא … וַיֵּשֶׁב מִקֶּדֶם לָעִיר (no Name).
+- **Elijah:** וַיִּשְׁאַל אֶת־נַפְשׁוֹ לָמוּת only 1 Kgs 19:4, Jonah 4:8; קַח נַפְשִׁי only 1 Kgs 19:4, Jonah 4:3. A day's journey (1 Kgs 19:4 / Jonah 3:4); the same question twice (מַה־לְּךָ פֹה 1 Kgs 19:9, 13; Jonah 4:4, 9); רוּחַ גְּדוֹלָה 1 Kgs 19:11, Jonah 1:4, Job 1:19; קוּם לֵךְ 7 verses incl. 1 Kgs 17:9.
+- **Pity:** לֹא אָחוּס only Jer 13:14, Ezek 24:14 (both refusing pity to Jerusalem, Name; Ezek 24:14 adds וְלֹא אֶנָּחֵם) and Jonah 4:11 (no Name). 4:10 חַסְתָּ.
+- **Hosea 11:8–9 (climax lead):** נֶהְפַּךְ עָלַי לִבִּי … נִכְמְרוּ נִחוּמָי, Admah and Zeboiim, לֹא אֶעֱשֶׂה חֲרוֹן אַפִּי … כִּי אֵל אָנֹכִי וְלֹא־אִישׁ (no Name). Hosea prophesied under Jeroboam son of Joash (Hos 1:1), Jonah's king (2 Kgs 14:25). נֶהְפָּכֶת (3:4) only Jer 2:21 and Jonah 3:4; Sodom verb Gen 19:25, 29.
+- **Israel vs Nineveh:** וַיַּאֲמִינוּ only Exod 14:31, Ps 106:12, Jonah 3:5. 2 Kgs 17:13–14 Israel warned שֻׁבוּ מִדַּרְכֵיכֶם הָרָעִים and לֹא הֶאֱמִינוּ (Name). וְיָשֻׁבוּ אִישׁ מִדַּרְכּוֹ הָרָעָה: Jer 26:3, 36:7, Jonah 3:8.
+- **Psalms in ch. 2:** כָּל־מִשְׁבָּרֶיךָ וְגַלֶּיךָ עָלַי עָבָרוּ = Ps 42:8 (only 2); הַבְלֵי שָׁוְא Ps 31:7; מִנֶּגֶד עֵינֶיךָ Ps 31:23; מַיִם עַד נֶפֶשׁ Ps 69:2. Say "shares the words of".
+- **Prophecy 3:4:** five words, עוֹד אַרְבָּעִים יוֹם וְנִינְוֵה נֶהְפָּכֶת. הָעִיר הַגְּדוֹלָה: Gen 10:12, Jonah 1:2, 3:2, 4:11. The book ends וּבְהֵמָה רַבָּה. אָנָּה in Jonah 1:14 and 4:2.
+
+## Long-form topic scout (Nov 8, 2026): three reviewers, picks checked in WLC
+- **Abraham's two sons (Gen 21 / 22), picked by 2 of 3:** an angel calling "from heaven" (מַלְאַךְ … מִן הַשָּׁמַיִם with וַיִּקְרָא) only Gen 21:17, 22:11, 22:15. וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר in 3 verses: 19:27, 21:14, 22:3. הַנַּעַר in both; eyes opened, sees a well (21:19) / lifts eyes, sees a ram (22:13). Name in 22:11 only of these; 21:17, 21:19, 22:3, 22:13 none. Demand: "The Binding" 2.94M, Peterson 1.34M, "ISHMAEL — Abraham's Rejected Son" 591k; none pairs the chapters.
+- **Moses' basket = Noah's ark, picked by 2 of 3:** תֵּבָה 28 times, only Gen 6–9 and Exod 2:3, 5. בַּסּוּף (2:3) → בְיַם סוּף (15:4). מֹשֶׁה … מִן הַמַּיִם מְשִׁיתִהוּ (2:10). Isa 63:11 הַמַּעֲלֵם מִיָּם (no Name). Different sealant words (כֹּפֶר / חֵמָר וָזָפֶת). Known observation, so it needs a bigger arc.
+- **Nephilim, the name is the ending (strategist):** נְפִלִים Gen 6:4, Num 13:33 ×2; וַיִּפְּלוּ בְיַד דָּוִד (2 Sam 21:22). Demand: Enoch explainers 3.08M, 2.74M; Tucker Carlson 2.16M; "Nephilim means fallen" videos 249–1,148. אַנְשֵׁי הַשֵּׁם Gen 6:4 and Num 16:2 (Korah).
+- **Rahab's cord = "hope":** תִּקְוַת חוּט הַשָּׁנִי (Josh 2:18), first noun תִּקְוָה in canonical order (2:18, 2:21). 2:19 going out of the house doors ~ Exod 12:22 לֹא תֵצְאוּ אִישׁ מִפֶּתַח בֵּיתוֹ. Achan, עֵמֶק עָכוֹר (Josh 7:26, Name) → Hos 2:17 עֵמֶק עָכוֹר לְפֶתַח תִּקְוָה (no Name).
+- **Elijah at Horeb = Sinai replayed:** אַרְבָּעִים יוֹם וְאַרְבָּעִים לַיְלָה 10 verses (Flood, Moses, 1 Kgs 19:8); עֹבֵר 1 Kgs 19:11 ~ Exod 34:6; דְּמָמָה 1 Kgs 19:12, Job 4:16 (Ps 107:29 spelled לִדְמָמָה). Overlaps the Jonah/Elijah material.
+- **Burning bush = Sinai:** בֹּעֵר בָּאֵשׁ only Exod 3:2 (Name), Deut 4:11, 5:23, 9:15; שֹׁכְנִי סְנֶה Deut 33:16; Deut 4:33 (no Name). Was a runner-up Reel; check it wasn't posted.
+- **Babel and "name":** Gen 6:4 אַנְשֵׁי הַשֵּׁם, 11:4 וְנַעֲשֶׂה לָּנוּ שֵׁם, 11:10 Shem's line, 12:2 וַאֲגַדְּלָה שְׁמֶךָ (no Name). Babel was short 21.
+
+## Long-form pick (Nov 8, 2026): "Why God calls some names twice". Verified in WLC
+- A doubled name in direct address from God appears exactly 4 times: אַבְרָהָם אַבְרָהָם (Gen 22:11, Name), יַעֲקֹב יַעֲקֹב (Gen 46:2, no Name), מֹשֶׁה מֹשֶׁה (Exod 3:4, Name), שְׁמוּאֵל שְׁמוּאֵל (1 Sam 3:10, Name). The other doubled proper nouns are genealogy seams (Gen 6:9, 11:10 …) or not address, except David's אַבְשָׁלוֹם אַבְשָׁלוֹם (2 Sam 19:5), a father calling a dead son.
+- Abraham, Jacob and Moses answer הִנֵּנִי; Samuel said הִנֵּנִי at the earlier calls (3:4) and at the double call answers דַּבֵּר כִּי שֹׁמֵעַ עַבְדֶּךָ.
+- God says הִנֵּנִי: Isa 58:9 (Name), 52:6; doubled הִנֵּנִי הִנֵּנִי only Isa 65:1 (no Name), אֶל גּוֹי לֹא קֹרָא בִשְׁמִי. הִנֵּנִי appears in 177 verses, so the claim is the doubled form.
+- Demand rides on the famous scenes (binding, burning bush, boy Samuel); no big video on the pattern found in autocomplete. The double-name reading is in the Midrash: pinned comment only.
+
+## Three more long-form options (Nov 8, 2026), same formula as the double name call. Verified in WLC
+- **"Who am I?":** מִי אָנֹכִי / מִי אֲנִי in 6 verses, all said by Moses, David or Solomon: Exod 3:11 (Moses, no Name), 1 Sam 18:18 (David to Saul, no Name, ends כִּי אֶהְיֶה חָתָן), 2 Sam 7:18 (Name) = 1 Chr 17:16 (Name), 1 Chr 29:14 (David, no Name, כִּי מִמְּךָ הַכֹּל), 2 Chr 2:5 (Solomon, no Name, building the Temple). God's answer to Moses: כִּי אֶהְיֶה עִמָּךְ (3:12), אֶהְיֶה אֲשֶׁר אֶהְיֶה (3:14), no Name in either. Contrast: Pharaoh מִי יְהוָה (Exod 5:2, Name). Gideon (Judg 6:15) and Saul (1 Sam 9:21) say the idea in other words.
+- **Shepherds:** Abel רֹעֵה צֹאן (Gen 4:2), Jacob (30:36), his sons (46:32, 34; 47:3), Moses הָיָה רֹעֶה (Exod 3:1), David רֹעֶה בַּצֹּאן (1 Sam 16:11), 2 Sam 7:8 מֵאַחַר הַצֹּאן (Name). First time God is called a shepherd, in canonical order: Gen 48:15 הָאֱלֹהִים הָרֹעֶה אֹתִי מֵעוֹדִי עַד הַיּוֹם הַזֶּה (no Name); then 49:24. Ps 23:1 and Ezek 34:15 have the Name. Christian "good shepherd" risk.
+- **Deep sleep (תַּרְדֵּמָה):** 7 verses: Gen 2:21 (Name), Gen 15:12 (no Name), 1 Sam 26:12 (Name), Isa 29:10, Prov 19:15, Job 4:13, 33:15. Each narrative one: God acts while the person sleeps (the woman; the torch passes between the pieces alone, 15:17, no Name; David takes Saul's spear and spares him). Verb נפל in Gen 2:21, 15:12, 1 Sam 26:12, Job 4:13, 33:15. Close: Ps 121:4 לֹא יָנוּם וְלֹא יִישָׁן שׁוֹמֵר יִשְׂרָאֵל or Ps 127:2 כֵּן יִתֵּן לִידִידוֹ שֵׁנָא (no Name in either).
+
+## Which first (Nov 8, 2026): four reviewers, unanimous for "Why God Calls Some Names Twice"
+- Strategist, story editor, Hebrew skeptic and core fan all ranked the double name call #1. Order behind it varied: strategist C, B, D; editor B, D, C; skeptic B, D, C; fan D, B, C.
+- Title: "Why God Calls Some Names Twice in the Bible". Thumbnail: "ONLY FOUR TIMES." with FOUR in gold.
+- Hook (editor): the knife is raised over Isaac when God does something He does only four times in the Bible: He says a man's name twice.
+- 3:00 twist: Samuel runs to Eli with הִנֵּנִי (1 Sam 3:4–8); at the doubled call he answers דַּבֵּר כִּי שֹׁמֵעַ עַבְדֶּךָ (3:10). 6:00 twist: David's אַבְשָׁלוֹם אַבְשָׁלוֹם (2 Sam 19:5), then Isa 65:1.
+- Skeptic fix: in Gen 22:11 the angel of God calls (22:12 "from Me"), so say "the voice from heaven". The other three are God (Gen 46:2 אֱלֹהִים; Exod 3:4 אֱלֹהִים from the bush; 1 Sam 3:10 the Name came and stood).
+- Kept for later: B "Who am I?" (frame Moses as leader, not builder), D deep sleep (say "in the stories", not "God-sent" for all 7). C shepherds likely sinks (cherry-picked, Christian imagery).
+
+## Channel and title research (Nov 8, 2026, YouTube pages)
+- **Channel:** 11.1K subscribers. Long-forms now: Well 416,409 (9 days); Deception 168,736 (5 days); 5 Patterns 126,606 (11 days); Barren 45,886 (2 days). Views run 4–40× the subscriber count, so most traffic is browse/suggested from the broad Bible audience (neighbors in search: Redeemed Zoomer, Bible Animations, hochelaga). Audience age, country and faith need YouTube Studio data; not available here.
+- **What the winning titles share:** a Bible-wide claim ("Everyone in the Bible", "So Many Women", "the Bible Keeps Repeating", "Hidden in the Hebrew Bible") about a human life experience (finding a wife, family deception, infertility). No single character, no Hebrew, nothing abstract.
+- **Shorts (top of the latest ~25):** "Only one woman in the Bible was called a woman of valor" 39K; Esther's three letters 14K; "Abraham never knew where he was going" 14K; "Death gets the last word, except once" 13K; Ehud 12K. Already posted: "God called only 4 people by name twice. Listen to their answer" 5.4K; "Both of Abraham's Sons Were Saved the Same Way" 4.7K.
+- **Competition on the double name call:** Deep Made Simple "Every Time God Calls a Name Twice in the Bible" 13,791 in 8 days, plus several small copies (8–96 views). "Who am I" and deep sleep have no comparable video (sleep results are bedtime-audio channels).
+
+## ICP from comments (Nov 8, 2026; ~1,400 comments from our 4 videos + Friedman Jonah, Bible Animations Jonah, Beyond the Bible Nineveh)
+- **Who:** ~55–65% Christian (general/evangelical, many from India, Pakistan, Mexico, South Africa, Trinidad); ~10–15% Jewish (Hebrew replies, "B"H", "G-d", "Todah raba", "learning Torah all my life and never noticed"); ~10% Hebrew-roots/Messianic (Yahuah, Yehovah, Yeshua, Jubilees); ~15–20% casual joke-commenters (mostly on the well video); ~3–5% scholar-adjacent (Alter, "my professor", textual critics). Mostly Bible-literate intermediates who correct details; few self-described beginners.
+- **What amazes them:** design/authorship ("God is truly an amazing author", "absolute perfection in the story structures"), "never noticed", seeing the Hebrew on screen, clean non-AI visuals, visible verification.
+- **Pushback:** AI voice/"It's AI", music, small factual slips (Rachel after a week, struck vs spoke to the rock, 150+150 days, Eli drawn thin), "Lord" from a Jewish viewer, Bible-code skeptics (manuscript variants), John 4 left out (Christians) vs "please no JC stuff" (Jews).
+- **Friedman Jonah lesson:** his midrashic "Pharaoh became king of Nineveh" drew 10+ timeline rebuttals. Non-Tanakh claims get disproven in comments.
+- **Jonah hot spots:** the book ends on God's unanswered question; ch. 4 and the plant; pagans (sailors, Nineveh) obey better than the prophet; the short sermon ("says five words, explains nothing, leaves"); "overturned"; animals in sackcloth; why Jonah ran (Assyria); "big fish, not a whale" corrections; "I'm like Jonah" relatability. The fish-god/Dagon theory is popular but extra-biblical: keep it off screen.
+
+## Jonah demand and title data (Nov 8, 2026; 29 YouTube searches, 365 videos, views per month)
+- **What wins for Jonah:** Nineveh or Assyria as the villain ("Nineveh: The Most Wicked City in the Bible That God Destroyed" 272k/mo; "Assyria – The First Empire of Evil" 116k/mo; 37 Nineveh titles total 7.1M), paradox ("The Jonah Paradox no one is talking about" 79k/mo), full-story movies, and Friedman's "Doesn't Make Sense - until now" (456k, a Jewish channel).
+- **What gets almost nothing:** "Why was Jonah angry" (median 34/mo), the plant, "why did God spare Nineveh", mercy, "sign of Jonah", Hebrew word studies, sermon words. Put those inside the video, not in the title.
+- **Keywords:** "jonah and the whale" is all kids' content, so keep "whale" out of the title (tags and description only). Avoid forgave, saved, repented, grace, salvation, Old Testament.
+- **Most-asked questions** (autocomplete, Stack Exchange, Quora): why Jonah ran or hated Nineveh, why he was angry in ch. 4, did he die in the fish, whale or fish, Nahum vs Jonah, Nineveh vs Sodom, did the prophecy fail, why read on Yom Kippur, the plant and 4:11.
+- **Field patterns:** median title 61 characters; a totality word in 11 of the top 30; "Hidden/Secret" in 6; "most readers miss" tails in 6; a colon split in 9; insight-statement titles are rare, so they stand out.
+- **Accuracy:** the animals' fast and sackcloth are the king's decree (3:7–8). The text never says they did it, so write "ordered". שמח appears in Jonah only at 4:6.
+
+## Prisoners pattern (Nov 8, 2026): verified in WLC
+- **The dry pit:** בּוֹר with "no water" in exactly 3 verses: Gen 37:24 (Joseph, וְהַבּוֹר רֵק אֵין בּוֹ מָיִם), Jer 38:6 (Jeremiah, וּבַבּוֹר אֵין מַיִם כִּי אִם טִיט, he sinks in the mud), Zech 9:11 (God: שִׁלַּחְתִּי אֲסִירַיִךְ מִבּוֹר אֵין מַיִם בּוֹ). None has the Divine Name.
+- **Same verbs in, same verbs out:** לקח + שלך + בּוֹר together only Gen 37:24 and Jer 38:6 ("took him and threw him into the pit"). משך + עלה + בּוֹר together only Gen 37:28 and Jer 38:13 (וַיִּמְשְׁכוּ … וַיַּעֲלוּ … מִן הַבּוֹר). Joseph is pulled out by strangers and sold; Jeremiah is pulled out by a foreigner, Ebed-melech the Cushite (38:7). Joseph calls prison בּוֹר too (Gen 40:15, 41:14).
+- **Payoff:** Zech 9:12 שׁוּבוּ לְבִצָּרוֹן אֲסִירֵי הַתִּקְוָה ("prisoners of hope", no Name). Ps 40:3 וַיַּעֲלֵנִי מִבּוֹר שָׁאוֹן מִטִּיט הַיָּוֵן (pit and mud; no Name in 40:3, Name in 40:2 with קַוֺּה קִוִּיתִי). Lam 3:55 מִבּוֹר תַּחְתִּיּוֹת (Name). בּוֹר + prisoner only Isa 24:22, Zech 9:11.
+- **The release:** "lift the head" of a prisoner: Gen 40:13, 20 (the cupbearer) and 2 Kgs 25:27 = Jer 52:31 (King Jehoiachin, נָשָׂא … אֶת רֹאשׁ … מִבֵּית כֶּלֶא). Change of clothes: Joseph וַיְחַלֵּף שִׂמְלֹתָיו (Gen 41:14); Jehoiachin וְשִׁנָּא אֵת בִּגְדֵי כִלְאוֹ and eats at the king's table all his life (2 Kgs 25:29–30; Jer 52:33–34). Kings and Jeremiah both end on this release. None has the Divine Name.
+- **Other prisoners:** Joseph's בֵּית הַסֹּהַר only Gen 39–40; Samson בֵּית הָאֲסִירִים (Judg 16:21); Micaiah בֵּית הַכֶּלֶא (1 Kgs 22:27); Hoshea (2 Kgs 17:4); Jeremiah (Jer 37:15); Hanani הַמַּהְפֶּכֶת (2 Chr 16:10); Zedekiah בֵית הַפְּקֻדֹּת (Jer 52:11).
+- Overlap: Joseph's pit is Gen 37, inside 04's range (the coat), so open on Jeremiah or keep Joseph to the pit only.
+
+## Text-first patterns (Nov 8, 2026): verified in WLC
+- **David and Bathsheba, "send" (Alter list #5):** root שלח 12 times in 2 Sam 11 (11:1, 3, 4, 5, 6 ×3, 12, 14, 18, 22, 27): David, Bathsheba and Joab send. No word for God (יהוה, אֱלֹהִים, אֵל) appears in 2 Sam 11 until the last verse, 11:27. Then 12:1 וַיִּשְׁלַח יְהוָה אֶת נָתָן (Name). David to Joab: אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה (11:25, no Name) → וַיֵּרַע הַדָּבָר … בְּעֵינֵי יְהוָה (11:27, Name). Uriah: אִם אֶעֱשֶׂה אֶת הַדָּבָר הַזֶּה (11:11).
+- **Balaam's donkey (Alter list #6):** שָׁלֹשׁ רְגָלִים ("three times") only Exod 23:14 (the three pilgrim festivals, followed by "three times a year … appear before the Lord", 23:17, Name) and Num 22:28, 32, 33. The donkey sees the angel three times (וַתֵּרֶא 22:23, 25, 27); then God uncovers Balaam's eyes (22:31, Name); Balaam calls himself שְׁתֻם הָעָיִן … גְּלוּי עֵינָיִם (24:3–4, no Name). "If I had a sword I'd kill you" (22:29) while the angel stands with a drawn sword (22:23, 31). Balak: בֵּרַכְתָּ בָרֵךְ זֶה שָׁלֹשׁ פְּעָמִים (24:10). ברך 14 times in Num 22–24. Close: Neh 13:2 וַיַּהֲפֹךְ אֱלֹהֵינוּ הַקְּלָלָה לִבְרָכָה (no Name); Deut 23:6 has the Name. Num 24:5 מַה טֹּבוּ (no Name).
+- **Cain and Abel:** אָח 7 times in Gen 4:2–11 (4:2, 8 ×2, 9 ×2, 10, 11); 4:21 is another family.
+- **Ruth:** כָּנָף twice: Boaz blesses her under God's wings (2:12, Name); she asks him to spread his wing (3:9, no Name).
+
+## David and Bathsheba vs Balaam (Nov 8, 2026): four reviewers, 3–1 for David and Bathsheba
+- For A: narrative scholar, Hebrew skeptic, YouTube strategist. For B: story editor (feared a dark, guilt ending).
+- **Fix the wording (skeptic):** "the word 'send' appears 12 times in 2 Sam 11; David sends 8 of them" (Joab 11:6c, 18, 22; Bathsheba 11:5). Say "God's name doesn't appear until the last verse" (Uriah mentions the ark, 11:11). 12:13 הֶעֱבִיר = "put away", not "passed over".
+- **The ending (scholar, verified):** שלח in 2 Sam 12 at 12:1 (God sends Nathan), 12:25 וַיִּשְׁלַח בְּיַד נָתָן הַנָּבִיא וַיִּקְרָא אֶת שְׁמוֹ יְדִידְיָהּ (Name; יְדִידְיָהּ appears only here), 12:27 (Joab). 12:24 the child is Solomon, and God loved him (Name). David's sends end in death; God's last send names the son of the same marriage "beloved of God". Eyes thread continues 12:9, 12:11.
+- **Demand (strategist):** See The Bible "Who Was Bathsheba" 161k; Ark Films 313k; JLI "The Most Problematic Story in the Bible" 201k; Manis Friedman 139k. No video on the "send" pattern. Title idea: "David and Bathsheba: The Word Repeated 12 Times"; thumbnail "THEN GOD SENT."
+- **Balaam fixes if made later:** שְׁתֻם הָעָיִן (24:3) is disputed, so use only גְלוּי עֵינָיִם (24:4); Exod 23:17 and Num 24:10 say שָׁלֹשׁ פְּעָמִים (another phrase); לְשָׂטָן לוֹ (22:22, 32); חָטָאתִי (22:34). Balaam's donkey demand is mostly kids' content, and "the donkey saw what he couldn't" is a stock title.
+
+## David and Bathsheba title roast (Nov 8, 2026): four harsh reviewers
+- **Killed:** "David and Bathsheba: The Word Repeated 12 Times" / "THEN GOD SENT." It's a bare count with a blind slot ("the word"), it reads like homework or trivia, it has no stakes, and it's disprovable: דוד appears 23 times and אוריה 20 in 2 Sam 11, Exod 9 also has שלח 12 times, and the 12 includes a command (11:6 שְׁלַח) and a promise (11:12 אֲשַׁלְּחֶךָּ). The thumbnail reads as a church line and spoils 12:1.
+- **Verdict:** put the reversal in the title, in two flat true statements. Best: "David Sent for Bathsheba. Then God Sent Nathan." with the thumbnail "SAME WORD." (circle on the messenger's hand). Backups: "The Hidden Reason God Is Silent in David and Bathsheba" / "HE WAS WATCHING."; "What Most People Miss About David and Bathsheba" / "IT'S ON PURPOSE."
+- **Rejected:** "Why David Never Went to Bathsheba", disproved by 2 Sam 12:24 וַיָּבֹא אֵלֶיהָ. Also "God sent for David" (God sent Nathan to David, 12:1).
+- **On screen:** "שלח twelve times in one chapter; David sends eight of them." In 12:25 the sender of וַיִּשְׁלַח בְּיַד נָתָן is not named (God is the subject of 12:24's last clause); Joab sends again in 12:27, so don't say God has "the last send" in the chapter.
+
+## 12 tribes: Simeon and Levi, one curse, two endings (Nov 8, 2026): verified in WLC
+- Gen 34:25 שִׁמְעוֹן וְלֵוִי … אִישׁ חַרְבּוֹ (Shechem). Gen 49:5–7 Jacob: כְּלֵי חָמָס … אָרוּר אַפָּם … אֲחַלְּקֵם בְּיַעֲקֹב וַאֲפִיצֵם בְּיִשְׂרָאֵל (no Name). Both tribes are cursed with being scattered.
+- Levi at the golden calf: מִי לַיהוָה אֵלָי וַיֵּאָסְפוּ אֵלָיו כָּל בְּנֵי לֵוִי (Exod 32:26, Name); שִׂימוּ אִישׁ חַרְבּוֹ (32:27, Name), the same phrase as Gen 34:25 (אִישׁ חַרְבּוֹ in 4 verses: Gen 34:25, Exod 32:27, Song 3:8, Neh 4:12); וְלָתֵת עֲלֵיכֶם הַיּוֹם בְּרָכָה (32:29, Name).
+- Simeon at Peor: Zimri, נְשִׂיא בֵית אָב לַשִּׁמְעֹנִי (Num 25:14, no Name), stopped by Phinehas, a Levite (25:7). Simeon's census: 59,300 (Num 1:23) → 22,200 (Num 26:14), down almost two-thirds.
+- Moses' blessing (Deut 33) names every tribe except Simeon; Levi gets a long blessing, יוֹרוּ מִשְׁפָּטֶיךָ לְיַעֲקֹב וְתוֹרָתְךָ לְיִשְׂרָאֵל (33:10, no Name).
+- The scattering comes true for both: Simeon's land is inside Judah's (Josh 19:1, 9, no Name); Levi gets 48 cities spread through all the tribes (Num 35:7, no Name), as teachers. Simeon still appears later (1 Chr 4:24–43; Ezek 48:24), so never say "disappeared"; say "missing from Moses' blessing".
+- Gen 34 is inside 04's chapter range (04 didn't use Shechem).
+
+## All 12 tribes (Nov 8, 2026): verified in WLC
+- **"According to the number of the tribes" (לְמִסְפַּר / כְּמִסְפַּר / לְמִנְיָן שִׁבְטֵי):** exactly 4 verses: Josh 4:5, 4:8 (12 stones from the Jordan, entering the land; 4:8 Name), 1 Kgs 18:31 (Elijah's 12 stones in the northern kingdom after the split, "Israel shall be your name", Name), Ezra 6:17 (Aramaic; the returned exiles offer 12 goats "for all Israel, by the number of the tribes of Israel", no Divine Name). Ezra 8:35 again 12 bulls and 12 goats עַל כָּל יִשְׂרָאֵל (Name).
+- **The others:** Exod 24:4 twelve pillars at Sinai (Name); Exod 28:21 twelve stones, each engraved with a name (no Name); 28:29 Aaron carries the names עַל לִבּוֹ … לְזִכָּרֹן לִפְנֵי יְהוָה תָּמִיד (Name); Ezek 48:31–34 twelve city gates named for the tribes (48:31 no Name), with the city's name in 48:35 (Name, English only).
+- **The names:** Leah's first three are about her husband (Gen 29:32 יֶאֱהָבַנִי אִישִׁי; 29:33 שְׂנוּאָה אָנֹכִי; 29:34 יִלָּוֶה אִישִׁי), and the fourth turns to God: הַפַּעַם אוֹדֶה אֶת יְהוָה, Judah (29:35, Name), the royal tribe (49:10). Naphtali נִפְתַּלְתִּי עִם אֲחֹתִי (30:8). Benjamin is the only one named by his father, renamed from בֶּן אוֹנִי (35:18, no Name).
+
+## 12 tribes angle (Nov 8, 2026): strategist, casual fan, enthusiast, scroller. Unanimous
+- **Lead:** God keeps counting twelve after the tribes are lost. Joshua's stones as setup → Elijah's 12 stones in the breakaway north → the exiles' 12 goats "for all Israel" (Ezra 6:17, the share moment) → the names on the high priest's heart → Ezekiel's 12 gates and the city "God is there".
+- **Names:** one short beat only (3–4 names: Leah's pain names → Judah's "this time I will thank God"; Ben-Oni → Binyamin), framed as a family built to break apart, or as the names God carries on the priest's heart. The enthusiast called the name meanings old news; the scroller would skip them.
+- **Cut:** Simeon and Levi (census numbers, new names, splits the idea).
+- **Demand:** ReligionForBreakfast "What Happened to the Ten Lost Tribes of Israel?" 1,501,952; Power of Wisdom 472,908; UsefulCharts "12 tribes" 1,095,632; Nils Glenn 488,516; Deep Made Simple 436,607. Name-meaning videos 10k–122k. Gap: every lost-tribes video is history, DNA or theories; none shows the Tanakh keeps counting twelve.
+- **Packaging (pick):** "10 Tribes Were Lost. The Bible Kept Counting 12." Thumbnail "NONE MISSING." over 12 stones, 10 dim and 2 lit, glowing circle on the dim ones. Backup: "Why the Bible Never Gave Up on the 10 Lost Tribes" / "STILL TWELVE."
+
+## 12 tribes title roast (Nov 8, 2026): four harsh reviewers
+- **Killed:** "Why the Bible Never Stops Counting to 12" / "10 WERE GONE." It reads as numerology ("12 apostles, 12 months", maybe Christian), "counting" is bookkeeping, "never" can be disproved, it has no keyword ("lost tribes" carries the 1.5M competitor), and the viewer is ~100% sure of the answer ("12 tribes, duh"). The thumbnail ends on an absence with a blind "10", and title and thumbnail each carry half the idea.
+- **Accuracy fixes (verified):** northerners still appear after the exile and the return: 2 Chr 30:11 (Asher, Manasseh, Zebulun come to Jerusalem), 2 Chr 34:9 (silver "from Manasseh and Ephraim and all the remnant of Israel"), 1 Chr 9:3 (Ephraim and Manasseh living in Jerusalem). So never say the ten were "gone"; say "the northern kingdom was exiled to Assyria" (2 Kgs 17:6). Use 1 Chr 9:3 as a hopeful beat. Phrase count: לְמִסְפַּר/כְּמִסְפַּר שִׁבְטֵי in 3 Hebrew verses (Josh 4:5, 4:8, 1 Kgs 18:31) plus Ezra 6:17 in Aramaic (לְמִנְיָן); Ezra 8:35 is "twelve again", not the phrase. Drop "exactly". Tribe lists vary (Deut 33 without Simeon; 1 Chr 2–8 without Dan and Zebulun), so never claim "always 12".
+- **Pick:** "The Bible Refused to Lose the Ten Lost Tribes" (the paradox is in the title, "Ten Lost Tribes" is used as the known name rather than a claim, it fits the design angle, and nothing in it is countable). Thumbnail "STILL TWELVE." ("TWELVE" in gold) over Elijah's twelve stones, ten faint but outlined, circle around the full row. Reviewers' alternatives: "10 Tribes Were Lost. The Bible Still Counts 12." / "ON PURPOSE."; "The Ten Lost Tribes: Why Israel Kept Counting Them" / "STILL TWELVE."
+
+## 12 tribes substance check (Nov 8, 2026): scholar, skeptic, story editor, core fan
+- **Verdict:** "the Bible keeps counting 12" is not an insight. It's the obvious consequence of Jacob's 12 sons, and the text says why each time. Fan and skeptic: not a long-form (a Short at most). Editor: it could carry 8 minutes only around Carmel, and it's weaker than the well or Goliath. Scholar: it needs a stronger core.
+- **The stronger core (verified): the tear and the repair.** 1 Kgs 11:29–31: Ahijah takes the שַׂלְמָה חֲדָשָׁה (a new garment; the same consonants as שְׁלֹמֹה, Solomon; the phrase appears only at 11:29–30) and tears it into שְׁנֵים עָשָׂר קְרָעִים, giving Jeroboam ten (11:31 Name; 11:30, 11:32 no Name). 1 Kgs 18:21 פֹּסְחִים עַל שְׁתֵּי הַסְּעִפִּים (Name). 18:30 וַיְרַפֵּא אֶת מִזְבַּח יְהוָה הֶהָרוּס ("he healed the torn-down altar", Name). 18:31 twelve stones + יִשְׂרָאֵל יִהְיֶה שְׁמֶךָ, which appears only at Gen 35:10 (no Name) and 1 Kgs 18:31. Gen 35:2 put away foreign gods, 35:14 stone and poured offering, set against Carmel. Payoff: Ezek 37:22 וְלֹא יֵחָצוּ עוֹד לִשְׁתֵּי מַמְלָכוֹת עוֹד (no Name).
+- Joshua's stones are memorials, not an altar; the Joshua–Elijah link is only the number (the firmer link is בֶּחָרָבָה, Josh 3:17 / 2 Kgs 2:8, another video). Leave out the tribe-list variations and Ezra's Aramaic.
+
+## Visual style research (Nov 2026, video 09)
+- Code-made people fail every time: stick rigs, 3D mannequins, jointed silhouettes, engraving figures and code-drawn hands all read as uncanny or cheap (tested as prototypes A/B/C plus a gold-line hands close-up). People must never be drawn in code.
+- What code does reliably well: verse typography on black with gold key words; map and route animation (Natural Earth data is public domain); close-ups of real codex scans (public domain, but every shot must hide the Divine Name); pattern diagrams (parallel stories, family trees, timelines); single objects in strong light; fire, light, water and particles tied to a line.
+- The owner liked the dark painterly oil-painting look from Nano Banana 2 (Jacob on the bed with the boys). Problems seen in that test: Egyptian costume on Joseph, the torch in the wrong hand, crossed arms that never came out.
+- What AI generators get right most often: empty landscapes and interiors, fire, water and light textures, one prop on black, and one figure from behind or at a distance with a simple pose. A dark, low-key style hides small errors.
+- What they get wrong most often: hand actions (crossing, grabbing, an object in a named hand), left versus right, exact counts, several figures interacting, costume described only in words, and lettering.
+- Workflow: lock one style frame; make one character sheet per person from the Tanakh text and reuse it with edit-with-reference; generate backgrounds and single figures on black separately, then composite and animate in our engine; stage hard actions in the composite (for example arms as separate layers); edit an image only when it's about 80% right; one variation per prompt.
+- Models and prices: Nano Banana Pro for figures (best consistency, up to 14 references); Nano Banana 2 for backgrounds, props and drafts. On ElevenLabs, Nano Banana 2 at 1K costs about 406 credits per image and about 609 with references.
+
+## Consistent characters with Nano Banana (Nov 2026 research: web and YouTube tutorials; X posts weren't searchable)
+- The standard workflow is: one approved style frame, then a master portrait per character, then a character sheet made from that portrait, then scenes made from the sheet.
+- Sheet: 16:9 on a plain neutral background, showing front, 3/4, profile and back plus a full-body view. Keep the clothes identical and the hands empty, because props in the hands make the views drift.
+- Nano Banana 2 takes up to 4 references for character consistency (Pro takes 5). For a scene, attach that character's sheet plus the style frame.
+- Prompt for a scene: name what must stay identical (face, beard, head cloth, robe), then change one thing (pose, angle or action). Fix with edits that change one thing at a time.
+- Drift grows with each extra character in a shot, so use as few people per image as possible.
+- Make sheets only for people who appear in more than one shot. A one-off figure needs only its fixed description.
+
+## Clothing in the patriarchs' era (Nov 2026 research, for image prompts)
+- The best visual source is the Beni Hasan tomb painting (about 1890 BCE). The Semitic "Aamu" travelers wear brightly dyed wool with geometric patterns and stripes in red, white and blue, often with fringed hems, while the Egyptians beside them wear plain white linen. The men have full beards and bare heads with thick hair, and no head cloths. The women wear long patterned dresses, with long hair held by headbands.
+- Dyes found in the Levant: red from madder and from oak-scale insects (Middle Bronze Age wool from the Judean Desert), and blue from woad (Timna, 13th–10th c. BCE). Undyed wool and linen were the base, and coloured cloth showed wealth (Jacob and Isaac were rich: Gen 26:13, 30:43).
+- Women's head covering: in Genesis the veil is situational. Rebekah takes the צָּעִיף when she meets Isaac (Gen 24:65), and Tamar covers herself (Gen 38:14). The Lachish relief (701 BCE, much later) shows Judean women under long shawls from head to hem. Everyday veiling isn't attested for the patriarchs' era.
+- The keffiyeh-and-agal head cloth is a later Bedouin look and isn't attested for this period.
+- Test result (video 09): asking for dyed, striped or patterned wool made the image models produce costume looks (a Native American blanket, a striped bathrobe, a caveman in fur). Use plain undyed earth-toned wool instead. It's historically sound as everyday dress and suits the gold-on-black grade.
+
+## On-screen style of the posted videos (YouTube auto-frames, Nov 8, 2026)
+- Latest posted: "Why So Many Women in the Bible Were Barren". Before it: 04 Deception, 03 Well.
+- Names are labelled with the Hebrew name in gold and the English caps under it (שִׁמְשׁוֹן / SAMSON). Plain role labels sit under groups ("HIS FATHER", "THE BOY").
+- A short verse goes at the top (reference, English with the key word in gold, sometimes the Hebrew) over one central scene.
+- A Hebrew key word with its gloss goes under the scene (וְלֹא הִכִּירוּ "he did not recognize him").
+- Explainers are labelled pattern diagrams: 03 drew the recurring scene as a path with stations (JOURNEY, A WELL, WATER, …).
+- The narration isn't captioned.
+
+## Image generation (Nov 8, 2026)
+- Use Magnific with Nano Banana 2 (mode `imagen-nano-banana-2-flash`, 1k, 16:9): 75 credits per image, with references at the same price. ElevenLabs' Nano Banana 2 costs 204 per image.
+- Always upload the existing shots of a recurring person as references (`creations_request_upload` → PUT → `creations_finalize_upload`).
+
+## Owner feedback on explainers (Nov 8, 2026)
+- The owner likes the card animations: names as Hebrew-over-English cards that build into T-charts, trees, chains and diagrams on black (video 09). Use them for comparisons, family links and anything the VO explains.
+
+## Short s24 Babel (Nov 20, 2026)
+- **Verified (WLC, Gen 11):**
+  - 11:4 הָבָה נִבְנֶה … וְנַעֲשֶׂה לָּנוּ שֵׁם
+  - 11:7 הָבָה נֵרְדָה וְנָבְלָה (no Divine Name in the verse)
+  - 11:9 בָּבֶל … בָּלַל (the verse has the Divine Name, so it is shown in English only)
+  - נִבְנֶה (root בנה) and נָבְלָה (root בלל) are different roots. The only claim on screen is that the written letters נבנה / נבלה differ by one, so the vowel points dissolve before "One letter changed".
+  - Also in 11:3: הָבָה נִלְבְּנָה לְבֵנִים. Not used (one proof per beat).
+- **Autocomplete (YouTube):**
+  - "tower of babel": explained / meaning / bible story / summary / analysis / theory
+  - "genesis 11": explained / 1-9 / bible study / tower of babel / summary / commentary
+  - "babel bible story"
+- **Hook (v2, after the owner rejected "one letter apart"):** "The builders of Babel say, 'Let us build.' God changes one letter, and the building stops." Gen 11:8 וַיַּחְדְּלוּ לִבְנֹת הָעִיר backs "the building stops".
+- **הָבָה opens three sentences in Genesis 11:** 11:3, 11:4 (the builders) and 11:7 (God). Used in the caption only.
+- **Rules live on another branch:** `_research/hooks.md`, `copywriting.md`, `scripts_playbook.md` and the fuller CLAUDE.md are on `claude/answer-first-rules`, not on main. Read them there before any hook, script or caption.
+- **Sound:** mix_s24.py uses the real sounds of our own reels: quill, scene-change whoosh, plucks, tick and the logo outro were lifted from the s23 / s20 audio (pad removed by spectral subtraction) into `s24/sfx/`, and the bed is the reels' own pad. A synthesized imitation was rejected by the owner as bad.
+- **Build:** the studio KIT (engine/lf12) is not in any branch, so `_research/shorts/s24/engine/` holds a self-contained rebuild:
+  - kit_core.js, render.cjs (Playwright), the fonts, and mk_morph.cjs (a true outline morph of נ into ל, made with opentype.js and flubber)
+  - mix_s24.py renders cues.json in the posted palette.
+
+## Eden research (Nov 20, 2026; Genesis 2–3)
+- **Channel now (19.5k subs, Nov 20):**
+  - Wells 621k (3 wk), Deception 221k (2 wk), Job 160k (3 days), Barren 158k, Marriage in Hebrew 152k, 5 Patterns 152k, Younger Brother 139k, Strangest Commands 25k (8 days), Dead Sea Scrolls 7k (9 hours).
+  - Median about 150k. The winners are one "Why…" question answered by one Hebrew pattern across several stories. The list video ("Strangest Commands") is the only flop.
+  - Eden short "Not good to be alone": 13.9k (mid). Best shorts are patterns (center, mirror).
+- **Autocomplete (YouTube):**
+  - "the serpent in the garden was not a snake", "the serpent was right", "eve wasn't talking to a snake"
+  - "why did god put the tree of knowledge in the garden", "tree of knowledge vs tree of life"
+  - "why did adam eat the forbidden fruit", "why did eve eat the apple", "what was the forbidden fruit"
+  - "where was the garden of eden located", "was the garden of eden real", "eden was a temple", "eden wasn't just a garden"
+  - "adam and eve were not the first humans", "eve from adam's rib meaning"
+  - "cherubim" and "flaming sword" have little Bible demand.
+- **Demand, top Eden videos (views ÷ channel median):**
+  - Serpent: Power of Wisdom "Secret of the Serpent… Hebrew Text" 1.26M (105x); Beyond The Verses 253k (15x); Wise Disciple "Eve Wasn't Talking to a Snake" 592k (7x); Nils Glenn 213k (0.6x).
+  - Tree of knowledge: Wise Disciple 959k (12x); Discernment Made Clear 234k (8x); Sam Shamoun 436k (48x).
+  - Rib: Power of Wisdom 523k (44x); Barley Harvest 102k (12x); Jake Doubleyoo 331k (1.3x).
+  - Eden as temple: Nils Glenn 718k (1.9x); Kingdom Story Films 251k (5x).
+  - Location: HolyLandSite 3.05M (64x); Expedition Bible "Pishon" 7.9M (5x); BLK SHP 439k (1.7x).
+  - Whole-story retellings: Tales From Ancient Lands 508k (181x), Bible Story Films 475k (26x), Daily Bread 1.7M. All are animated movie retellings for a general or kids audience.
+  - Ethiopian-Bible "Eve revealed" videos: 400k+ (100x+). Not Tanakh; off-limits.
+- **Saturated angles (each has several 100k+ videos):** serpent not a snake, rib means side, Eden was a temple, where Eden was, why God put the tree there.
+- **Format verdict: one video, one angle.**
+  - Series decay: Aleph Beta "Inside Eden" parts 1–7: 14k, 11.6k, 8.8k, 5.3k, 4.6k, 2.9k, 3.9k. Power of Wisdom "Genesis movie Part 1" 0.6x. gclmedia's run of Eden episodes: 0.7–0.9x each.
+  - A second video on the same Eden angle sinks: Power of Wisdom's second serpent video 6.6k (0.5x) after 1.26M; Nils Glenn's serpent 0.6x after his Eden video.
+  - Whole-story retellings only win as animated movies, and the channel rule bans retelling.
+  - Any later Eden video must stand alone with its own keyword; no "Part 1/2".
+- **Picked idea (owner to approve):** "The Forbidden Fruit Is Hidden in the Ten Commandments". Thumbnail: "SAME TWO WORDS." with "TWO" in gold, a glowing circle on the fruit in the woman's hand.
+  - Insight: the two words that make the fruit attractive in Gen 3:6 (תַאֲוָה, נֶחְמָד) appear together in only one other verse: Deut 5:21, the last commandment (לֹא תַחְמֹד… לֹא תִתְאַוֶּה).
+  - Beats: (1) Gen 3:6 → Deut 5:21 in the first minute. (2) Before her, only God "saw that it was good" (6 times in Gen 1); she is the first human to say it, and then she takes. (3) Re-hook: the sons of God "saw… good… took" (Gen 6:2), and the Flood follows. (4) Achan: saw, good, coveted, took (Josh 7:21), all four Eden verbs, right after Jericho; then David (2 Sam 11:2–4). (5) Payoff: one other woman "sees that it is good", Moses' mother (Exod 2:2), and she hides him, then takes an ark for him (2:3).
+- **Runners-up:**
+  - "Where are you?" אַיֶּכָּה (Gen 3:9) has the same four letters as אֵיכָה, the first word of Lamentations (Lam 1:1, 2:1, 4:1). The link comes from later tradition; put that in the pinned comment.
+  - Naked and cunning: עֲרוּמִּים (2:25) and עָרוּם (3:1). Moderate surprise; partly known.
+- **Verified Hebrew (WLC):**
+  - Gen 3:6: וַתֵּרֶא הָאִשָּׁה כִּי טוֹב… תַאֲוָה… וְנֶחְמָד… וַתִּקַּח. It has see, good, desire, desirable, take.
+  - Verses with both the חמד family and the אוה family: only Gen 3:6 and Deut 5:21. Exod 20:17 has תַחְמֹד twice and no אוה.
+  - Verses with see + good + take in narration: Gen 3:6, Gen 6:2 and Josh 7:21 (Araunah's offer in 2 Sam 24:22 and 1 Chr 21:23 also has the three lemmas, but as speech, not a taking).
+  - Josh 7:21: וָאֵרֶא… טוֹבָה… וָאֶחְמְדֵם וָאֶקָּחֵם.
+  - 2 Sam 11:2: וַיַּרְא… טוֹבַת מַרְאֶה; 11:4: וַיִּקָּחֶהָ (two verses, not one).
+  - ראה + כִּי טוֹב in Genesis 1: 1:4, 10, 12, 18, 21, 25 (six). 1:31 is וְהִנֵּה טוֹב מְאֹד.
+  - וַתֵּרֶא with כִּי טוֹב: only Gen 3:6 and Exod 2:2. Exod 2:3: וַתִּקַּח לוֹ תֵּבַת גֹּמֶא.
+  - אַיֶּכָּה appears only at Gen 3:9.
+  - Gen 12:15 (Pharaoh's officials) has saw and took but no טוֹב; don't use it.
+
+## Channel numbers (YouTube feed, Nov 20, 2026)
+- Long-forms:
+  - Wells 621k
+  - Deception 221k
+  - Barren 158k
+  - Job 157k
+  - 5 Patterns 152k
+  - Marriage 151k
+  - Younger brother 138k
+  - Strange commands 25k (the only flop)
+- Shorts are mostly 4–24k. "Both of Abraham's Sons Were Saved the Same Way" got only 5.8k.
+
+## Topic scouts (Nov 20, 2026; three independent reviewers: search demand, outliers, Hebrew-first)
+- **Pick for most viral: biblically accurate angels.**
+  - Demand:
+    - "Why Bible Accurate Angels Are So Creepy": 16.8M
+    - "Every Angel in the Bible Drawn and Explained": 6.3M in 10 months
+    - "I Recreated Every Angel in the Bible": 2.4M in 5 months
+    - None of them shows the Hebrew. The only video with this angle has 1.4k views.
+  - Angle (UNVERIFIED): the many-winged, many-eyed beings are never called מַלְאָךְ; they are כְּרוּבִים (Gen 3:24), שְׂרָפִים (Isa 6:2) and חַיּוֹת (Ezek 1:5). The מַלְאָךְ who comes into a scene is taken for a man (Gen 18:2, 19:1; Judg 13:6; Dan 9:21). "Every" must be counted or dropped.
+  - Risks: Dan 9:21 ("flying swiftly"), Dan 10:5–6, Judg 13:6 "very awesome". Drop the seraph-as-serpent idea, because it overlaps 05.
+- **Runner-up: Nephilim after the Flood.** Two scouts found it.
+  - Outliers:
+    - "How Did Giants Return After the Flood?": 900k in 5 months, about 6x its channel
+    - "If the Flood Killed the Nephilim…": 601k
+    - "Why Did Giants Appear in Canaan…": 662k
+    - Tucker Carlson: 2.2M
+  - Angle (UNVERIFIED): נְפִלִים, "the fallen", and then "your carcasses shall fall" (יִפְּלוּ, Num 14:29, 32). The report is called דִּבָּה (13:32; 14:37). Moses retells it with no Nephilim (Deut 1:28).
+  - Risks: Gen 6:4 וְגַם אַחֲרֵי־כֵן; the Anakim were real (Josh 14:12); overlap with 05 through Gath.
+- **Third: Abraham's two sons (Gen 21 and 22).** Two scouts found it. The short on it got only 5.8k, and it overlaps the younger-brother video.
+  - Outliers: Ishmael videos at 1.47M (13x its channel), 1.23M and 704k.
+  - Checked in the WLC by the scout:
+    - לֶךְ־לְךָ from God only at Gen 12:1 and 22:2.
+    - An angel calling "from heaven" only at 21:17, 22:11 and 22:15.
+    - וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר also at 19:27, so don't say "only".
+- **Other leads:**
+  - תְּשׁוּקָה exactly 3 times (Gen 3:16, 4:7; Song 7:11), checked. It lands in the gender fight.
+  - תֵּבָה: 26 times in Gen 6:14–9:18, plus Exod 2:3 and 2:5 only, checked. Low demand for the link.
+  - Babel נִלְבְּנָה / וְנָבְלָה (11:3, 11:7), UNVERIFIED. Smaller draw.
+  - Eden "east" steps. Thin, and the idea is already known.
+
+## Outlier research (Nov 20, 2026)
+- **Method:** 74 similar channels, found through YouTube search; channeldb blocks automated access.
+  - For each channel, the multiplier is a video's views ÷ the median views of the channel's last ~80 long-forms.
+  - Only long-forms from the last 12 months count.
+  - Script: scratchpad `outliers.py`.
+- **Clusters that outlier on several channels (Tanakh-relevant only):**
+  - **Amalekites:**
+    - Deep Bible Insights 817k (115x)
+    - The Bible Told 514k (184x)
+    - Power of Wisdom 235k (23x)
+    - Black and White Bible 114k (9x)
+    - Every one of them is about origin and "why erase them". None shows the Saul → Esther rematch; the best video on that angle has 15k.
+  - **Hebrew word "doesn't mean what you think":** the biggest multipliers in the niche.
+    - "Helper" is a military term: 667k (1026x)
+    - Marriage, Gen 2:24: 199k (1137x)
+    - "Be still": 188k (289x)
+    - Proverbs 31 woman a soldier: 71k (109x)
+    - "Humble": 210k (54x) on two channels
+    - First word of Genesis: 134k (433x)
+    - Light in Genesis: 91k (253x)
+    - Aaron's rod almonds: 250k (32x)
+    - We have already done עֵזֶר and אֵשֶׁת חַיִל.
+  - **Spirit beings:**
+    - "Every Angel in the Bible": 6.2M (16x)
+    - "When Lucifer became Satan": 367k (45x)
+    - "Michael vs the Devil": 184k (48x)
+    - "Imprisoned angels": 1.2M (17x)
+    - "Many spirit beings": 12x
+    - "Satan isn't in the Hebrew Bible / is a title" is already saturated: Dan McClellan 267k, Data Over Dogma, Traced.
+  - **Pre-Flood, Nephilim and Noah:** the largest count of outliers.
+    - "Giants after the Flood": 899k (12x)
+    - "Last 24 hours before the Flood": 25x
+    - "900 years to 80": 53x
+    - "370 days in the ark": 26x
+    - It overlaps 05 through Gath.
+  - **Single laws:**
+    - Tattoos (Lev 19:28) on three channels in the last 2 months: 10x, 25x and 9.5x
+    - Pork: 1.1M (110x)
+  - **Forgotten figures:**
+    - Benaiah: 245x
+    - Eleazar: 174x
+    - Absalom: 120x
+    - Ham: 118x
+    - Leah: 99x
+    - Ishmael: 27x
+- **Verified in the WLC (Nov 20):**
+  - Mordecai is בֶּן קִישׁ אִישׁ יְמִינִי (Esth 2:5). Saul's father Kish is בֶּן אִישׁ יְמִינִי (1 Sam 9:1).
+  - Saul spared Agag: וַיַּחְמֹל שָׁאוּל … עַל אֲגָג (1 Sam 15:9). He "swooped on the plunder", וַתַּעַט אֶל הַשָּׁלָל (15:19; it contains the Divine Name, so show it in English).
+  - הָאֲגָגִי appears 5 times, all for Haman, all in Esther (3:1, 3:10, 8:3, 8:5, 9:24).
+  - Both decrees allow וּשְׁלָלָם לָבוֹז (Esth 3:13; 8:11). Then, three times, וּבַבִּזָּה לֹא שָׁלְחוּ אֶת יָדָם (9:10, 15, 16).
+  - The noun שָׂטָן appears 27 times. Its first is Num 22:22, God's own angel "as a satan" to Balaam (also 22:32). הַשָּׂטָן with the article appears only in Job 1–2 and Zech 3. The root appears earlier, in the well name שִׂטְנָה (Gen 26:21).
+  - הֵילֵל appears once (Isa 14:12). קַעֲקַע appears once (Lev 19:28).
+
+## Reel ideas (Nov 20, 2026)
+- 100 new short-form ideas, each checked against the WLC, are in `_research/reel_ideas_100.md` (plus checked spares and two dropped claims).
+- Owner's own 100-idea list (pillars: scroll anomalies, centers and mirrors, acrostics and codes, word echoes, numbers) is not repeated there.
+- Top pick by demand: the Nephilim (two verses; see "Verified Hebrew" above).
+- Checks worth reusing: "sin" (חטאת) first appears at Gen 4:7; שטן never appears in Genesis; ירושלם never appears in the Torah; וישאל את נפשו למות only in 1 Kgs 19:4 and Jonah 4:8; מוריה only in Gen 22:2 and 2 Chr 3:1; אשת חיל only in Prov 12:4, 31:10, Ruth 3:11; the verb משה only in Exod 2:10, 2 Sam 22:17, Ps 18:17.
+- `data/shorts.json` lists only the 8 newest shorts, so overlap with older shorts was not checked.
+
+## Packaging research for the "six predictions / Jewish people" video (Nov 20, 2026)
+One quick pass per cluster, YouTube search, last 12 months. Published as "If God Isn't Real, Explain This": 6.9K views at 9 hours.
+- **"Proof God exists":** big demand (several 700K–5M videos) but owned by interview-clip channels and 1M+ on-location channels. Autocomplete points to philosophy, science and debates; no completion mentions prophecy, Israel, Jews or the Scrolls.
+  - "If God isn't real, explain this" has no demand: not in autocomplete, every exact match under 6K views.
+  - No winner has "prophecy" in the title.
+  - Small-channel breakouts are numbered lists of physical finds: "Unexpected Discoveries That Confirm The Bible" 963K (26.3K subs); "10 RARE Photos That Prove the Bible Is True!" 917K (139K subs).
+- **Jewish people:** "survived / outlasted empires" titles are dead (best 2.4K; most under 2K). Mark Twain: no recent videos. Only "why are Jews hated" has demand (1.0M, 292K, 74K), with a famous name and face, and a political, partly hostile audience.
+- **Prophecy / Israel:** "bible prophecies that came true" is about three-quarters end-times and news content. "Israel 1948 prophecy", "Deuteronomy 28" and "Ezekiel 37" searches are near dead or off-audience.
+- **Dead Sea Scrolls: the winnable keyword.** Many 100K–1.3M videos, none end-times.
+  - "The Dead Sea Scrolls Are Weirder Than You Think": 1.28M (Nils Glenn, 273K subs, about 3× his typical). Thumbnail: "they're hiding something".
+  - "The Dead Sea Scrolls Reveal What God REALLY Said About Israel": 344K in 1 month (3–5× that channel's norm).
+  - "The Dead Sea Scrolls: The Oldest Cover-Up In History": 55.8K in 2 weeks from a 10.1K-sub channel (30×+ its norm). Thumbnail: one scroll on a plinth, black background, spotlight, "WE WERE FOOLED".
+  - Title pattern: "The Dead Sea Scrolls" first, then a curiosity claim with a named subject.
+  - Thumbnail pattern: one physical scroll or one face, dark background with a warm spotlit subject, 2–4 words that never repeat the title.
+- **Peers (5 channels):** none ran a "this proves God" title. Curiosity about the object beat their typical views; prophecy-as-argument titles sat at or below typical (Data Over Dogma: 45K, 23K, 22K against ~45K).
