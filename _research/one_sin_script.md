@@ -58,7 +58,7 @@ But before the second attack on Ai, God says to Joshua, "Its spoil and its cattl
 
 Achan was one man, and about thirty-six died. The next man who sees and takes is the king.
 
-David walks on the roof of his palace in the evening:
+By now, God has promised David a kingdom that will last forever. One evening, David walks on the roof of his palace:
 
 וַיַּרְא אִשָּׁה רֹחֶצֶת מֵעַל הַגָּג
 
