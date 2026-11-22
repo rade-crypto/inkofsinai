@@ -1,8 +1,8 @@
 # Ink of Sinai: where everything lives
 
-Read this first in any new session. It points to every rule, note, script and engine in the repo. It also covers the large media files, which are in the repo but skipped by search.
+Open this when a task needs past work. It points to every rule, note, script and engine in the repo. It also covers the large media files, which are in the repo but skipped by search.
 
-## Rules (read before any work)
+## Rules
 - `CLAUDE.md`: every standing rule from the owner (working style, content, scripts, titles and thumbnails, on screen).
 - `_research/scripts_playbook.md`: the owner's quoted notes plus the formula of the finished scripts (hooks, structure, endings, checklist). Read it in full before writing any script, hook, title or caption.
 - `_research/hooks.md`: the hook research and its checklist.
