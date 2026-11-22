@@ -91,9 +91,9 @@
 
 # Past work lives on every branch
 
-- Start every session by reading `_research/INDEX.md`. It lists where every rule, note, script and engine lives, including media left on other branches.
+- `_research/INDEX.md` maps where every rule, note, script, engine and media file lives. Open it when a task needs past work. Don't read it, the notes or the playbook when the task doesn't need them, because reading costs tokens.
 - Before writing any script, hook, title or caption, run `git fetch --all` and search every branch for past scripts and notes. Don't rely only on the current checkout.
-- Then read `_research/scripts_playbook.md` in full and run its checklist (see Writing scripts). It holds the owner's notes and the formula of the finished scripts, including how endings work. `_research/INDEX.md` lists where everything lives.
+- Never open media, renders, audio or the large generated files listed in `.ignore` unless the task needs that exact file. Search skips them on purpose.
 
 # On screen (every video, long-form and Shorts)
 
@@ -140,4 +140,4 @@ These are the user's standing notes from earlier videos. Apply all of them witho
 
 # Research notes
 
-`_research/notes.md` holds everything researched so far: demand data, channel hits, writing principles, topic verdicts and verified Hebrew. Read it before picking a topic or writing, and add new findings to it.
+`_research/notes.md` holds everything researched so far: demand data, channel hits, writing principles, topic verdicts and verified Hebrew. It's long, so don't read it whole. Before picking a topic or writing, search it for the topic, the story and the owner's verdicts. Add new findings to it.

@@ -1,0 +1,2 @@
+page.evaluate: Target page, context or browser has been closed
+    at /tmp/claude-0/lf12/b09p/render.cjs:7:40
