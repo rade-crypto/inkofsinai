@@ -1,6 +1,6 @@
 # Ink of Sinai: where everything lives
 
-Open this when a task needs past work. It points to every rule, note, script and engine in the repo. It also covers the large media files, which are in the repo but skipped by search.
+The live rules and research are in `rade-crypto/inkofsinai-studio`; this file maps the old copies and the media kept here. Open it when a task needs past work. It points to every rule, note, script and engine in the repo. It also covers the large media files, which are in the repo but skipped by search.
 
 ## Two repos
 - `rade-crypto/inkofsinai` (this one): the website, rules, research, scripts and media.
