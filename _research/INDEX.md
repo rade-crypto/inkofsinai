@@ -2,6 +2,10 @@
 
 Open this when a task needs past work. It points to every rule, note, script and engine in the repo. It also covers the large media files, which are in the repo but skipped by search.
 
+## Two repos
+- `rade-crypto/inkofsinai` (this one): the website, rules, research, scripts and media.
+- `rade-crypto/inkofsinai-studio`: production. It holds scripts in progress (16, 17…), `work/reviews/` with the owner review briefs, and the Westminster Leningrad Codex check tool. Attach it with add_repo if it isn't in the session.
+
 ## Rules
 - `CLAUDE.md`: every standing rule from the owner (working style, content, scripts, titles and thumbnails, on screen).
 - `_research/scripts_playbook.md`: the owner's quoted notes plus the formula of the finished scripts (hooks, structure, endings, checklist). Read it in full before writing any script, hook, title or caption.
