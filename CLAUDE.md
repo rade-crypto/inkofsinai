@@ -92,6 +92,7 @@
 
 # Past work lives on every branch
 
+- Ink of Sinai work lives in two repos. `rade-crypto/inkofsinai` holds the website, rules, research, scripts and media. `rade-crypto/inkofsinai-studio` holds production: scripts in progress, reviews, owner review briefs and the Westminster Leningrad Codex check tool. If either repo is missing from the session, attach it with add_repo before starting. Search both for past work.
 - `_research/INDEX.md` maps where every rule, note, script, engine and media file lives. Open it when a task needs past work. Don't read it, the notes or the playbook when the task doesn't need them, because reading costs tokens.
 - Before writing any script, hook, title or caption, run `git fetch --all` and search every branch for past scripts and notes. Don't rely only on the current checkout.
 - Never open media, renders, audio or the large generated files listed in `.ignore` unless the task needs that exact file. Search skips them on purpose.
