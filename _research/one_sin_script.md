@@ -1,6 +1,6 @@
 The One Sin the Bible Keeps Repeating
 
-There is one sin the Bible tells four times. It happens first in a garden, then in the days before the flood, then at the fall of Jericho, and last on the roof of a king's palace. Each time, the Hebrew tells it with the same three words, in the same order. And the two words Genesis uses for why the fruit was tempting appear together in only one other verse in the whole Hebrew Bible.
+There is one sin the Bible tells four times. It happens first in a garden, then in the days before the flood, then at the fall of Jericho, and last on the roof of a king's palace. Each time, the Hebrew tells it with the same three words, in the same order: saw, good, took. But you see something good and take it every day, so what made it a sin those four times?
 
 Here is the verse at the tree:
 
