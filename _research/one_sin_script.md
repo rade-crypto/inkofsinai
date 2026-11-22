@@ -56,7 +56,7 @@ He names silver and gold as well. Then he says:
 
 But before the second attack on Ai, God says to Joshua, "Its spoil and its cattle you may plunder for yourselves." Achan stole spoil at Jericho, and one city later, spoil was given to all Israel.
 
-Achan was one man, and about thirty-six died. The next man who sees and takes is the king.
+The next man who sees and takes is the king.
 
 By now, God has promised David a kingdom that will last forever. One evening, David walks on the roof of his palace:
 
