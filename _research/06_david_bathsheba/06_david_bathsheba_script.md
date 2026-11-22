@@ -13,7 +13,7 @@ His orders go out through one Hebrew word: שָׁלַח. Send.
 
 In 2 Samuel 11, that word appears twelve times, and no chapter in the Bible has more. Follow it, and you can watch the crime happen one message at a time. And right after the twelfth, someone new picks up the word.
 
-It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling: it's read "kings," but the Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
+It begins in spring, "the time when kings go out" to war. Even that line has a strange spelling: read aloud, the word is "kings," but its Hebrew letters spell הַמַּלְאֿכִים, messengers, with an א no one pronounces. As it's written, the chapter opens at the time when messengers go out.
 
 And the first send is David's: he sends Joab, his general, with the whole army, and stays home in Jerusalem.
 
@@ -23,7 +23,7 @@ He stays where he is and sends someone to ask who she is. The answer names her h
 
 So now he knows she's married, but he sends again. וַיִּשְׁלַח דָּוִד מַלְאָכִים וַיִּקָּחֶהָ. "David sent messengers, and took her," and lay with her. There they are: the messengers from the first verse.
 
-She goes home, and when she finds she is pregnant, she sends David two words: הָרָה אָנֹכִי, "I'm pregnant." In all of 2 Samuel, those are the only words of hers it quotes.
+She goes home, and when she finds she is pregnant, she sends David two words: הָרָה אָנֹכִי, "I'm pregnant." In all of 2 Samuel, they're the only words she's quoted saying.
 
 Now David needs her husband home, fast, and one verse holds three sends. David sends to Joab, שְׁלַח אֵלַי אֶת אוּרִיָּה, "send me Uriah," and Joab sends Uriah.
 
@@ -33,7 +33,7 @@ But Uriah sleeps at the palace door with the servants. When David asks why, Uria
 
 Eat, drink, lie with my wife: לֶאֱכֹל וְלִשְׁתּוֹת וְלִשְׁכַּב. A prophet is going to hand those three words back to David.
 
-So David says, "Stay today too, and tomorrow I'll send you off." He calls Uriah in to eat and drink with him and gets him drunk, but that evening Uriah still goes out to lie down with his master's servants. He never goes home.
+David tries again: "Stay today too, and tomorrow I'll send you off." He calls Uriah in to eat and drink with him and gets him drunk, but that evening Uriah still goes out to lie down with his master's servants. He never goes home.
 
 So the cover-up turns into a murder plan, and Uriah is going to deliver it himself.
 
@@ -49,7 +49,7 @@ That's twelve sends, and eight of them are David's. Uriah never sends anything; 
 
 But the chapter's last line uses David's own words against him. David told Joab, "Don't let this be evil in your eyes," and the narrator answers with the same words: וַיֵּרַע הַדָּבָר אֲשֶׁר עָשָׂה דָוִד. "But the thing David had done was evil in the eyes of God."
 
-One verse later, chapter 12 opens with the same word and a new sender: "And God sent Nathan to David."
+One verse later, chapter 12 opens with שָׁלַח again, and a new sender: "And God sent Nathan to David."
 
 Nathan the prophet comes with a case for the king to judge. A rich man has flocks and herds, and a poor man has nothing but one little ewe lamb that he raised with his children. "It ate from his bread, drank from his cup, and lay in his arms."
 
