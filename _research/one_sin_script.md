@@ -116,4 +116,4 @@ One psalm takes the words from the tree and turns them around:
 
 טַעֲמוּ וּרְאוּ כִּי טוֹב
 
-"Taste and see that God is good." At the tree, the good thing was a fruit, and a hand took it. Here, the good is God himself, and the same psalm promises, "Those who seek God will lack no good thing."
+"Taste and see that God is good." At the tree, the good was a fruit. Here, the good is God himself, and the same psalm promises, "Those who seek God will lack no good thing."
