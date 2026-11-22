@@ -24,7 +24,7 @@ So the cover-up turns into a murder plan, and Uriah delivers it himself. David w
 
 When the news comes back that Uriah is dead, David sends Joab a shrug: אַל יֵרַע בְּעֵינֶיךָ אֶת הַדָּבָר הַזֶּה, "Don't let this thing be evil in your eyes. The sword devours this one and that one."
 
-Count the sends, and the design shows. Eight of the twelve are David's, and Uriah never sends anything; he is only sent. The king never goes to her house, never goes near the battle, and never holds a sword. His hands are clean in every eye but one.
+Count the sends, and the design shows. Eight of the twelve are David's, and Uriah never sends anything; he is only sent. The king never goes to her house, never goes near the battle, and never holds a sword. His hands look clean. But one pair of eyes has seen all of it.
 
 The chapter's last line takes David's shrug and turns it around: "The thing David had done was evil in the eyes of God." And after twelve sends, the thirteenth has a new sender: "And God sent Nathan to David."
 
@@ -40,9 +40,9 @@ One echo could be chance. But the verdict keeps using chapter 11's words. "You s
 
 And Nathan names what all those messengers kept out of sight: כִּי אַתָּה עָשִׂיתָ בַסָּתֶר, "You did it in secret." God will answer in the open, before all Israel and before the sun.
 
-All chapter long, David sent others to do it. This time there's no messenger and no letter. David answers Nathan to his face: חָטָאתִי. "I have sinned against God."
+All chapter long, David sent others in his place. This time there's no messenger and no letter. David answers Nathan to his face: חָטָאתִי. "I have sinned against God."
 
-And Nathan replies at once: "God has put away your sin. You will not die."
+And Nathan replies at once: "God has put away your sin. You will not die." But the child will.
 
 David sent to take and sent to hide, but God sent Nathan to bring him back. Years before, on the run for his life, David had prayed with the same verb: יִשְׁלַח מִשָּׁמַיִם וְיוֹשִׁיעֵנִי. "He will send from heaven and save me. God will send His love and His truth."
 
